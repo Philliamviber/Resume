@@ -1,0 +1,249 @@
+{
+  "profile": {
+    "name": "Philip Stiber",
+    "credentials": ["CISSP", "CISM"],
+    "headline": "Cybersecurity Leadership | IT Infrastructure Management | M&A Technology Integration",
+    "location": "Peterborough, ON, Canada",
+    "email": "redacted@example.com",
+    "linkedin": "https://www.linkedin.com/in/pstiber/",
+    "summary": "Seasoned CISSP- and CISM-certified cybersecurity and IT infrastructure leader with extensive global experience securing and optimizing complex enterprise environments. Proven expertise in post-merger integrations, governance, risk, and compliance (including SOX ITGC), and business continuity & disaster recovery planning. Aligns cybersecurity and infrastructure strategy with business objectives to enhance resilience, compliance, and operational efficiency, and leads high-performing cross-functional teams that deliver secure, scalable solutions across multinational organizations.",
+    "tagline": "Mapping a 15-year attack path from helpdesk to the enterprise infrastructure command chair."
+  },
+  "certifications": [
+    { "name": "CISSP", "issuer": "(ISC)²", "issued": "2023-06", "label": "Certified Information Systems Security Professional" },
+    { "name": "CISM", "issuer": "ISACA", "issued": "2024-06", "label": "Certified Information Security Manager" }
+  ],
+  "education": [
+    { "program": "Coursework in Computer Engineering", "school": "University of South Florida", "location": "Tampa, FL" },
+    { "program": "Coursework in Network Engineering & Windows Server Administration", "school": "State College of Florida", "location": "Bradenton, FL" }
+  ],
+  "domains": [
+    { "key": "infra", "label": "IT Infrastructure", "score": 5, "color": "#39ff14" },
+    { "key": "cloudsec", "label": "Cloud Security", "score": 4, "color": "#00e5ff" },
+    { "key": "grc", "label": "GRC & Compliance", "score": 5, "color": "#ffb000" },
+    { "key": "ma", "label": "M&A Integration", "score": 5, "color": "#ff2e63" },
+    { "key": "netsec", "label": "Network Security", "score": 4, "color": "#bd00ff" },
+    { "key": "bcdr", "label": "Business Continuity / DR", "score": 5, "color": "#00ff9d" },
+    { "key": "iam", "label": "Identity & Access", "score": 4, "color": "#ff7b00" },
+    { "key": "automation", "label": "Scripting & Automation", "score": 4, "color": "#f8f32b" }
+  ],
+  "skills": [
+    { "name": "Post-Merger Integration", "domain": "ma", "proficiency": 5 },
+    { "name": "Cybersecurity Leadership", "domain": "grc", "proficiency": 5 },
+    { "name": "IT Infrastructure Management", "domain": "infra", "proficiency": 5 },
+    { "name": "SOX ITGC", "domain": "grc", "proficiency": 5 },
+    { "name": "NIST 800-53", "domain": "grc", "proficiency": 4 },
+    { "name": "Business Continuity Planning", "domain": "bcdr", "proficiency": 5 },
+    { "name": "Disaster Recovery", "domain": "bcdr", "proficiency": 5 },
+    { "name": "Network Architecture Design", "domain": "netsec", "proficiency": 4 },
+    { "name": "Enterprise System Hardening", "domain": "netsec", "proficiency": 4 },
+    { "name": "Incident Response Coordination", "domain": "grc", "proficiency": 4 },
+    { "name": "Threat Detection & Hunting", "domain": "netsec", "proficiency": 4 },
+    { "name": "Cloud Security", "domain": "cloudsec", "proficiency": 4 },
+    { "name": "Identity & Access Management", "domain": "iam", "proficiency": 4 },
+    { "name": "Team Leadership", "domain": "infra", "proficiency": 5 },
+    { "name": "Data Protection Strategies", "domain": "grc", "proficiency": 4 }
+  ],
+  "techStack": {
+    "Enterprise Systems": ["Active Directory", "Microsoft Exchange", "Hyper-V", "VMware", "ServiceNow", "Cisco Meraki"],
+    "Cloud Platforms": ["Microsoft 365", "Azure IaaS", "Azure Arc", "Okta", "Duo", "Entra ID"],
+    "Security": ["Palo Alto NGFW", "NIST 800-53", "SOX ITGC", "CIS Controls", "Application Whitelisting", "Network Segmentation"],
+    "Scripting & Data": ["PowerShell", "SQL", "KQL", "WMI", "Python"]
+  },
+  "wordCloud": [
+    ["Active Directory", 9], ["Entra ID", 9], ["M&A Integration", 10], ["SOX ITGC", 8], ["PowerShell", 8],
+    ["Palo Alto NGFW", 7], ["Cisco Meraki", 7], ["Hyper-V", 6], ["VMware", 6], ["Azure", 7],
+    ["Office 365", 8], ["Okta", 5], ["Duo", 5], ["KQL", 6], ["Python", 5], ["NIST 800-53", 6],
+    ["Incident Response", 7], ["Threat Hunting", 6], ["Disaster Recovery", 7], ["CISSP", 8], ["CISM", 8],
+    ["ServiceNow", 5], ["Azure Arc", 5], ["Network Segmentation", 5], ["CIS Controls", 6], ["Business Continuity", 7],
+    ["Tenant Migration", 7], ["Cloud Security", 7], ["GRC", 7], ["Exchange", 6], ["WMI", 4], ["SQL", 5],
+    ["Hardening", 6], ["NGFW", 6], ["IAM", 6]
+  ],
+  "impact": [
+    { "value": 10, "suffix": "", "label": "M&A integrations in 12 months", "icon": "merge" },
+    { "value": 4, "prefix": "#", "suffix": "", "label": "Largest U.S. craft brewer enabled", "icon": "trophy" },
+    { "value": 900, "suffix": "+", "label": "Employees onboarded via Entra", "icon": "users" },
+    { "value": 350, "suffix": "+", "label": "Endpoints & servers reimaged", "icon": "server" },
+    { "value": 160, "suffix": "", "label": "Staff moved remote in 48 hours", "icon": "bolt" },
+    { "value": 65, "suffix": "+", "label": "Sites, brew pubs & offices supported", "icon": "globe" }
+  ],
+  "experience": [
+    {
+      "id": "tilray",
+      "company": "Tilray Brands Inc.",
+      "role": "IT Infrastructure Manager",
+      "location": "Toronto, ON",
+      "start": "2023-07",
+      "end": "present",
+      "tenure": "Jul 2023 – Present",
+      "domains": ["ma", "infra", "grc", "cloudsec"],
+      "summary": "Leads global infrastructure and high-tempo M&A integration for a multinational beverage and cannabis enterprise.",
+      "achievements": [
+        "Orchestrated high-priority IT M&A across 10 acquired organizations in 12 months, directly contributing to Tilray Beverages becoming the 4th-largest craft brewer in the U.S.",
+        "Coordinated IT acquisition events with AB InBev — full system and network takeovers of 4 production facilities in 90 days.",
+        "Directed post-acquisition transitions with Molson Coors — 6 major migrations in 60 days (Meraki org transfers, G-Suite→O365, Exchange→O365, Active Directory takeovers).",
+        "Completed 6 Microsoft Entra tenant-to-tenant migrations, onboarding 900+ employees and thousands of digital assets within a year.",
+        "Led a distributed team of 10 (network engineers, cloud architects, sysadmins) supporting 15+ production facilities, 20 brew pubs, and 30 offices across North America and Europe.",
+        "Aligned infrastructure operations with cybersecurity pillars: SLA reviews, BIAs, system hardening, SOX ITGC, and incident management/response."
+      ]
+    },
+    {
+      "id": "bakertilly",
+      "company": "Baker Tilly KDN LLP",
+      "role": "Information Technology Manager",
+      "location": "Courtice, ON",
+      "start": "2019-01",
+      "end": "2023-02",
+      "tenure": "Jan 2019 – Feb 2023",
+      "domains": ["netsec", "grc", "bcdr", "iam"],
+      "summary": "Matured the security program of a professional services firm and rebuilt its core identity and network estate.",
+      "achievements": [
+        "Established CIS framework maturity via security improvement plans: application whitelisting, network segmentation, next-gen firewalls, and cloud IAM.",
+        "Oversaw enterprise-wide Palo Alto NGFW deployment across all firm locations, replacing end-of-life equipment and increasing network visibility.",
+        "Built core security processes: phish-alert reporting, incident management, threat hunting, patching cycles, and coordinated incident response.",
+        "Served as M&A technology advisor for the Collins Barrow Kawarthas & Durham consolidation, leading IT due diligence.",
+        "Designed, built, and deployed a new Active Directory + O365 environment enabling full remote connectivity in under 10 months; reimaged 300 endpoints and 50 servers across three 48-hour maintenance windows.",
+        "Transitioned 160 employees to remote work in 48 hours by co-authoring the firm's COVID-19 technical strategy with the COO."
+      ]
+    },
+    {
+      "id": "collinsbarrow",
+      "company": "Collins Barrow Durham LLP",
+      "role": "IT Systems Administrator",
+      "location": "Courtice, ON",
+      "start": "2017-11",
+      "end": "2019-01",
+      "tenure": "Nov 2017 – Jan 2019",
+      "domains": ["infra", "bcdr", "ma"],
+      "summary": "Modernized core systems and prepared the firm's IT estate for merger due diligence.",
+      "achievements": [
+        "Built IT asset inventory, process documentation, and cost models to satisfy merger due-diligence requirements.",
+        "Migrated email from Exchange 2010 to Office 365, reducing exposure and improving reliability.",
+        "Virtualized all on-prem physical servers to Hyper-V 2016, improving scalability and DR readiness.",
+        "Standardized GPO baselines and implemented Windows 10 / Server 2016 hardening guidelines."
+      ]
+    },
+    {
+      "id": "sentient",
+      "company": "Complete Sentient Information Systems",
+      "role": "IT Systems Technical Consultant",
+      "location": "Oshawa, ON",
+      "start": "2016-05",
+      "end": "2017-11",
+      "tenure": "May 2016 – Nov 2017",
+      "domains": ["infra", "cloudsec"],
+      "summary": "Delivered end-to-end IT modernization for legal firms, CPA practices, and small businesses across the eastern GTA.",
+      "achievements": [
+        "Performed complex AD domain and Exchange migrations, server virtualization, and Office 365 deployments.",
+        "Managed migration programs and ongoing support, sustaining seamless operations post-cutover.",
+        "Delivered tailored, fit-for-purpose systems deployments aligned to each client's requirements."
+      ]
+    },
+    {
+      "id": "bogart",
+      "company": "Bogart & Daugherty Consulting",
+      "role": "IT Consultant",
+      "location": "Sarasota, FL",
+      "start": "2010-04",
+      "end": "2014-09",
+      "tenure": "Apr 2010 – Sep 2014",
+      "domains": ["infra"],
+      "summary": "Supported major migrations and line-of-business continuity for legal and CPA clients.",
+      "achievements": [
+        "Supported major migrations — Exchange, BlackBerry BES, Active Directory, and Windows 7/8 deployments.",
+        "Delivered IT consulting, project management, and systems administration for legal firms, CPA practices, and small businesses.",
+        "Assisted MSP helpdesk escalation management and maintained support for 30+ legal line-of-business applications."
+      ]
+    }
+  ],
+  "timeline": [
+    { "year": "2010", "title": "IT Consultant", "org": "Bogart & Daugherty", "node": "bogart" },
+    { "year": "2016", "title": "Technical Consultant", "org": "Complete Sentient", "node": "sentient" },
+    { "year": "2017", "title": "Systems Administrator", "org": "Collins Barrow Durham", "node": "collinsbarrow" },
+    { "year": "2019", "title": "IT Manager", "org": "Baker Tilly KDN", "node": "bakertilly" },
+    { "year": "2023", "title": "CISSP Certified", "org": "(ISC)²", "node": "cert-cissp" },
+    { "year": "2023", "title": "IT Infrastructure Manager", "org": "Tilray Brands", "node": "tilray" },
+    { "year": "2024", "title": "CISM Certified", "org": "ISACA", "node": "cert-cism" }
+  ],
+  "graph": {
+    "legend": [
+      { "type": "root", "label": "Operator", "color": "#ff2e63" },
+      { "type": "company", "label": "Engagement", "color": "#00e5ff" },
+      { "type": "achievement", "label": "Objective", "color": "#39ff14" },
+      { "type": "skill", "label": "Capability", "color": "#ffb000" },
+      { "type": "cert", "label": "Credential", "color": "#bd00ff" }
+    ],
+    "nodes": [
+      { "id": "root", "label": "Philip Stiber\nCISSP · CISM", "type": "root", "value": 50 },
+
+      { "id": "tilray", "label": "Tilray Brands", "type": "company", "value": 32, "meta": "IT Infrastructure Manager · 2023–Present" },
+      { "id": "bakertilly", "label": "Baker Tilly KDN", "type": "company", "value": 28, "meta": "IT Manager · 2019–2023" },
+      { "id": "collinsbarrow", "label": "Collins Barrow Durham", "type": "company", "value": 22, "meta": "Systems Administrator · 2017–2019" },
+      { "id": "sentient", "label": "Complete Sentient", "type": "company", "value": 20, "meta": "Technical Consultant · 2016–2017" },
+      { "id": "bogart", "label": "Bogart & Daugherty", "type": "company", "value": 20, "meta": "IT Consultant · 2010–2014" },
+
+      { "id": "cert-cissp", "label": "CISSP", "type": "cert", "value": 24, "meta": "(ISC)² · 2023" },
+      { "id": "cert-cism", "label": "CISM", "type": "cert", "value": 24, "meta": "ISACA · 2024" },
+
+      { "id": "ach-10ma", "label": "10 M&A in 12mo", "type": "achievement", "value": 18, "meta": "Tilray Beverages → #4 U.S. craft brewer" },
+      { "id": "ach-abinbev", "label": "AB InBev takeover", "type": "achievement", "value": 16, "meta": "4 facilities in 90 days" },
+      { "id": "ach-molson", "label": "Molson Coors migrations", "type": "achievement", "value": 16, "meta": "6 migrations in 60 days" },
+      { "id": "ach-entra", "label": "6 Entra tenant migrations", "type": "achievement", "value": 16, "meta": "900+ employees onboarded" },
+      { "id": "ach-team", "label": "Team of 10 / 65+ sites", "type": "achievement", "value": 14, "meta": "NA & Europe estate" },
+      { "id": "ach-ngfw", "label": "Palo Alto NGFW rollout", "type": "achievement", "value": 14, "meta": "Firm-wide perimeter rebuild" },
+      { "id": "ach-cis", "label": "CIS framework maturity", "type": "achievement", "value": 13, "meta": "Whitelisting, segmentation, IAM" },
+      { "id": "ach-greenfield", "label": "AD/O365 greenfield", "type": "achievement", "value": 14, "meta": "300 endpoints + 50 servers" },
+      { "id": "ach-covid", "label": "160 staff remote / 48h", "type": "achievement", "value": 13, "meta": "COVID-19 continuity cutover" },
+      { "id": "ach-virt", "label": "Hyper-V virtualization", "type": "achievement", "value": 12, "meta": "Full on-prem fleet" },
+
+      { "id": "skill-ma", "label": "M&A Integration", "type": "skill", "value": 16 },
+      { "id": "skill-infra", "label": "IT Infrastructure", "type": "skill", "value": 16 },
+      { "id": "skill-grc", "label": "GRC / SOX ITGC", "type": "skill", "value": 15 },
+      { "id": "skill-netsec", "label": "Network Security", "type": "skill", "value": 14 },
+      { "id": "skill-cloud", "label": "Cloud Security", "type": "skill", "value": 14 },
+      { "id": "skill-iam", "label": "Identity & Access", "type": "skill", "value": 13 },
+      { "id": "skill-bcdr", "label": "Business Continuity / DR", "type": "skill", "value": 14 },
+      { "id": "skill-lead", "label": "Team Leadership", "type": "skill", "value": 15 }
+    ],
+    "edges": [
+      { "from": "root", "to": "tilray", "label": "leads" },
+      { "from": "root", "to": "bakertilly", "label": "led" },
+      { "from": "root", "to": "collinsbarrow", "label": "led" },
+      { "from": "root", "to": "sentient", "label": "consulted" },
+      { "from": "root", "to": "bogart", "label": "consulted" },
+      { "from": "root", "to": "cert-cissp", "label": "earned" },
+      { "from": "root", "to": "cert-cism", "label": "earned" },
+
+      { "from": "tilray", "to": "ach-10ma" },
+      { "from": "tilray", "to": "ach-abinbev" },
+      { "from": "tilray", "to": "ach-molson" },
+      { "from": "tilray", "to": "ach-entra" },
+      { "from": "tilray", "to": "ach-team" },
+      { "from": "bakertilly", "to": "ach-ngfw" },
+      { "from": "bakertilly", "to": "ach-cis" },
+      { "from": "bakertilly", "to": "ach-greenfield" },
+      { "from": "bakertilly", "to": "ach-covid" },
+      { "from": "collinsbarrow", "to": "ach-virt" },
+
+      { "from": "ach-10ma", "to": "skill-ma" },
+      { "from": "ach-abinbev", "to": "skill-ma" },
+      { "from": "ach-molson", "to": "skill-ma" },
+      { "from": "ach-entra", "to": "skill-iam" },
+      { "from": "ach-entra", "to": "skill-cloud" },
+      { "from": "ach-team", "to": "skill-lead" },
+      { "from": "ach-ngfw", "to": "skill-netsec" },
+      { "from": "ach-cis", "to": "skill-grc" },
+      { "from": "ach-cis", "to": "skill-netsec" },
+      { "from": "ach-greenfield", "to": "skill-infra" },
+      { "from": "ach-greenfield", "to": "skill-iam" },
+      { "from": "ach-covid", "to": "skill-bcdr" },
+      { "from": "ach-virt", "to": "skill-infra" },
+      { "from": "ach-virt", "to": "skill-bcdr" },
+
+      { "from": "cert-cissp", "to": "skill-grc" },
+      { "from": "cert-cissp", "to": "skill-netsec" },
+      { "from": "cert-cism", "to": "skill-grc" },
+      { "from": "cert-cism", "to": "skill-lead" }
+    ]
+  }
+}

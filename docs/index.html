@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philip Stiber · CISSP, CISM — Cyber & Infrastructure Portfolio</title>
+  <meta name="description" content="Interactive cybersecurity portfolio for Philip Stiber, CISSP/CISM — IT infrastructure leadership, M&A technology integration, and GRC, mapped as an attack-path graph." />
+  <meta name="author" content="Philip Stiber" />
+  <meta property="og:title" content="Philip Stiber · CISSP, CISM — Cyber & Infrastructure Portfolio" />
+  <meta property="og:description" content="A BloodHound-style interactive map of a 15-year cybersecurity and IT infrastructure career." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#graph">Skip to career graph</a>
+
+  <!-- ============================ NAV ============================ -->
+  <nav class="nav" aria-label="Primary">
+    <span class="brand">stiber<span class="blink">_</span>sec</span>
+    <span class="spacer"></span>
+    <a class="navlink" href="#impact">impact</a>
+    <a class="navlink always" href="#graph">graph</a>
+    <a class="navlink" href="#radar">skills</a>
+    <a class="navlink" href="#cloud">stack</a>
+    <a class="navlink" href="#timeline">timeline</a>
+    <a class="navlink" href="#experience">experience</a>
+    <a class="navlink always" href="https://www.linkedin.com/in/pstiber/" target="_blank" rel="noopener">linkedin ↗</a>
+  </nav>
+
+  <!-- ============================ HERO ============================ -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="terminal" role="img" aria-label="Terminal-styled introduction for Philip Stiber">
+        <div class="terminal-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="title">root@stiber-sec: ~/career</span>
+        </div>
+        <div class="terminal-body">
+          <div><span class="prompt">┌──(</span><span class="path">operator㉿stiber</span><span class="prompt">)-[</span><span class="cmd">~/career</span><span class="prompt">]</span></div>
+          <div><span class="prompt">└─$</span> <span class="cmd">whoami --full</span></div>
+          <h1>Philip Stiber <span style="color:var(--neon-green); font-size:0.5em; vertical-align:middle;">CISSP · CISM</span></h1>
+          <p class="role"><span id="typed-role" class="typed">Cybersecurity &amp; IT Infrastructure Leader</span></p>
+          <p class="out" id="hero-summary">Loading mission brief…</p>
+
+          <div class="badges" id="badges">
+            <img src="https://img.shields.io/badge/CISSP-(ISC)%C2%B2-39ff14?style=flat-square&labelColor=05080d" alt="CISSP — (ISC)²" />
+            <img src="https://img.shields.io/badge/CISM-ISACA-ffb000?style=flat-square&labelColor=05080d" alt="CISM — ISACA" />
+            <img src="https://img.shields.io/badge/M%26A_Integrations-10_in_12mo-ff2e63?style=flat-square&labelColor=05080d" alt="10 M&A integrations in 12 months" />
+            <img src="https://img.shields.io/badge/Entra_Migrations-900%2B_users-00e5ff?style=flat-square&labelColor=05080d" alt="900+ users migrated via Entra" />
+          </div>
+
+          <div class="cta-row">
+            <a class="btn" href="#graph">▶ launch career graph</a>
+            <a class="btn alt" href="https://www.linkedin.com/in/pstiber/" target="_blank" rel="noopener">view linkedin</a>
+            <a class="btn alt" href="mailto:redacted@example.com">contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================ IMPACT ============================ -->
+    <section id="impact" aria-labelledby="impact-h">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">// quantified impact</div>
+          <h2 id="impact-h">Objectives Achieved</h2>
+          <p>The numbers behind a decade-plus of enterprise infrastructure and security delivery.</p>
+        </div>
+        <div class="impact-grid" id="impact-grid"><!-- stat cards injected by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============================ GRAPH ============================ -->
+    <section id="graph-section" aria-labelledby="graph-h">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">// attack-path map</div>
+          <h2 id="graph-h">Career Graph</h2>
+          <p>A BloodHound-style force-directed map of the path from operator → engagements → objectives → capabilities → credentials. Drag nodes, scroll to zoom, click a node for detail, or filter by type.</p>
+        </div>
+
+        <div class="graph-toolbar">
+          <input type="search" id="graph-search" placeholder="search nodes… (e.g. Entra, M&A, Tilray)" aria-label="Search graph nodes" />
+          <span class="chip" data-filter="all" data-active="true">all</span>
+          <span class="chip" data-filter="company">engagements</span>
+          <span class="chip" data-filter="achievement">objectives</span>
+          <span class="chip" data-filter="skill">capabilities</span>
+          <span class="chip" data-filter="cert">credentials</span>
+          <span class="spacer"></span>
+          <span class="chip" id="graph-reset">⟳ reset</span>
+        </div>
+
+        <div id="graph" role="application" aria-label="Interactive career graph"></div>
+        <div class="graph-legend" id="graph-legend"><!-- legend injected --></div>
+        <div class="node-info" id="node-info">› Click any node to inspect its details.</div>
+      </div>
+    </section>
+
+    <!-- ============================ SKILLS: RADAR + HEATMAP ============================ -->
+    <section id="radar" aria-labelledby="radar-h">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">// capability profile</div>
+          <h2 id="radar-h">Skill Domains &amp; Proficiency</h2>
+          <p>Domain coverage as a radar sweep, with a skill-by-skill proficiency heatmap.</p>
+        </div>
+        <div class="grid-2">
+          <div class="panel">
+            <h3>radar :: domain coverage</h3>
+            <div class="canvas-host"><canvas id="radar-canvas" aria-label="Radar chart of skill domains"></canvas></div>
+          </div>
+          <div class="panel">
+            <h3>heatmap :: proficiency matrix</h3>
+            <div class="heatmap" id="heatmap"><!-- heatmap injected --></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ STACK: WORDCLOUD + TIMELINE ============================ -->
+    <section id="cloud" aria-labelledby="cloud-h">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">// tooling &amp; trajectory</div>
+          <h2 id="cloud-h">Tech Arsenal &amp; Timeline</h2>
+          <p>The platforms and languages in active rotation, alongside the career kill-chain.</p>
+        </div>
+        <div class="grid-2">
+          <div class="panel">
+            <h3>arsenal :: tech word cloud</h3>
+            <canvas id="wordcloud" aria-label="Word cloud of technologies"></canvas>
+          </div>
+          <div class="panel">
+            <h3 id="timeline">trajectory :: timeline</h3>
+            <div class="timeline" id="timeline-list"><!-- timeline injected --></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ EXPERIENCE ============================ -->
+    <section id="experience" aria-labelledby="exp-h">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">// engagement log</div>
+          <h2 id="exp-h">Experience</h2>
+          <p>Full role detail — the source data behind every node in the graph above.</p>
+        </div>
+        <div id="exp-list"><!-- experience cards injected --></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer>
+    <div class="wrap">
+      <div class="ascii">  ____  _   _ _ _ _         ____  _   _ _
+ |  _ \| | | (_) (_)_ __   / ___|| |_(_) |__   ___ _ __
+ | |_) | |_| | | | | '_ \  \___ \| __| | '_ \ / _ \ '__|
+ |  __/|  _  | | | | |_) |  ___) | |_| | |_) |  __/ |
+ |_|   |_| |_|_|_|_| .__/  |____/ \__|_|_.__/ \___|_|
+                   |_|</div>
+      <p>
+        Philip Stiber · CISSP, CISM — Peterborough, ON ·
+        <a href="mailto:redacted@example.com">redacted@example.com</a> ·
+        <a href="https://www.linkedin.com/in/pstiber/" target="_blank" rel="noopener">linkedin.com/in/pstiber</a>
+      </p>
+      <p class="out">Built as a static, offline-capable GitHub Pages site. Visuals: vis-network · Chart.js · wordcloud2.js. No trackers, no backend.</p>
+    </div>
+  </footer>
+
+  <!-- Vendored libraries (offline-capable) -->
+  <script src="vendor/vis-network.min.js"></script>
+  <script src="vendor/chart.umd.min.js"></script>
+  <script src="vendor/wordcloud2.min.js"></script>
+
+  <!-- App modules -->
+  <script src="js/main.js"></script>
+  <script src="js/graph.js"></script>
+  <script src="js/radar.js"></script>
+  <script src="js/heatmap.js"></script>
+  <script src="js/wordcloud.js"></script>
+</body>
+</html>
