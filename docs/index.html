@@ -22,6 +22,7 @@
   <nav class="nav" aria-label="Primary">
     <span class="brand">stiber<span class="blink">_</span>sec</span>
     <span class="spacer"></span>
+    <a class="navlink" href="#about">profile</a>
     <a class="navlink" href="#impact">impact</a>
     <a class="navlink always" href="#graph">graph</a>
     <a class="navlink" href="#radar">skills</a>
@@ -33,7 +34,11 @@
 
   <!-- ============================ HERO ============================ -->
   <header class="hero">
-    <div class="wrap">
+    <div class="wrap hero-grid">
+      <figure class="hero-avatar">
+        <img id="profile-photo" src="assets/profile-placeholder.svg" alt="Philip Stiber" width="180" height="180" />
+        <figcaption>Philip Stiber · Peterborough, ON</figcaption>
+      </figure>
       <div class="terminal" role="img" aria-label="Terminal-styled introduction for Philip Stiber">
         <div class="terminal-bar">
           <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
@@ -44,6 +49,7 @@
           <div><span class="prompt">└─$</span> <span class="cmd">whoami --full</span></div>
           <h1>Philip Stiber <span style="color:var(--neon-green); font-size:0.5em; vertical-align:middle;">CISSP · CISM</span></h1>
           <p class="role"><span id="typed-role" class="typed">Cybersecurity &amp; IT Infrastructure Leader</span></p>
+          <p class="hook" id="hero-hook"></p>
           <p class="out" id="hero-summary">Loading mission brief…</p>
 
           <div class="badges" id="badges">
@@ -64,6 +70,30 @@
   </header>
 
   <main>
+    <!-- ============================ ABOUT / CROSSING ============================ -->
+    <section id="about" aria-labelledby="about-h">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">// profile</div>
+          <h2 id="about-h">A Career Built to Not Be Siloed</h2>
+          <p id="about-tagline"></p>
+        </div>
+        <div class="crossing-grid" id="crossing-grid"><!-- crossing cards injected by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============================ RARE BY THE NUMBERS ============================ -->
+    <section id="rare" aria-labelledby="rare-h">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">// why this profile is rare</div>
+          <h2 id="rare-h">Rare by the Numbers</h2>
+          <p>The market is full of specialists. The value is in the overlap — and the overlap is uncommon.</p>
+        </div>
+        <div class="rare-grid" id="rare-grid"><!-- rare stat cards injected by main.js --></div>
+      </div>
+    </section>
+
     <!-- ============================ IMPACT ============================ -->
     <section id="impact" aria-labelledby="impact-h">
       <div class="wrap">

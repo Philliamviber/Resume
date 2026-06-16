@@ -53,8 +53,45 @@ function wireImpact(data) {
 }
 
 function renderHero(data) {
+  const p = data.profile;
   const sum = document.getElementById("hero-summary");
-  if (sum) sum.textContent = data.profile.summary;
+  if (sum) sum.textContent = p.summary;
+  const hook = document.getElementById("hero-hook");
+  if (hook && p.hook) hook.textContent = p.hook;
+
+  // Profile photo: try the real headshot, fall back to the monogram SVG.
+  const img = document.getElementById("profile-photo");
+  if (img && p.photo) {
+    const fallback = p.photoFallback || img.src;
+    const test = new Image();
+    test.onload = () => { img.src = p.photo; };       // real photo exists -> use it
+    test.onerror = () => { img.src = fallback; };      // not there -> keep monogram
+    test.src = p.photo;
+  }
+}
+
+function renderCrossing(data) {
+  const tag = document.getElementById("about-tagline");
+  if (tag && data.profile.tagline) tag.textContent = data.profile.tagline;
+  const host = document.getElementById("crossing-grid");
+  if (!host || !data.profile.crossing) return;
+  host.innerHTML = data.profile.crossing.map((c, i) => `
+    <article class="cross-card">
+      <div class="x">&#10799; vector_${String(i + 1).padStart(2, "0")}</div>
+      <h3>${c.title}</h3>
+      <p>${c.body}</p>
+    </article>`).join("");
+}
+
+function renderRare(data) {
+  const host = document.getElementById("rare-grid");
+  if (!host || !data.profile.rareStats) return;
+  host.innerHTML = data.profile.rareStats.map((r) => `
+    <article class="rare-card">
+      <div class="fig">${r.figure}</div>
+      <div class="rl">${r.label}</div>
+      <p class="rn">${r.note}</p>
+    </article>`).join("");
 }
 
 function renderTimeline(data) {
@@ -96,6 +133,8 @@ async function boot() {
     window.RESUME = data;
 
     renderHero(data);
+    renderCrossing(data);
+    renderRare(data);
     wireImpact(data);
     renderTimeline(data);
     renderExperience(data);

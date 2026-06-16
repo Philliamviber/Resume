@@ -19,7 +19,36 @@
 
 ## 🎯 Summary
 
-Seasoned **CISSP- and CISM-certified** cybersecurity and IT infrastructure leader with extensive global experience securing and optimizing complex enterprise environments. Proven expertise in **post-merger technology integration**, **governance, risk & compliance (incl. SOX ITGC)**, and **business continuity & disaster recovery**. I align cybersecurity and infrastructure strategy with business objectives to enhance resilience, compliance, and operational efficiency — and lead high-performing, cross-functional teams that deliver secure, scalable solutions across multinational organizations.
+> **Two companies become one — and the technology has to merge overnight: secure, audited, and running by Monday. That's my job.**
+
+For 15 years I've worked at the intersection of three roles most people pick only one of: the **engineer** who builds the systems, the **security leader** who defends and governs them, and the **integrator** who fuses entire companies together after an acquisition. I came up hands-on — Active Directory, networks, virtualization, PowerShell — and never traded that depth away as I moved into leadership.
+
+Today I run global infrastructure and M&A integration at **Tilray Brands**, where I folded **10 acquisitions into one secure platform in 12 months**, migrated **900+ employees** across Microsoft Entra tenants, and built the **SOX ITGC**, system-hardening, and incident-response controls that keep auditors and executives confident. **CISSP-** and **CISM-certified**, I translate fluently between the server room and the boardroom: I can architect the network, write the script, pass the audit, and brief the C-suite on the risk — often in the same week.
+
+---
+
+## 🔀 How my disciplines cross
+
+A specialist gets hired for one thing. I get hired because the wires connect — each layer was built on top of the last, so the work can't be siloed.
+
+- **Build it, then defend it** — I architect the AD, network, and virtualization estate, *then* harden it (segmentation, NGFW, whitelisting, CIS). The defense is designed by someone who knows how the machine actually works.
+- **Merge companies, not just mailboxes** — M&A is where identity, cloud, networking, and governance collide at once. I collapse acquired tenants, domains, and email into one governed Entra/M365 estate on a 60–90 day clock, without dropping security or breaking the business.
+- **Make compliance operational** — I turn SOX ITGC, NIST 800-53, and CIS into living controls (SLAs, BIAs, patch cycles, access reviews), not audit-season slideware.
+- **Lead without losing the keyboard** — I lead distributed teams of engineers and architects while staying technical enough to do the work myself. Engineers respect it; executives rely on it.
+- **Resilience as a habit** — from a 48-hour COVID-19 remote cutover for 160 staff to DR-ready virtualization, continuity is baked in, not bolted on.
+
+---
+
+## 📈 Rare by the numbers
+
+The market is full of specialists. The value is in the overlap — and the overlap is uncommon.
+
+| Figure | What it means |
+|---|---|
+| **CISSP + CISM** | Most security professionals hold one or the other. Both together validate that I can **build and defend** the systems *and* **govern** the program and its risk. |
+| **70–90%** | The share of M&A deals that *Harvard Business Review* and others have long reported fail to deliver their expected value — with technology integration repeatedly named a leading cause. I've personally delivered **10 integrations in 12 months**. |
+| **3 deep domains** | Candidates are usually deep-technical *or* strategic. Hands-on infrastructure **+** security leadership **+** M&A delivery is a narrow slice of the talent pool. |
+| **15 years** | Hands-on through executive-facing — technical depth I never gave up. Still writing the PowerShell and reading the KQL while owning the strategy. |
 
 ---
 
