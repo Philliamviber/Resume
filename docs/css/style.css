@@ -294,6 +294,78 @@ section { padding: 56px 0; border-top: 1px solid rgba(255,255,255,0.03); }
 .exp-card .exp-role { color: var(--neon-green); font-family: var(--mono); font-size: 0.9rem; }
 .exp-card .exp-when { color: var(--text-dim); font-family: var(--mono); font-size: 0.82rem; }
 .exp-card .exp-summary { color: var(--text-dim); margin: 8px 0 12px; }
+
+/* ---------- Engagement brief (Situation -> Action -> Outcome case study) ---------- */
+.brief {
+  margin: 14px 0 18px;
+  background: linear-gradient(160deg, rgba(57,255,20,0.06), rgba(10,16,24,0.4) 60%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 18px 18px;
+}
+.brief-kicker {
+  font-family: var(--mono); font-size: 0.7rem; letter-spacing: 2.5px;
+  text-transform: uppercase; color: var(--red); margin-bottom: 8px;
+}
+/* Outcome-first headline: the visual focal point of each role */
+.brief-headline {
+  margin: 0 0 16px; padding-left: 14px; position: relative;
+  font-size: clamp(1.12rem, 2.2vw, 1.5rem); font-weight: 700; line-height: 1.32;
+  color: var(--text-bright);
+}
+.brief-headline::before {
+  content: ""; position: absolute; left: 0; top: 4px; bottom: 4px; width: 4px;
+  border-radius: 3px; background: var(--neon-green);
+  box-shadow: 0 0 14px rgba(57,255,20,0.7);
+}
+
+/* Situation -> Action -> Outcome flow */
+.sao {
+  display: grid; align-items: stretch; gap: 10px;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+}
+.sao-step {
+  background: var(--bg-2); border: 1px solid var(--line); border-radius: 9px;
+  padding: 12px 14px; position: relative; overflow: hidden;
+}
+.sao-step .sao-num {
+  position: absolute; right: 10px; top: 4px;
+  font-family: var(--mono); font-size: 1.7rem; font-weight: 700;
+  color: rgba(255,255,255,0.05);
+}
+.sao-step .sao-label {
+  display: block; font-family: var(--mono); font-size: 0.68rem; letter-spacing: 1.5px;
+  text-transform: uppercase; margin-bottom: 6px;
+}
+.sao-step p { margin: 0; font-size: 0.86rem; line-height: 1.5; color: var(--text-dim); }
+.sao-step.sit { border-top: 2px solid var(--cyan); }
+.sao-step.sit .sao-label { color: var(--cyan); }
+.sao-step.act { border-top: 2px solid var(--amber); }
+.sao-step.act .sao-label { color: var(--amber); }
+/* Outcome cell is emphasized — the payoff */
+.sao-step.out {
+  border: 1px solid rgba(57,255,20,0.35); border-top: 2px solid var(--neon-green);
+  background: linear-gradient(180deg, rgba(57,255,20,0.08), var(--bg-2));
+  box-shadow: 0 0 22px rgba(57,255,20,0.10);
+}
+.sao-step.out .sao-label { color: var(--neon-green); }
+.sao-step.out p { color: var(--text); }
+.sao-arrow {
+  display: flex; align-items: center; justify-content: center;
+  color: var(--neon-green); font-size: 1.3rem; opacity: 0.75;
+  text-shadow: 0 0 10px rgba(57,255,20,0.5);
+}
+@media (max-width: 720px) {
+  .sao { grid-template-columns: 1fr; }
+  .sao-arrow { transform: rotate(90deg); padding: 2px 0; }
+}
+
+/* Detailed wins block under the brief */
+.exp-detail { margin-top: 4px; }
+.exp-detail-label {
+  font-family: var(--mono); font-size: 0.7rem; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--text-dim); margin-bottom: 4px; opacity: 0.8;
+}
 .exp-card ul { margin: 0; padding-left: 18px; }
 .exp-card li { margin: 6px 0; color: var(--text); }
 .exp-card li::marker { color: var(--red); }
