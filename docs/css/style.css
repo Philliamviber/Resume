@@ -129,6 +129,52 @@ a:hover { color: var(--neon-green); text-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
 .btn:hover { background: var(--neon-green); color: #04210a; box-shadow: 0 0 18px rgba(57,255,20,0.45); }
 .btn.alt { border-color: var(--cyan); color: var(--cyan); background: rgba(0,229,255,0.06); }
 .btn.alt:hover { background: var(--cyan); color: #04222b; box-shadow: 0 0 18px rgba(0,229,255,0.45); }
+.hook { color: var(--cyan); font-size: 1.02rem; margin: 2px 0 10px; font-style: italic; }
+
+/* ---------- Hero layout with avatar ---------- */
+.hero-grid { display: flex; align-items: flex-start; gap: 28px; }
+.hero-grid .terminal { flex: 1; min-width: 0; }
+.hero-avatar { margin: 6px 0 0; text-align: center; flex: 0 0 auto; }
+.hero-avatar img {
+  width: 180px; height: 180px; border-radius: 50%; object-fit: cover;
+  border: 3px solid transparent;
+  background:
+    linear-gradient(var(--bg), var(--bg)) padding-box,
+    linear-gradient(135deg, var(--red), var(--cyan), var(--neon-green)) border-box;
+  box-shadow: 0 0 28px rgba(0, 229, 255, 0.35), 0 0 60px rgba(57, 255, 20, 0.15);
+}
+.hero-avatar figcaption { font-family: var(--mono); font-size: 0.72rem; color: var(--text-dim); margin-top: 10px; }
+@media (max-width: 820px) {
+  .hero-grid { flex-direction: column-reverse; align-items: center; }
+  .hero-avatar img { width: 132px; height: 132px; }
+}
+
+/* ---------- Crossing (skills cross-over) cards ---------- */
+.crossing-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.cross-card {
+  background: var(--bg-3); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 20px 20px 18px; position: relative; overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cross-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,229,255,0.25); }
+.cross-card .x {
+  font-family: var(--mono); font-size: 0.8rem; color: var(--red); letter-spacing: 2px;
+}
+.cross-card h3 { margin: 6px 0 8px; color: var(--text-bright); font-size: 1.08rem; }
+.cross-card p { margin: 0; color: var(--text-dim); font-size: 0.92rem; }
+
+/* ---------- Rare-by-numbers cards ---------- */
+.rare-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.rare-card {
+  background: linear-gradient(160deg, rgba(255,46,99,0.07), var(--bg-3) 55%);
+  border: 1px solid rgba(255,46,99,0.22); border-radius: var(--radius); padding: 20px;
+}
+.rare-card .fig {
+  font-family: var(--mono); font-size: 1.9rem; font-weight: 700; color: var(--red);
+  text-shadow: 0 0 14px rgba(255,46,99,0.35); line-height: 1.1;
+}
+.rare-card .rl { color: var(--text-bright); font-weight: 600; margin: 4px 0 8px; font-size: 0.98rem; }
+.rare-card .rn { color: var(--text-dim); font-size: 0.86rem; margin: 0; }
 
 /* ============================ SECTIONS ============================ */
 section { padding: 56px 0; border-top: 1px solid rgba(255,255,255,0.03); }

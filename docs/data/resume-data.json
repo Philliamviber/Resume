@@ -6,8 +6,24 @@
     "location": "Peterborough, ON, Canada",
     "email": "redacted@example.com",
     "linkedin": "https://www.linkedin.com/in/pstiber/",
-    "summary": "Seasoned CISSP- and CISM-certified cybersecurity and IT infrastructure leader with extensive global experience securing and optimizing complex enterprise environments. Proven expertise in post-merger integrations, governance, risk, and compliance (including SOX ITGC), and business continuity & disaster recovery planning. Aligns cybersecurity and infrastructure strategy with business objectives to enhance resilience, compliance, and operational efficiency, and leads high-performing cross-functional teams that deliver secure, scalable solutions across multinational organizations.",
-    "tagline": "Mapping a 15-year attack path from helpdesk to the enterprise infrastructure command chair."
+    "photo": "assets/profile.jpg",
+    "photoFallback": "assets/profile-placeholder.svg",
+    "hook": "Two companies become one — and the technology has to merge overnight: secure, audited, and running by Monday. That's my job.",
+    "summary": "For 15 years I've worked at the intersection of three roles most people pick only one of: the engineer who builds the systems, the security leader who defends and governs them, and the integrator who fuses entire companies together after an acquisition. I came up hands-on — Active Directory, networks, virtualization, PowerShell — and never traded that depth away as I moved into leadership. Today I run global infrastructure and M&A integration at Tilray Brands, where I folded 10 acquisitions into one secure platform in 12 months, migrated 900+ employees across Microsoft Entra tenants, and built the SOX ITGC, system-hardening, and incident-response controls that keep auditors and executives confident. CISSP- and CISM-certified, I translate fluently between the server room and the boardroom: I can architect the network, write the script, pass the audit, and brief the C-suite on the risk — often in the same week.",
+    "tagline": "Engineer × Security Leader × M&A Integrator — a career built to not be siloed.",
+    "crossing": [
+      { "title": "Build it, then defend it", "body": "Most security leaders have never run the systems they are securing. I architect the Active Directory, network, and virtualization estate and then harden it — segmentation, next-gen firewalls, application whitelisting, CIS controls — so the defense is designed by someone who knows exactly how the machine works underneath." },
+      { "title": "Merge companies, not just mailboxes", "body": "M&A integration is where identity, cloud, networking, and governance collide at once. I collapse acquired tenants, domains, and email into a single governed Entra / Microsoft 365 estate — on a 60-to-90-day clock — without dropping security posture or breaking the business mid-flight." },
+      { "title": "Make compliance operational", "body": "GRC only delivers when it lives in daily operations. I turn SOX ITGC, NIST 800-53, and CIS into working controls — SLAs, business impact analyses, patch cycles, access reviews — instead of audit-season slideware that nobody runs." },
+      { "title": "Lead without losing the keyboard", "body": "I lead distributed teams of network engineers, cloud architects, and admins while staying technical enough to do the work myself. That earns trust in both directions: engineers respect it, executives rely on it." },
+      { "title": "Resilience as a habit", "body": "From a 48-hour COVID-19 remote-work cutover for 160 staff to DR-ready virtualization, business continuity is baked into how I build — not bolted on after the incident." }
+    ],
+    "rareStats": [
+      { "figure": "2-in-1", "label": "CISSP + CISM held together", "note": "Most security professionals carry one or the other. Both at once validates that I can build and defend the systems (CISSP) and govern the program and its risk (CISM)." },
+      { "figure": "70–90%", "label": "of M&A deals miss their goals", "note": "Harvard Business Review and others have long reported most mergers fail to deliver their expected value — with technology integration repeatedly named a leading cause. I have personally delivered 10 integrations in 12 months." },
+      { "figure": "3 domains", "label": "deep, not just broad", "note": "Candidates are usually deep-technical OR strategic. The overlap of hands-on infrastructure, security leadership, and M&A delivery is a narrow slice of the talent pool." },
+      { "figure": "15 yrs", "label": "hands-on through executive-facing", "note": "Technical depth I never gave up — still writing the PowerShell and reading the KQL while owning the strategy and the audit." }
+    ]
   },
   "certifications": [
     { "name": "CISSP", "issuer": "(ISC)²", "issued": "2023-06", "label": "Certified Information Systems Security Professional" },
