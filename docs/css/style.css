@@ -298,6 +298,67 @@ section { padding: 56px 0; border-top: 1px solid rgba(255,255,255,0.03); }
 .exp-card li { margin: 6px 0; color: var(--text); }
 .exp-card li::marker { color: var(--red); }
 
+/* ---------- Achievement drill-down (hover/focus reveals business impact) ---------- */
+.ach-list { list-style: none; padding-left: 4px; }
+.ach { margin: 4px 0; }
+.ach.has-impact {
+  position: relative; cursor: help; border-radius: 8px;
+  padding: 9px 12px 9px 30px;
+  border: 1px solid transparent;
+  transition: background 0.18s ease, border-color 0.18s ease;
+  outline: none;
+}
+.ach.has-impact::before {
+  content: "▸"; position: absolute; left: 11px; top: 9px;
+  color: var(--red); transition: transform 0.18s ease, color 0.18s ease;
+}
+.ach.has-impact:hover,
+.ach.has-impact:focus,
+.ach.has-impact:focus-within {
+  background: rgba(0, 229, 255, 0.05);
+  border-color: rgba(0, 229, 255, 0.25);
+}
+.ach.has-impact:hover::before,
+.ach.has-impact:focus::before,
+.ach.has-impact:focus-within::before {
+  transform: rotate(90deg); color: var(--neon-green);
+}
+.ach.has-impact:focus-visible { box-shadow: 0 0 0 2px rgba(57, 255, 20, 0.4); }
+.ach-text { color: var(--text); }
+
+/* The little hint chip that nudges HR to hover */
+.ach-cue {
+  display: inline-block; margin-left: 8px; vertical-align: middle;
+  font-family: var(--mono); font-size: 0.66rem; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--amber);
+  border: 1px solid rgba(255, 176, 0, 0.35); border-radius: 999px;
+  padding: 1px 8px; opacity: 0.55; transition: opacity 0.18s ease;
+}
+.ach.has-impact:hover .ach-cue,
+.ach.has-impact:focus .ach-cue,
+.ach.has-impact:focus-within .ach-cue { opacity: 0; }
+
+/* The revealed business-impact note */
+.ach-impact {
+  display: block; overflow: hidden;
+  max-height: 0; opacity: 0; margin-top: 0;
+  color: var(--text-dim); font-size: 0.9rem; line-height: 1.55;
+  border-left: 2px solid var(--neon-green);
+  padding-left: 0; transition: max-height 0.32s ease, opacity 0.25s ease, margin-top 0.2s ease, padding-left 0.2s ease;
+}
+.ach.has-impact:hover .ach-impact,
+.ach.has-impact:focus .ach-impact,
+.ach.has-impact:focus-within .ach-impact {
+  max-height: 320px; opacity: 1; margin-top: 9px; padding-left: 12px;
+}
+.ach-impact-label {
+  display: block; font-family: var(--mono); font-size: 0.66rem; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--neon-green); margin-bottom: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ach-impact { transition: none; }
+}
+
 /* ============================ FOOTER ============================ */
 footer {
   border-top: 1px solid var(--line); padding: 30px 0 50px; color: var(--text-dim);

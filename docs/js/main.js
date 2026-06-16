@@ -109,7 +109,26 @@ function renderTimeline(data) {
 function renderExperience(data) {
   const host = document.getElementById("exp-list");
   if (!host) return;
-  host.innerHTML = data.experience.map((x) => `
+
+  // Render one achievement as a keyboard/tap-accessible drill-down.
+  // The "impact" (business objective elevated) lives in the DOM so it is
+  // visible on hover AND focus, and readable by screen readers / ATS parsers.
+  function achievement(a, key) {
+    const text = typeof a === "string" ? a : a.text;
+    const impact = typeof a === "string" ? "" : (a.impact || "");
+    if (!impact) return `<li class="ach"><span class="ach-text">${text}</span></li>`;
+    const id = `impact-${key}`;
+    return `
+      <li class="ach has-impact" tabindex="0" aria-describedby="${id}">
+        <span class="ach-text">${text}</span>
+        <span class="ach-cue" aria-hidden="true">▸ business impact</span>
+        <span class="ach-impact" id="${id}" role="note">
+          <span class="ach-impact-label">Business objective elevated</span>${impact}
+        </span>
+      </li>`;
+  }
+
+  host.innerHTML = data.experience.map((x, xi) => `
     <article class="exp-card">
       <div class="exp-head">
         <div>
@@ -120,7 +139,7 @@ function renderExperience(data) {
         <span class="exp-when">${x.tenure}</span>
       </div>
       <p class="exp-summary">${x.summary}</p>
-      <ul>${x.achievements.map((a) => `<li>${a}</li>`).join("")}</ul>
+      <ul class="ach-list">${x.achievements.map((a, ai) => achievement(a, `${xi}-${ai}`)).join("")}</ul>
     </article>`).join("");
 }
 

@@ -95,12 +95,12 @@
       "domains": ["ma", "infra", "grc", "cloudsec"],
       "summary": "Leads global infrastructure and high-tempo M&A integration for a multinational beverage and cannabis enterprise.",
       "achievements": [
-        "Orchestrated high-priority IT M&A across 10 acquired organizations in 12 months, directly contributing to Tilray Beverages becoming the 4th-largest craft brewer in the U.S.",
-        "Coordinated IT acquisition events with AB InBev — full system and network takeovers of 4 production facilities in 90 days.",
-        "Directed post-acquisition transitions with Molson Coors — 6 major migrations in 60 days (Meraki org transfers, G-Suite→O365, Exchange→O365, Active Directory takeovers).",
-        "Completed 6 Microsoft Entra tenant-to-tenant migrations, onboarding 900+ employees and thousands of digital assets within a year.",
-        "Led a distributed team of 10 (network engineers, cloud architects, sysadmins) supporting 15+ production facilities, 20 brew pubs, and 30 offices across North America and Europe.",
-        "Aligned infrastructure operations with cybersecurity pillars: SLA reviews, BIAs, system hardening, SOX ITGC, and incident management/response."
+        { "text": "Orchestrated high-priority IT M&A across 10 acquired organizations in 12 months, directly contributing to Tilray Beverages becoming the 4th-largest craft brewer in the U.S.", "impact": "Accelerated value capture from acquisitions: each integration delivered on schedule meant faster revenue consolidation and synergy realization, directly advancing the growth strategy that vaulted the beverage division to #4 in the U.S. market." },
+        { "text": "Coordinated IT acquisition events with AB InBev — full system and network takeovers of 4 production facilities in 90 days.", "impact": "Protected production continuity through the ownership transfer: zero unplanned downtime across four revenue-generating plants meant no lost output or missed shipments during handover, de-risking the deal's operational P&L." },
+        { "text": "Directed post-acquisition transitions with Molson Coors — 6 major migrations in 60 days (Meraki org transfers, G-Suite→O365, Exchange→O365, Active Directory takeovers).", "impact": "Compressed the integration timeline so the business could exit costly Transition Service Agreements early — every retired legacy contract cut recurring spend and removed a dependency on the seller." },
+        { "text": "Completed 6 Microsoft Entra tenant-to-tenant migrations, onboarding 900+ employees and thousands of digital assets within a year.", "impact": "Unified identity gave 900+ employees governed, single sign-on access from day one — speeding workforce productivity, enabling consistent MFA and policy enforcement, and eliminating duplicate licensing across fragmented tenants." },
+        { "text": "Led a distributed team of 10 (network engineers, cloud architects, sysadmins) supporting 15+ production facilities, 20 brew pubs, and 30 offices across North America and Europe.", "impact": "Sustained always-on operations across 65+ sites on two continents with a lean team — high engineer-to-site leverage held infrastructure overhead down while protecting the uptime revenue depends on." },
+        { "text": "Aligned infrastructure operations with cybersecurity pillars: SLA reviews, BIAs, system hardening, SOX ITGC, and incident management/response.", "impact": "Made IT an audit-ready, board-defensible function: SOX ITGC compliance and documented business impact analyses reduced regulatory and financial-reporting risk for a publicly traded company and protected market trust." }
       ]
     },
     {
@@ -114,12 +114,12 @@
       "domains": ["netsec", "grc", "bcdr", "iam"],
       "summary": "Matured the security program of a professional services firm and rebuilt its core identity and network estate.",
       "achievements": [
-        "Established CIS framework maturity via security improvement plans: application whitelisting, network segmentation, next-gen firewalls, and cloud IAM.",
-        "Oversaw enterprise-wide Palo Alto NGFW deployment across all firm locations, replacing end-of-life equipment and increasing network visibility.",
-        "Built core security processes: phish-alert reporting, incident management, threat hunting, patching cycles, and coordinated incident response.",
-        "Served as M&A technology advisor for the Collins Barrow Kawarthas & Durham consolidation, leading IT due diligence.",
-        "Designed, built, and deployed a new Active Directory + O365 environment enabling full remote connectivity in under 10 months; reimaged 300 endpoints and 50 servers across three 48-hour maintenance windows.",
-        "Transitioned 160 employees to remote work in 48 hours by co-authoring the firm's COVID-19 technical strategy with the COO."
+        { "text": "Established CIS framework maturity via security improvement plans: application whitelisting, network segmentation, next-gen firewalls, and cloud IAM.", "impact": "Raised measurable security maturity to protect the firm's most valuable asset — client confidentiality — lowering breach risk, strengthening cyber-insurance posture, and reinforcing the trust that wins and keeps clients." },
+        { "text": "Oversaw enterprise-wide Palo Alto NGFW deployment across all firm locations, replacing end-of-life equipment and increasing network visibility.", "impact": "Closed an end-of-life risk and audit/insurance gap across every office while gaining network-wide visibility — reducing the likelihood of a costly outage or breach the firm could not afford." },
+        { "text": "Built core security processes: phish-alert reporting, incident management, threat hunting, patching cycles, and coordinated incident response.", "impact": "Shifted the firm from reactive to proactive defense: faster detection and response shrink attacker dwell time and the financial and reputational cost of an incident — critical for a custodian of sensitive financial data." },
+        { "text": "Served as M&A technology advisor for the Collins Barrow Kawarthas & Durham consolidation, leading IT due diligence.", "impact": "Gave leadership a clear view of technology risk and integration cost before signing — informing deal valuation and enabling a smoother, lower-cost post-merger combination." },
+        { "text": "Designed, built, and deployed a new Active Directory + O365 environment enabling full remote connectivity in under 10 months; reimaged 300 endpoints and 50 servers across three 48-hour maintenance windows.", "impact": "Delivered a modern, remote-capable platform that unlocked workforce flexibility and future growth — executed inside tight maintenance windows to avoid disrupting billable client work." },
+        { "text": "Transitioned 160 employees to remote work in 48 hours by co-authoring the firm's COVID-19 technical strategy with the COO.", "impact": "Kept the firm fully operational and billing through a crisis while competitors stalled — business continuity that protected revenue and client commitments during a black-swan event." }
       ]
     },
     {
@@ -133,10 +133,10 @@
       "domains": ["infra", "bcdr", "ma"],
       "summary": "Modernized core systems and prepared the firm's IT estate for merger due diligence.",
       "achievements": [
-        "Built IT asset inventory, process documentation, and cost models to satisfy merger due-diligence requirements.",
-        "Migrated email from Exchange 2010 to Office 365, reducing exposure and improving reliability.",
-        "Virtualized all on-prem physical servers to Hyper-V 2016, improving scalability and DR readiness.",
-        "Standardized GPO baselines and implemented Windows 10 / Server 2016 hardening guidelines."
+        { "text": "Built IT asset inventory, process documentation, and cost models to satisfy merger due-diligence requirements.", "impact": "Produced the transparency a merger requires: accurate asset and cost data supported fair valuation and de-risked the transaction for both parties." },
+        { "text": "Migrated email from Exchange 2010 to Office 365, reducing exposure and improving reliability.", "impact": "Cut the cost and risk of aging on-prem mail while improving uptime — modernizing a mission-critical communication channel the business relies on every day." },
+        { "text": "Virtualized all on-prem physical servers to Hyper-V 2016, improving scalability and DR readiness.", "impact": "Improved disaster-recovery readiness and hardware efficiency — lowering capital cost and shrinking the recovery time that protects the business after a failure." },
+        { "text": "Standardized GPO baselines and implemented Windows 10 / Server 2016 hardening guidelines.", "impact": "Made security and onboarding repeatable: consistent baselines reduce configuration drift, speed new-hire productivity, and shrink the attack surface as the firm scales." }
       ]
     },
     {
@@ -150,9 +150,9 @@
       "domains": ["infra", "cloudsec"],
       "summary": "Delivered end-to-end IT modernization for legal firms, CPA practices, and small businesses across the eastern GTA.",
       "achievements": [
-        "Performed complex AD domain and Exchange migrations, server virtualization, and Office 365 deployments.",
-        "Managed migration programs and ongoing support, sustaining seamless operations post-cutover.",
-        "Delivered tailored, fit-for-purpose systems deployments aligned to each client's requirements."
+        { "text": "Performed complex AD domain and Exchange migrations, server virtualization, and Office 365 deployments.", "impact": "Modernized client environments so small firms could operate with enterprise-grade reliability and security — turning technical upgrades into client business resilience." },
+        { "text": "Managed migration programs and ongoing support, sustaining seamless operations post-cutover.", "impact": "Protected client operations through and after change: seamless cutovers meant no lost productivity, preserving the trust that retains clients and drives referrals." },
+        { "text": "Delivered tailored, fit-for-purpose systems deployments aligned to each client's requirements.", "impact": "Matched spend to need — right-sized solutions avoided over-investment and delivered measurable ROI for cost-conscious small businesses." }
       ]
     },
     {
@@ -166,9 +166,9 @@
       "domains": ["infra"],
       "summary": "Supported major migrations and line-of-business continuity for legal and CPA clients.",
       "achievements": [
-        "Supported major migrations — Exchange, BlackBerry BES, Active Directory, and Windows 7/8 deployments.",
-        "Delivered IT consulting, project management, and systems administration for legal firms, CPA practices, and small businesses.",
-        "Assisted MSP helpdesk escalation management and maintained support for 30+ legal line-of-business applications."
+        { "text": "Supported major migrations — Exchange, BlackBerry BES, Active Directory, and Windows 7/8 deployments.", "impact": "Kept executives and staff productive through platform change — minimizing disruption to billable work during technically risky transitions." },
+        { "text": "Delivered IT consulting, project management, and systems administration for legal firms, CPA practices, and small businesses.", "impact": "Acted as a fractional IT department, letting professional firms focus on their core revenue work while technology stayed dependable and secure." },
+        { "text": "Assisted MSP helpdesk escalation management and maintained support for 30+ legal line-of-business applications.", "impact": "Sustained continuity of the 30+ specialized applications law practices bill against — fast escalation resolution protected client deadlines and active case work." }
       ]
     }
   ],
