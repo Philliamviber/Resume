@@ -128,6 +128,32 @@ function renderExperience(data) {
       </li>`;
   }
 
+  // The engagement brief: outcome-first headline, then Situation -> Action -> Outcome.
+  function brief(b) {
+    if (!b) return "";
+    return `
+      <div class="brief">
+        <div class="brief-kicker">&#9656; engagement brief</div>
+        <p class="brief-headline">${b.headline}</p>
+        <div class="sao">
+          <div class="sao-step sit">
+            <span class="sao-num">01</span><span class="sao-label">Situation</span>
+            <p>${b.situation}</p>
+          </div>
+          <div class="sao-arrow" aria-hidden="true">&#10142;</div>
+          <div class="sao-step act">
+            <span class="sao-num">02</span><span class="sao-label">Action</span>
+            <p>${b.action}</p>
+          </div>
+          <div class="sao-arrow" aria-hidden="true">&#10142;</div>
+          <div class="sao-step out">
+            <span class="sao-num">03</span><span class="sao-label">Measurable outcome</span>
+            <p>${b.outcome}</p>
+          </div>
+        </div>
+      </div>`;
+  }
+
   host.innerHTML = data.experience.map((x, xi) => `
     <article class="exp-card">
       <div class="exp-head">
@@ -138,8 +164,11 @@ function renderExperience(data) {
         </div>
         <span class="exp-when">${x.tenure}</span>
       </div>
-      <p class="exp-summary">${x.summary}</p>
-      <ul class="ach-list">${x.achievements.map((a, ai) => achievement(a, `${xi}-${ai}`)).join("")}</ul>
+      ${brief(x.brief)}
+      <div class="exp-detail">
+        <div class="exp-detail-label">Detailed wins &mdash; hover or tap any line for its business impact</div>
+        <ul class="ach-list">${x.achievements.map((a, ai) => achievement(a, `${xi}-${ai}`)).join("")}</ul>
+      </div>
     </article>`).join("");
 }
 
