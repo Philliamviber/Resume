@@ -1,0 +1,5 @@
+[allowlist]
+  description = "Vendored third-party library false positives"
+  paths = [
+    "docs/vendor/.*\\.min\\.js"
+  ]
