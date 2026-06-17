@@ -17,6 +17,8 @@ A menu of **marketable, cyber-themed visual concepts** for this portfolio. The s
 | 5 | **Impact stat cards** — animated count-up of quantified wins | Vanilla JS | Numbers-first storytelling; the "wow" above the fold |
 | 6 | **Career kill-chain timeline** — glowing vertical trajectory | Vanilla CSS/JS | Narrative spine connecting roles to certs |
 | 7 | **Terminal / hero boot screen** — `whoami --full` Kali-style prompt | Vanilla CSS | Establishes red-team identity in the first second |
+| 8 | **Global estate map** — Tilray's NA + Europe sites on an equirectangular SVG, glowing markers + hub-and-spoke links | Vanilla SVG/JS | Dependency-free, offline; visualizes the scope of operations managed (see #21) |
+| 9 | **Certification badge wall + Credly embeds** — CISSP/CISM crests, hover-to-verify issuer logos, cert→work mapping | Credly embed + CSS | Trust signals, independently verifiable (see #28) |
 
 ---
 
@@ -51,7 +53,7 @@ A menu of **marketable, cyber-themed visual concepts** for this portfolio. The s
 
 | # | Concept | Library | Notes |
 |---|---------|---------|-------|
-| 21 | **Geographic estate map** — 65+ plants/brew pubs/offices across NA & Europe | Leaflet / D3-geo | Visualizes the scope of operations managed |
+| 21 | ⭐ **Geographic estate map** — *built* as a dependency-free SVG (no tile server, stays offline & on-theme) — Tilray sites across NA & Europe, glowing markers + hub-and-spoke links, data-driven from `estate` block | Vanilla SVG/JS | Visualizes the scope of operations managed |
 | 22 | **Migration flow map** — arcs showing tenant-to-tenant & datacenter moves | D3 arcs | Tells the M&A integration story spatially |
 
 ---

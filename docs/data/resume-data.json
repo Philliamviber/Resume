@@ -65,6 +65,34 @@
       }
     ]
   },
+  "estate": {
+    "intro": "The footprint behind the résumé. Tilray Brands runs a global beverage and cannabis enterprise spanning two continents — the operational estate my infrastructure and M&A integration team keeps secure, governed, and running. Markers are placed by real geographic coordinates; hover or tap any node for detail.",
+    "summary": [
+      { "value": "#4", "label": "Largest U.S. craft brewer" },
+      { "value": "20+", "label": "U.S. breweries integrated" },
+      { "value": "11", "label": "BrewDog brewpubs (UK/EU)" },
+      { "value": "8", "label": "Cannabis facilities, CA + EU" },
+      { "value": "20+", "label": "Countries of operation" },
+      { "value": "2", "label": "Continents under one platform" }
+    ],
+    "projection": { "lngMin": -135, "lngMax": 20, "latMin": 28, "latMax": 60, "w": 1000, "h": 480 },
+    "sites": [
+      { "name": "Toronto, ON", "type": "hub", "lat": 43.65, "lng": -79.38, "note": "Infrastructure & M&A integration command center — distributed team of 10 across NA & Europe." },
+      { "name": "Leamington, ON", "type": "cannabis", "lat": 42.05, "lng": -82.60, "note": "Aphria One & Diamond — flagship Canadian cannabis cultivation and processing campus." },
+      { "name": "Nanaimo, BC", "type": "cannabis", "lat": 49.16, "lng": -123.94, "note": "Broken Coast — premium West-Coast cannabis cultivation." },
+      { "name": "Bend, OR", "type": "production", "lat": 44.06, "lng": -121.31, "note": "10 Barrel Brewing — Pacific Northwest craft production." },
+      { "name": "Portland, OR", "type": "production", "lat": 45.52, "lng": -122.68, "note": "Widmer Brothers & Redhook — heritage Northwest breweries." },
+      { "name": "San Diego, CA", "type": "production", "lat": 32.72, "lng": -117.16, "note": "Green Flash & Alpine Beer — Southern California craft." },
+      { "name": "Breckenridge, CO", "type": "production", "lat": 39.48, "lng": -106.04, "note": "Breckenridge Brewery & Distillery — Rocky Mountain operations." },
+      { "name": "Atlanta / Athens, GA", "type": "production", "lat": 33.75, "lng": -84.39, "note": "SweetWater Brewery & Terrapin Beer — Southeast production hub." },
+      { "name": "Detroit, MI", "type": "production", "lat": 42.33, "lng": -83.05, "note": "Atwater Brewery — acquired and integrated into the unified platform." },
+      { "name": "Long Island, NY", "type": "production", "lat": 40.85, "lng": -72.50, "note": "Montauk & Blue Point Brewing — Northeast craft footprint." },
+      { "name": "Ellon, Scotland", "type": "production", "lat": 57.36, "lng": -2.07, "note": "BrewDog — global craft brand and brewing operations (acquired 2026)." },
+      { "name": "London & UK brewpubs", "type": "brewpub", "lat": 51.50, "lng": -0.13, "note": "11 premier BrewDog brewpubs across the UK and Europe." },
+      { "name": "Cantanhede, Portugal", "type": "cannabis", "lat": 40.35, "lng": -8.60, "note": "Tilray Portugal — EU medical cannabis research, cultivation & distribution." },
+      { "name": "Neumünster, Germany", "type": "cannabis", "lat": 54.07, "lng": 9.98, "note": "Aphria RX — German-market cannabis cultivation and processing." }
+    ]
+  },
   "domains": [
     { "key": "infra", "label": "IT Infrastructure", "score": 5, "color": "#39ff14" },
     { "key": "cloudsec", "label": "Cloud Security", "score": 4, "color": "#00e5ff" },
