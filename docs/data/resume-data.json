@@ -9,7 +9,7 @@
     "photoFallback": "assets/profile-placeholder.svg",
     "hook": "Two companies become one — and the technology has to merge overnight: secure, audited, and running by Monday. That's my job.",
     "summary": "For 15 years I've worked at the intersection of three roles most people pick only one of: the engineer who builds the systems, the security leader who defends and governs them, and the integrator who fuses entire companies together after an acquisition. I came up hands-on — Active Directory, networks, virtualization, PowerShell — and never traded that depth away as I moved into leadership. Today I run global infrastructure and M&A integration at Tilray Brands, where I folded 10 acquisitions into one secure platform in 12 months, migrated 900+ employees across Microsoft Entra tenants, and built the SOX ITGC, system-hardening, and incident-response controls that keep auditors and executives confident. CISSP- and CISM-certified, I translate fluently between the server room and the boardroom: I can architect the network, write the script, pass the audit, and brief the C-suite on the risk — often in the same week.",
-    "tagline": "Engineer × Security Leader × M&A Integrator — a career built to not be siloed.",
+    "tagline": "Engineer × Security Leader × M&A Integrator × Hands-on through Executive-facing experiences × Identity, Cloud, Networking, GRC",
     "crossing": [
       { "title": "Build it, then defend it", "body": "Most security leaders have never run the systems they are securing. I architect the Active Directory, network, and virtualization estate and then harden it — segmentation, next-gen firewalls, application whitelisting, CIS controls — so the defense is designed by someone who knows exactly how the machine works underneath." },
       { "title": "Merge companies, not just mailboxes", "body": "M&A integration is where identity, cloud, networking, and governance collide at once. I collapse acquired tenants, domains, and email into a single governed Entra / Microsoft 365 estate — on a 60-to-90-day clock — without dropping security posture or breaking the business mid-flight." },
@@ -19,7 +19,7 @@
     ],
     "rareStats": [
       { "figure": "2-in-1", "label": "CISSP + CISM held together", "note": "Most security professionals carry one or the other. Both at once validates that I can build and defend the systems (CISSP) and govern the program and its risk (CISM)." },
-      { "figure": "70–90%", "label": "of M&A deals miss their goals", "note": "Harvard Business Review and others have long reported most mergers fail to deliver their expected value — with technology integration repeatedly named a leading cause. I have personally delivered 10 integrations in 12 months." },
+      { "figure": "70–90%", "label": "of M&A deals miss their goals", "note": "Harvard Business Review and others have long reported most mergers fail to deliver their expected value — with technology integration repeatedly named a leading cause. I have personally delivered 10 integrations within 12 months." },
       { "figure": "3 domains", "label": "deep, not just broad", "note": "Candidates are usually deep-technical OR strategic. The overlap of hands-on infrastructure, security leadership, and M&A delivery is a narrow slice of the talent pool." },
       { "figure": "15 yrs", "label": "hands-on through executive-facing", "note": "Technical depth I never gave up — still writing the PowerShell and reading the KQL while owning the strategy and the audit." }
     ]
@@ -61,7 +61,7 @@
   ],
   "techStack": {
     "Enterprise Systems": ["Active Directory", "Microsoft Exchange", "Hyper-V", "VMware", "ServiceNow", "Cisco Meraki"],
-    "Cloud Platforms": ["Microsoft 365", "Azure IaaS", "Azure Arc", "Okta", "Duo", "Entra ID"],
+    "Cloud Platforms": ["Microsoft 365", "Azure IaaS", "Azure Arc", "Azure Sentinel", "Okta", "Duo", "Entra ID"],
     "Security": ["Palo Alto NGFW", "NIST 800-53", "SOX ITGC", "CIS Controls", "Application Whitelisting", "Network Segmentation"],
     "Scripting & Data": ["PowerShell", "SQL", "KQL", "WMI", "Python"]
   },
@@ -75,7 +75,7 @@
     ["Hardening", 6], ["NGFW", 6], ["IAM", 6]
   ],
   "impact": [
-    { "value": 10, "suffix": "", "label": "M&A integrations in 12 months", "icon": "merge" },
+    { "value": 10, "suffix": "", "label": "M&A integrations within 12 months", "icon": "merge" },
     { "value": 4, "prefix": "#", "suffix": "", "label": "Largest U.S. craft brewer enabled", "icon": "trophy" },
     { "value": 900, "suffix": "+", "label": "Employees onboarded via Entra", "icon": "users" },
     { "value": 350, "suffix": "+", "label": "Endpoints & servers reimaged", "icon": "server" },
@@ -94,10 +94,10 @@
       "domains": ["ma", "infra", "grc", "cloudsec"],
       "summary": "Leads global infrastructure and high-tempo M&A integration for a multinational beverage and cannabis enterprise.",
       "brief": {
-        "headline": "Integrated 10 acquisitions in 12 months — fueling Tilray Beverages' rise to the #4 craft brewer in the U.S.",
+        "headline": "Integrated 10 acquisitions within 12 months — fueling Tilray Beverages' rise to the #4 craft brewer in the U.S.",
         "situation": "A multinational beverage and cannabis enterprise on an aggressive acquisition spree, inheriting a sprawl of incompatible networks, identities, and email systems across 65+ sites in North America and Europe.",
         "action": "Built and led a 10-person infrastructure team running back-to-back M&A takeovers — AB InBev and Molson Coors plant cutovers, 6 Entra tenant-to-tenant migrations, and AD / Meraki / O365 consolidations — while wiring SOX ITGC, system hardening, and incident response into daily operations.",
-        "outcome": "10 organizations integrated in 12 months · 900+ employees onboarded to unified governed identity · 4 production facilities transferred with zero unplanned downtime — accelerating the synergy capture behind the division's climb to #4 in the U.S. craft market."
+        "outcome": "10 organizations integrated within 12 months · 900+ employees onboarded to unified governed identity · 4 production facilities transferred with zero unplanned downtime — accelerating the synergy capture behind the division's climb to #4 in the U.S. craft market."
       },
       "achievements": [
         { "text": "Orchestrated high-priority IT M&A across 10 acquired organizations in 12 months, directly contributing to Tilray Beverages becoming the 4th-largest craft brewer in the U.S.", "impact": "Accelerated value capture from acquisitions: each integration delivered on schedule meant faster revenue consolidation and synergy realization, directly advancing the growth strategy that vaulted the beverage division to #4 in the U.S. market." },
