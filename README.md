@@ -166,5 +166,5 @@ Resume/
 
 <div align="center">
 <sub>Built with vanilla HTML/CSS/JS · vis-network · Chart.js · wordcloud2.js · No trackers, no backend.</sub><br>
-<sub>📫 <a href="mailto:redacted@example.com">redacted@example.com</a> · <a href="https://www.linkedin.com/in/pstiber/">linkedin.com/in/pstiber</a></sub>
+<sub>📫 <a href="https://www.linkedin.com/in/pstiber/">linkedin.com/in/pstiber</a></sub>
 </div>
