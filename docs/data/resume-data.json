@@ -18,20 +18,53 @@
       { "title": "Resilience as a habit", "body": "From a 48-hour COVID-19 remote-work cutover for 160 staff to DR-ready virtualization, business continuity is baked into how I build — not bolted on after the incident." }
     ],
     "rareStats": [
-      { "figure": "2-in-1", "label": "CISSP + CISM held together", "note": "Most security professionals carry one or the other. Both at once validates that I can build and defend the systems (CISSP) and govern the program and its risk (CISM)." },
-      { "figure": "70–90%", "label": "of M&A deals miss their goals", "note": "Harvard Business Review and others have long reported most mergers fail to deliver their expected value — with technology integration repeatedly named a leading cause. I have personally delivered 10 integrations within 12 months." },
+      { "figure": "2-in-1", "label": "CISSP + CISM held together", "note": "Most security professionals carry one or the other. Both at once validates that I can build and defend the systems (CISSP) and govern the program and its risk (CISM). Fewer than 5% of security practitioners hold both." },
+      { "figure": "70–90%", "label": "of M&A deals miss their goals", "note": "Harvard Business Review and others have long reported most mergers fail to deliver their expected value — with technology integration repeatedly named a leading cause. I have personally delivered 10 integrations in 12 months." },
       { "figure": "3 domains", "label": "deep, not just broad", "note": "Candidates are usually deep-technical OR strategic. The overlap of hands-on infrastructure, security leadership, and M&A delivery is a narrow slice of the talent pool." },
-      { "figure": "15 yrs", "label": "hands-on through executive-facing", "note": "Technical depth I never gave up — still writing the PowerShell and reading the KQL while owning the strategy and the audit." }
+      { "figure": "15 yrs", "label": "hands-on through executive-facing", "note": "Technical depth I never gave up — still writing the PowerShell and reading the KQL while owning the strategy and the audit." },
+      { "figure": "&lt;1%", "label": "CISSP + CISM + active builder", "note": "Holding both premier certs while actively shipping infrastructure as code, detection engineering, and automation puts this profile in a vanishingly small group: the practitioner who can also own the boardroom conversation." }
     ]
   },
   "certifications": [
-    { "name": "CISSP", "issuer": "(ISC)²", "issued": "2023-06", "label": "Certified Information Systems Security Professional" },
-    { "name": "CISM", "issuer": "ISACA", "issued": "2024-06", "label": "Certified Information Security Manager" }
+    { "name": "CISSP", "issuer": "(ISC)²", "issuerKey": "isc2", "issued": "2023-06", "label": "Certified Information Systems Security Professional", "credlyId": "e7398140-fb0e-4ce8-86be-ecc8999d3d64", "verifyUrl": "https://www.credly.com/earner/earned/share/e7398140-fb0e-4ce8-86be-ecc8999d3d64" },
+    { "name": "CISM", "issuer": "ISACA", "issuerKey": "isaca", "issued": "2024-06", "label": "Certified Information Security Manager", "credlyId": "af84d868-20c3-43b2-9d26-e2656fb7868a", "verifyUrl": "https://www.credly.com/earner/earned/share/af84d868-20c3-43b2-9d26-e2656fb7868a" }
   ],
   "education": [
     { "program": "Coursework in Computer Engineering", "school": "University of South Florida", "location": "Tampa, FL" },
     { "program": "Coursework in Network Engineering & Windows Server Administration", "school": "State College of Florida", "location": "Bradenton, FL" }
   ],
+  "github": {
+    "profile": "https://github.com/Philliamviber",
+    "intro": "Public work that backs up the resume — secure-by-design infrastructure as code, detection engineering, and automation. The same disciplines, shipped in the open.",
+    "groups": [
+      {
+        "name": "Security & Detection Engineering",
+        "repos": [
+          { "name": "Sentinelmonitoring", "lang": "KQL · Workbooks", "url": "https://github.com/Philliamviber/Sentinelmonitoring", "blurb": "Microsoft Sentinel workbooks built for intelligent, signal-rich SOC monitoring.", "why": "Detection engineering and SIEM visualization — the analytics layer behind modern threat detection." },
+          { "name": "Blueteamthreathunting", "lang": "KQL", "url": "https://github.com/Philliamviber/Blueteamthreathunting", "blurb": "Identity-centric threat-hunting tracker correlating Zero-Trust signals for privileged and VIP accounts.", "why": "Proactive hunting for the identity attacks that drive the majority of breaches." },
+          { "name": "Sentineladvisor", "lang": "HTML · KQL", "url": "https://github.com/Philliamviber/Sentineladvisor", "blurb": "Guided advisory for tuning and operationalizing Microsoft Sentinel.", "why": "Turns a raw SIEM into well-tuned, actionable detections instead of alert noise." },
+          { "name": "Merakicorrelator", "lang": "Python", "url": "https://github.com/Philliamviber/Merakicorrelator", "blurb": "Correlates Cisco Meraki network telemetry into security-relevant insight.", "why": "Bridges network operations and security analytics — hands-on with the Meraki estate I ran at enterprise scale." }
+        ]
+      },
+      {
+        "name": "Cloud & Infrastructure as Code",
+        "repos": [
+          { "name": "azure-ad-landing-zone", "lang": "Terraform · HCL", "url": "https://github.com/Philliamviber/azure-ad-landing-zone", "blurb": "A hardened Active Directory landing zone on Azure, as code: hub-and-spoke, dual DCs on Server 2025 Core, Azure Firewall Premium IDPS, Key Vault RBAC, and Sentinel wired in.", "why": "Secure-by-design cloud infrastructure as repeatable IaC — infrastructure and security delivered in one artifact.", "flagship": true },
+          { "name": "TeraformMultiregionAD", "lang": "Terraform", "url": "https://github.com/Philliamviber/TeraformMultiregionAD", "blurb": "Multi-region Active Directory deployment expressed in Terraform.", "why": "Resilient, DR-ready identity infrastructure as code — the continuity mindset, automated." },
+          { "name": "CiscoMerakiSDWanAutoVPNAzureGuidance", "lang": "Guide", "url": "https://github.com/Philliamviber/CiscoMerakiSDWanAutoVPNAzureGuidance", "blurb": "Reference guidance for extending Cisco Meraki SD-WAN AutoVPN into Azure.", "why": "Hybrid network architecture connecting branch sites to cloud — the exact pattern behind multi-site enterprises." }
+        ]
+      },
+      {
+        "name": "Automation, DevSecOps & Enablement",
+        "repos": [
+          { "name": "githubactionsguidance", "lang": "CI/CD", "url": "https://github.com/Philliamviber/githubactionsguidance", "blurb": "Practical GitHub Actions CI/CD guidance and patterns.", "why": "Pipeline automation and secure software delivery — DevSecOps fundamentals." },
+          { "name": "ClaudeDevSecOpseagents", "lang": "HTML · Markdown", "url": "https://github.com/Philliamviber/ClaudeDevSecOpseagents", "blurb": "VS Code agent definitions and how-tos for DevSecOps workflows.", "why": "Operationalizing AI assistants across a secure SDLC." },
+          { "name": "claudecheatsheets", "lang": "Docs", "url": "https://github.com/Philliamviber/claudecheatsheets", "blurb": "Beginner-friendly guides for using Claude Code efficiently: token efficiency, engineer bots, and model routing.", "why": "Team enablement and knowledge-sharing — multiplying other people's productivity." },
+          { "name": "tokenwatcher", "lang": "C#", "url": "https://github.com/Philliamviber/tokenwatcher", "blurb": "A Diablo-style health-globe desktop overlay that tracks Claude Code token usage in real time.", "why": "Range and a builder's curiosity — a native C# app, shipped for fun." }
+        ]
+      }
+    ]
+  },
   "domains": [
     { "key": "infra", "label": "IT Infrastructure", "score": 5, "color": "#39ff14" },
     { "key": "cloudsec", "label": "Cloud Security", "score": 4, "color": "#00e5ff" },
@@ -61,9 +94,9 @@
   ],
   "techStack": {
     "Enterprise Systems": ["Active Directory", "Microsoft Exchange", "Hyper-V", "VMware", "ServiceNow", "Cisco Meraki"],
-    "Cloud Platforms": ["Microsoft 365", "Azure IaaS", "Azure Arc", "Azure Sentinel", "Okta", "Duo", "Entra ID"],
-    "Security": ["Palo Alto NGFW", "NIST 800-53", "SOX ITGC", "CIS Controls", "Application Whitelisting", "Network Segmentation"],
-    "Scripting & Data": ["PowerShell", "SQL", "KQL", "WMI", "Python"]
+    "Cloud Platforms": ["Microsoft 365", "Azure IaaS", "Azure Arc", "Okta", "Duo", "Entra ID"],
+    "Security": ["Palo Alto NGFW", "Microsoft Sentinel", "Defender for Endpoint", "NIST 800-53", "SOX ITGC", "CIS Controls", "Application Whitelisting", "Network Segmentation", "Zero Trust"],
+    "Scripting & IaC": ["PowerShell", "SQL", "KQL", "WMI", "Python", "Terraform", "GitHub Actions"]
   },
   "wordCloud": [
     ["Active Directory", 9], ["Entra ID", 9], ["M&A Integration", 10], ["SOX ITGC", 8], ["PowerShell", 8],
@@ -72,7 +105,9 @@
     ["Incident Response", 7], ["Threat Hunting", 6], ["Disaster Recovery", 7], ["CISSP", 8], ["CISM", 8],
     ["ServiceNow", 5], ["Azure Arc", 5], ["Network Segmentation", 5], ["CIS Controls", 6], ["Business Continuity", 7],
     ["Tenant Migration", 7], ["Cloud Security", 7], ["GRC", 7], ["Exchange", 6], ["WMI", 4], ["SQL", 5],
-    ["Hardening", 6], ["NGFW", 6], ["IAM", 6]
+    ["Hardening", 6], ["NGFW", 6], ["IAM", 6],
+    ["Microsoft Sentinel", 7], ["Terraform", 6], ["Zero Trust", 6], ["GitHub Actions", 5],
+    ["Defender", 6], ["MITRE ATT&CK", 5], ["DevSecOps", 5]
   ],
   "impact": [
     { "value": 10, "suffix": "", "label": "M&A integrations within 12 months", "icon": "merge" },

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 56" role="img" aria-label="(ISC)² — International Information System Security Certification Consortium">
+  <rect x="0.5" y="0.5" width="149" height="55" rx="9" fill="#06181a" stroke="#1bd1c4" stroke-width="1"/>
+  <text x="14" y="36" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="26" fill="#e8fbf9">(ISC)<tspan font-size="16" dy="-9" fill="#1bd1c4">2</tspan></text>
+  <text x="14" y="49" font-family="'JetBrains Mono', monospace" font-size="6.2" letter-spacing="0.5" fill="#5fbdb6">CYBERSECURITY CERTIFICATION</text>
+</svg>

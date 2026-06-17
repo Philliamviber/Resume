@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 56" role="img" aria-label="ISACA — Information Systems Audit and Control Association">
+  <rect x="0.5" y="0.5" width="149" height="55" rx="9" fill="#0a1430" stroke="#2f6cff" stroke-width="1"/>
+  <text x="15" y="34" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="25" letter-spacing="1.5" fill="#ffffff">ISACA<tspan font-size="9" dy="-10" fill="#2f6cff">®</tspan></text>
+  <text x="16" y="48" font-family="'JetBrains Mono', monospace" font-size="6.2" letter-spacing="0.5" fill="#7f9cff">GOVERNANCE · RISK · AUDIT</text>
+</svg>

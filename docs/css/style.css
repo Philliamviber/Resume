@@ -439,6 +439,245 @@ footer {
 footer a { color: var(--cyan); }
 footer .ascii { color: var(--neon-green); white-space: pre; font-size: 0.7rem; line-height: 1.2; opacity: 0.5; }
 
+/* ============================ CERTIFICATIONS ============================ */
+.cert-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+.cert-card {
+  background: var(--bg-3);
+  border: 1px solid rgba(189,0,255,0.20);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cert-card::before {
+  content: "";
+  position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(320px 200px at 100% 0%, rgba(189,0,255,0.07), transparent 70%);
+}
+
+.cert-card::after {
+  content: "";
+  position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+  background: var(--violet);
+  box-shadow: 0 0 14px var(--violet);
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.5), 0 0 0 1px rgba(189,0,255,0.3);
+}
+
+.cert-meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.issuer-logo {
+  flex-shrink: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 14px rgba(189,0,255,0.2);
+}
+
+.cert-info h3 {
+  margin: 0 0 4px;
+  color: var(--text-bright);
+  font-size: 1.5rem;
+  font-family: var(--mono);
+}
+
+.cert-sub {
+  color: var(--text-dim);
+  font-size: 0.88rem;
+  margin: 0 0 6px;
+  line-height: 1.45;
+}
+
+.cert-iss {
+  color: var(--amber);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.credly-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 270px;
+  background: rgba(255,255,255,0.015);
+  border-radius: 8px;
+  border: 1px dashed rgba(189,0,255,0.14);
+}
+
+.cert-verify {
+  align-self: flex-start;
+  font-size: 0.82rem;
+}
+
+/* ---------- Cert section: what each cert validates ---------- */
+.cert-validates {
+  margin-top: 32px;
+  background: linear-gradient(160deg, rgba(189,0,255,0.06), var(--bg-3) 60%);
+  border: 1px solid rgba(189,0,255,0.15);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+}
+
+.cert-validates h3 {
+  margin: 0 0 14px;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--violet);
+}
+
+.cert-validates-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.cv-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.cv-tag {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--bg);
+  background: var(--violet);
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+}
+
+.cv-text {
+  color: var(--text-dim);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+/* ---------- Hero: Issuer logo badges with hover Credly tooltip ---------- */
+.issuer-badges {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0 6px;
+  flex-wrap: wrap;
+}
+
+.issuer-badge-link {
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.issuer-badge-link:hover,
+.issuer-badge-link:focus-visible {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 6px 18px rgba(189,0,255,0.45));
+}
+
+.issuer-mini {
+  display: block;
+  width: 118px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.badge-hover-card {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
+  min-width: 210px;
+  background: var(--bg-3);
+  border: 1px solid rgba(189,0,255,0.4);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.65), 0 0 0 1px rgba(189,0,255,0.12);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 20;
+}
+
+.issuer-badge-link:hover .badge-hover-card,
+.issuer-badge-link:focus-visible .badge-hover-card {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.bhc-cert {
+  display: block;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--violet);
+  margin-bottom: 2px;
+}
+
+.bhc-label {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+  white-space: normal;
+  line-height: 1.4;
+}
+
+.bhc-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--neon-green);
+  background: rgba(57,255,20,0.08);
+  border: 1px solid rgba(57,255,20,0.25);
+  border-radius: 999px;
+  padding: 3px 9px;
+}
+
+/* ---------- Tech background overlay (atmospheric scatter, non-distracting) ---------- */
+.tech-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  user-select: none;
+}
+
+.tech-bg .tb {
+  position: absolute;
+  font-family: var(--mono);
+  font-weight: 600;
+  white-space: nowrap;
+  line-height: 1;
+  opacity: 0.028;
+}
+
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; scroll-behavior: auto !important; }
