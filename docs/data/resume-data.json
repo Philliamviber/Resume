@@ -5,11 +5,15 @@
     "headline": "Cybersecurity Leadership | IT Infrastructure Management | M&A Technology Integration",
     "location": "Peterborough, ON, Canada",
     "linkedin": "https://www.linkedin.com/in/pstiber/",
-    "photo": "assets/profile.jpg",
+    "photo": "assets/profile-1.jpg",
     "photoFallback": "assets/profile-placeholder.svg",
+    "photos": [
+      { "src": "assets/profile-1.jpg", "position": "58% 40%" },
+      { "src": "assets/profile-2.jpg", "position": "66% 26%" }
+    ],
     "hook": "Two companies become one — and the technology has to merge overnight: secure, audited, and running by Monday. That's my job.",
     "summary": "For 15 years I've worked at the intersection of three roles most people pick only one of: the engineer who builds the systems, the security leader who defends and governs them, and the integrator who fuses entire companies together after an acquisition. I came up hands-on — Active Directory, networks, virtualization, PowerShell — and never traded that depth away as I moved into leadership. Today I run global infrastructure and M&A integration at Tilray Brands, where I folded 10 acquisitions into one secure platform in 12 months, migrated 900+ employees across Microsoft Entra tenants, and built the SOX ITGC, system-hardening, and incident-response controls that keep auditors and executives confident. CISSP- and CISM-certified, I translate fluently between the server room and the boardroom: I can architect the network, write the script, pass the audit, and brief the C-suite on the risk — often in the same week.",
-    "tagline": "Engineer × Security Leader × M&A Integrator × Hands-on through Executive-facing experiences × Identity, Cloud, Networking, GRC",
+    "tagline": "Engineer × Security Leader × M&A Integrator — hands-on to boardroom",
     "crossing": [
       { "title": "Build it, then defend it", "body": "Most security leaders have never run the systems they are securing. I architect the Active Directory, network, and virtualization estate and then harden it — segmentation, next-gen firewalls, application whitelisting, CIS controls — so the defense is designed by someone who knows exactly how the machine works underneath." },
       { "title": "Merge companies, not just mailboxes", "body": "M&A integration is where identity, cloud, networking, and governance collide at once. I collapse acquired tenants, domains, and email into a single governed Entra / Microsoft 365 estate — on a 60-to-90-day clock — without dropping security posture or breaking the business mid-flight." },
@@ -160,7 +164,14 @@
         "headline": "Integrated 10 acquisitions within 12 months — fueling Tilray Beverages' rise to the #4 craft brewer in the U.S.",
         "situation": "A multinational beverage and cannabis enterprise on an aggressive acquisition spree, inheriting a sprawl of incompatible networks, identities, and email systems across 65+ sites in North America and Europe.",
         "action": "Built and led a 10-person infrastructure team running back-to-back M&A takeovers — AB InBev and Molson Coors plant cutovers, 6 Entra tenant-to-tenant migrations, and AD / Meraki / O365 consolidations — while wiring SOX ITGC, system hardening, and incident response into daily operations.",
-        "outcome": "10 organizations integrated within 12 months · 900+ employees onboarded to unified governed identity · 4 production facilities transferred with zero unplanned downtime — accelerating the synergy capture behind the division's climb to #4 in the U.S. craft market."
+        "outcome": "10 organizations integrated within 12 months · 900+ employees onboarded to unified governed identity · 4 production facilities transferred with zero unplanned downtime — accelerating the synergy capture behind the division's climb to #4 in the U.S. craft market.",
+        "metrics": [
+          { "value": "10", "label": "M&A in 12 months" },
+          { "value": "900+", "label": "users onboarded" },
+          { "value": "4", "label": "plants · zero downtime" },
+          { "value": "65+", "label": "sites · 2 continents" }
+        ],
+        "stack": ["Microsoft Entra", "Active Directory", "Microsoft 365", "Cisco Meraki", "SOX ITGC", "Palo Alto NGFW"]
       },
       "achievements": [
         { "text": "Orchestrated high-priority IT M&A across 10 acquired organizations in 12 months, directly contributing to Tilray Beverages becoming the 4th-largest craft brewer in the U.S.", "impact": "Accelerated value capture from acquisitions: each integration delivered on schedule meant faster revenue consolidation and synergy realization, directly advancing the growth strategy that vaulted the beverage division to #4 in the U.S. market." },
@@ -185,7 +196,14 @@
         "headline": "Moved 160 staff fully remote in 48 hours and rebuilt the firm's identity, network, and security estate.",
         "situation": "A professional-services firm running aging, end-of-life infrastructure with limited security maturity — then forced into an overnight remote-work pivot by the COVID-19 pandemic.",
         "action": "Matured the security program to CIS benchmarks (segmentation, application whitelisting, firm-wide Palo Alto NGFW, cloud IAM), stood up proactive security operations (threat hunting, incident response, patch cycles), and architected a greenfield Active Directory + O365 environment — co-authoring the COVID-19 technical strategy with the COO.",
-        "outcome": "160 employees productive remotely within 48 hours · 300 endpoints and 50 servers reimaged across three 48-hour windows · a measurably hardened posture that protected client confidentiality and uninterrupted billing."
+        "outcome": "160 employees productive remotely within 48 hours · 300 endpoints and 50 servers reimaged across three 48-hour windows · a measurably hardened posture that protected client confidentiality and uninterrupted billing.",
+        "metrics": [
+          { "value": "48h", "label": "to 160 staff remote" },
+          { "value": "350", "label": "endpoints + servers reimaged" },
+          { "value": "100%", "label": "of offices on NGFW" },
+          { "value": "<10mo", "label": "to greenfield AD + O365" }
+        ],
+        "stack": ["Palo Alto NGFW", "Active Directory", "Microsoft 365", "CIS Controls", "Cloud IAM", "Application Whitelisting"]
       },
       "achievements": [
         { "text": "Established CIS framework maturity via security improvement plans: application whitelisting, network segmentation, next-gen firewalls, and cloud IAM.", "impact": "Raised measurable security maturity to protect the firm's most valuable asset — client confidentiality — lowering breach risk, strengthening cyber-insurance posture, and reinforcing the trust that wins and keeps clients." },
@@ -210,7 +228,14 @@
         "headline": "Modernized core systems and made the IT estate merger-ready, supporting a clean firm consolidation.",
         "situation": "An accounting firm running aging on-prem infrastructure and preparing for a merger that demanded full transparency into its technology and costs.",
         "action": "Virtualized the entire physical server fleet to Hyper-V 2016, migrated email from Exchange 2010 to Office 365, standardized GPO and Windows hardening baselines, and assembled the asset inventory and cost models for due diligence.",
-        "outcome": "A modern, DR-ready, fully documented environment with lower hardware cost and improved uptime — plus the transparent asset and cost data that de-risked the merger and supported a fair valuation."
+        "outcome": "A modern, DR-ready, fully documented environment with lower hardware cost and improved uptime — plus the transparent asset and cost data that de-risked the merger and supported a fair valuation.",
+        "metrics": [
+          { "value": "100%", "label": "server fleet virtualized" },
+          { "value": "0", "label": "physical servers left" },
+          { "value": "Exch→365", "label": "email modernized" },
+          { "value": "M&A", "label": "estate made deal-ready" }
+        ],
+        "stack": ["Hyper-V 2016", "Exchange 2010", "Office 365", "GPO Baselines", "Windows Server 2016"]
       },
       "achievements": [
         { "text": "Built IT asset inventory, process documentation, and cost models to satisfy merger due-diligence requirements.", "impact": "Produced the transparency a merger requires: accurate asset and cost data supported fair valuation and de-risked the transaction for both parties." },
@@ -233,7 +258,13 @@
         "headline": "Brought enterprise-grade reliability and security to dozens of small firms across the eastern GTA.",
         "situation": "Legal, CPA, and small-business clients needing modernization but lacking in-house IT depth or enterprise budgets.",
         "action": "Executed complex AD and Exchange migrations, server virtualization, and Office 365 deployments — each right-sized to the client and backed by ongoing support and seamless cutovers.",
-        "outcome": "Enterprise-grade reliability and security at small-business cost, with no lost productivity through change — converting technical upgrades into durable client trust and referrals."
+        "outcome": "Enterprise-grade reliability and security at small-business cost, with no lost productivity through change — converting technical upgrades into durable client trust and referrals.",
+        "metrics": [
+          { "value": "Dozens", "label": "of firms modernized" },
+          { "value": "AD + Exch", "label": "migrations delivered" },
+          { "value": "0", "label": "productivity lost at cutover" }
+        ],
+        "stack": ["Active Directory", "Microsoft Exchange", "Office 365", "Server Virtualization"]
       },
       "achievements": [
         { "text": "Performed complex AD domain and Exchange migrations, server virtualization, and Office 365 deployments.", "impact": "Modernized client environments so small firms could operate with enterprise-grade reliability and security — turning technical upgrades into client business resilience." },
@@ -255,7 +286,13 @@
         "headline": "Kept 30+ legal line-of-business apps and their users running through major platform migrations.",
         "situation": "Legal and CPA practices dependent on specialized line-of-business software, facing risky platform transitions across Exchange, BlackBerry BES, Active Directory, and Windows 7/8.",
         "action": "Acted as a fractional IT department — running migrations and new-client onboarding, managing MSP helpdesk escalations, and supporting 30+ specialized applications.",
-        "outcome": "Continuity of the 30+ applications the practices bill against, with minimal disruption to billable work — protecting client deadlines and active case work through technically risky change."
+        "outcome": "Continuity of the 30+ applications the practices bill against, with minimal disruption to billable work — protecting client deadlines and active case work through technically risky change.",
+        "metrics": [
+          { "value": "30+", "label": "line-of-business apps supported" },
+          { "value": "4yrs", "label": "as fractional IT dept" },
+          { "value": "Multi", "label": "platform migrations" }
+        ],
+        "stack": ["Microsoft Exchange", "BlackBerry BES", "Active Directory", "Windows 7 / 8"]
       },
       "achievements": [
         { "text": "Supported major migrations — Exchange, BlackBerry BES, Active Directory, and Windows 7/8 deployments.", "impact": "Kept executives and staff productive through platform change — minimizing disruption to billable work during technically risky transitions." },
