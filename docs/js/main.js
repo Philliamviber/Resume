@@ -59,15 +59,48 @@ function renderHero(data) {
   const hook = document.getElementById("hero-hook");
   if (hook && p.hook) hook.textContent = p.hook;
 
-  // Profile photo: try the real headshot, fall back to the monogram SVG.
-  const img = document.getElementById("profile-photo");
-  if (img && p.photo) {
-    const fallback = p.photoFallback || img.src;
+  // Profile photos: build a rotating stack of real headshots, each with its own
+  // face-framing object-position. Falls back to the monogram SVG if none load.
+  renderAvatar(p);
+}
+
+/* Rotating circular avatar. Loads every photo in profile.photos (each may be a
+   string or {src, position} to frame the face), stacks them, and crossfades.
+   If no photo loads (e.g. user hasn't added them yet), the placeholder stays. */
+function renderAvatar(p) {
+  const ring = document.getElementById("avatar-ring");
+  if (!ring) return;
+
+  const photos = (p.photos && p.photos.length ? p.photos : (p.photo ? [p.photo] : []))
+    .map((x) => (typeof x === "string" ? { src: x, position: "center" } : x));
+  if (!photos.length) return;
+
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Load all photos first; only swap in the ones that actually exist.
+  Promise.all(photos.map((ph) => new Promise((resolve) => {
     const test = new Image();
-    test.onload = () => { img.src = p.photo; };       // real photo exists -> use it
-    test.onerror = () => { img.src = fallback; };      // not there -> keep monogram
-    test.src = p.photo;
-  }
+    test.onload = () => resolve(ph);
+    test.onerror = () => resolve(null);
+    test.src = ph.src;
+  }))).then((loaded) => {
+    const ok = loaded.filter(Boolean);
+    if (!ok.length) return;                 // keep placeholder
+
+    ring.innerHTML = ok.map((ph, i) => `
+      <img class="avatar-photo${i === 0 ? " is-active" : ""}" src="${ph.src}"
+           alt="Philip Stiber" style="object-position:${ph.position || "center"}" />`).join("");
+
+    const slides = [...ring.querySelectorAll(".avatar-photo")];
+    if (slides.length < 2 || reduce) return; // single photo (or reduced motion) = no rotation
+
+    let idx = 0;
+    setInterval(() => {
+      slides[idx].classList.remove("is-active");
+      idx = (idx + 1) % slides.length;
+      slides[idx].classList.add("is-active");
+    }, 5000);                                // crossfade every 5s
+  });
 }
 
 function renderCrossing(data) {
@@ -128,13 +161,34 @@ function renderExperience(data) {
       </li>`;
   }
 
-  // The engagement brief: outcome-first headline, then Situation -> Action -> Outcome.
+  // Metric chips: the headline numbers of an engagement, scannable at a glance.
+  function metrics(list) {
+    if (!list || !list.length) return "";
+    return `<div class="brief-metrics">${list.map((m) => `
+      <div class="bm">
+        <span class="bm-val">${m.value}</span>
+        <span class="bm-lbl">${m.label}</span>
+      </div>`).join("")}</div>`;
+  }
+
+  // Stack tags: the platforms/controls actually used on the engagement.
+  function stack(list) {
+    if (!list || !list.length) return "";
+    return `<div class="brief-stack">
+      <span class="bs-label">stack&nbsp;&rsaquo;</span>
+      ${list.map((t) => `<span class="bs-tag">${t}</span>`).join("")}
+    </div>`;
+  }
+
+  // The engagement brief: outcome-first headline, key metrics, the
+  // Situation -> Action -> Outcome flow, then the stack exercised.
   function brief(b) {
     if (!b) return "";
     return `
       <div class="brief">
         <div class="brief-kicker">&#9656; engagement brief</div>
         <p class="brief-headline">${b.headline}</p>
+        ${metrics(b.metrics)}
         <div class="sao">
           <div class="sao-step sit">
             <span class="sao-num">01</span><span class="sao-label">Situation</span>
@@ -151,6 +205,7 @@ function renderExperience(data) {
             <p>${b.outcome}</p>
           </div>
         </div>
+        ${stack(b.stack)}
       </div>`;
   }
 
