@@ -469,88 +469,81 @@ footer .ascii { color: var(--neon-green); white-space: pre; font-size: 0.7rem; l
   font-size: 0.78rem;
 }
 
-.estate-map-host {
+/* Brand-logo wall */
+.brand-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+}
+.brand-tile {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   background:
-    radial-gradient(900px 460px at 50% 40%, rgba(0,229,255,0.05), transparent 70%),
-    var(--bg-2);
+    radial-gradient(600px 200px at 50% -40%, rgba(0,229,255,0.05), transparent 70%),
+    var(--bg-3);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  box-shadow: inset 0 0 80px rgba(0,0,0,0.6);
-  overflow: hidden;
+  padding: 18px 14px 14px;
+  text-align: center;
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
 }
-.estate-map {
-  display: block;
-  width: 100%;
-  height: auto;
+.brand-tile:hover {
+  border-color: var(--cyan);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5), 0 0 16px rgba(0,229,255,0.15);
 }
-
-/* Graticule + stylized continents (decorative, deliberately faint) */
-.estate-grid line { stroke: rgba(0,229,255,0.10); stroke-width: 1; stroke-dasharray: 3 7; }
-.estate-land path {
-  fill: rgba(57,255,20,0.045);
-  stroke: rgba(57,255,20,0.16);
-  stroke-width: 1;
+/* Wellness / CPG marks read as a distinct (dashed) group — no vertical is ever named in text. */
+.brand-tile[data-vertical="wellness"] { border-style: dashed; }
+/* Light "logo card" so any logo format sits cleanly — incl. JPG/PNG
+   that carry a white background (JPG has no transparency). */
+.bt-logo {
+  display: flex; align-items: center; justify-content: center;
+  width: 100%; min-height: 64px;
+  background: #f4f6f9;
+  border-radius: 8px;
+  padding: 10px 12px;
 }
-
-/* Hub -> site links */
-.estate-link {
-  fill: none;
-  stroke: rgba(0,229,255,0.30);
-  stroke-width: 1.1;
+.bt-logo img {
+  max-width: 100%; max-height: 44px; object-fit: contain;
 }
-.estate-link.animate {
-  stroke-dasharray: 4 6;
-  animation: estate-flow 1.6s linear infinite;
-}
-@keyframes estate-flow { to { stroke-dashoffset: -20; } }
-
-/* Markers */
-.estate-node { cursor: pointer; outline: none; }
-.estate-node .es-dot { transition: r 0.18s ease; }
-.estate-node:hover .es-dot,
-.estate-node:focus-visible .es-dot { r: 9; }
-.estate-node:focus-visible .es-halo { opacity: 0.28; }
-.es-pulse { transform-origin: center; transform-box: fill-box; animation: estate-pulse 2.2s ease-out infinite; }
-@keyframes estate-pulse {
-  0%   { transform: scale(1); opacity: 0.8; }
-  100% { transform: scale(3.4); opacity: 0; }
+.bt-name { font-family: var(--mono); font-size: 0.78rem; color: var(--text-dim); }
+/* Graceful fallback: a missing logo asset collapses the tile to a clean text chip. */
+.brand-tile.logo-missing .bt-logo { display: none; }
+.brand-tile.logo-missing .bt-name { color: var(--text-bright); font-size: 0.9rem; font-weight: 700; }
+.bt-badge {
+  font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.03em;
+  color: var(--text-dim);
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 2px 9px;
 }
 
-.estate-tooltip {
-  position: absolute;
-  transform: translate(-50%, -160%);
-  pointer-events: none;
-  opacity: 0;
+/* Acquisition-integration callouts */
+.estate-transitions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 24px;
+}
+.transition-card {
   background: var(--bg-3);
-  border: 1px solid var(--cyan);
-  border-radius: 6px;
-  padding: 4px 9px;
-  font-family: var(--mono);
-  font-size: 0.76rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--red);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+.tc-partner {
+  font-family: var(--mono); font-weight: 700;
   color: var(--text-bright);
-  white-space: nowrap;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.6);
-  transition: opacity 0.15s ease;
-  z-index: 5;
+  letter-spacing: 0.02em;
+  margin-bottom: 6px;
 }
+.tc-text { color: var(--text-dim); font-size: 0.9rem; line-height: 1.55; margin: 0; }
 
-.estate-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; }
-.es-key { display: flex; align-items: center; gap: 7px; font-family: var(--mono); font-size: 0.78rem; color: var(--text-dim); }
-.es-swatch { width: 12px; height: 12px; border-radius: 50%; }
-
-.estate-info {
-  margin-top: 12px; min-height: 44px;
-  font-family: var(--mono); font-size: 0.85rem; color: var(--text);
-  background: var(--bg-3); border: 1px dashed var(--line);
-  border-radius: 8px; padding: 12px 14px;
-}
-.estate-info .ei-name { font-weight: 700; margin-right: 8px; }
-.estate-info .ei-type { color: var(--amber); }
-
-@media (prefers-reduced-motion: reduce) {
-  .estate-link.animate { animation: none; }
-  .es-pulse { animation: none; }
+@media (max-width: 640px) {
+  .estate-transitions { grid-template-columns: 1fr; }
 }
 
 /* ============================ CERTIFICATIONS ============================ */
