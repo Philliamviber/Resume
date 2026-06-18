@@ -548,13 +548,14 @@ footer .ascii { color: var(--neon-green); white-space: pre; font-size: 0.7rem; l
   font-size: 0.78rem;
 }
 
-/* Brand-logo wall — clean white logo cards, no nested boxes. Each mark
-   sits on a single seamless tile of uniform footprint; the neon ring and
-   lift appear only on hover so the grid reads calm at rest. */
+/* Brand-logo wall — clean logo cards, no nested boxes. Each mark sits on a
+   single seamless tile of uniform footprint; tight padding lets the logo fill
+   the card at rest, and the neon ring, lift and ~1.15× zoom appear only on
+   hover so the grid reads calm at rest but pops the mark you're inspecting. */
 .brand-wall {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 14px;
 }
 .brand-tile {
   position: relative;
@@ -568,24 +569,33 @@ footer .ascii { color: var(--neon-green); white-space: pre; font-size: 0.7rem; l
    opaque JPG) on one consistent backdrop. */
 .bt-logo {
   display: flex; align-items: center; justify-content: center;
-  width: 100%; aspect-ratio: 16 / 10;
-  background: #fff;
-  border-radius: 12px;
-  padding: 20px 22px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%; aspect-ratio: 16 / 9;
+  /* slightly off-white softens the card against the dark theme; the thin
+     inset ring keeps it reading as an intentional "logo chip", not a block. */
+  background: #f7f8fa;
+  border-radius: 10px;
+  padding: 12px 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(0,0,0,0.05);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 .bt-logo img {
   max-width: 100%; max-height: 100%; object-fit: contain;
-  /* subtle desaturation at rest → full color on hover keeps the grid cohesive */
-  filter: saturate(0.85);
-  transition: filter 0.2s ease;
+  /* near-full color at rest so marks are legible immediately, full pop on hover */
+  filter: saturate(0.95);
+  transition: filter 0.22s ease;
 }
+/* The whole chip scales up and lifts above its neighbours on hover so the
+   logo is easy to read; z-index raise prevents the grid clipping it. */
+.brand-tile:hover { z-index: 5; }
 .brand-tile:hover .bt-logo {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 32px rgba(0,0,0,0.5), 0 0 0 1.5px var(--cyan), 0 0 22px rgba(0,229,255,0.22);
+  transform: translateY(-5px) scale(1.15);
+  box-shadow: 0 18px 38px rgba(0,0,0,0.55), 0 0 0 1.5px var(--cyan), 0 0 26px rgba(0,229,255,0.26);
 }
 .brand-tile:hover .bt-logo img { filter: saturate(1.1); }
+/* Respect reduced-motion: keep the lift + ring, drop the zoom. */
+@media (prefers-reduced-motion: reduce) {
+  .brand-tile:hover .bt-logo { transform: translateY(-5px); }
+}
 /* White-knockout marks: invert to dark ink so they read on the white card. */
 .brand-tile.is-knockout .bt-logo img { filter: brightness(0) saturate(0) opacity(0.82); }
 .brand-tile.is-knockout:hover .bt-logo img { filter: brightness(0) saturate(0) opacity(1); }
