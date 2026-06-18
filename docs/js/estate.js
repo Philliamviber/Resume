@@ -43,8 +43,11 @@
         const via = b.acquiredVia
           ? `<span class="bt-badge">${viaLabel(b.acquiredVia)}</span>`
           : "";
+        // White-knockout marks would vanish on the light card; flag them so
+        // CSS recolors them to dark ink.
+        const knockout = b.knockout ? " is-knockout" : "";
         return `
-        <figure class="brand-tile" data-vertical="${b.vertical || "beverage"}">
+        <figure class="brand-tile${knockout}">
           <div class="bt-logo">
             <img src="${b.logo}" alt="${b.name} logo" loading="lazy" decoding="async">
           </div>
