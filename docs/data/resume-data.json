@@ -114,7 +114,7 @@
     { "key": "netsec", "label": "Network Security", "score": 4, "color": "#bd00ff" },
     { "key": "bcdr", "label": "Business Continuity / DR", "score": 5, "color": "#00ff9d" },
     { "key": "iam", "label": "Identity & Access", "score": 4, "color": "#ff7b00" },
-    { "key": "automation", "label": "Scripting & Automation", "score": 4, "color": "#f8f32b" }
+    { "key": "automation", "label": "Scripting & Automation", "score": 5, "color": "#f8f32b" }
   ],
   "skills": [
     { "name": "Post-Merger Integration", "domain": "ma", "proficiency": 5 },
@@ -126,7 +126,8 @@
     { "name": "Disaster Recovery", "domain": "bcdr", "proficiency": 5 },
     { "name": "Network Architecture Design", "domain": "netsec", "proficiency": 4 },
     { "name": "Enterprise System Hardening", "domain": "netsec", "proficiency": 4 },
-    { "name": "Incident Response Coordination", "domain": "grc", "proficiency": 4 },
+    { "name": "Incident Response & Triage", "domain": "grc", "proficiency": 5 },
+    { "name": "Scripting & Automation", "domain": "automation", "proficiency": 5 },
     { "name": "Threat Detection & Hunting", "domain": "netsec", "proficiency": 4 },
     { "name": "Cloud Security", "domain": "cloudsec", "proficiency": 4 },
     { "name": "Identity & Access Management", "domain": "iam", "proficiency": 4 },
@@ -137,18 +138,19 @@
     "Enterprise Systems": ["Active Directory", "Microsoft Exchange", "Hyper-V", "VMware", "ServiceNow", "Cisco Meraki"],
     "Cloud Platforms": ["Microsoft 365", "Azure IaaS", "Azure Arc", "Okta", "Duo", "Entra ID"],
     "Security": ["Palo Alto NGFW", "Microsoft Sentinel", "Defender for Endpoint", "NIST 800-53", "SOX ITGC", "CIS Controls", "Application Whitelisting", "Network Segmentation", "Zero Trust"],
-    "Scripting & IaC": ["PowerShell", "SQL", "KQL", "WMI", "Python", "Terraform", "GitHub Actions"]
+    "Languages, Scripting & IaC": ["PowerShell", "SQL", "KQL", "WMI", "Python", "Perl", "PHP", "ASP", "C++", "Terraform", "GitHub Actions"]
   },
   "wordCloud": [
-    ["Active Directory", 9], ["Entra ID", 9], ["M&A Integration", 10], ["SOX ITGC", 8], ["PowerShell", 8],
+    ["Active Directory", 9], ["Entra ID", 9], ["M&A Integration", 10], ["SOX ITGC", 8], ["PowerShell", 11],
     ["Palo Alto NGFW", 7], ["Cisco Meraki", 7], ["Hyper-V", 6], ["VMware", 6], ["Azure", 7],
     ["Office 365", 8], ["Okta", 5], ["Duo", 5], ["KQL", 6], ["Python", 5], ["NIST 800-53", 6],
-    ["Incident Response", 7], ["Threat Hunting", 6], ["Disaster Recovery", 7], ["CISSP", 8], ["CISM", 8],
+    ["Incident Response", 8], ["Ransomware Remediation", 6], ["Threat Hunting", 6], ["Disaster Recovery", 7], ["CISSP", 8], ["CISM", 8],
     ["ServiceNow", 5], ["Azure Arc", 5], ["Network Segmentation", 5], ["CIS Controls", 6], ["Business Continuity", 7],
     ["Tenant Migration", 7], ["Cloud Security", 7], ["GRC", 7], ["Exchange", 6], ["WMI", 4], ["SQL", 5],
     ["Hardening", 6], ["NGFW", 6], ["IAM", 6],
     ["Microsoft Sentinel", 7], ["Terraform", 6], ["Zero Trust", 6], ["GitHub Actions", 5],
-    ["Defender", 6], ["MITRE ATT&CK", 5], ["DevSecOps", 5]
+    ["Defender", 6], ["MITRE ATT&CK", 5], ["DevSecOps", 5],
+    ["C++", 5], ["Perl", 4], ["PHP", 4], ["ASP", 4], ["Detection Engineering", 5]
   ],
   "impact": [
     { "value": 10, "suffix": "", "label": "M&A integrations within 12 months", "icon": "merge" },
@@ -381,6 +383,17 @@
       { "id": "ach-greenfield", "label": "AD/O365 greenfield", "type": "achievement", "value": 14, "meta": "300 endpoints + 50 servers" },
       { "id": "ach-covid", "label": "160 staff remote / 48h", "type": "achievement", "value": 13, "meta": "COVID-19 continuity cutover" },
       { "id": "ach-virt", "label": "Hyper-V virtualization", "type": "achievement", "value": 12, "meta": "Full on-prem fleet" },
+      { "id": "ach-sox", "label": "SOX ITGC & IR ops", "type": "achievement", "value": 14, "meta": "Audit-ready, board-defensible IT" },
+      { "id": "ach-secops", "label": "Threat hunting & IR program", "type": "achievement", "value": 12, "meta": "Phish-alert, patch cycles, response" },
+      { "id": "ach-madvisor", "label": "M&A IT due diligence", "type": "achievement", "value": 12, "meta": "Collins Barrow / Durham consolidation" },
+      { "id": "ach-exch", "label": "Exchange → O365 migration", "type": "achievement", "value": 11, "meta": "On-prem mail modernized" },
+      { "id": "ach-dd", "label": "M&A due-diligence data", "type": "achievement", "value": 11, "meta": "Asset inventory + cost models" },
+      { "id": "ach-fractional", "label": "Outsourced IT leadership", "type": "achievement", "value": 12, "meta": "Dozens of firms on retainer" },
+      { "id": "ach-clientmig", "label": "AD + Exchange migrations", "type": "achievement", "value": 11, "meta": "Server 2016 · O365 adoption" },
+      { "id": "ach-legalapps", "label": "30+ legal apps administered", "type": "achievement", "value": 11, "meta": "ProLaw · Worldox · Amicus" },
+      { "id": "ach-advisor", "label": "Advised 2 U.S. Senators", "type": "achievement", "value": 12, "meta": "Trusted-advisor IT strategy" },
+      { "id": "ach-foundations", "label": "SBS · AD · Exchange", "type": "achievement", "value": 10, "meta": "Full-stack Microsoft estate" },
+      { "id": "ach-ransomware", "label": "Ransomware remediation", "type": "achievement", "value": 13, "meta": "Resolved & remediated ransomware events across client estates" },
 
       { "id": "skill-ma", "label": "M&A Integration", "type": "skill", "value": 16 },
       { "id": "skill-infra", "label": "IT Infrastructure", "type": "skill", "value": 16 },
@@ -389,7 +402,10 @@
       { "id": "skill-cloud", "label": "Cloud Security", "type": "skill", "value": 14 },
       { "id": "skill-iam", "label": "Identity & Access", "type": "skill", "value": 13 },
       { "id": "skill-bcdr", "label": "Business Continuity / DR", "type": "skill", "value": 14 },
-      { "id": "skill-lead", "label": "Team Leadership", "type": "skill", "value": 15 }
+      { "id": "skill-lead", "label": "Team Leadership", "type": "skill", "value": 15 },
+      { "id": "skill-auto", "label": "Scripting & Automation", "type": "skill", "value": 14 },
+      { "id": "skill-detect", "label": "Detection Engineering", "type": "skill", "value": 12 },
+      { "id": "skill-ir", "label": "Incident Response & Triage", "type": "skill", "value": 14 }
     ],
     "edges": [
       { "from": "root", "to": "tilray", "label": "leads" },
@@ -430,7 +446,45 @@
       { "from": "cert-cissp", "to": "skill-grc" },
       { "from": "cert-cissp", "to": "skill-netsec" },
       { "from": "cert-cism", "to": "skill-grc" },
-      { "from": "cert-cism", "to": "skill-lead" }
+      { "from": "cert-cism", "to": "skill-lead" },
+      { "from": "cert-cissp", "to": "skill-detect" },
+
+      { "from": "tilray", "to": "ach-sox" },
+      { "from": "bakertilly", "to": "ach-secops" },
+      { "from": "bakertilly", "to": "ach-madvisor" },
+      { "from": "collinsbarrow", "to": "ach-exch" },
+      { "from": "collinsbarrow", "to": "ach-dd" },
+      { "from": "sentient", "to": "ach-fractional" },
+      { "from": "sentient", "to": "ach-clientmig" },
+      { "from": "bogart", "to": "ach-legalapps" },
+      { "from": "bogart", "to": "ach-advisor" },
+      { "from": "sarasotasupport", "to": "ach-foundations" },
+
+      { "from": "ach-sox", "to": "skill-grc" },
+      { "from": "ach-secops", "to": "skill-netsec" },
+      { "from": "ach-secops", "to": "skill-detect" },
+      { "from": "ach-madvisor", "to": "skill-ma" },
+      { "from": "ach-exch", "to": "skill-cloud" },
+      { "from": "ach-exch", "to": "skill-infra" },
+      { "from": "ach-dd", "to": "skill-ma" },
+      { "from": "ach-fractional", "to": "skill-lead" },
+      { "from": "ach-fractional", "to": "skill-infra" },
+      { "from": "ach-clientmig", "to": "skill-infra" },
+      { "from": "ach-clientmig", "to": "skill-auto" },
+      { "from": "ach-legalapps", "to": "skill-infra" },
+      { "from": "ach-advisor", "to": "skill-lead" },
+      { "from": "ach-foundations", "to": "skill-infra" },
+
+      { "from": "ach-entra", "to": "skill-auto" },
+      { "from": "ach-greenfield", "to": "skill-auto" },
+      { "from": "ach-virt", "to": "skill-auto" },
+
+      { "from": "sentient", "to": "ach-ransomware" },
+      { "from": "ach-ransomware", "to": "skill-ir" },
+      { "from": "ach-secops", "to": "skill-ir" },
+      { "from": "ach-sox", "to": "skill-ir" },
+      { "from": "cert-cissp", "to": "skill-ir" },
+      { "from": "cert-cism", "to": "skill-ir" }
     ]
   },
   "travel": {
