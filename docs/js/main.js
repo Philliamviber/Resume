@@ -227,6 +227,80 @@ function renderExperience(data) {
     </article>`).join("");
 }
 
+/* Personal travel slideshow: a self-contained carousel built from
+   data.travel.slides. Prev/next buttons, clickable dots, keyboard
+   arrows, and a pause-on-hover auto-advance. Images lazy-load and the
+   whole section hides itself if no travel data is present. */
+function renderTravel(data) {
+  const t = data.travel;
+  const section = document.getElementById("travel");
+  if (!section) return;
+  if (!t || !t.slides || !t.slides.length) { section.hidden = true; return; }
+
+  const sub = document.getElementById("travel-sub");
+  if (sub && t.subtitle) sub.textContent = t.subtitle;
+
+  const stage = document.getElementById("travel-stage");
+  const dotsHost = document.getElementById("travel-dots");
+  if (!stage) return;
+
+  stage.innerHTML = t.slides.map((s, i) => `
+    <figure class="travel-slide${i === 0 ? " is-active" : ""}" data-idx="${i}">
+      <img src="${s.src}" alt="${(s.caption || "Travel photo").replace(/"/g, "&quot;")}"
+           loading="lazy" decoding="async" />
+      <figcaption>${s.caption || ""}</figcaption>
+    </figure>`).join("");
+
+  if (dotsHost) {
+    dotsHost.innerHTML = t.slides.map((_, i) => `
+      <button class="travel-dot${i === 0 ? " is-active" : ""}" data-idx="${i}"
+              aria-label="Go to photo ${i + 1} of ${t.slides.length}"></button>`).join("");
+  }
+
+  const slides = [...stage.querySelectorAll(".travel-slide")];
+  const dots = dotsHost ? [...dotsHost.querySelectorAll(".travel-dot")] : [];
+  const counter = document.getElementById("travel-counter");
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let idx = 0;
+  let timer = null;
+
+  function show(n) {
+    idx = (n + slides.length) % slides.length;
+    slides.forEach((s, i) => s.classList.toggle("is-active", i === idx));
+    dots.forEach((d, i) => d.classList.toggle("is-active", i === idx));
+    if (counter) counter.textContent = `${idx + 1} / ${slides.length}`;
+  }
+  const next = () => show(idx + 1);
+  const prev = () => show(idx - 1);
+
+  function startAuto() {
+    if (reduce) return;
+    stopAuto();
+    timer = setInterval(next, 5000);
+  }
+  function stopAuto() { if (timer) { clearInterval(timer); timer = null; } }
+
+  section.querySelector(".travel-next")?.addEventListener("click", () => { next(); startAuto(); });
+  section.querySelector(".travel-prev")?.addEventListener("click", () => { prev(); startAuto(); });
+  dots.forEach((d) => d.addEventListener("click", () => { show(+d.dataset.idx); startAuto(); }));
+
+  // Keyboard arrows when the carousel is focused.
+  const viewport = section.querySelector(".travel-viewport");
+  viewport?.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") { next(); startAuto(); }
+    else if (e.key === "ArrowLeft") { prev(); startAuto(); }
+  });
+
+  // Pause auto-advance while the visitor is interacting.
+  viewport?.addEventListener("mouseenter", stopAuto);
+  viewport?.addEventListener("mouseleave", startAuto);
+  viewport?.addEventListener("focusin", stopAuto);
+  viewport?.addEventListener("focusout", startAuto);
+
+  show(0);
+  startAuto();
+}
+
 /* Boot: fetch data, render HTML parts, broadcast to chart modules. */
 async function boot() {
   try {
@@ -241,6 +315,7 @@ async function boot() {
     wireImpact(data);
     renderTimeline(data);
     renderExperience(data);
+    renderTravel(data);
 
     // Let the visualization modules know data is ready.
     document.dispatchEvent(new CustomEvent("resume:ready", { detail: data }));

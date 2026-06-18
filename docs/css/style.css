@@ -869,6 +869,119 @@ footer .ascii { color: var(--neon-green); white-space: pre; font-size: 0.7rem; l
   opacity: 0.028;
 }
 
+/* ---------- Personal travel ventures slideshow ---------- */
+.travel-viewport {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-3);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px;
+  outline: none;
+}
+.travel-viewport:focus-visible {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 2px rgba(0, 229, 255, 0.25);
+}
+.travel-stage {
+  position: relative;
+  flex: 1 1 auto;
+  width: 100%;
+  height: clamp(320px, 60vh, 620px);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg);
+}
+.travel-slide {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease;
+}
+.travel-slide.is-active { opacity: 1; visibility: visible; }
+.travel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #02040a;
+}
+.travel-slide figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 26px 16px 12px;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--text-bright);
+  background: linear-gradient(to top, rgba(2, 4, 10, 0.92), rgba(2, 4, 10, 0));
+}
+.travel-arrow {
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  color: var(--cyan);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+  z-index: 2;
+}
+.travel-arrow:hover {
+  background: var(--cyan);
+  color: #04210a;
+  box-shadow: 0 0 16px rgba(0, 229, 255, 0.45);
+}
+.travel-counter {
+  position: absolute;
+  top: 22px;
+  right: 70px;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  color: var(--text-bright);
+  background: rgba(2, 4, 10, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 10px;
+  z-index: 2;
+}
+.travel-dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.travel-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid var(--text-dim);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+.travel-dot:hover { border-color: var(--cyan); }
+.travel-dot.is-active {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.6);
+  transform: scale(1.15);
+}
+@media (max-width: 640px) {
+  .travel-arrow { width: 36px; height: 36px; }
+  .travel-counter { right: 58px; }
+  .travel-stage { height: 56vh; }
+}
+
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; scroll-behavior: auto !important; }

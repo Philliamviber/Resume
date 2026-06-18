@@ -9,7 +9,12 @@
     "photoFallback": "assets/profile-placeholder.svg",
     "photos": [
       { "src": "assets/profile-1.jpg", "position": "58% 40%" },
-      { "src": "assets/profile-2.jpg", "position": "66% 26%" }
+      { "src": "assets/profile-2.jpg", "position": "66% 26%" },
+      { "src": "assets/travel/1.jpg", "position": "50% 35%" },
+      { "src": "assets/travel/2.jpg", "position": "60% 30%" },
+      { "src": "assets/travel/3.JPEG", "position": "45% 40%" },
+      { "src": "assets/travel/7.JPEG", "position": "50% 35%" },
+      { "src": "assets/travel/10.JPEG", "position": "35% 45%" }
     ],
     "hook": "Two companies become one — and the technology has to merge overnight: secure, audited, and running by Monday. That's my job.",
     "summary": "For 15 years I've worked at the intersection of three roles most people pick only one of: the engineer who builds the systems, the security leader who defends and governs them, and the integrator who fuses entire companies together after an acquisition. I came up hands-on — Active Directory, networks, virtualization, PowerShell — and never traded that depth away as I moved into leadership. Today I run global infrastructure and M&A integration at Tilray Brands, where I folded 10 acquisitions into one secure platform in 12 months, migrated 900+ employees across Microsoft Entra tenants, and built the SOX ITGC, system-hardening, and incident-response controls that keep auditors and executives confident. CISSP- and CISM-certified, I translate fluently between the server room and the boardroom: I can architect the network, write the script, pass the audit, and brief the C-suite on the risk — often in the same week.",
@@ -426,6 +431,41 @@
       { "from": "cert-cissp", "to": "skill-netsec" },
       { "from": "cert-cism", "to": "skill-grc" },
       { "from": "cert-cism", "to": "skill-lead" }
+    ]
+  },
+  "travel": {
+    "subtitle": "My technology career has taken me across the US and Canada — from data-center cutovers to client sites and industry conferences. These are a few highlights from the road.",
+    "slides": [
+      { "src": "assets/travel/1.jpg", "caption": "At the North Portico of the White House — Washington, D.C." },
+      { "src": "assets/travel/2.jpg", "caption": "Inside the White House James S. Brady Press Briefing Room." },
+      { "src": "assets/travel/20170902_151643.jpg", "caption": "Behind the podium in the West Wing press room." },
+      { "src": "assets/travel/20170902_151135.jpg", "caption": "Touring the West Wing interior." },
+      { "src": "assets/travel/20170901_104242_HDR.jpg", "caption": "The White House from the North Lawn fence line." },
+      { "src": "assets/travel/20170901_162404_HDR.jpg", "caption": "Overlooking the West Wing entrance and drive." },
+      { "src": "assets/travel/20170902_153821_HDR.jpg", "caption": "Room 491 — the National Space Council, Eisenhower Executive Office Building." },
+      { "src": "assets/travel/20170902_154907_HDR.jpg", "caption": "A presidential portrait in an EEOB ceremonial room." },
+      { "src": "assets/travel/20170902_155841_HDR.jpg", "caption": "A 48-star flag and eagle standard on display." },
+      { "src": "assets/travel/20170901_165242_HDR.jpg", "caption": "A signed table among the historic furnishings." },
+      { "src": "assets/travel/IMG_3300.JPEG", "caption": "Banking over downtown Seattle and Puget Sound on approach." },
+      { "src": "assets/travel/8.JPEG", "caption": "Microsoft suite overlooking the field at T-Mobile Park, Seattle." },
+      { "src": "assets/travel/9.JPEG", "caption": "T-Mobile Park and the Seattle skyline from the stands." },
+      { "src": "assets/travel/6103608898401234209.JPEG", "caption": "With colleagues at the AWS cloud-security conference." },
+      { "src": "assets/travel/3.JPEG", "caption": "A Midtown Manhattan avenue from a high-rise office window." },
+      { "src": "assets/travel/10.JPEG", "caption": "Park Avenue on a rainy New York morning." },
+      { "src": "assets/travel/IMG_5212.JPEG", "caption": "Sunset over the Manhattan skyline." },
+      { "src": "assets/travel/7.JPEG", "caption": "A crisp afternoon in Central Park, New York City." },
+      { "src": "assets/travel/IMG_5363.JPEG", "caption": "The Rockefeller Center Christmas tree at night." },
+      { "src": "assets/travel/IMG_6450.JPEG", "caption": "Union Station and the CN Tower, Toronto." },
+      { "src": "assets/travel/IMG_7114.JPEG", "caption": "The CN Tower lit up over downtown Toronto at night." },
+      { "src": "assets/travel/6.JPEG", "caption": "Hockey night in Toronto — the anthem before puck drop." },
+      { "src": "assets/travel/IMG_0417.JPEG", "caption": "Blue Point Brewing Company — Patchogue, New York." },
+      { "src": "assets/travel/IMG_6257.JPEG", "caption": "The Blue Point brewpub and clock tower." },
+      { "src": "assets/travel/IMG_8015.JPEG", "caption": "A wall of brewing history — vintage cans and bottles." },
+      { "src": "assets/travel/IMG_8757.JPEG", "caption": "Aging barrels at Breckenridge Distillery, Colorado." },
+      { "src": "assets/travel/IMG_8777.JPEG", "caption": "Inside the Breckenridge Distillery tasting hall." },
+      { "src": "assets/travel/IMG_8879.JPEG", "caption": "The whiskey wall at Breckenridge Distillery." },
+      { "src": "assets/travel/IMG_8620.JPEG", "caption": "A modern taproom at golden hour out west." },
+      { "src": "assets/travel/IMG_6122.JPEG", "caption": "A Tilray Brands tasting room — the brand portfolio on the wall." }
     ]
   }
 }
