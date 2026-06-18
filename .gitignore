@@ -15,3 +15,6 @@ tmp/
 node_modules/
 npm-debug.log*
 changereview1.1.md
+
+# Source photo originals — served copies live in docs/assets/travel/
+images/
