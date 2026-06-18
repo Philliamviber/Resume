@@ -257,21 +257,23 @@
       "end": "2017-11",
       "tenure": "May 2016 – Nov 2017",
       "domains": ["infra", "cloudsec"],
-      "summary": "Delivered end-to-end IT modernization for legal firms, CPA practices, and small businesses across the eastern GTA.",
+      "summary": "Delivered end-to-end IT modernization and retained fractional-sysadmin support for legal firms, CPA practices, and small businesses across the eastern GTA.",
       "brief": {
-        "headline": "Brought enterprise-grade reliability and security to dozens of small firms across the eastern GTA.",
+        "headline": "Acted as outsourced IT leadership for dozens of small firms — modernizing, securing, and running them on a weekly retainer.",
         "situation": "Legal, CPA, and small-business clients needing modernization but lacking in-house IT depth or enterprise budgets.",
-        "action": "Executed complex AD and Exchange migrations, server virtualization, and Office 365 deployments — each right-sized to the client and backed by ongoing support and seamless cutovers.",
+        "action": "Executed complex AD and Exchange migrations, server virtualization on Hyper-V, Windows Server 2016 / Exchange 2016 deployments, and Office 365 adoption — then held retained weekly sysadmin roles with security auditing, documented procedures, and long-term strategic guidance.",
         "outcome": "Enterprise-grade reliability and security at small-business cost, with no lost productivity through change — converting technical upgrades into durable client trust and referrals.",
         "metrics": [
           { "value": "Dozens", "label": "of firms modernized" },
+          { "value": "20–100", "label": "users per retained client" },
           { "value": "AD + Exch", "label": "migrations delivered" },
           { "value": "0", "label": "productivity lost at cutover" }
         ],
-        "stack": ["Active Directory", "Microsoft Exchange", "Office 365", "Server Virtualization"]
+        "stack": ["Windows Server 2016", "Hyper-V", "Exchange 2016", "Active Directory", "Office 365", "Server Virtualization"]
       },
       "achievements": [
-        { "text": "Performed complex AD domain and Exchange migrations, server virtualization, and Office 365 deployments.", "impact": "Modernized client environments so small firms could operate with enterprise-grade reliability and security — turning technical upgrades into client business resilience." },
+        { "text": "Performed complex AD domain and Exchange migrations, Hyper-V server virtualization, Windows Server 2016 / Exchange 2016 deployments, and Office 365 adoption.", "impact": "Modernized client environments so small firms could operate with enterprise-grade reliability and security — turning technical upgrades into client business resilience." },
+        { "text": "Held retained weekly sysadmin roles for multiple organizations of 20–100 users, with security auditing and documented administrative procedures.", "impact": "Acted as outsourced IT leadership — recurring, accountable ownership that gave small firms enterprise discipline (audits, documentation, strategy) without the cost of an internal hire." },
         { "text": "Managed migration programs and ongoing support, sustaining seamless operations post-cutover.", "impact": "Protected client operations through and after change: seamless cutovers meant no lost productivity, preserving the trust that retains clients and drives referrals." },
         { "text": "Delivered tailored, fit-for-purpose systems deployments aligned to each client's requirements.", "impact": "Matched spend to need — right-sized solutions avoided over-investment and delivered measurable ROI for cost-conscious small businesses." }
       ]
@@ -285,27 +287,56 @@
       "end": "2014-09",
       "tenure": "Apr 2010 – Sep 2014",
       "domains": ["infra"],
-      "summary": "Supported major migrations and line-of-business continuity for legal and CPA clients.",
+      "summary": "Ran the full IT estate for legal and CPA practices as a fractional IT department — platform migrations, deep legal-application support, and trusted-advisor relationships at the top of each client.",
       "brief": {
-        "headline": "Kept 30+ legal line-of-business apps and their users running through major platform migrations.",
-        "situation": "Legal and CPA practices dependent on specialized line-of-business software, facing risky platform transitions across Exchange, BlackBerry BES, Active Directory, and Windows 7/8.",
-        "action": "Acted as a fractional IT department — running migrations and new-client onboarding, managing MSP helpdesk escalations, and supporting 30+ specialized applications.",
-        "outcome": "Continuity of the 30+ applications the practices bill against, with minimal disruption to billable work — protecting client deadlines and active case work through technically risky change.",
+        "headline": "Ran legal and CPA practices' entire IT — and earned the trust of the people at the top, including two former U.S. Senators.",
+        "situation": "Legal and CPA practices dependent on specialized line-of-business software and Windows Small Business Server, with no internal IT and zero tolerance for downtime against billable work.",
+        "action": "Acted as a fractional IT department across a firewall-secured Microsoft estate — SBS 2008/2011, Server 2003–2012, Exchange 2003–2013, BlackBerry Enterprise Server, AD/DNS/DHCP — running platform migrations and new-client onboarding, administering 30+ legal applications, and advising senior decision-makers directly on IT strategy and MSP service models.",
+        "outcome": "Continuity of the 30+ applications the practices bill against, plus trusted-advisor relationships with high-profile clients — including two former U.S. Senators, leading attorneys, and CEOs — that drove referrals and recurring MSP revenue.",
         "metrics": [
-          { "value": "30+", "label": "line-of-business apps supported" },
-          { "value": "4yrs", "label": "as fractional IT dept" },
-          { "value": "Multi", "label": "platform migrations" }
+          { "value": "30+", "label": "legal apps administered" },
+          { "value": "4 yrs", "label": "as fractional IT dept" },
+          { "value": "2", "label": "former U.S. Senators advised" }
         ],
-        "stack": ["Microsoft Exchange", "BlackBerry BES", "Active Directory", "Windows 7 / 8"]
+        "stack": ["Windows SBS 2008 / 2011", "Exchange 2003–2013", "BlackBerry Enterprise Server", "Active Directory", "WatchGuard / SonicWall", "ProLaw / Worldox / Amicus"]
       },
       "achievements": [
-        { "text": "Supported major migrations — Exchange, BlackBerry BES, Active Directory, and Windows 7/8 deployments.", "impact": "Kept executives and staff productive through platform change — minimizing disruption to billable work during technically risky transitions." },
-        { "text": "Delivered IT consulting, project management, and systems administration for legal firms, CPA practices, and small businesses.", "impact": "Acted as a fractional IT department, letting professional firms focus on their core revenue work while technology stayed dependable and secure." },
-        { "text": "Assisted MSP helpdesk escalation management and maintained support for 30+ legal line-of-business applications.", "impact": "Sustained continuity of the 30+ specialized applications law practices bill against — fast escalation resolution protected client deadlines and active case work." }
+        { "text": "Supported and migrated a Microsoft Small Business Server estate — SBS 2008/2011, Server 2003–2012, Exchange 2003–2013, BlackBerry Enterprise Server, and AD/DNS/DHCP — behind WatchGuard / SonicWall perimeters for legal and CPA practices.", "impact": "Kept the core systems law and accounting firms run on dependable through end-to-end platform change — minimizing disruption to billable work during technically risky transitions." },
+        { "text": "Administered 30+ legal and practice-management applications — ProLaw, Worldox, Amicus Attorney, Time Matters, Juris, PracticeMaster, Open Text eDocs, NetDocs, Aderant, Orion, Lexis Nexis — plus cost-recovery systems (EquiTrac, Copitrak) and VoIP platforms.", "impact": "Sustained continuity of the specialized software practices bill against; deep application fluency let one consultant cover what would otherwise demand several niche specialists." },
+        { "text": "Advised senior decision-makers directly — including two former U.S. Senators, high-profile attorneys, and CEOs — on IT strategy and MSP service models, and owned MSP helpdesk escalation management.", "impact": "Built trusted-advisor relationships at the top of each client that drove referrals and recurring revenue — translating technical risk into language executives could act on." },
+        { "text": "Delivered IT consulting, project management, and systems administration for legal firms, CPA practices, and small businesses.", "impact": "Acted as a fractional IT department, letting professional firms focus on their core revenue work while technology stayed dependable and secure." }
+      ]
+    },
+    {
+      "id": "sarasotasupport",
+      "company": "Sarasotasupport.com — Computer Assist",
+      "role": "Contracted Systems Support Analyst",
+      "location": "Sarasota, FL",
+      "start": "2009-01",
+      "end": "2010-04",
+      "tenure": "Jan 2009 – Apr 2010",
+      "domains": ["infra"],
+      "summary": "Provided contracted desktop-to-server support and legal-software administration for small professional practices.",
+      "brief": {
+        "headline": "Cut my teeth keeping small law and professional offices running — desktop to server, end to end.",
+        "situation": "Small legal and professional practices on Windows Small Business Server with no in-house IT, dependent on specialized legal applications to bill.",
+        "action": "Delivered hands-on technical support, workstation and server deployments, and day-to-day legal-software administration on SBS 2003, Active Directory, and Exchange 2007 — with junior-level IT planning for upcoming upgrades.",
+        "outcome": "Reliable day-to-day operations for practices that could not afford downtime, and the foundational server / AD / Exchange fluency the rest of my career is built on.",
+        "metrics": [
+          { "value": "SBS", "label": "Server + AD + Exchange" },
+          { "value": "Legal", "label": "line-of-business apps" },
+          { "value": "End-to-end", "label": "desktop-to-server support" }
+        ],
+        "stack": ["Windows SBS 2003", "Active Directory", "Microsoft Exchange 2007", "Workstation Imaging"]
+      },
+      "achievements": [
+        { "text": "Provided contracted systems support, workstation/server deployment, and legal line-of-business software support for small professional practices.", "impact": "Kept practices that bill against specialized software productive day to day — building the early track record that grew into a full consulting career." },
+        { "text": "Administered Windows Small Business Server 2003, Active Directory, and Exchange 2007 environments end to end.", "impact": "Gained full-stack ownership of the core Microsoft estate early — the AD and Exchange fundamentals that underpin every migration I have run since." }
       ]
     }
   ],
   "timeline": [
+    { "year": "2009", "title": "Systems Support Analyst", "org": "Sarasotasupport.com", "node": "sarasotasupport" },
     { "year": "2010", "title": "IT Consultant", "org": "Bogart & Daugherty", "node": "bogart" },
     { "year": "2016", "title": "Technical Consultant", "org": "Complete Sentient", "node": "sentient" },
     { "year": "2017", "title": "Systems Administrator", "org": "Collins Barrow Durham", "node": "collinsbarrow" },
@@ -330,6 +361,7 @@
       { "id": "collinsbarrow", "label": "Collins Barrow Durham", "type": "company", "value": 22, "meta": "Systems Administrator · 2017–2019" },
       { "id": "sentient", "label": "Complete Sentient", "type": "company", "value": 20, "meta": "Technical Consultant · 2016–2017" },
       { "id": "bogart", "label": "Bogart & Daugherty", "type": "company", "value": 20, "meta": "IT Consultant · 2010–2014" },
+      { "id": "sarasotasupport", "label": "Sarasotasupport.com", "type": "company", "value": 16, "meta": "Systems Support Analyst · 2009–2010" },
 
       { "id": "cert-cissp", "label": "CISSP", "type": "cert", "value": 24, "meta": "(ISC)² · 2023" },
       { "id": "cert-cism", "label": "CISM", "type": "cert", "value": 24, "meta": "ISACA · 2024" },
@@ -360,6 +392,7 @@
       { "from": "root", "to": "collinsbarrow", "label": "led" },
       { "from": "root", "to": "sentient", "label": "consulted" },
       { "from": "root", "to": "bogart", "label": "consulted" },
+      { "from": "root", "to": "sarasotasupport", "label": "consulted" },
       { "from": "root", "to": "cert-cissp", "label": "earned" },
       { "from": "root", "to": "cert-cism", "label": "earned" },
 

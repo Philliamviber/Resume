@@ -35,14 +35,12 @@ backgrounds). On the light logo card they'd be invisible, so the renderer flags 
 version any time and remove the flag.
 
 ## Notes
-- **Blue Point** — `bluepoint.png` is the brand's own public logotype, which includes the brewery's
-  coordinates (`40.77,-73.02`) as a design element. It's public brand art, not an internal
-  disclosure, but if you'd rather not show any coordinates, replace it with a coordinate-free
-  variant or drop the brand.
+- **Blue Point** — `bluepoint.png` was the brand's public logotype with the brewery's coordinates
+  (`40.77,-73.02`) baked into the tagline row. The coordinate text was erased to transparent (the
+  "BLUE/POINT BREWING CO." wordmark is otherwise unaltered).
 - **Atwater Brewery is intentionally excluded.**
-- **Not included (by design):** `humbleseed` and `liquidlove` from the source folder are
-  hemp/wellness marks; they reintroduce the vertical kept off the site. Add an entry to
-  `estate.brands` only if you decide to surface that vertical.
+- **`humbleseed` and `liquidlove` are intentionally excluded** — hemp/wellness marks that
+  reintroduce the vertical kept off the site.
 - `acquiredVia` accepts `"anheuser-busch"` or `"molson-coors"` and renders a small provenance badge;
   omit it for directly-held brands.
 - To add/remove/reorder a brand, edit `estate.brands` in `resume-data.json`; the wall re-renders
