@@ -30,8 +30,8 @@
     ]
   },
   "certifications": [
-    { "name": "CISSP", "issuer": "(ISC)²", "issuerKey": "isc2", "issued": "2023-06", "label": "Certified Information Systems Security Professional", "credlyId": "e7398140-fb0e-4ce8-86be-ecc8999d3d64", "verifyUrl": "https://www.credly.com/earner/earned/share/e7398140-fb0e-4ce8-86be-ecc8999d3d64" },
-    { "name": "CISM", "issuer": "ISACA", "issuerKey": "isaca", "issued": "2024-06", "label": "Certified Information Security Manager", "credlyId": "af84d868-20c3-43b2-9d26-e2656fb7868a", "verifyUrl": "https://www.credly.com/earner/earned/share/af84d868-20c3-43b2-9d26-e2656fb7868a" }
+    { "name": "CISSP", "issuer": "(ISC)²", "issuerKey": "isc2", "issued": "2023-06", "label": "Certified Information Systems Security Professional", "credlyId": "e7398140-fb0e-4ce8-86be-ecc8999d3d64", "verifyUrl": "https://www.credly.com/badges/e7398140-fb0e-4ce8-86be-ecc8999d3d64/public_url" },
+    { "name": "CISM", "issuer": "ISACA", "issuerKey": "isaca", "issued": "2024-06", "label": "Certified Information Security Manager", "credlyId": "af84d868-20c3-43b2-9d26-e2656fb7868a", "verifyUrl": "https://www.credly.com/badges/af84d868-20c3-43b2-9d26-e2656fb7868a/public_url" }
   ],
   "education": [
     { "program": "Coursework in Computer Engineering", "school": "University of South Florida", "location": "Tampa, FL" },
