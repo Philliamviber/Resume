@@ -77,17 +77,15 @@
     ],
     "brands": [
       { "name": "SweetWater Brewing", "vertical": "beverage", "logo": "assets/brands/sweetwater.svg" },
-      { "name": "Montauk Brewing", "vertical": "beverage", "logo": "assets/brands/montauk.svg" },
-      { "name": "Breckenridge Brewery", "vertical": "beverage", "logo": "assets/brands/breckenridge.svg", "acquiredVia": "anheuser-busch" },
-      { "name": "Blue Point Brewing", "vertical": "beverage", "logo": "assets/brands/bluepoint.svg", "acquiredVia": "anheuser-busch" },
+      { "name": "Breckenridge Brewery", "vertical": "beverage", "logo": "assets/brands/breckenridge.png", "acquiredVia": "anheuser-busch" },
+      { "name": "Blue Point Brewing", "vertical": "beverage", "logo": "assets/brands/bluepoint.png", "acquiredVia": "anheuser-busch" },
       { "name": "10 Barrel Brewing", "vertical": "beverage", "logo": "assets/brands/10barrel.svg", "acquiredVia": "anheuser-busch" },
-      { "name": "Redhook Brewery", "vertical": "beverage", "logo": "assets/brands/redhook.svg", "acquiredVia": "anheuser-busch" },
-      { "name": "Widmer Brothers", "vertical": "beverage", "logo": "assets/brands/widmer.svg", "acquiredVia": "anheuser-busch" },
-      { "name": "Shock Top", "vertical": "beverage", "logo": "assets/brands/shocktop.svg", "acquiredVia": "anheuser-busch" },
-      { "name": "Terrapin Beer Co.", "vertical": "beverage", "logo": "assets/brands/terrapin.svg" },
-      { "name": "Hop Valley Brewing", "vertical": "beverage", "logo": "assets/brands/hopvalley.svg", "acquiredVia": "molson-coors" },
-      { "name": "BrewDog", "vertical": "beverage", "logo": "assets/brands/brewdog.svg" },
-      { "name": "Manitoba Harvest", "vertical": "wellness", "logo": "assets/brands/manitobaharvest.svg" }
+      { "name": "Widmer Brothers", "vertical": "beverage", "logo": "assets/brands/widmer.jpg", "acquiredVia": "anheuser-busch" },
+      { "name": "Shock Top", "vertical": "beverage", "logo": "assets/brands/shocktop.png", "acquiredVia": "anheuser-busch" },
+      { "name": "Hop Valley Brewing", "vertical": "beverage", "logo": "assets/brands/hopvalley.png", "acquiredVia": "molson-coors" },
+      { "name": "Revolver Brewing", "vertical": "beverage", "logo": "assets/brands/revolver.jpg" },
+      { "name": "Terrapin Beer Co.", "vertical": "beverage", "logo": "assets/brands/terrapin.png" },
+      { "name": "BrewDog", "vertical": "beverage", "logo": "assets/brands/brewdog.png" }
     ],
     "transitions": [
       { "partner": "Anheuser-Busch", "text": "Led the infrastructure and network integration for the 2023 acquisition of eight craft brands from Anheuser-Busch — system and network cutovers delivered on a 90-day clock." },

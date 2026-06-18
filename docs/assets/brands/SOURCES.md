@@ -1,34 +1,40 @@
-# Brand logo assets — sourcing
+# Brand logo assets — sourcing & manifest
 
-The Integration Portfolio section (`#estate`) renders a logo tile per brand listed under
-`estate.brands` in `docs/data/resume-data.json`. Each tile expects a logo file at the `logo` path
-below. **Until a file is present, the tile renders a clean text chip** (the brand name) — so the
-site works before any art is added. Drop **SVG** (preferred) or transparent **PNG** into this folder
-using the exact filename.
+The Integration Portfolio section (`#estate`) renders one logo tile per brand in `estate.brands`
+(`docs/data/resume-data.json`). Each `logo` path below points to a file in this folder. Tiles seat
+the logo on a light "logo card," so transparent and opaque art (SVG / PNG / JPG) all render cleanly.
+If a `logo` path has no matching file, that tile falls back to a text chip (no breakage).
 
 > Marks are third-party trademarks shown only to illustrate integration scope (no endorsement
-> implied). Use the official press-kit / brand art linked below — do not restyle the marks. The
-> `data-vertical="wellness"` tile (Manitoba Harvest) is the only non-beverage mark; other-vertical
-> products are intentionally not shown.
+> implied). Use official press-kit / brand art; do not restyle the marks beyond format/color-variant
+> selection.
 
-| File (in this folder) | Brand | Official source |
-|---|---|---|
-| `sweetwater.svg` | SweetWater Brewing | sweetwaterbrew.com/downloads-home/sweetwater-logos (press: /our-story/press/) |
-| `montauk.svg` | Montauk Brewing | montaukbrewingco.com — News/Press section |
-| `breckenridge.svg` | Breckenridge Brewery | breckbrew.com; fallback Wikimedia Commons / brandfetch.com/breckenridgebrewery.com |
-| `bluepoint.svg` | Blue Point Brewing | bluepointbrewing.com; fallback Wikimedia Commons |
-| `10barrel.svg` | 10 Barrel Brewing | 10barrel.com; fallback Wikimedia Commons |
-| `redhook.svg` | Redhook Brewery | redhook.com; fallback Wikimedia Commons |
-| `widmer.svg` | Widmer Brothers | widmerbrothers.com; fallback Wikimedia Commons |
-| `shocktop.svg` | Shock Top | brandfetch.com/shocktop.com; fallback Wikimedia Commons |
-| `terrapin.svg` | Terrapin Beer Co. | terrapinbeer.com (use the current 2026 mark) |
-| `hopvalley.svg` | Hop Valley Brewing | hopvalleybrewing.com; fallback Wikimedia Commons |
-| `brewdog.svg` | BrewDog | brandfolder.com/brewdog-uk-international/brand + presshub.brewdog.com/presshub/brewdog-logo (assets: design@brewdog.com) |
-| `manitobaharvest.svg` | Manitoba Harvest | manitobaharvest.com/pages/media-press (media@manitobaharvest.com) |
+## Current manifest (10 brands, beverage-alcohol)
 
-Notes:
-- The eight Anheuser-Busch craft brands (Breckenridge, Blue Point, 10 Barrel, Redhook, Widmer, Shock
-  Top, + Square Mile Cider, HiBall Energy) were acquired by Tilray on **Aug 8, 2023** — public, so the
-  association is verifiable. Tilray Investor Relations (`ir.tilray.com`) can also supply portfolio art.
-- **Atwater Brewery is intentionally excluded** from the portfolio.
-- To add/remove a brand, edit `estate.brands` in `resume-data.json`; the wall re-renders from data.
+| File | Brand | Format | Official source |
+|---|---|---|---|
+| `sweetwater.svg` | SweetWater Brewing | SVG · recolored* | sweetwaterbrew.com/downloads-home/sweetwater-logos |
+| `breckenridge.png` | Breckenridge Brewery | PNG | breckbrew.com |
+| `bluepoint.png` | Blue Point Brewing | PNG (navy logotype) | bluepointbrewing.com |
+| `10barrel.svg` | 10 Barrel Brewing | SVG · recolored* | 10barrel.com |
+| `widmer.jpg` | Widmer Brothers | JPG | widmerbrothers.com |
+| `shocktop.png` | Shock Top | PNG | brandfetch.com/shocktop.com |
+| `hopvalley.png` | Hop Valley Brewing | PNG | hopvalleybrewing.com |
+| `revolver.jpg` | Revolver Brewing | JPG | revolverbrewing.com |
+| `terrapin.png` | Terrapin Beer Co. | PNG | terrapinbeer.com |
+| `brewdog.png` | BrewDog | PNG | brandfolder.com/brewdog-uk-international/brand |
+
+\* **Recolored:** `sweetwater.svg` and `10barrel.svg` were supplied as white "knockout" versions
+(built for dark backgrounds) and would be invisible on the light logo card, so their fill was
+changed to dark monochrome (`#141414`). Swap in a full-color press-kit version any time.
+
+## Notes
+- **Revolver Brewing** has no `acquiredVia` badge — the deal it came through (vs. Anheuser-Busch /
+  Molson Coors) wasn't confirmed. Add `"acquiredVia": "molson-coors"` (or `"anheuser-busch"`) to its
+  entry in `resume-data.json` to show the badge.
+- **Atwater Brewery is intentionally excluded.**
+- Not currently shown (no art supplied): **Montauk**, **Redhook**, **Manitoba Harvest** (the
+  wellness/CPG tile). Drop a logo in this folder and add an entry to `estate.brands` to include any
+  of them.
+- To add/remove/reorder a brand, edit `estate.brands` in `resume-data.json`; the wall re-renders
+  from data.
