@@ -86,7 +86,7 @@ This repo is also a **GitHub Pages site** that renders the resume as a living, e
 ## 🧑‍💻 Experience
 
 **Tilray Brands Inc.** — *IT Infrastructure Manager* · Toronto, ON · Jul 2023 – Present
-Global infrastructure & high-tempo M&A integration for a multinational beverage/cannabis enterprise. Led 10 acquisition integrations, AB InBev & Molson Coors takeovers, 6 Entra tenant migrations, and a 10-person team across 65+ sites.
+Global infrastructure & high-tempo M&A integration for a global beverage-alcohol / CPG enterprise. Led 10 acquisition integrations, Anheuser-Busch & Molson Coors craft-brand integrations, 6 Entra tenant migrations, and a 10-person team across 65+ sites.
 
 **Baker Tilly KDN LLP** — *Information Technology Manager* · Courtice, ON · Jan 2019 – Feb 2023
 Matured the security program (CIS controls, firm-wide Palo Alto NGFW, threat hunting), rebuilt AD/O365 greenfield (300 endpoints + 50 servers), and ran the 48-hour COVID-19 remote-work cutover for 160 staff.
