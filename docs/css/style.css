@@ -19,9 +19,13 @@
   --red:          #ff2e63;   /* objectives / alert           */
   --violet:       #bd00ff;   /* credentials                  */
 
-  --text:         #d7e0e8;
-  --text-dim:     #7d8b9a;
-  --text-bright:  #f4f8fb;
+  /* Text tiers tuned for high-contrast, age-friendly legibility.
+     Grays are kept near-neutral (low blue tint): aging eyes lose blue
+     sensitivity, so a blue-gray on a dark-blue panel is the hardest
+     combo to read. These hit WCAG AAA (~7:1+) on the card background. */
+  --text:         #e4eaf0;   /* primary body text                       */
+  --text-dim:     #aab6c2;   /* secondary text (was #7d8b9a — too faint) */
+  --text-bright:  #f6f9fc;   /* headings / strongest emphasis           */
   --line:         rgba(0, 229, 255, 0.14);
 
   --mono: "JetBrains Mono", "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;

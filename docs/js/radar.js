@@ -37,20 +37,20 @@
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-          legend: { labels: { color: "#7d8b9a", font: { family: "JetBrains Mono" } } },
+          legend: { labels: { color: "#aab6c2", font: { family: "JetBrains Mono" } } },
           tooltip: {
             backgroundColor: "#0a1018",
             borderColor: "#39ff14",
             borderWidth: 1,
             titleColor: "#39ff14",
-            bodyColor: "#d7e0e8",
+            bodyColor: "#e4eaf0",
           },
         },
         scales: {
           r: {
             min: 0,
             max: 5,
-            ticks: { stepSize: 1, color: "#46556680", backdropColor: "transparent", showLabelBackdrop: false },
+            ticks: { stepSize: 1, color: "#8c98a4", backdropColor: "transparent", showLabelBackdrop: false },
             grid: { color: "rgba(0, 229, 255, 0.12)" },
             angleLines: { color: "rgba(0, 229, 255, 0.16)" },
             pointLabels: { color: "#aeb9c4", font: { family: "JetBrains Mono", size: 11 } },

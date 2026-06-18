@@ -65,7 +65,7 @@
         width: 1.2,
         selectionWidth: 2,
         smooth: { type: "continuous", roundness: 0.4 },
-        font: { color: "#5e6f80", size: 9, face: "JetBrains Mono, monospace", strokeWidth: 0, align: "middle" },
+        font: { color: "#8c98a4", size: 9, face: "JetBrains Mono, monospace", strokeWidth: 0, align: "middle" },
       }))
     );
 
