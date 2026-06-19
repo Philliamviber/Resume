@@ -1,52 +1,156 @@
 {
   "profile": {
     "name": "Philip Stiber",
-    "credentials": ["CISSP", "CISM"],
+    "credentials": [
+      "CISSP",
+      "CISM"
+    ],
     "headline": "Cybersecurity Leadership | IT Infrastructure Management | M&A Technology Integration",
     "location": "Peterborough, ON, Canada",
     "linkedin": "https://www.linkedin.com/in/pstiber/",
     "photo": "assets/profile-1.jpg",
     "photoFallback": "assets/profile-placeholder.svg",
     "photos": [
-      { "src": "assets/profile-1.jpg", "position": "58% 40%" },
-      { "src": "assets/profile-2.jpg", "position": "66% 26%" },
-      { "src": "assets/travel/1.jpg", "position": "50% 35%" },
-      { "src": "assets/travel/2.jpg", "position": "60% 30%" },
-      { "src": "assets/travel/3.JPEG", "position": "45% 40%" },
-      { "src": "assets/travel/7.JPEG", "position": "50% 35%" },
-      { "src": "assets/travel/10.JPEG", "position": "35% 45%" }
+      {
+        "src": "assets/profile-1.jpg",
+        "position": "58% 40%"
+      },
+      {
+        "src": "assets/profile-2.jpg",
+        "position": "66% 26%"
+      },
+      {
+        "src": "assets/travel/1.jpg",
+        "position": "50% 35%"
+      },
+      {
+        "src": "assets/travel/2.jpg",
+        "position": "60% 30%"
+      },
+      {
+        "src": "assets/travel/3.JPEG",
+        "position": "45% 40%"
+      },
+      {
+        "src": "assets/travel/7.JPEG",
+        "position": "50% 35%"
+      },
+      {
+        "src": "assets/travel/10.JPEG",
+        "position": "35% 45%"
+      }
     ],
     "hook": "When two companies become one, the technology has to merge overnight — secure, audited, and running by Monday morning. That's the problem I get hired to solve.",
     "summary": "For 15 years I've lived at the intersection of three roles most people pick just one of: the engineer who builds the systems, the security leader who defends and governs them, and the integrator who fuses whole companies together after an acquisition. I came up hands-on — Active Directory, networks, virtualization, PowerShell — and never traded that depth for a title. Today I lead global infrastructure and M&A integration at Tilray Brands, where I folded 10 acquisitions into one secure platform in 12 months, migrated 900+ employees across Microsoft Entra tenants, and built the SOX ITGC, system-hardening, and incident-response controls that keep auditors and executives confident. CISSP- and CISM-certified, I move fluently between the server room and the boardroom: I can architect the network, write the script, pass the audit, and brief the C-suite on the risk — often in the same week.",
     "tagline": "Engineer × Security Leader × M&A Integrator — hands-on to boardroom",
     "crossing": [
-      { "title": "Build it, then defend it", "body": "Most security leaders have never run the systems they are securing. I architect the Active Directory, network, and virtualization estate and then harden it — segmentation, next-gen firewalls, application whitelisting, CIS controls — so the defense is designed by someone who knows exactly how the machine works underneath." },
-      { "title": "Merge companies, not just mailboxes", "body": "M&A integration is where identity, cloud, networking, and governance collide at once. I collapse acquired tenants, domains, and email into a single governed Entra / Microsoft 365 estate — on a 60-to-90-day clock — without dropping security posture or breaking the business mid-flight." },
-      { "title": "Lead without losing the keyboard", "body": "I lead distributed teams of network engineers, cloud architects, and admins while staying technical enough to do the work myself. That earns trust in both directions: engineers respect it, executives rely on it." },
-      { "title": "Hunt, don't just alert", "body": "A SIEM you bought is not a detection program. I build the analytics myself — KQL hunts in Microsoft Sentinel, identity-centric Zero-Trust correlation, coverage mapped to MITRE ATT&CK — so the threats that actually matter surface as signal instead of drowning in alert noise." },
-      { "title": "Adopt the cloud by the framework", "body": "I drive cloud adoption by the playbook, not the credit card. I recently led a Microsoft Cloud Adoption Framework (CAF) program at Tilray Brands — governed landing zones and deep Azure adoption strategy across multiple deployments — including a Cisco Meraki global VPN hub built across geo-redundant Azure zones, connecting branch sites worldwide to the cloud with resilience designed in from day one." },
-      { "title": "Steady when it's on fire", "body": "I've led live ransomware and security incidents end to end — contain, eradicate, recover — and built the programs that catch them early: phish-alert triage, patch discipline, and tested response runbooks. Under pressure, a clear process beats panic, and cutting attacker dwell time is the job." },
-      { "title": "Trusted at the top", "body": "I've been the technology voice senior decision-makers rely on — from two former U.S. Senators and high-profile attorneys to publicly-traded-company executives — translating technical risk into language the people who sign can actually act on." },
-      { "title": "Range is the résumé", "body": "I've been the entire IT department for a two-person law office and the M&A lead for a global enterprise across two continents — the same fundamentals, scaled up. Breadth like that is rare, and it's deliberate." }
+      {
+        "title": "Build it, then defend it",
+        "body": "Most security leaders have never run the systems they are securing. I architect the Active Directory, network, and virtualization estate and then harden it — segmentation, next-gen firewalls, application whitelisting, CIS controls — so the defense is designed by someone who knows exactly how the machine works underneath."
+      },
+      {
+        "title": "Merge companies, not just mailboxes",
+        "body": "M&A integration is where identity, cloud, networking, and governance collide at once. I collapse acquired tenants, domains, and email into a single governed Entra / Microsoft 365 estate — on a 60-to-90-day clock — without dropping security posture or breaking the business mid-flight."
+      },
+      {
+        "title": "Lead without losing the keyboard",
+        "body": "I lead distributed teams of network engineers, cloud architects, and admins while staying technical enough to do the work myself. That earns trust in both directions: engineers respect it, executives rely on it."
+      },
+      {
+        "title": "Hunt, don't just alert",
+        "body": "A SIEM you bought is not a detection program. I build the analytics myself — KQL hunts in Microsoft Sentinel, identity-centric Zero-Trust correlation, coverage mapped to MITRE ATT&CK — so the threats that actually matter surface as signal instead of drowning in alert noise."
+      },
+      {
+        "title": "Adopt the cloud by the framework",
+        "body": "I drive cloud adoption by the playbook, not the credit card. I recently led a Microsoft Cloud Adoption Framework (CAF) program at Tilray Brands — governed landing zones and deep Azure adoption strategy across multiple deployments — including a Cisco Meraki global VPN hub built across geo-redundant Azure zones, connecting branch sites worldwide to the cloud with resilience designed in from day one."
+      },
+      {
+        "title": "Steady when it's on fire",
+        "body": "I've led live ransomware and security incidents end to end — contain, eradicate, recover — and built the programs that catch them early: phish-alert triage, patch discipline, and tested response runbooks. Under pressure, a clear process beats panic, and cutting attacker dwell time is the job."
+      },
+      {
+        "title": "Trusted at the top",
+        "body": "I've been the technology voice senior decision-makers rely on — from two former U.S. Senators and high-profile attorneys to publicly-traded-company executives — translating technical risk into language the people who sign can actually act on."
+      },
+      {
+        "title": "Range is the résumé",
+        "body": "I've been the entire IT department for a two-person law office and the M&A lead for a global enterprise across two continents — the same fundamentals, scaled up. Breadth like that is rare, and it's deliberate."
+      }
     ],
     "rareStats": [
-      { "figure": "2-in-1", "label": "CISSP + CISM held together", "note": "Most security professionals carry one or the other. Both at once validates that I can build and defend the systems (CISSP) and govern the program and its risk (CISM). Fewer than 5% of security practitioners hold both." },
-      { "figure": "70–90%", "label": "of M&A deals miss their goals", "note": "Harvard Business Review and others have long reported most mergers fail to deliver their expected value — with technology integration repeatedly named a leading cause. I have personally delivered 10 integrations in 12 months." },
-      { "figure": "3 domains", "label": "deep, not just broad", "note": "Candidates are usually deep-technical OR strategic. The overlap of hands-on infrastructure, security leadership, and M&A delivery is a narrow slice of the talent pool." },
-      { "figure": "15 yrs", "label": "hands-on through executive-facing", "note": "Technical depth I never gave up — still writing the PowerShell and reading the KQL while owning the strategy and the audit." },
-      { "figure": "&lt;1%", "label": "CISSP + CISM + active builder", "note": "Holding both premier certs while actively shipping infrastructure as code, detection engineering, and automation puts this profile in a vanishingly small group: the practitioner who can also own the boardroom conversation." },
-      { "figure": "US + CAN", "label": "authorized to work in both countries", "note": "Dual U.S. and Canadian citizenship — I can take a role or run an integration on either side of the border with zero visa, sponsorship, or work-permit friction. For cross-border M&A, that is an operational edge, not just a convenience." },
-      { "figure": "11 repos", "label": "a résumé you can read the source of", "note": "Most leaders stop shipping code. I keep a public GitHub of secure-by-design infrastructure as code, detection engineering, and automation — the same disciplines on this résumé, open for anyone to inspect." },
-      { "figure": "2 → 900+", "label": "users, two-person office to global enterprise", "note": "I have been the entire IT department for a small practice and the M&A integration lead for a 900+-employee enterprise across two continents — the same fundamentals proven across four orders of magnitude of scale." }
+      {
+        "figure": "2-in-1",
+        "label": "CISSP + CISM held together",
+        "note": "Most security professionals carry one or the other. Both at once validates that I can build and defend the systems (CISSP) and govern the program and its risk (CISM). Fewer than 5% of security practitioners hold both."
+      },
+      {
+        "figure": "70–90%",
+        "label": "of M&A deals miss their goals",
+        "note": "Harvard Business Review and others have long reported most mergers fail to deliver their expected value — with technology integration repeatedly named a leading cause. I have personally delivered 10 integrations in 12 months."
+      },
+      {
+        "figure": "3 domains",
+        "label": "deep, not just broad",
+        "note": "Candidates are usually deep-technical OR strategic. The overlap of hands-on infrastructure, security leadership, and M&A delivery is a narrow slice of the talent pool."
+      },
+      {
+        "figure": "15 yrs",
+        "label": "hands-on through executive-facing",
+        "note": "Technical depth I never gave up — still writing the PowerShell and reading the KQL while owning the strategy and the audit."
+      },
+      {
+        "figure": "&lt;1%",
+        "label": "CISSP + CISM + active builder",
+        "note": "Holding both premier certs while actively shipping infrastructure as code, detection engineering, and automation puts this profile in a vanishingly small group: the practitioner who can also own the boardroom conversation."
+      },
+      {
+        "figure": "US + CAN",
+        "label": "authorized to work in both countries",
+        "note": "Dual U.S. and Canadian citizenship — I can take a role or run an integration on either side of the border with zero visa, sponsorship, or work-permit friction. For cross-border M&A, that is an operational edge, not just a convenience."
+      },
+      {
+        "figure": "11 repos",
+        "label": "a résumé you can read the source of",
+        "note": "Most leaders stop shipping code. I keep a public GitHub of secure-by-design infrastructure as code, detection engineering, and automation — the same disciplines on this résumé, open for anyone to inspect."
+      },
+      {
+        "figure": "2 → 900+",
+        "label": "users, two-person office to global enterprise",
+        "note": "I have been the entire IT department for a small practice and the M&A integration lead for a 900+-employee enterprise across two continents — the same fundamentals proven across four orders of magnitude of scale."
+      }
     ]
   },
   "certifications": [
-    { "name": "CISSP", "issuer": "(ISC)²", "issuerKey": "isc2", "issued": "2023-06", "label": "Certified Information Systems Security Professional", "credlyId": "e7398140-fb0e-4ce8-86be-ecc8999d3d64", "verifyUrl": "https://www.credly.com/badges/e7398140-fb0e-4ce8-86be-ecc8999d3d64/public_url" },
-    { "name": "CISM", "issuer": "ISACA", "issuerKey": "isaca", "issued": "2024-06", "label": "Certified Information Security Manager", "credlyId": "af84d868-20c3-43b2-9d26-e2656fb7868a", "verifyUrl": "https://www.credly.com/badges/af84d868-20c3-43b2-9d26-e2656fb7868a/public_url" }
+    {
+      "name": "CISSP",
+      "issuer": "(ISC)²",
+      "issuerKey": "isc2",
+      "issued": "2023-06",
+      "label": "Certified Information Systems Security Professional",
+      "credlyId": "e7398140-fb0e-4ce8-86be-ecc8999d3d64",
+      "verifyUrl": "https://www.credly.com/badges/e7398140-fb0e-4ce8-86be-ecc8999d3d64/public_url"
+    },
+    {
+      "name": "CISM",
+      "issuer": "ISACA",
+      "issuerKey": "isaca",
+      "issued": "2024-06",
+      "label": "Certified Information Security Manager",
+      "credlyId": "af84d868-20c3-43b2-9d26-e2656fb7868a",
+      "verifyUrl": "https://www.credly.com/badges/af84d868-20c3-43b2-9d26-e2656fb7868a/public_url"
+    }
   ],
   "education": [
-    { "program": "Coursework in Computer Engineering", "school": "University of South Florida", "location": "Tampa, FL" },
-    { "program": "Coursework in Network Engineering & Windows Server Administration", "school": "State College of Florida", "location": "Bradenton, FL" }
+    {
+      "program": "Coursework in Computer Engineering",
+      "school": "University of South Florida",
+      "location": "Tampa, FL"
+    },
+    {
+      "program": "Coursework in Network Engineering & Windows Server Administration",
+      "school": "State College of Florida",
+      "location": "Bradenton, FL"
+    }
   ],
   "github": {
     "profile": "https://github.com/Philliamviber",
@@ -55,27 +159,94 @@
       {
         "name": "Security & Detection Engineering",
         "repos": [
-          { "name": "Sentinelmonitoring", "lang": "KQL · Workbooks", "url": "https://github.com/Philliamviber/Sentinelmonitoring", "blurb": "Microsoft Sentinel workbooks built for intelligent, signal-rich SOC monitoring.", "why": "Detection engineering and SIEM visualization — the analytics layer behind modern threat detection." },
-          { "name": "Blueteamthreathunting", "lang": "KQL", "url": "https://github.com/Philliamviber/Blueteamthreathunting", "blurb": "Identity-centric threat-hunting tracker correlating Zero-Trust signals for privileged and VIP accounts.", "why": "Proactive hunting for the identity attacks that drive the majority of breaches." },
-          { "name": "Sentineladvisor", "lang": "HTML · KQL", "url": "https://github.com/Philliamviber/Sentineladvisor", "blurb": "Guided advisory for tuning and operationalizing Microsoft Sentinel.", "why": "Turns a raw SIEM into well-tuned, actionable detections instead of alert noise." },
-          { "name": "Merakicorrelator", "lang": "Python", "url": "https://github.com/Philliamviber/Merakicorrelator", "blurb": "Correlates Cisco Meraki network telemetry into security-relevant insight.", "why": "Bridges network operations and security analytics — hands-on with the Meraki estate I ran at enterprise scale." }
+          {
+            "name": "Sentinelmonitoring",
+            "lang": "KQL · Workbooks",
+            "url": "https://github.com/Philliamviber/Sentinelmonitoring",
+            "blurb": "Microsoft Sentinel workbooks built for intelligent, signal-rich SOC monitoring.",
+            "why": "Detection engineering and SIEM visualization — the analytics layer behind modern threat detection."
+          },
+          {
+            "name": "Blueteamthreathunting",
+            "lang": "KQL",
+            "url": "https://github.com/Philliamviber/Blueteamthreathunting",
+            "blurb": "Identity-centric threat-hunting tracker correlating Zero-Trust signals for privileged and VIP accounts.",
+            "why": "Proactive hunting for the identity attacks that drive the majority of breaches."
+          },
+          {
+            "name": "Sentineladvisor",
+            "lang": "HTML · KQL",
+            "url": "https://github.com/Philliamviber/Sentineladvisor",
+            "blurb": "Guided advisory for tuning and operationalizing Microsoft Sentinel.",
+            "why": "Turns a raw SIEM into well-tuned, actionable detections instead of alert noise."
+          },
+          {
+            "name": "Merakicorrelator",
+            "lang": "Python",
+            "url": "https://github.com/Philliamviber/Merakicorrelator",
+            "blurb": "Correlates Cisco Meraki network telemetry into security-relevant insight.",
+            "why": "Bridges network operations and security analytics — hands-on with the Meraki estate I ran at enterprise scale."
+          }
         ]
       },
       {
         "name": "Cloud & Infrastructure as Code",
         "repos": [
-          { "name": "azure-ad-landing-zone", "lang": "Terraform · HCL", "url": "https://github.com/Philliamviber/azure-ad-landing-zone", "blurb": "A hardened Active Directory landing zone on Azure, as code: hub-and-spoke, dual DCs on Server 2025 Core, Azure Firewall Premium IDPS, Key Vault RBAC, and Sentinel wired in.", "why": "Secure-by-design cloud infrastructure as repeatable IaC — infrastructure and security delivered in one artifact.", "flagship": true },
-          { "name": "TeraformMultiregionAD", "lang": "Terraform", "url": "https://github.com/Philliamviber/TeraformMultiregionAD", "blurb": "Multi-region Active Directory deployment expressed in Terraform.", "why": "Resilient, DR-ready identity infrastructure as code — the continuity mindset, automated." },
-          { "name": "CiscoMerakiSDWanAutoVPNAzureGuidance", "lang": "Guide", "url": "https://github.com/Philliamviber/CiscoMerakiSDWanAutoVPNAzureGuidance", "blurb": "Reference guidance for extending Cisco Meraki SD-WAN AutoVPN into Azure.", "why": "Hybrid network architecture connecting branch sites to cloud — the exact pattern behind multi-site enterprises." }
+          {
+            "name": "azure-ad-landing-zone",
+            "lang": "Terraform · HCL",
+            "url": "https://github.com/Philliamviber/azure-ad-landing-zone",
+            "blurb": "A hardened Active Directory landing zone on Azure, as code: hub-and-spoke, dual DCs on Server 2025 Core, Azure Firewall Premium IDPS, Key Vault RBAC, and Sentinel wired in.",
+            "why": "Secure-by-design cloud infrastructure as repeatable IaC — infrastructure and security delivered in one artifact.",
+            "flagship": true
+          },
+          {
+            "name": "TeraformMultiregionAD",
+            "lang": "Terraform",
+            "url": "https://github.com/Philliamviber/TeraformMultiregionAD",
+            "blurb": "Multi-region Active Directory deployment expressed in Terraform.",
+            "why": "Resilient, DR-ready identity infrastructure as code — the continuity mindset, automated."
+          },
+          {
+            "name": "CiscoMerakiSDWanAutoVPNAzureGuidance",
+            "lang": "Guide",
+            "url": "https://github.com/Philliamviber/CiscoMerakiSDWanAutoVPNAzureGuidance",
+            "blurb": "Reference guidance for extending Cisco Meraki SD-WAN AutoVPN into Azure.",
+            "why": "Hybrid network architecture connecting branch sites to cloud — the exact pattern behind multi-site enterprises."
+          }
         ]
       },
       {
         "name": "Automation, DevSecOps & Enablement",
         "repos": [
-          { "name": "githubactionsguidance", "lang": "CI/CD", "url": "https://github.com/Philliamviber/githubactionsguidance", "blurb": "Practical GitHub Actions CI/CD guidance and patterns.", "why": "Pipeline automation and secure software delivery — DevSecOps fundamentals." },
-          { "name": "ClaudeDevSecOpseagents", "lang": "HTML · Markdown", "url": "https://github.com/Philliamviber/ClaudeDevSecOpseagents", "blurb": "VS Code agent definitions and how-tos for DevSecOps workflows.", "why": "Operationalizing AI assistants across a secure SDLC." },
-          { "name": "claudecheatsheets", "lang": "Docs", "url": "https://github.com/Philliamviber/claudecheatsheets", "blurb": "Beginner-friendly guides for using Claude Code efficiently: token efficiency, engineer bots, and model routing.", "why": "Team enablement and knowledge-sharing — multiplying other people's productivity." },
-          { "name": "tokenwatcher", "lang": "C#", "url": "https://github.com/Philliamviber/tokenwatcher", "blurb": "A Diablo-style health-globe desktop overlay that tracks Claude Code token usage in real time.", "why": "Range and a builder's curiosity — a native C# app, shipped for fun." }
+          {
+            "name": "githubactionsguidance",
+            "lang": "CI/CD",
+            "url": "https://github.com/Philliamviber/githubactionsguidance",
+            "blurb": "Practical GitHub Actions CI/CD guidance and patterns.",
+            "why": "Pipeline automation and secure software delivery — DevSecOps fundamentals."
+          },
+          {
+            "name": "ClaudeDevSecOpseagents",
+            "lang": "HTML · Markdown",
+            "url": "https://github.com/Philliamviber/ClaudeDevSecOpseagents",
+            "blurb": "VS Code agent definitions and how-tos for DevSecOps workflows.",
+            "why": "Operationalizing AI assistants across a secure SDLC."
+          },
+          {
+            "name": "claudecheatsheets",
+            "lang": "Docs",
+            "url": "https://github.com/Philliamviber/claudecheatsheets",
+            "blurb": "Beginner-friendly guides for using Claude Code efficiently: token efficiency, engineer bots, and model routing.",
+            "why": "Team enablement and knowledge-sharing — multiplying other people's productivity."
+          },
+          {
+            "name": "tokenwatcher",
+            "lang": "C#",
+            "url": "https://github.com/Philliamviber/tokenwatcher",
+            "blurb": "A Diablo-style health-globe desktop overlay that tracks Claude Code token usage in real time.",
+            "why": "Range and a builder's curiosity — a native C# app, shipped for fun."
+          }
         ]
       }
     ]
@@ -83,88 +254,520 @@
   "estate": {
     "intro": "The brand portfolio behind the résumé. As Tilray Brands grew into a global beverage-alcohol and CPG enterprise across two continents, I led the infrastructure and M&A integration that folded each acquisition onto one secure, governed platform — brands integrated 2023–2026.",
     "summary": [
-      { "value": "#4", "label": "Largest U.S. craft brewer" },
-      { "value": "20+", "label": "Breweries integrated" },
-      { "value": "40+", "label": "Brands on one platform" },
-      { "value": "900+", "label": "Employees onboarded" },
-      { "value": "20+", "label": "Countries of operation" },
-      { "value": "2", "label": "Continents, one platform" }
+      {
+        "value": "#4",
+        "label": "Largest U.S. craft brewer"
+      },
+      {
+        "value": "20+",
+        "label": "Breweries integrated"
+      },
+      {
+        "value": "40+",
+        "label": "Brands on one platform"
+      },
+      {
+        "value": "900+",
+        "label": "Employees onboarded"
+      },
+      {
+        "value": "20+",
+        "label": "Countries of operation"
+      },
+      {
+        "value": "2",
+        "label": "Continents, one platform"
+      }
     ],
     "brands": [
-      { "name": "SweetWater Brewing", "logo": "assets/brands/sweetwater.png" },
-      { "name": "Montauk Brewing", "logo": "assets/brands/montauk.png" },
-      { "name": "Breckenridge Brewery", "logo": "assets/brands/breckenridge.png", "acquiredVia": "anheuser-busch" },
-      { "name": "Blue Point Brewing", "logo": "assets/brands/bluepoint.png", "acquiredVia": "anheuser-busch" },
-      { "name": "10 Barrel Brewing", "logo": "assets/brands/10barrel.png", "acquiredVia": "anheuser-busch" },
-      { "name": "Redhook Brewery", "logo": "assets/brands/redhook.png", "acquiredVia": "anheuser-busch", "knockout": true },
-      { "name": "Widmer Brothers", "logo": "assets/brands/widmer.png", "acquiredVia": "anheuser-busch" },
-      { "name": "Shock Top", "logo": "assets/brands/shocktop.png", "acquiredVia": "anheuser-busch" },
-      { "name": "Hiball Energy", "logo": "assets/brands/hiball.png", "acquiredVia": "anheuser-busch" },
-      { "name": "Hop Valley Brewing", "logo": "assets/brands/hopvalley.png", "acquiredVia": "molson-coors" },
-      { "name": "Terrapin Beer Co.", "logo": "assets/brands/terrapin.png" },
-      { "name": "Revolver Brewing", "logo": "assets/brands/revolver.png", "knockout": true },
-      { "name": "Alpine Beer Company", "logo": "assets/brands/alpine.png" },
-      { "name": "Green Flash Brewing", "logo": "assets/brands/greenflash.png" },
-      { "name": "BrewDog", "logo": "assets/brands/brewdog.png" }
+      {
+        "name": "SweetWater Brewing",
+        "logo": "assets/brands/sweetwater.png"
+      },
+      {
+        "name": "Montauk Brewing",
+        "logo": "assets/brands/montauk.png"
+      },
+      {
+        "name": "Breckenridge Brewery",
+        "logo": "assets/brands/breckenridge.png",
+        "acquiredVia": "anheuser-busch"
+      },
+      {
+        "name": "Blue Point Brewing",
+        "logo": "assets/brands/bluepoint.png",
+        "acquiredVia": "anheuser-busch"
+      },
+      {
+        "name": "10 Barrel Brewing",
+        "logo": "assets/brands/10barrel.png",
+        "acquiredVia": "anheuser-busch"
+      },
+      {
+        "name": "Redhook Brewery",
+        "logo": "assets/brands/redhook.png",
+        "acquiredVia": "anheuser-busch",
+        "knockout": true
+      },
+      {
+        "name": "Widmer Brothers",
+        "logo": "assets/brands/widmer.png",
+        "acquiredVia": "anheuser-busch"
+      },
+      {
+        "name": "Shock Top",
+        "logo": "assets/brands/shocktop.png",
+        "acquiredVia": "anheuser-busch"
+      },
+      {
+        "name": "Hiball Energy",
+        "logo": "assets/brands/hiball.png",
+        "acquiredVia": "anheuser-busch"
+      },
+      {
+        "name": "Hop Valley Brewing",
+        "logo": "assets/brands/hopvalley.png",
+        "acquiredVia": "molson-coors"
+      },
+      {
+        "name": "Terrapin Beer Co.",
+        "logo": "assets/brands/terrapin.png"
+      },
+      {
+        "name": "Revolver Brewing",
+        "logo": "assets/brands/revolver.png",
+        "knockout": true
+      },
+      {
+        "name": "Alpine Beer Company",
+        "logo": "assets/brands/alpine.png"
+      },
+      {
+        "name": "Green Flash Brewing",
+        "logo": "assets/brands/greenflash.png"
+      },
+      {
+        "name": "BrewDog",
+        "logo": "assets/brands/brewdog.png"
+      }
     ],
     "transitions": [
-      { "partner": "Anheuser-Busch", "text": "Led the infrastructure and network integration for the 2023 acquisition of eight craft brands from Anheuser-Busch — system and network cutovers delivered on a 90-day clock." },
-      { "partner": "Molson Coors", "text": "Led the post-acquisition infrastructure transition for craft brands acquired from Molson Coors — identity, email, and network consolidated onto one governed platform." }
+      {
+        "partner": "Anheuser-Busch",
+        "text": "Led the infrastructure and network integration for the 2023 acquisition of eight craft brands from Anheuser-Busch — system and network cutovers delivered on a 90-day clock."
+      },
+      {
+        "partner": "Molson Coors",
+        "text": "Led the post-acquisition infrastructure transition for craft brands acquired from Molson Coors — identity, email, and network consolidated onto one governed platform."
+      }
     ]
   },
   "domains": [
-    { "key": "infra", "label": "IT Infrastructure", "score": 5, "color": "#39ff14" },
-    { "key": "cloudsec", "label": "Cloud Security", "score": 4, "color": "#00e5ff" },
-    { "key": "grc", "label": "GRC & Compliance", "score": 5, "color": "#ffb000" },
-    { "key": "ma", "label": "M&A Integration", "score": 5, "color": "#ff2e63" },
-    { "key": "netsec", "label": "Network Security", "score": 4, "color": "#bd00ff" },
-    { "key": "bcdr", "label": "Business Continuity / DR", "score": 5, "color": "#00ff9d" },
-    { "key": "iam", "label": "Identity & Access", "score": 4, "color": "#ff7b00" },
-    { "key": "automation", "label": "Scripting & Automation", "score": 5, "color": "#f8f32b" }
+    {
+      "key": "infra",
+      "label": "IT Infrastructure",
+      "score": 5,
+      "color": "#39ff14"
+    },
+    {
+      "key": "cloudsec",
+      "label": "Cloud Security",
+      "score": 4,
+      "color": "#00e5ff"
+    },
+    {
+      "key": "grc",
+      "label": "GRC & Compliance",
+      "score": 5,
+      "color": "#ffb000"
+    },
+    {
+      "key": "ma",
+      "label": "M&A Integration",
+      "score": 5,
+      "color": "#ff2e63"
+    },
+    {
+      "key": "netsec",
+      "label": "Network Security",
+      "score": 4,
+      "color": "#bd00ff"
+    },
+    {
+      "key": "bcdr",
+      "label": "Business Continuity / DR",
+      "score": 5,
+      "color": "#00ff9d"
+    },
+    {
+      "key": "iam",
+      "label": "Identity & Access",
+      "score": 4,
+      "color": "#ff7b00"
+    },
+    {
+      "key": "automation",
+      "label": "Scripting & Automation",
+      "score": 5,
+      "color": "#f8f32b"
+    }
   ],
   "skills": [
-    { "name": "Post-Merger Integration", "domain": "ma", "proficiency": 5 },
-    { "name": "Cybersecurity Leadership", "domain": "grc", "proficiency": 5 },
-    { "name": "IT Infrastructure Management", "domain": "infra", "proficiency": 5 },
-    { "name": "SOX ITGC", "domain": "grc", "proficiency": 5 },
-    { "name": "NIST 800-53", "domain": "grc", "proficiency": 4 },
-    { "name": "Business Continuity Planning", "domain": "bcdr", "proficiency": 5 },
-    { "name": "Disaster Recovery", "domain": "bcdr", "proficiency": 5 },
-    { "name": "Network Architecture Design", "domain": "netsec", "proficiency": 4 },
-    { "name": "Enterprise System Hardening", "domain": "netsec", "proficiency": 4 },
-    { "name": "Incident Response & Triage", "domain": "grc", "proficiency": 5 },
-    { "name": "Scripting & Automation", "domain": "automation", "proficiency": 5 },
-    { "name": "Threat Detection & Hunting", "domain": "netsec", "proficiency": 4 },
-    { "name": "Cloud Security", "domain": "cloudsec", "proficiency": 4 },
-    { "name": "Identity & Access Management", "domain": "iam", "proficiency": 4 },
-    { "name": "Team Leadership", "domain": "infra", "proficiency": 5 },
-    { "name": "Data Protection Strategies", "domain": "grc", "proficiency": 4 }
+    {
+      "name": "Post-Merger Integration",
+      "domain": "ma",
+      "proficiency": 5
+    },
+    {
+      "name": "Cybersecurity Leadership",
+      "domain": "grc",
+      "proficiency": 5
+    },
+    {
+      "name": "IT Infrastructure Management",
+      "domain": "infra",
+      "proficiency": 5
+    },
+    {
+      "name": "SOX ITGC",
+      "domain": "grc",
+      "proficiency": 5
+    },
+    {
+      "name": "NIST 800-53",
+      "domain": "grc",
+      "proficiency": 4
+    },
+    {
+      "name": "Business Continuity Planning",
+      "domain": "bcdr",
+      "proficiency": 5
+    },
+    {
+      "name": "Disaster Recovery",
+      "domain": "bcdr",
+      "proficiency": 5
+    },
+    {
+      "name": "Network Architecture Design",
+      "domain": "netsec",
+      "proficiency": 4
+    },
+    {
+      "name": "Enterprise System Hardening",
+      "domain": "netsec",
+      "proficiency": 4
+    },
+    {
+      "name": "Incident Response & Triage",
+      "domain": "grc",
+      "proficiency": 5
+    },
+    {
+      "name": "Scripting & Automation",
+      "domain": "automation",
+      "proficiency": 5
+    },
+    {
+      "name": "Threat Detection & Hunting",
+      "domain": "netsec",
+      "proficiency": 4
+    },
+    {
+      "name": "Cloud Security",
+      "domain": "cloudsec",
+      "proficiency": 4
+    },
+    {
+      "name": "Identity & Access Management",
+      "domain": "iam",
+      "proficiency": 4
+    },
+    {
+      "name": "Team Leadership",
+      "domain": "infra",
+      "proficiency": 5
+    },
+    {
+      "name": "Data Protection Strategies",
+      "domain": "grc",
+      "proficiency": 4
+    }
   ],
   "techStack": {
-    "Enterprise Systems": ["Active Directory", "Microsoft Exchange", "Hyper-V", "VMware", "ServiceNow", "Cisco Meraki"],
-    "Cloud Platforms": ["Microsoft 365", "Azure IaaS", "Azure Arc", "Okta", "Duo", "Entra ID"],
-    "Security": ["Palo Alto NGFW", "Microsoft Sentinel", "Defender for Endpoint", "NIST 800-53", "SOX ITGC", "CIS Controls", "Application Whitelisting", "Network Segmentation", "Zero Trust"],
-    "Languages, Scripting & IaC": ["PowerShell", "SQL", "KQL", "WMI", "Python", "Perl", "PHP", "ASP", "C++", "Terraform", "GitHub Actions"]
+    "Enterprise Systems": [
+      "Active Directory",
+      "Microsoft Exchange",
+      "Hyper-V",
+      "VMware",
+      "ServiceNow",
+      "Cisco Meraki"
+    ],
+    "Cloud Platforms": [
+      "Microsoft 365",
+      "Azure IaaS",
+      "Azure Arc",
+      "Okta",
+      "Duo",
+      "Entra ID"
+    ],
+    "Security": [
+      "Palo Alto NGFW",
+      "Microsoft Sentinel",
+      "Defender for Endpoint",
+      "NIST 800-53",
+      "SOX ITGC",
+      "CIS Controls",
+      "Application Whitelisting",
+      "Network Segmentation",
+      "Zero Trust"
+    ],
+    "Languages, Scripting & IaC": [
+      "PowerShell",
+      "SQL",
+      "KQL",
+      "WMI",
+      "Python",
+      "Perl",
+      "PHP",
+      "ASP",
+      "C++",
+      "Terraform",
+      "GitHub Actions"
+    ]
   },
   "wordCloud": [
-    ["Active Directory", 9], ["Entra ID", 9], ["M&A Integration", 10], ["SOX ITGC", 8], ["PowerShell", 11],
-    ["Palo Alto NGFW", 7], ["Cisco Meraki", 7], ["Hyper-V", 6], ["VMware", 6], ["Azure", 7],
-    ["Office 365", 8], ["Okta", 5], ["Duo", 5], ["KQL", 6], ["Python", 5], ["NIST 800-53", 6],
-    ["Incident Response", 8], ["Ransomware Remediation", 6], ["Threat Hunting", 6], ["Disaster Recovery", 7], ["CISSP", 8], ["CISM", 8],
-    ["ServiceNow", 5], ["Azure Arc", 5], ["Network Segmentation", 5], ["CIS Controls", 6], ["Business Continuity", 7],
-    ["Tenant Migration", 7], ["Cloud Security", 7], ["GRC", 7], ["Exchange", 6], ["WMI", 4], ["SQL", 5],
-    ["Hardening", 6], ["NGFW", 6], ["IAM", 6],
-    ["Microsoft Sentinel", 7], ["Terraform", 6], ["Zero Trust", 6], ["GitHub Actions", 5],
-    ["Defender", 6], ["MITRE ATT&CK", 5], ["DevSecOps", 5],
-    ["C++", 5], ["Perl", 4], ["PHP", 4], ["ASP", 4], ["Detection Engineering", 5]
+    [
+      "Active Directory",
+      9
+    ],
+    [
+      "Entra ID",
+      9
+    ],
+    [
+      "M&A Integration",
+      10
+    ],
+    [
+      "SOX ITGC",
+      8
+    ],
+    [
+      "PowerShell",
+      11
+    ],
+    [
+      "Palo Alto NGFW",
+      7
+    ],
+    [
+      "Cisco Meraki",
+      7
+    ],
+    [
+      "Hyper-V",
+      6
+    ],
+    [
+      "VMware",
+      6
+    ],
+    [
+      "Azure",
+      7
+    ],
+    [
+      "Office 365",
+      8
+    ],
+    [
+      "Okta",
+      5
+    ],
+    [
+      "Duo",
+      5
+    ],
+    [
+      "KQL",
+      6
+    ],
+    [
+      "Python",
+      5
+    ],
+    [
+      "NIST 800-53",
+      6
+    ],
+    [
+      "Incident Response",
+      8
+    ],
+    [
+      "Ransomware Remediation",
+      6
+    ],
+    [
+      "Threat Hunting",
+      6
+    ],
+    [
+      "Disaster Recovery",
+      7
+    ],
+    [
+      "CISSP",
+      8
+    ],
+    [
+      "CISM",
+      8
+    ],
+    [
+      "ServiceNow",
+      5
+    ],
+    [
+      "Azure Arc",
+      5
+    ],
+    [
+      "Network Segmentation",
+      5
+    ],
+    [
+      "CIS Controls",
+      6
+    ],
+    [
+      "Business Continuity",
+      7
+    ],
+    [
+      "Tenant Migration",
+      7
+    ],
+    [
+      "Cloud Security",
+      7
+    ],
+    [
+      "GRC",
+      7
+    ],
+    [
+      "Exchange",
+      6
+    ],
+    [
+      "WMI",
+      4
+    ],
+    [
+      "SQL",
+      5
+    ],
+    [
+      "Hardening",
+      6
+    ],
+    [
+      "NGFW",
+      6
+    ],
+    [
+      "IAM",
+      6
+    ],
+    [
+      "Microsoft Sentinel",
+      7
+    ],
+    [
+      "Terraform",
+      6
+    ],
+    [
+      "Zero Trust",
+      6
+    ],
+    [
+      "GitHub Actions",
+      5
+    ],
+    [
+      "Defender",
+      6
+    ],
+    [
+      "MITRE ATT&CK",
+      5
+    ],
+    [
+      "DevSecOps",
+      5
+    ],
+    [
+      "C++",
+      5
+    ],
+    [
+      "Perl",
+      4
+    ],
+    [
+      "PHP",
+      4
+    ],
+    [
+      "ASP",
+      4
+    ],
+    [
+      "Detection Engineering",
+      5
+    ]
   ],
   "impact": [
-    { "value": 10, "suffix": "", "label": "M&A integrations within 12 months", "icon": "merge" },
-    { "value": 4, "prefix": "#", "suffix": "", "label": "Largest U.S. craft brewer enabled", "icon": "trophy" },
-    { "value": 900, "suffix": "+", "label": "Employees onboarded via Entra", "icon": "users" },
-    { "value": 350, "suffix": "+", "label": "Endpoints & servers reimaged", "icon": "server" },
-    { "value": 160, "suffix": "", "label": "Staff moved remote in 48 hours", "icon": "bolt" },
-    { "value": 65, "suffix": "+", "label": "Sites, brew pubs & offices supported", "icon": "globe" }
+    {
+      "value": 10,
+      "suffix": "",
+      "label": "M&A integrations within 12 months",
+      "icon": "merge"
+    },
+    {
+      "value": 4,
+      "prefix": "#",
+      "suffix": "",
+      "label": "Largest U.S. craft brewer enabled",
+      "icon": "trophy"
+    },
+    {
+      "value": 900,
+      "suffix": "+",
+      "label": "Employees onboarded via Entra",
+      "icon": "users"
+    },
+    {
+      "value": 350,
+      "suffix": "+",
+      "label": "Endpoints & servers reimaged",
+      "icon": "server"
+    },
+    {
+      "value": 160,
+      "suffix": "",
+      "label": "Staff moved remote in 48 hours",
+      "icon": "bolt"
+    },
+    {
+      "value": 65,
+      "suffix": "+",
+      "label": "Sites, brew pubs & offices supported",
+      "icon": "globe"
+    }
   ],
   "experience": [
     {
@@ -175,7 +778,12 @@
       "start": "2023-07",
       "end": "present",
       "tenure": "Jul 2023 – Present",
-      "domains": ["ma", "infra", "grc", "cloudsec"],
+      "domains": [
+        "ma",
+        "infra",
+        "grc",
+        "cloudsec"
+      ],
       "summary": "Leads global infrastructure and high-tempo M&A integration for a global beverage-alcohol and CPG enterprise.",
       "brief": {
         "headline": "Integrated 10 acquisitions within 12 months — fueling Tilray Beverages' rise to the #4 craft brewer in the U.S.",
@@ -183,20 +791,57 @@
         "action": "Built and led a 10-person infrastructure team running back-to-back M&A takeovers — AB InBev and Molson Coors plant cutovers, 6 Entra tenant-to-tenant migrations, and AD / Meraki / O365 consolidations — while wiring SOX ITGC, system hardening, and incident response into daily operations.",
         "outcome": "10 organizations integrated within 12 months · 900+ employees onboarded to unified governed identity · 4 production facilities transferred with zero unplanned downtime — accelerating the synergy capture behind the division's climb to #4 in the U.S. craft market.",
         "metrics": [
-          { "value": "10", "label": "M&A in 12 months" },
-          { "value": "900+", "label": "users onboarded" },
-          { "value": "4", "label": "plants · zero downtime" },
-          { "value": "65+", "label": "sites · 2 continents" }
+          {
+            "value": "10",
+            "label": "M&A in 12 months"
+          },
+          {
+            "value": "900+",
+            "label": "users onboarded"
+          },
+          {
+            "value": "4",
+            "label": "plants · zero downtime"
+          },
+          {
+            "value": "65+",
+            "label": "sites · 2 continents"
+          }
         ],
-        "stack": ["Microsoft Entra", "Active Directory", "Microsoft 365", "Cisco Meraki", "SOX ITGC", "Palo Alto NGFW"]
+        "stack": [
+          "Microsoft Entra",
+          "Active Directory",
+          "Microsoft 365",
+          "Cisco Meraki",
+          "SOX ITGC",
+          "Palo Alto NGFW"
+        ]
       },
       "achievements": [
-        { "text": "Orchestrated high-priority IT M&A across 10 acquired organizations in 12 months, directly contributing to Tilray Beverages becoming the 4th-largest craft brewer in the U.S.", "impact": "Accelerated value capture from acquisitions: each integration delivered on schedule meant faster revenue consolidation and synergy realization, directly advancing the growth strategy that vaulted the beverage division to #4 in the U.S. market." },
-        { "text": "Coordinated IT acquisition events with AB InBev — full system and network takeovers of 4 production facilities in 90 days.", "impact": "Protected production continuity through the ownership transfer: zero unplanned downtime across four revenue-generating plants meant no lost output or missed shipments during handover, de-risking the deal's operational P&L." },
-        { "text": "Directed post-acquisition transitions with Molson Coors — 6 major migrations in 60 days (Meraki org transfers, G-Suite→O365, Exchange→O365, Active Directory takeovers).", "impact": "Compressed the integration timeline so the business could exit costly Transition Service Agreements early — every retired legacy contract cut recurring spend and removed a dependency on the seller." },
-        { "text": "Completed 6 Microsoft Entra tenant-to-tenant migrations, onboarding 900+ employees and thousands of digital assets within a year.", "impact": "Unified identity gave 900+ employees governed, single sign-on access from day one — speeding workforce productivity, enabling consistent MFA and policy enforcement, and eliminating duplicate licensing across fragmented tenants." },
-        { "text": "Led a distributed team of 10 (network engineers, cloud architects, sysadmins) supporting 15+ production facilities, 20 brew pubs, and 30 offices across North America and Europe.", "impact": "Sustained always-on operations across 65+ sites on two continents with a lean team — high engineer-to-site leverage held infrastructure overhead down while protecting the uptime revenue depends on." },
-        { "text": "Aligned infrastructure operations with cybersecurity pillars: SLA reviews, BIAs, system hardening, SOX ITGC, and incident management/response.", "impact": "Made IT an audit-ready, board-defensible function: SOX ITGC compliance and documented business impact analyses reduced regulatory and financial-reporting risk for a publicly traded company and protected market trust." }
+        {
+          "text": "Orchestrated high-priority IT M&A across 10 acquired organizations in 12 months, directly contributing to Tilray Beverages becoming the 4th-largest craft brewer in the U.S.",
+          "impact": "Accelerated value capture from acquisitions: each integration delivered on schedule meant faster revenue consolidation and synergy realization, directly advancing the growth strategy that vaulted the beverage division to #4 in the U.S. market."
+        },
+        {
+          "text": "Coordinated IT acquisition events with AB InBev — full system and network takeovers of 4 production facilities in 90 days.",
+          "impact": "Protected production continuity through the ownership transfer: zero unplanned downtime across four revenue-generating plants meant no lost output or missed shipments during handover, de-risking the deal's operational P&L."
+        },
+        {
+          "text": "Directed post-acquisition transitions with Molson Coors — 6 major migrations in 60 days (Meraki org transfers, G-Suite→O365, Exchange→O365, Active Directory takeovers).",
+          "impact": "Compressed the integration timeline so the business could exit costly Transition Service Agreements early — every retired legacy contract cut recurring spend and removed a dependency on the seller."
+        },
+        {
+          "text": "Completed 6 Microsoft Entra tenant-to-tenant migrations, onboarding 900+ employees and thousands of digital assets within a year.",
+          "impact": "Unified identity gave 900+ employees governed, single sign-on access from day one — speeding workforce productivity, enabling consistent MFA and policy enforcement, and eliminating duplicate licensing across fragmented tenants."
+        },
+        {
+          "text": "Led a distributed team of 10 (network engineers, cloud architects, sysadmins) supporting 15+ production facilities, 20 brew pubs, and 30 offices across North America and Europe.",
+          "impact": "Sustained always-on operations across 65+ sites on two continents with a lean team — high engineer-to-site leverage held infrastructure overhead down while protecting the uptime revenue depends on."
+        },
+        {
+          "text": "Aligned infrastructure operations with cybersecurity pillars: SLA reviews, BIAs, system hardening, SOX ITGC, and incident management/response.",
+          "impact": "Made IT an audit-ready, board-defensible function: SOX ITGC compliance and documented business impact analyses reduced regulatory and financial-reporting risk for a publicly traded company and protected market trust."
+        }
       ]
     },
     {
@@ -207,7 +852,12 @@
       "start": "2019-01",
       "end": "2023-02",
       "tenure": "Jan 2019 – Feb 2023",
-      "domains": ["netsec", "grc", "bcdr", "iam"],
+      "domains": [
+        "netsec",
+        "grc",
+        "bcdr",
+        "iam"
+      ],
       "summary": "Matured the security program of a professional services firm and rebuilt its core identity and network estate.",
       "brief": {
         "headline": "Moved 160 staff fully remote in 48 hours and rebuilt the firm's identity, network, and security estate.",
@@ -215,20 +865,57 @@
         "action": "Matured the security program to CIS benchmarks (segmentation, application whitelisting, firm-wide Palo Alto NGFW, cloud IAM), stood up proactive security operations (threat hunting, incident response, patch cycles), and architected a greenfield Active Directory + O365 environment — co-authoring the COVID-19 technical strategy with the COO.",
         "outcome": "160 employees productive remotely within 48 hours · 300 endpoints and 50 servers reimaged across three 48-hour windows · a measurably hardened posture that protected client confidentiality and uninterrupted billing.",
         "metrics": [
-          { "value": "48h", "label": "to 160 staff remote" },
-          { "value": "350", "label": "endpoints + servers reimaged" },
-          { "value": "100%", "label": "of offices on NGFW" },
-          { "value": "<10mo", "label": "to greenfield AD + O365" }
+          {
+            "value": "48h",
+            "label": "to 160 staff remote"
+          },
+          {
+            "value": "350",
+            "label": "endpoints + servers reimaged"
+          },
+          {
+            "value": "100%",
+            "label": "of offices on NGFW"
+          },
+          {
+            "value": "<10mo",
+            "label": "to greenfield AD + O365"
+          }
         ],
-        "stack": ["Palo Alto NGFW", "Active Directory", "Microsoft 365", "CIS Controls", "Cloud IAM", "Application Whitelisting"]
+        "stack": [
+          "Palo Alto NGFW",
+          "Active Directory",
+          "Microsoft 365",
+          "CIS Controls",
+          "Cloud IAM",
+          "Application Whitelisting"
+        ]
       },
       "achievements": [
-        { "text": "Established CIS framework maturity via security improvement plans: application whitelisting, network segmentation, next-gen firewalls, and cloud IAM.", "impact": "Raised measurable security maturity to protect the firm's most valuable asset — client confidentiality — lowering breach risk, strengthening cyber-insurance posture, and reinforcing the trust that wins and keeps clients." },
-        { "text": "Oversaw enterprise-wide Palo Alto NGFW deployment across all firm locations, replacing end-of-life equipment and increasing network visibility.", "impact": "Closed an end-of-life risk and audit/insurance gap across every office while gaining network-wide visibility — reducing the likelihood of a costly outage or breach the firm could not afford." },
-        { "text": "Built core security processes: phish-alert reporting, incident management, threat hunting, patching cycles, and coordinated incident response.", "impact": "Shifted the firm from reactive to proactive defense: faster detection and response shrink attacker dwell time and the financial and reputational cost of an incident — critical for a custodian of sensitive financial data." },
-        { "text": "Served as M&A technology advisor for the Collins Barrow Kawarthas & Durham consolidation, leading IT due diligence.", "impact": "Gave leadership a clear view of technology risk and integration cost before signing — informing deal valuation and enabling a smoother, lower-cost post-merger combination." },
-        { "text": "Designed, built, and deployed a new Active Directory + O365 environment enabling full remote connectivity in under 10 months; reimaged 300 endpoints and 50 servers across three 48-hour maintenance windows.", "impact": "Delivered a modern, remote-capable platform that unlocked workforce flexibility and future growth — executed inside tight maintenance windows to avoid disrupting billable client work." },
-        { "text": "Transitioned 160 employees to remote work in 48 hours by co-authoring the firm's COVID-19 technical strategy with the COO.", "impact": "Kept the firm fully operational and billing through a crisis while competitors stalled — business continuity that protected revenue and client commitments during a black-swan event." }
+        {
+          "text": "Established CIS framework maturity via security improvement plans: application whitelisting, network segmentation, next-gen firewalls, and cloud IAM.",
+          "impact": "Raised measurable security maturity to protect the firm's most valuable asset — client confidentiality — lowering breach risk, strengthening cyber-insurance posture, and reinforcing the trust that wins and keeps clients."
+        },
+        {
+          "text": "Oversaw enterprise-wide Palo Alto NGFW deployment across all firm locations, replacing end-of-life equipment and increasing network visibility.",
+          "impact": "Closed an end-of-life risk and audit/insurance gap across every office while gaining network-wide visibility — reducing the likelihood of a costly outage or breach the firm could not afford."
+        },
+        {
+          "text": "Built core security processes: phish-alert reporting, incident management, threat hunting, patching cycles, and coordinated incident response.",
+          "impact": "Shifted the firm from reactive to proactive defense: faster detection and response shrink attacker dwell time and the financial and reputational cost of an incident — critical for a custodian of sensitive financial data."
+        },
+        {
+          "text": "Served as M&A technology advisor for the Collins Barrow Kawarthas & Durham consolidation, leading IT due diligence.",
+          "impact": "Gave leadership a clear view of technology risk and integration cost before signing — informing deal valuation and enabling a smoother, lower-cost post-merger combination."
+        },
+        {
+          "text": "Designed, built, and deployed a new Active Directory + O365 environment enabling full remote connectivity in under 10 months; reimaged 300 endpoints and 50 servers across three 48-hour maintenance windows.",
+          "impact": "Delivered a modern, remote-capable platform that unlocked workforce flexibility and future growth — executed inside tight maintenance windows to avoid disrupting billable client work."
+        },
+        {
+          "text": "Transitioned 160 employees to remote work in 48 hours by co-authoring the firm's COVID-19 technical strategy with the COO.",
+          "impact": "Kept the firm fully operational and billing through a crisis while competitors stalled — business continuity that protected revenue and client commitments during a black-swan event."
+        }
       ]
     },
     {
@@ -239,7 +926,11 @@
       "start": "2017-11",
       "end": "2019-01",
       "tenure": "Nov 2017 – Jan 2019",
-      "domains": ["infra", "bcdr", "ma"],
+      "domains": [
+        "infra",
+        "bcdr",
+        "ma"
+      ],
       "summary": "Modernized core systems and prepared the firm's IT estate for merger due diligence.",
       "brief": {
         "headline": "Modernized core systems and made the IT estate merger-ready, supporting a clean firm consolidation.",
@@ -247,18 +938,48 @@
         "action": "Virtualized the entire physical server fleet to Hyper-V 2016, migrated email from Exchange 2010 to Office 365, standardized GPO and Windows hardening baselines, and assembled the asset inventory and cost models for due diligence.",
         "outcome": "A modern, DR-ready, fully documented environment with lower hardware cost and improved uptime — plus the transparent asset and cost data that de-risked the merger and supported a fair valuation.",
         "metrics": [
-          { "value": "100%", "label": "server fleet virtualized" },
-          { "value": "0", "label": "physical servers left" },
-          { "value": "Exch→365", "label": "email modernized" },
-          { "value": "M&A", "label": "estate made deal-ready" }
+          {
+            "value": "100%",
+            "label": "server fleet virtualized"
+          },
+          {
+            "value": "0",
+            "label": "physical servers left"
+          },
+          {
+            "value": "Exch→365",
+            "label": "email modernized"
+          },
+          {
+            "value": "M&A",
+            "label": "estate made deal-ready"
+          }
         ],
-        "stack": ["Hyper-V 2016", "Exchange 2010", "Office 365", "GPO Baselines", "Windows Server 2016"]
+        "stack": [
+          "Hyper-V 2016",
+          "Exchange 2010",
+          "Office 365",
+          "GPO Baselines",
+          "Windows Server 2016"
+        ]
       },
       "achievements": [
-        { "text": "Built IT asset inventory, process documentation, and cost models to satisfy merger due-diligence requirements.", "impact": "Produced the transparency a merger requires: accurate asset and cost data supported fair valuation and de-risked the transaction for both parties." },
-        { "text": "Migrated email from Exchange 2010 to Office 365, reducing exposure and improving reliability.", "impact": "Cut the cost and risk of aging on-prem mail while improving uptime — modernizing a mission-critical communication channel the business relies on every day." },
-        { "text": "Virtualized all on-prem physical servers to Hyper-V 2016, improving scalability and DR readiness.", "impact": "Improved disaster-recovery readiness and hardware efficiency — lowering capital cost and shrinking the recovery time that protects the business after a failure." },
-        { "text": "Standardized GPO baselines and implemented Windows 10 / Server 2016 hardening guidelines.", "impact": "Made security and onboarding repeatable: consistent baselines reduce configuration drift, speed new-hire productivity, and shrink the attack surface as the firm scales." }
+        {
+          "text": "Built IT asset inventory, process documentation, and cost models to satisfy merger due-diligence requirements.",
+          "impact": "Produced the transparency a merger requires: accurate asset and cost data supported fair valuation and de-risked the transaction for both parties."
+        },
+        {
+          "text": "Migrated email from Exchange 2010 to Office 365, reducing exposure and improving reliability.",
+          "impact": "Cut the cost and risk of aging on-prem mail while improving uptime — modernizing a mission-critical communication channel the business relies on every day."
+        },
+        {
+          "text": "Virtualized all on-prem physical servers to Hyper-V 2016, improving scalability and DR readiness.",
+          "impact": "Improved disaster-recovery readiness and hardware efficiency — lowering capital cost and shrinking the recovery time that protects the business after a failure."
+        },
+        {
+          "text": "Standardized GPO baselines and implemented Windows 10 / Server 2016 hardening guidelines.",
+          "impact": "Made security and onboarding repeatable: consistent baselines reduce configuration drift, speed new-hire productivity, and shrink the attack surface as the firm scales."
+        }
       ]
     },
     {
@@ -269,7 +990,10 @@
       "start": "2016-05",
       "end": "2017-11",
       "tenure": "May 2016 – Nov 2017",
-      "domains": ["infra", "cloudsec"],
+      "domains": [
+        "infra",
+        "cloudsec"
+      ],
       "summary": "Delivered end-to-end IT modernization and retained fractional-sysadmin support for legal firms, CPA practices, and small businesses across the eastern GTA.",
       "brief": {
         "headline": "Acted as outsourced IT leadership for dozens of small firms — modernizing, securing, and running them on a weekly retainer.",
@@ -277,18 +1001,49 @@
         "action": "Executed complex AD and Exchange migrations, server virtualization on Hyper-V, Windows Server 2016 / Exchange 2016 deployments, and Office 365 adoption — then held retained weekly sysadmin roles with security auditing, documented procedures, and long-term strategic guidance.",
         "outcome": "Enterprise-grade reliability and security at small-business cost, with no lost productivity through change — converting technical upgrades into durable client trust and referrals.",
         "metrics": [
-          { "value": "Dozens", "label": "of firms modernized" },
-          { "value": "20–100", "label": "users per retained client" },
-          { "value": "AD + Exch", "label": "migrations delivered" },
-          { "value": "0", "label": "productivity lost at cutover" }
+          {
+            "value": "Dozens",
+            "label": "of firms modernized"
+          },
+          {
+            "value": "20–100",
+            "label": "users per retained client"
+          },
+          {
+            "value": "AD + Exch",
+            "label": "migrations delivered"
+          },
+          {
+            "value": "0",
+            "label": "productivity lost at cutover"
+          }
         ],
-        "stack": ["Windows Server 2016", "Hyper-V", "Exchange 2016", "Active Directory", "Office 365", "Server Virtualization"]
+        "stack": [
+          "Windows Server 2016",
+          "Hyper-V",
+          "Exchange 2016",
+          "Active Directory",
+          "Office 365",
+          "Server Virtualization"
+        ]
       },
       "achievements": [
-        { "text": "Performed complex AD domain and Exchange migrations, Hyper-V server virtualization, Windows Server 2016 / Exchange 2016 deployments, and Office 365 adoption.", "impact": "Modernized client environments so small firms could operate with enterprise-grade reliability and security — turning technical upgrades into client business resilience." },
-        { "text": "Held retained weekly sysadmin roles for multiple organizations of 20–100 users, with security auditing and documented administrative procedures.", "impact": "Acted as outsourced IT leadership — recurring, accountable ownership that gave small firms enterprise discipline (audits, documentation, strategy) without the cost of an internal hire." },
-        { "text": "Managed migration programs and ongoing support, sustaining seamless operations post-cutover.", "impact": "Protected client operations through and after change: seamless cutovers meant no lost productivity, preserving the trust that retains clients and drives referrals." },
-        { "text": "Delivered tailored, fit-for-purpose systems deployments aligned to each client's requirements.", "impact": "Matched spend to need — right-sized solutions avoided over-investment and delivered measurable ROI for cost-conscious small businesses." }
+        {
+          "text": "Performed complex AD domain and Exchange migrations, Hyper-V server virtualization, Windows Server 2016 / Exchange 2016 deployments, and Office 365 adoption.",
+          "impact": "Modernized client environments so small firms could operate with enterprise-grade reliability and security — turning technical upgrades into client business resilience."
+        },
+        {
+          "text": "Held retained weekly sysadmin roles for multiple organizations of 20–100 users, with security auditing and documented administrative procedures.",
+          "impact": "Acted as outsourced IT leadership — recurring, accountable ownership that gave small firms enterprise discipline (audits, documentation, strategy) without the cost of an internal hire."
+        },
+        {
+          "text": "Managed migration programs and ongoing support, sustaining seamless operations post-cutover.",
+          "impact": "Protected client operations through and after change: seamless cutovers meant no lost productivity, preserving the trust that retains clients and drives referrals."
+        },
+        {
+          "text": "Delivered tailored, fit-for-purpose systems deployments aligned to each client's requirements.",
+          "impact": "Matched spend to need — right-sized solutions avoided over-investment and delivered measurable ROI for cost-conscious small businesses."
+        }
       ]
     },
     {
@@ -299,7 +1054,9 @@
       "start": "2010-04",
       "end": "2014-09",
       "tenure": "Apr 2010 – Sep 2014",
-      "domains": ["infra"],
+      "domains": [
+        "infra"
+      ],
       "summary": "Ran the full IT estate for legal and CPA practices as a fractional IT department — platform migrations, deep legal-application support, and trusted-advisor relationships at the top of each client.",
       "brief": {
         "headline": "Ran legal and CPA practices' entire IT — and earned the trust of the people at the top, including two former U.S. Senators.",
@@ -307,17 +1064,45 @@
         "action": "Acted as a fractional IT department across a firewall-secured Microsoft estate — SBS 2008/2011, Server 2003–2012, Exchange 2003–2013, BlackBerry Enterprise Server, AD/DNS/DHCP — running platform migrations and new-client onboarding, administering 30+ legal applications, and advising senior decision-makers directly on IT strategy and MSP service models.",
         "outcome": "Continuity of the 30+ applications the practices bill against, plus trusted-advisor relationships with high-profile clients — including two former U.S. Senators, leading attorneys, and CEOs — that drove referrals and recurring MSP revenue.",
         "metrics": [
-          { "value": "30+", "label": "legal apps administered" },
-          { "value": "4 yrs", "label": "as fractional IT dept" },
-          { "value": "2", "label": "former U.S. Senators advised" }
+          {
+            "value": "30+",
+            "label": "legal apps administered"
+          },
+          {
+            "value": "4 yrs",
+            "label": "as fractional IT dept"
+          },
+          {
+            "value": "2",
+            "label": "former U.S. Senators advised"
+          }
         ],
-        "stack": ["Windows SBS 2008 / 2011", "Exchange 2003–2013", "BlackBerry Enterprise Server", "Active Directory", "WatchGuard / SonicWall", "ProLaw / Worldox / Amicus"]
+        "stack": [
+          "Windows SBS 2008 / 2011",
+          "Exchange 2003–2013",
+          "BlackBerry Enterprise Server",
+          "Active Directory",
+          "WatchGuard / SonicWall",
+          "ProLaw / Worldox / Amicus"
+        ]
       },
       "achievements": [
-        { "text": "Supported and migrated a Microsoft Small Business Server estate — SBS 2008/2011, Server 2003–2012, Exchange 2003–2013, BlackBerry Enterprise Server, and AD/DNS/DHCP — behind WatchGuard / SonicWall perimeters for legal and CPA practices.", "impact": "Kept the core systems law and accounting firms run on dependable through end-to-end platform change — minimizing disruption to billable work during technically risky transitions." },
-        { "text": "Administered 30+ legal and practice-management applications — ProLaw, Worldox, Amicus Attorney, Time Matters, Juris, PracticeMaster, Open Text eDocs, NetDocs, Aderant, Orion, Lexis Nexis — plus cost-recovery systems (EquiTrac, Copitrak) and VoIP platforms.", "impact": "Sustained continuity of the specialized software practices bill against; deep application fluency let one consultant cover what would otherwise demand several niche specialists." },
-        { "text": "Advised senior decision-makers directly — including two former U.S. Senators, high-profile attorneys, and CEOs — on IT strategy and MSP service models, and owned MSP helpdesk escalation management.", "impact": "Built trusted-advisor relationships at the top of each client that drove referrals and recurring revenue — translating technical risk into language executives could act on." },
-        { "text": "Delivered IT consulting, project management, and systems administration for legal firms, CPA practices, and small businesses.", "impact": "Acted as a fractional IT department, letting professional firms focus on their core revenue work while technology stayed dependable and secure." }
+        {
+          "text": "Supported and migrated a Microsoft Small Business Server estate — SBS 2008/2011, Server 2003–2012, Exchange 2003–2013, BlackBerry Enterprise Server, and AD/DNS/DHCP — behind WatchGuard / SonicWall perimeters for legal and CPA practices.",
+          "impact": "Kept the core systems law and accounting firms run on dependable through end-to-end platform change — minimizing disruption to billable work during technically risky transitions."
+        },
+        {
+          "text": "Administered 30+ legal and practice-management applications — ProLaw, Worldox, Amicus Attorney, Time Matters, Juris, PracticeMaster, Open Text eDocs, NetDocs, Aderant, Orion, Lexis Nexis — plus cost-recovery systems (EquiTrac, Copitrak) and VoIP platforms.",
+          "impact": "Sustained continuity of the specialized software practices bill against; deep application fluency let one consultant cover what would otherwise demand several niche specialists."
+        },
+        {
+          "text": "Advised senior decision-makers directly — including two former U.S. Senators, high-profile attorneys, and CEOs — on IT strategy and MSP service models, and owned MSP helpdesk escalation management.",
+          "impact": "Built trusted-advisor relationships at the top of each client that drove referrals and recurring revenue — translating technical risk into language executives could act on."
+        },
+        {
+          "text": "Delivered IT consulting, project management, and systems administration for legal firms, CPA practices, and small businesses.",
+          "impact": "Acted as a fractional IT department, letting professional firms focus on their core revenue work while technology stayed dependable and secure."
+        }
       ]
     },
     {
@@ -328,7 +1113,9 @@
       "start": "2009-01",
       "end": "2010-04",
       "tenure": "Jan 2009 – Apr 2010",
-      "domains": ["infra"],
+      "domains": [
+        "infra"
+      ],
       "summary": "Provided contracted desktop-to-server support and legal-software administration for small professional practices.",
       "brief": {
         "headline": "Cut my teeth keeping small law and professional offices running — desktop to server, end to end.",
@@ -336,196 +1123,1116 @@
         "action": "Delivered hands-on technical support, workstation and server deployments, and day-to-day legal-software administration on SBS 2003, Active Directory, and Exchange 2007 — with junior-level IT planning for upcoming upgrades.",
         "outcome": "Reliable day-to-day operations for practices that could not afford downtime, and the foundational server / AD / Exchange fluency the rest of my career is built on.",
         "metrics": [
-          { "value": "SBS", "label": "Server + AD + Exchange" },
-          { "value": "Legal", "label": "line-of-business apps" },
-          { "value": "End-to-end", "label": "desktop-to-server support" }
+          {
+            "value": "SBS",
+            "label": "Server + AD + Exchange"
+          },
+          {
+            "value": "Legal",
+            "label": "line-of-business apps"
+          },
+          {
+            "value": "End-to-end",
+            "label": "desktop-to-server support"
+          }
         ],
-        "stack": ["Windows SBS 2003", "Active Directory", "Microsoft Exchange 2007", "Workstation Imaging"]
+        "stack": [
+          "Windows SBS 2003",
+          "Active Directory",
+          "Microsoft Exchange 2007",
+          "Workstation Imaging"
+        ]
       },
       "achievements": [
-        { "text": "Provided contracted systems support, workstation/server deployment, and legal line-of-business software support for small professional practices.", "impact": "Kept practices that bill against specialized software productive day to day — building the early track record that grew into a full consulting career." },
-        { "text": "Administered Windows Small Business Server 2003, Active Directory, and Exchange 2007 environments end to end.", "impact": "Gained full-stack ownership of the core Microsoft estate early — the AD and Exchange fundamentals that underpin every migration I have run since." }
+        {
+          "text": "Provided contracted systems support, workstation/server deployment, and legal line-of-business software support for small professional practices.",
+          "impact": "Kept practices that bill against specialized software productive day to day — building the early track record that grew into a full consulting career."
+        },
+        {
+          "text": "Administered Windows Small Business Server 2003, Active Directory, and Exchange 2007 environments end to end.",
+          "impact": "Gained full-stack ownership of the core Microsoft estate early — the AD and Exchange fundamentals that underpin every migration I have run since."
+        }
       ]
     }
   ],
   "timeline": [
-    { "year": "2009", "title": "Systems Support Analyst", "org": "Sarasotasupport.com", "node": "sarasotasupport" },
-    { "year": "2010", "title": "IT Consultant", "org": "Bogart & Daugherty", "node": "bogart" },
-    { "year": "2016", "title": "Technical Consultant", "org": "Complete Sentient", "node": "sentient" },
-    { "year": "2017", "title": "Systems Administrator", "org": "Collins Barrow Durham", "node": "collinsbarrow" },
-    { "year": "2019", "title": "IT Manager", "org": "Baker Tilly KDN", "node": "bakertilly" },
-    { "year": "2023", "title": "CISSP Certified", "org": "(ISC)²", "node": "cert-cissp" },
-    { "year": "2023", "title": "IT Infrastructure Manager", "org": "Tilray Brands", "node": "tilray" },
-    { "year": "2024", "title": "CISM Certified", "org": "ISACA", "node": "cert-cism" }
+    {
+      "year": "2009",
+      "title": "Systems Support Analyst",
+      "org": "Sarasotasupport.com",
+      "node": "sarasotasupport"
+    },
+    {
+      "year": "2010",
+      "title": "IT Consultant",
+      "org": "Bogart & Daugherty",
+      "node": "bogart"
+    },
+    {
+      "year": "2016",
+      "title": "Technical Consultant",
+      "org": "Complete Sentient",
+      "node": "sentient"
+    },
+    {
+      "year": "2017",
+      "title": "Systems Administrator",
+      "org": "Collins Barrow Durham",
+      "node": "collinsbarrow"
+    },
+    {
+      "year": "2019",
+      "title": "IT Manager",
+      "org": "Baker Tilly KDN",
+      "node": "bakertilly"
+    },
+    {
+      "year": "2023",
+      "title": "CISSP Certified",
+      "org": "(ISC)²",
+      "node": "cert-cissp"
+    },
+    {
+      "year": "2023",
+      "title": "IT Infrastructure Manager",
+      "org": "Tilray Brands",
+      "node": "tilray"
+    },
+    {
+      "year": "2024",
+      "title": "CISM Certified",
+      "org": "ISACA",
+      "node": "cert-cism"
+    }
   ],
   "graph": {
     "legend": [
-      { "type": "root", "label": "Operator", "color": "#ff2e63" },
-      { "type": "company", "label": "Engagement", "color": "#00e5ff" },
-      { "type": "achievement", "label": "Objective", "color": "#39ff14" },
-      { "type": "skill", "label": "Capability", "color": "#ffb000" },
-      { "type": "cert", "label": "Credential", "color": "#bd00ff" }
+      {
+        "type": "root",
+        "label": "Operator",
+        "color": "#ff2e63"
+      },
+      {
+        "type": "company",
+        "label": "Engagement",
+        "color": "#00e5ff"
+      },
+      {
+        "type": "achievement",
+        "label": "Objective",
+        "color": "#39ff14"
+      },
+      {
+        "type": "skill",
+        "label": "Capability",
+        "color": "#ffb000"
+      },
+      {
+        "type": "cert",
+        "label": "Credential",
+        "color": "#bd00ff"
+      }
     ],
     "nodes": [
-      { "id": "root", "label": "Philip Stiber\nCISSP · CISM", "type": "root", "value": 50 },
-
-      { "id": "tilray", "label": "Tilray Brands", "type": "company", "value": 32, "meta": "IT Infrastructure Manager · 2023–Present" },
-      { "id": "bakertilly", "label": "Baker Tilly KDN", "type": "company", "value": 28, "meta": "IT Manager · 2019–2023" },
-      { "id": "collinsbarrow", "label": "Collins Barrow Durham", "type": "company", "value": 22, "meta": "Systems Administrator · 2017–2019" },
-      { "id": "sentient", "label": "Complete Sentient", "type": "company", "value": 20, "meta": "Technical Consultant · 2016–2017" },
-      { "id": "bogart", "label": "Bogart & Daugherty", "type": "company", "value": 20, "meta": "IT Consultant · 2010–2014" },
-      { "id": "sarasotasupport", "label": "Sarasotasupport.com", "type": "company", "value": 16, "meta": "Systems Support Analyst · 2009–2010" },
-
-      { "id": "cert-cissp", "label": "CISSP", "type": "cert", "value": 24, "meta": "(ISC)² · 2023" },
-      { "id": "cert-cism", "label": "CISM", "type": "cert", "value": 24, "meta": "ISACA · 2024" },
-
-      { "id": "ach-10ma", "label": "10 M&A in 12mo", "type": "achievement", "value": 18, "meta": "Tilray Beverages → #4 U.S. craft brewer" },
-      { "id": "ach-abinbev", "label": "AB InBev takeover", "type": "achievement", "value": 16, "meta": "4 facilities in 90 days" },
-      { "id": "ach-molson", "label": "Molson Coors migrations", "type": "achievement", "value": 16, "meta": "6 migrations in 60 days" },
-      { "id": "ach-entra", "label": "6 Entra tenant migrations", "type": "achievement", "value": 16, "meta": "900+ employees onboarded" },
-      { "id": "ach-team", "label": "Team of 10 / 65+ sites", "type": "achievement", "value": 14, "meta": "NA & Europe estate" },
-      { "id": "ach-ngfw", "label": "Palo Alto NGFW rollout", "type": "achievement", "value": 14, "meta": "Firm-wide perimeter rebuild" },
-      { "id": "ach-cis", "label": "CIS framework maturity", "type": "achievement", "value": 13, "meta": "Whitelisting, segmentation, IAM" },
-      { "id": "ach-greenfield", "label": "AD/O365 greenfield", "type": "achievement", "value": 14, "meta": "300 endpoints + 50 servers" },
-      { "id": "ach-covid", "label": "160 staff remote / 48h", "type": "achievement", "value": 13, "meta": "COVID-19 continuity cutover" },
-      { "id": "ach-virt", "label": "Hyper-V virtualization", "type": "achievement", "value": 12, "meta": "Full on-prem fleet" },
-      { "id": "ach-sox", "label": "SOX ITGC & IR ops", "type": "achievement", "value": 14, "meta": "Audit-ready, board-defensible IT" },
-      { "id": "ach-secops", "label": "Threat hunting & IR program", "type": "achievement", "value": 12, "meta": "Phish-alert, patch cycles, response" },
-      { "id": "ach-madvisor", "label": "M&A IT due diligence", "type": "achievement", "value": 12, "meta": "Collins Barrow / Durham consolidation" },
-      { "id": "ach-exch", "label": "Exchange → O365 migration", "type": "achievement", "value": 11, "meta": "On-prem mail modernized" },
-      { "id": "ach-dd", "label": "M&A due-diligence data", "type": "achievement", "value": 11, "meta": "Asset inventory + cost models" },
-      { "id": "ach-fractional", "label": "Outsourced IT leadership", "type": "achievement", "value": 12, "meta": "Dozens of firms on retainer" },
-      { "id": "ach-clientmig", "label": "AD + Exchange migrations", "type": "achievement", "value": 11, "meta": "Server 2016 · O365 adoption" },
-      { "id": "ach-legalapps", "label": "30+ legal apps administered", "type": "achievement", "value": 11, "meta": "ProLaw · Worldox · Amicus" },
-      { "id": "ach-advisor", "label": "Advised 2 U.S. Senators", "type": "achievement", "value": 12, "meta": "Trusted-advisor IT strategy" },
-      { "id": "ach-foundations", "label": "SBS · AD · Exchange", "type": "achievement", "value": 10, "meta": "Full-stack Microsoft estate" },
-      { "id": "ach-ransomware", "label": "Ransomware remediation", "type": "achievement", "value": 13, "meta": "Resolved & remediated ransomware events across client estates" },
-
-      { "id": "skill-ma", "label": "M&A Integration", "type": "skill", "value": 16 },
-      { "id": "skill-infra", "label": "IT Infrastructure", "type": "skill", "value": 16 },
-      { "id": "skill-grc", "label": "GRC / SOX ITGC", "type": "skill", "value": 15 },
-      { "id": "skill-netsec", "label": "Network Security", "type": "skill", "value": 14 },
-      { "id": "skill-cloud", "label": "Cloud Security", "type": "skill", "value": 14 },
-      { "id": "skill-iam", "label": "Identity & Access", "type": "skill", "value": 13 },
-      { "id": "skill-bcdr", "label": "Business Continuity / DR", "type": "skill", "value": 14 },
-      { "id": "skill-lead", "label": "Team Leadership", "type": "skill", "value": 15 },
-      { "id": "skill-auto", "label": "Scripting & Automation", "type": "skill", "value": 14 },
-      { "id": "skill-detect", "label": "Detection Engineering", "type": "skill", "value": 12 },
-      { "id": "skill-ir", "label": "Incident Response & Triage", "type": "skill", "value": 14 }
+      {
+        "id": "root",
+        "label": "Philip Stiber\nCISSP · CISM",
+        "type": "root",
+        "value": 50
+      },
+      {
+        "id": "tilray",
+        "label": "Tilray Brands",
+        "type": "company",
+        "value": 32,
+        "meta": "IT Infrastructure Manager · 2023–Present"
+      },
+      {
+        "id": "bakertilly",
+        "label": "Baker Tilly KDN",
+        "type": "company",
+        "value": 28,
+        "meta": "IT Manager · 2019–2023"
+      },
+      {
+        "id": "collinsbarrow",
+        "label": "Collins Barrow Durham",
+        "type": "company",
+        "value": 22,
+        "meta": "Systems Administrator · 2017–2019"
+      },
+      {
+        "id": "sentient",
+        "label": "Complete Sentient",
+        "type": "company",
+        "value": 20,
+        "meta": "Technical Consultant · 2016–2017"
+      },
+      {
+        "id": "bogart",
+        "label": "Bogart & Daugherty",
+        "type": "company",
+        "value": 20,
+        "meta": "IT Consultant · 2010–2014"
+      },
+      {
+        "id": "sarasotasupport",
+        "label": "Sarasotasupport.com",
+        "type": "company",
+        "value": 16,
+        "meta": "Systems Support Analyst · 2009–2010"
+      },
+      {
+        "id": "cert-cissp",
+        "label": "CISSP",
+        "type": "cert",
+        "value": 24,
+        "meta": "(ISC)² · 2023"
+      },
+      {
+        "id": "cert-cism",
+        "label": "CISM",
+        "type": "cert",
+        "value": 24,
+        "meta": "ISACA · 2024"
+      },
+      {
+        "id": "ach-10ma",
+        "label": "10 M&A in 12mo",
+        "type": "achievement",
+        "value": 18,
+        "meta": "Tilray Beverages → #4 U.S. craft brewer"
+      },
+      {
+        "id": "ach-abinbev",
+        "label": "AB InBev takeover",
+        "type": "achievement",
+        "value": 16,
+        "meta": "4 facilities in 90 days"
+      },
+      {
+        "id": "ach-molson",
+        "label": "Molson Coors migrations",
+        "type": "achievement",
+        "value": 16,
+        "meta": "6 migrations in 60 days"
+      },
+      {
+        "id": "ach-entra",
+        "label": "6 Entra tenant migrations",
+        "type": "achievement",
+        "value": 16,
+        "meta": "900+ employees onboarded"
+      },
+      {
+        "id": "ach-team",
+        "label": "Team of 10 / 65+ sites",
+        "type": "achievement",
+        "value": 14,
+        "meta": "NA & Europe estate"
+      },
+      {
+        "id": "ach-ngfw",
+        "label": "Palo Alto NGFW rollout",
+        "type": "achievement",
+        "value": 14,
+        "meta": "Firm-wide perimeter rebuild"
+      },
+      {
+        "id": "ach-cis",
+        "label": "CIS framework maturity",
+        "type": "achievement",
+        "value": 13,
+        "meta": "Whitelisting, segmentation, IAM"
+      },
+      {
+        "id": "ach-greenfield",
+        "label": "AD/O365 greenfield",
+        "type": "achievement",
+        "value": 14,
+        "meta": "300 endpoints + 50 servers"
+      },
+      {
+        "id": "ach-covid",
+        "label": "160 staff remote / 48h",
+        "type": "achievement",
+        "value": 13,
+        "meta": "COVID-19 continuity cutover"
+      },
+      {
+        "id": "ach-virt",
+        "label": "Hyper-V virtualization",
+        "type": "achievement",
+        "value": 12,
+        "meta": "Full on-prem fleet"
+      },
+      {
+        "id": "ach-sox",
+        "label": "SOX ITGC & IR ops",
+        "type": "achievement",
+        "value": 14,
+        "meta": "Audit-ready, board-defensible IT"
+      },
+      {
+        "id": "ach-secops",
+        "label": "Threat hunting & IR program",
+        "type": "achievement",
+        "value": 12,
+        "meta": "Phish-alert, patch cycles, response"
+      },
+      {
+        "id": "ach-madvisor",
+        "label": "M&A IT due diligence",
+        "type": "achievement",
+        "value": 12,
+        "meta": "Collins Barrow / Durham consolidation"
+      },
+      {
+        "id": "ach-exch",
+        "label": "Exchange → O365 migration",
+        "type": "achievement",
+        "value": 11,
+        "meta": "On-prem mail modernized"
+      },
+      {
+        "id": "ach-dd",
+        "label": "M&A due-diligence data",
+        "type": "achievement",
+        "value": 11,
+        "meta": "Asset inventory + cost models"
+      },
+      {
+        "id": "ach-fractional",
+        "label": "Outsourced IT leadership",
+        "type": "achievement",
+        "value": 12,
+        "meta": "Dozens of firms on retainer"
+      },
+      {
+        "id": "ach-clientmig",
+        "label": "AD + Exchange migrations",
+        "type": "achievement",
+        "value": 11,
+        "meta": "Server 2016 · O365 adoption"
+      },
+      {
+        "id": "ach-legalapps",
+        "label": "30+ legal apps administered",
+        "type": "achievement",
+        "value": 11,
+        "meta": "ProLaw · Worldox · Amicus"
+      },
+      {
+        "id": "ach-advisor",
+        "label": "Advised 2 U.S. Senators",
+        "type": "achievement",
+        "value": 12,
+        "meta": "Trusted-advisor IT strategy"
+      },
+      {
+        "id": "ach-foundations",
+        "label": "SBS · AD · Exchange",
+        "type": "achievement",
+        "value": 10,
+        "meta": "Full-stack Microsoft estate"
+      },
+      {
+        "id": "ach-ransomware",
+        "label": "Ransomware remediation",
+        "type": "achievement",
+        "value": 13,
+        "meta": "Resolved & remediated ransomware events across client estates"
+      },
+      {
+        "id": "skill-ma",
+        "label": "M&A Integration",
+        "type": "skill",
+        "value": 16
+      },
+      {
+        "id": "skill-infra",
+        "label": "IT Infrastructure",
+        "type": "skill",
+        "value": 16
+      },
+      {
+        "id": "skill-grc",
+        "label": "GRC / SOX ITGC",
+        "type": "skill",
+        "value": 15
+      },
+      {
+        "id": "skill-netsec",
+        "label": "Network Security",
+        "type": "skill",
+        "value": 14
+      },
+      {
+        "id": "skill-cloud",
+        "label": "Cloud Security",
+        "type": "skill",
+        "value": 14
+      },
+      {
+        "id": "skill-iam",
+        "label": "Identity & Access",
+        "type": "skill",
+        "value": 13
+      },
+      {
+        "id": "skill-bcdr",
+        "label": "Business Continuity / DR",
+        "type": "skill",
+        "value": 14
+      },
+      {
+        "id": "skill-lead",
+        "label": "Team Leadership",
+        "type": "skill",
+        "value": 15
+      },
+      {
+        "id": "skill-auto",
+        "label": "Scripting & Automation",
+        "type": "skill",
+        "value": 14
+      },
+      {
+        "id": "skill-detect",
+        "label": "Detection Engineering",
+        "type": "skill",
+        "value": 12
+      },
+      {
+        "id": "skill-ir",
+        "label": "Incident Response & Triage",
+        "type": "skill",
+        "value": 14
+      }
     ],
     "edges": [
-      { "from": "root", "to": "tilray", "label": "leads" },
-      { "from": "root", "to": "bakertilly", "label": "led" },
-      { "from": "root", "to": "collinsbarrow", "label": "led" },
-      { "from": "root", "to": "sentient", "label": "consulted" },
-      { "from": "root", "to": "bogart", "label": "consulted" },
-      { "from": "root", "to": "sarasotasupport", "label": "consulted" },
-      { "from": "root", "to": "cert-cissp", "label": "earned" },
-      { "from": "root", "to": "cert-cism", "label": "earned" },
-
-      { "from": "tilray", "to": "ach-10ma" },
-      { "from": "tilray", "to": "ach-abinbev" },
-      { "from": "tilray", "to": "ach-molson" },
-      { "from": "tilray", "to": "ach-entra" },
-      { "from": "tilray", "to": "ach-team" },
-      { "from": "bakertilly", "to": "ach-ngfw" },
-      { "from": "bakertilly", "to": "ach-cis" },
-      { "from": "bakertilly", "to": "ach-greenfield" },
-      { "from": "bakertilly", "to": "ach-covid" },
-      { "from": "collinsbarrow", "to": "ach-virt" },
-
-      { "from": "ach-10ma", "to": "skill-ma" },
-      { "from": "ach-abinbev", "to": "skill-ma" },
-      { "from": "ach-molson", "to": "skill-ma" },
-      { "from": "ach-entra", "to": "skill-iam" },
-      { "from": "ach-entra", "to": "skill-cloud" },
-      { "from": "ach-team", "to": "skill-lead" },
-      { "from": "ach-ngfw", "to": "skill-netsec" },
-      { "from": "ach-cis", "to": "skill-grc" },
-      { "from": "ach-cis", "to": "skill-netsec" },
-      { "from": "ach-greenfield", "to": "skill-infra" },
-      { "from": "ach-greenfield", "to": "skill-iam" },
-      { "from": "ach-covid", "to": "skill-bcdr" },
-      { "from": "ach-virt", "to": "skill-infra" },
-      { "from": "ach-virt", "to": "skill-bcdr" },
-
-      { "from": "cert-cissp", "to": "skill-grc" },
-      { "from": "cert-cissp", "to": "skill-netsec" },
-      { "from": "cert-cism", "to": "skill-grc" },
-      { "from": "cert-cism", "to": "skill-lead" },
-      { "from": "cert-cissp", "to": "skill-detect" },
-
-      { "from": "tilray", "to": "ach-sox" },
-      { "from": "bakertilly", "to": "ach-secops" },
-      { "from": "bakertilly", "to": "ach-madvisor" },
-      { "from": "collinsbarrow", "to": "ach-exch" },
-      { "from": "collinsbarrow", "to": "ach-dd" },
-      { "from": "sentient", "to": "ach-fractional" },
-      { "from": "sentient", "to": "ach-clientmig" },
-      { "from": "bogart", "to": "ach-legalapps" },
-      { "from": "bogart", "to": "ach-advisor" },
-      { "from": "sarasotasupport", "to": "ach-foundations" },
-
-      { "from": "ach-sox", "to": "skill-grc" },
-      { "from": "ach-secops", "to": "skill-netsec" },
-      { "from": "ach-secops", "to": "skill-detect" },
-      { "from": "ach-madvisor", "to": "skill-ma" },
-      { "from": "ach-exch", "to": "skill-cloud" },
-      { "from": "ach-exch", "to": "skill-infra" },
-      { "from": "ach-dd", "to": "skill-ma" },
-      { "from": "ach-fractional", "to": "skill-lead" },
-      { "from": "ach-fractional", "to": "skill-infra" },
-      { "from": "ach-clientmig", "to": "skill-infra" },
-      { "from": "ach-clientmig", "to": "skill-auto" },
-      { "from": "ach-legalapps", "to": "skill-infra" },
-      { "from": "ach-advisor", "to": "skill-lead" },
-      { "from": "ach-foundations", "to": "skill-infra" },
-
-      { "from": "ach-entra", "to": "skill-auto" },
-      { "from": "ach-greenfield", "to": "skill-auto" },
-      { "from": "ach-virt", "to": "skill-auto" },
-
-      { "from": "sentient", "to": "ach-ransomware" },
-      { "from": "ach-ransomware", "to": "skill-ir" },
-      { "from": "ach-secops", "to": "skill-ir" },
-      { "from": "ach-sox", "to": "skill-ir" },
-      { "from": "cert-cissp", "to": "skill-ir" },
-      { "from": "cert-cism", "to": "skill-ir" }
+      {
+        "from": "root",
+        "to": "tilray",
+        "label": "leads"
+      },
+      {
+        "from": "root",
+        "to": "bakertilly",
+        "label": "led"
+      },
+      {
+        "from": "root",
+        "to": "collinsbarrow",
+        "label": "led"
+      },
+      {
+        "from": "root",
+        "to": "sentient",
+        "label": "consulted"
+      },
+      {
+        "from": "root",
+        "to": "bogart",
+        "label": "consulted"
+      },
+      {
+        "from": "root",
+        "to": "sarasotasupport",
+        "label": "consulted"
+      },
+      {
+        "from": "root",
+        "to": "cert-cissp",
+        "label": "earned"
+      },
+      {
+        "from": "root",
+        "to": "cert-cism",
+        "label": "earned"
+      },
+      {
+        "from": "tilray",
+        "to": "ach-10ma"
+      },
+      {
+        "from": "tilray",
+        "to": "ach-abinbev"
+      },
+      {
+        "from": "tilray",
+        "to": "ach-molson"
+      },
+      {
+        "from": "tilray",
+        "to": "ach-entra"
+      },
+      {
+        "from": "tilray",
+        "to": "ach-team"
+      },
+      {
+        "from": "bakertilly",
+        "to": "ach-ngfw"
+      },
+      {
+        "from": "bakertilly",
+        "to": "ach-cis"
+      },
+      {
+        "from": "bakertilly",
+        "to": "ach-greenfield"
+      },
+      {
+        "from": "bakertilly",
+        "to": "ach-covid"
+      },
+      {
+        "from": "collinsbarrow",
+        "to": "ach-virt"
+      },
+      {
+        "from": "ach-10ma",
+        "to": "skill-ma"
+      },
+      {
+        "from": "ach-abinbev",
+        "to": "skill-ma"
+      },
+      {
+        "from": "ach-molson",
+        "to": "skill-ma"
+      },
+      {
+        "from": "ach-entra",
+        "to": "skill-iam"
+      },
+      {
+        "from": "ach-entra",
+        "to": "skill-cloud"
+      },
+      {
+        "from": "ach-team",
+        "to": "skill-lead"
+      },
+      {
+        "from": "ach-ngfw",
+        "to": "skill-netsec"
+      },
+      {
+        "from": "ach-cis",
+        "to": "skill-grc"
+      },
+      {
+        "from": "ach-cis",
+        "to": "skill-netsec"
+      },
+      {
+        "from": "ach-greenfield",
+        "to": "skill-infra"
+      },
+      {
+        "from": "ach-greenfield",
+        "to": "skill-iam"
+      },
+      {
+        "from": "ach-covid",
+        "to": "skill-bcdr"
+      },
+      {
+        "from": "ach-virt",
+        "to": "skill-infra"
+      },
+      {
+        "from": "ach-virt",
+        "to": "skill-bcdr"
+      },
+      {
+        "from": "cert-cissp",
+        "to": "skill-grc"
+      },
+      {
+        "from": "cert-cissp",
+        "to": "skill-netsec"
+      },
+      {
+        "from": "cert-cism",
+        "to": "skill-grc"
+      },
+      {
+        "from": "cert-cism",
+        "to": "skill-lead"
+      },
+      {
+        "from": "cert-cissp",
+        "to": "skill-detect"
+      },
+      {
+        "from": "tilray",
+        "to": "ach-sox"
+      },
+      {
+        "from": "bakertilly",
+        "to": "ach-secops"
+      },
+      {
+        "from": "bakertilly",
+        "to": "ach-madvisor"
+      },
+      {
+        "from": "collinsbarrow",
+        "to": "ach-exch"
+      },
+      {
+        "from": "collinsbarrow",
+        "to": "ach-dd"
+      },
+      {
+        "from": "sentient",
+        "to": "ach-fractional"
+      },
+      {
+        "from": "sentient",
+        "to": "ach-clientmig"
+      },
+      {
+        "from": "bogart",
+        "to": "ach-legalapps"
+      },
+      {
+        "from": "bogart",
+        "to": "ach-advisor"
+      },
+      {
+        "from": "sarasotasupport",
+        "to": "ach-foundations"
+      },
+      {
+        "from": "ach-sox",
+        "to": "skill-grc"
+      },
+      {
+        "from": "ach-secops",
+        "to": "skill-netsec"
+      },
+      {
+        "from": "ach-secops",
+        "to": "skill-detect"
+      },
+      {
+        "from": "ach-madvisor",
+        "to": "skill-ma"
+      },
+      {
+        "from": "ach-exch",
+        "to": "skill-cloud"
+      },
+      {
+        "from": "ach-exch",
+        "to": "skill-infra"
+      },
+      {
+        "from": "ach-dd",
+        "to": "skill-ma"
+      },
+      {
+        "from": "ach-fractional",
+        "to": "skill-lead"
+      },
+      {
+        "from": "ach-fractional",
+        "to": "skill-infra"
+      },
+      {
+        "from": "ach-clientmig",
+        "to": "skill-infra"
+      },
+      {
+        "from": "ach-clientmig",
+        "to": "skill-auto"
+      },
+      {
+        "from": "ach-legalapps",
+        "to": "skill-infra"
+      },
+      {
+        "from": "ach-advisor",
+        "to": "skill-lead"
+      },
+      {
+        "from": "ach-foundations",
+        "to": "skill-infra"
+      },
+      {
+        "from": "ach-entra",
+        "to": "skill-auto"
+      },
+      {
+        "from": "ach-greenfield",
+        "to": "skill-auto"
+      },
+      {
+        "from": "ach-virt",
+        "to": "skill-auto"
+      },
+      {
+        "from": "sentient",
+        "to": "ach-ransomware"
+      },
+      {
+        "from": "ach-ransomware",
+        "to": "skill-ir"
+      },
+      {
+        "from": "ach-secops",
+        "to": "skill-ir"
+      },
+      {
+        "from": "ach-sox",
+        "to": "skill-ir"
+      },
+      {
+        "from": "cert-cissp",
+        "to": "skill-ir"
+      },
+      {
+        "from": "cert-cism",
+        "to": "skill-ir"
+      }
     ]
   },
   "travel": {
     "subtitle": "My technology career has taken me across the US and Canada — from data-center cutovers to client sites and industry conferences. These are a few highlights from the road.",
     "slides": [
-      { "src": "assets/travel/1.jpg", "caption": "At the North Portico of the White House — Washington, D.C." },
-      { "src": "assets/travel/2.jpg", "caption": "Inside the White House James S. Brady Press Briefing Room." },
-      { "src": "assets/travel/20170902_151643.jpg", "caption": "Behind the podium in the West Wing press room." },
-      { "src": "assets/travel/20170902_151135.jpg", "caption": "Touring the West Wing interior." },
-      { "src": "assets/travel/20170901_104242_HDR.jpg", "caption": "The White House from the North Lawn fence line." },
-      { "src": "assets/travel/20170901_162404_HDR.jpg", "caption": "Overlooking the West Wing entrance and drive." },
-      { "src": "assets/travel/20170902_153821_HDR.jpg", "caption": "Room 491 — the National Space Council, Eisenhower Executive Office Building." },
-      { "src": "assets/travel/20170902_154907_HDR.jpg", "caption": "A presidential portrait in an EEOB ceremonial room." },
-      { "src": "assets/travel/20170902_155841_HDR.jpg", "caption": "A 48-star flag and eagle standard on display." },
-      { "src": "assets/travel/20170901_165242_HDR.jpg", "caption": "A signed table among the historic furnishings." },
-      { "src": "assets/travel/IMG_3300.JPEG", "caption": "Banking over downtown Seattle and Puget Sound on approach." },
-      { "src": "assets/travel/8.JPEG", "caption": "Microsoft suite overlooking the field at T-Mobile Park, Seattle." },
-      { "src": "assets/travel/9.JPEG", "caption": "T-Mobile Park and the Seattle skyline from the stands." },
-      { "src": "assets/travel/6103608898401234209.JPEG", "caption": "With colleagues at the AWS cloud-security conference." },
-      { "src": "assets/travel/3.JPEG", "caption": "A Midtown Manhattan avenue from a high-rise office window." },
-      { "src": "assets/travel/10.JPEG", "caption": "Park Avenue on a rainy New York morning." },
-      { "src": "assets/travel/IMG_5212.JPEG", "caption": "Sunset over the Manhattan skyline." },
-      { "src": "assets/travel/7.JPEG", "caption": "A crisp afternoon in Central Park, New York City." },
-      { "src": "assets/travel/IMG_5363.JPEG", "caption": "The Rockefeller Center Christmas tree at night." },
-      { "src": "assets/travel/IMG_6450.JPEG", "caption": "Union Station and the CN Tower, Toronto." },
-      { "src": "assets/travel/IMG_7114.JPEG", "caption": "The CN Tower lit up over downtown Toronto at night." },
-      { "src": "assets/travel/6.JPEG", "caption": "Hockey night in Toronto — the anthem before puck drop." },
-      { "src": "assets/travel/IMG_0417.JPEG", "caption": "Blue Point Brewing Company — Patchogue, New York." },
-      { "src": "assets/travel/IMG_6257.JPEG", "caption": "The Blue Point brewpub and clock tower." },
-      { "src": "assets/travel/IMG_8015.JPEG", "caption": "A wall of brewing history — vintage cans and bottles." },
-      { "src": "assets/travel/IMG_8757.JPEG", "caption": "Aging barrels at Breckenridge Distillery, Colorado." },
-      { "src": "assets/travel/IMG_8777.JPEG", "caption": "Inside the Breckenridge Distillery tasting hall." },
-      { "src": "assets/travel/IMG_8879.JPEG", "caption": "The whiskey wall at Breckenridge Distillery." },
-      { "src": "assets/travel/IMG_8620.JPEG", "caption": "A modern taproom at golden hour out west." },
-      { "src": "assets/travel/IMG_6122.JPEG", "caption": "A Tilray Brands tasting room — the brand portfolio on the wall." }
+      {
+        "src": "assets/travel/1.jpg",
+        "caption": "At the North Portico of the White House — Washington, D.C."
+      },
+      {
+        "src": "assets/travel/2.jpg",
+        "caption": "Inside the White House James S. Brady Press Briefing Room."
+      },
+      {
+        "src": "assets/travel/20170902_151643.jpg",
+        "caption": "Behind the podium in the West Wing press room."
+      },
+      {
+        "src": "assets/travel/20170902_151135.jpg",
+        "caption": "Touring the West Wing interior."
+      },
+      {
+        "src": "assets/travel/20170901_104242_HDR.jpg",
+        "caption": "The White House from the North Lawn fence line."
+      },
+      {
+        "src": "assets/travel/20170901_162404_HDR.jpg",
+        "caption": "Overlooking the West Wing entrance and drive."
+      },
+      {
+        "src": "assets/travel/20170902_153821_HDR.jpg",
+        "caption": "Room 491 — the National Space Council, Eisenhower Executive Office Building."
+      },
+      {
+        "src": "assets/travel/20170902_154907_HDR.jpg",
+        "caption": "A presidential portrait in an EEOB ceremonial room."
+      },
+      {
+        "src": "assets/travel/20170902_155841_HDR.jpg",
+        "caption": "A 48-star flag and eagle standard on display."
+      },
+      {
+        "src": "assets/travel/20170901_165242_HDR.jpg",
+        "caption": "A signed table among the historic furnishings."
+      },
+      {
+        "src": "assets/travel/IMG_3300.JPEG",
+        "caption": "Banking over downtown Seattle and Puget Sound on approach."
+      },
+      {
+        "src": "assets/travel/8.JPEG",
+        "caption": "Microsoft suite overlooking the field at T-Mobile Park, Seattle."
+      },
+      {
+        "src": "assets/travel/9.JPEG",
+        "caption": "T-Mobile Park and the Seattle skyline from the stands."
+      },
+      {
+        "src": "assets/travel/6103608898401234209.JPEG",
+        "caption": "With colleagues at the AWS cloud-security conference."
+      },
+      {
+        "src": "assets/travel/3.JPEG",
+        "caption": "A Midtown Manhattan avenue from a high-rise office window."
+      },
+      {
+        "src": "assets/travel/10.JPEG",
+        "caption": "Park Avenue on a rainy New York morning."
+      },
+      {
+        "src": "assets/travel/IMG_5212.JPEG",
+        "caption": "Sunset over the Manhattan skyline."
+      },
+      {
+        "src": "assets/travel/7.JPEG",
+        "caption": "A crisp afternoon in Central Park, New York City."
+      },
+      {
+        "src": "assets/travel/IMG_5363.JPEG",
+        "caption": "The Rockefeller Center Christmas tree at night."
+      },
+      {
+        "src": "assets/travel/IMG_6450.JPEG",
+        "caption": "Union Station and the CN Tower, Toronto."
+      },
+      {
+        "src": "assets/travel/IMG_7114.JPEG",
+        "caption": "The CN Tower lit up over downtown Toronto at night."
+      },
+      {
+        "src": "assets/travel/6.JPEG",
+        "caption": "Hockey night in Toronto — the anthem before puck drop."
+      },
+      {
+        "src": "assets/travel/IMG_0417.JPEG",
+        "caption": "Blue Point Brewing Company — Patchogue, New York."
+      },
+      {
+        "src": "assets/travel/IMG_6257.JPEG",
+        "caption": "The Blue Point brewpub and clock tower."
+      },
+      {
+        "src": "assets/travel/IMG_8015.JPEG",
+        "caption": "A wall of brewing history — vintage cans and bottles."
+      },
+      {
+        "src": "assets/travel/IMG_8757.JPEG",
+        "caption": "Aging barrels at Breckenridge Distillery, Colorado."
+      },
+      {
+        "src": "assets/travel/IMG_8777.JPEG",
+        "caption": "Inside the Breckenridge Distillery tasting hall."
+      },
+      {
+        "src": "assets/travel/IMG_8879.JPEG",
+        "caption": "The whiskey wall at Breckenridge Distillery."
+      },
+      {
+        "src": "assets/travel/IMG_8620.JPEG",
+        "caption": "A modern taproom at golden hour out west."
+      },
+      {
+        "src": "assets/travel/IMG_6122.JPEG",
+        "caption": "A Tilray Brands tasting room — the brand portfolio on the wall."
+      }
+    ]
+  },
+  "footprint": {
+    "intro": "Cities across North America and Europe where I've delivered hands-on IT, infrastructure, and security work. Dense regions are grouped — hover a marker or a city to link the two.",
+    "maps": [
+      {
+        "id": "na",
+        "title": "North America",
+        "asset": "assets/north-america.svg",
+        "viewBox": "0 0 1000 720",
+        "clusters": [
+          {
+            "id": "00",
+            "label": "Tampa Bay & Sarasota",
+            "x": 805.4,
+            "y": 613.7,
+            "cities": [
+              "Tampa, FL",
+              "St. Petersburg, FL",
+              "Temple Terrace, FL",
+              "Brandon, FL",
+              "Bradenton, FL",
+              "Sarasota, FL",
+              "Longboat Key, FL",
+              "Venice, FL",
+              "North Port, FL"
+            ]
+          },
+          {
+            "id": "01",
+            "label": "Southwest Florida",
+            "x": 822.3,
+            "y": 640.7,
+            "cities": [
+              "Naples, FL",
+              "Sanibel Island, FL"
+            ]
+          },
+          {
+            "id": "02",
+            "label": "South Florida",
+            "x": 860.1,
+            "y": 642,
+            "cities": [
+              "Miami, FL",
+              "Ft. Lauderdale, FL"
+            ]
+          },
+          {
+            "id": "03",
+            "label": "Orlando, FL",
+            "x": 823.8,
+            "y": 587.3,
+            "cities": [
+              "Orlando, FL"
+            ]
+          },
+          {
+            "id": "04",
+            "label": "Atlanta, GA",
+            "x": 744.3,
+            "y": 476.2,
+            "cities": [
+              "Atlanta, GA"
+            ]
+          },
+          {
+            "id": "05",
+            "label": "New York & Long Island",
+            "x": 913.8,
+            "y": 267.8,
+            "cities": [
+              "New York City, NY",
+              "Patchogue, NY",
+              "Montauk, NY"
+            ]
+          },
+          {
+            "id": "06",
+            "label": "Moorestown, NJ",
+            "x": 886,
+            "y": 296.7,
+            "cities": [
+              "Moorestown, NJ"
+            ]
+          },
+          {
+            "id": "07",
+            "label": "Columbus, OH",
+            "x": 746.7,
+            "y": 326.4,
+            "cities": [
+              "Columbus, OH"
+            ]
+          },
+          {
+            "id": "08",
+            "label": "Detroit, MI",
+            "x": 736.7,
+            "y": 270.8,
+            "cities": [
+              "Detroit, MI"
+            ]
+          },
+          {
+            "id": "09",
+            "label": "Denver & the Rockies",
+            "x": 348.7,
+            "y": 350.9,
+            "cities": [
+              "Denver, CO",
+              "Breckenridge, CO"
+            ]
+          },
+          {
+            "id": "10",
+            "label": "San Antonio, TX",
+            "x": 472.2,
+            "y": 597.7,
+            "cities": [
+              "San Antonio, TX"
+            ]
+          },
+          {
+            "id": "11",
+            "label": "Boise, ID",
+            "x": 179.3,
+            "y": 230.9,
+            "cities": [
+              "Boise, ID"
+            ]
+          },
+          {
+            "id": "12",
+            "label": "Seattle, WA",
+            "x": 104.2,
+            "y": 116,
+            "cities": [
+              "Seattle, WA"
+            ]
+          },
+          {
+            "id": "13",
+            "label": "Portland & Willamette Valley",
+            "x": 75.6,
+            "y": 183.4,
+            "cities": [
+              "Portland, OR",
+              "Eugene, OR",
+              "Springfield, OR"
+            ]
+          },
+          {
+            "id": "14",
+            "label": "Bend, OR",
+            "x": 98.5,
+            "y": 201.4,
+            "cities": [
+              "Bend, OR"
+            ]
+          },
+          {
+            "id": "15",
+            "label": "Greater Toronto & Durham",
+            "x": 795.3,
+            "y": 224,
+            "cities": [
+              "Downtown Toronto, ON",
+              "Mississauga, ON",
+              "Markham, ON",
+              "Pickering, ON",
+              "Ajax, ON",
+              "Whitby, ON",
+              "Oshawa, ON",
+              "Bowmanville, ON"
+            ]
+          },
+          {
+            "id": "16",
+            "label": "Kawartha Lakes",
+            "x": 802.4,
+            "y": 209.8,
+            "cities": [
+              "Peterborough, ON",
+              "Lindsay, ON"
+            ]
+          },
+          {
+            "id": "17",
+            "label": "Cobourg–Quinte corridor",
+            "x": 817,
+            "y": 212.9,
+            "cities": [
+              "Cobourg, ON",
+              "Trenton, ON",
+              "Belleville, ON"
+            ]
+          },
+          {
+            "id": "18",
+            "label": "Niagara & Haldimand",
+            "x": 793.6,
+            "y": 243.6,
+            "cities": [
+              "Niagara Falls, ON",
+              "Cayuga, ON"
+            ]
+          },
+          {
+            "id": "19",
+            "label": "Southwest Ontario",
+            "x": 754.7,
+            "y": 263.1,
+            "cities": [
+              "London, ON",
+              "Leamington, ON"
+            ]
+          },
+          {
+            "id": "20",
+            "label": "Ottawa–Gatineau",
+            "x": 841.5,
+            "y": 172.9,
+            "cities": [
+              "Gatineau, QC"
+            ]
+          },
+          {
+            "id": "21",
+            "label": "Laurentians, QC",
+            "x": 860.4,
+            "y": 154,
+            "cities": [
+              "Sainte-Agathe-des-Monts, QC"
+            ]
+          },
+          {
+            "id": "22",
+            "label": "Winnipeg, MB",
+            "x": 495.3,
+            "y": 112.6,
+            "cities": [
+              "Winnipeg, MB"
+            ]
+          },
+          {
+            "id": "23",
+            "label": "Nanaimo, BC",
+            "x": 90.2,
+            "y": 73.8,
+            "cities": [
+              "Nanaimo, BC"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "eu",
+        "title": "Europe",
+        "asset": "assets/europe.svg",
+        "viewBox": "0 0 520 620",
+        "clusters": [
+          {
+            "id": "00",
+            "label": "London, UK",
+            "x": 281.7,
+            "y": 199.7,
+            "cities": [
+              "London, UK"
+            ]
+          },
+          {
+            "id": "01",
+            "label": "Densborn, Germany",
+            "x": 397.2,
+            "y": 247.2,
+            "cities": [
+              "Densborn, DE"
+            ]
+          },
+          {
+            "id": "02",
+            "label": "Neumünster, Germany",
+            "x": 460,
+            "y": 136,
+            "cities": [
+              "Neumünster, DE"
+            ]
+          },
+          {
+            "id": "03",
+            "label": "Cantanhede, Portugal",
+            "x": 60,
+            "y": 484,
+            "cities": [
+              "Cantanhede, PT"
+            ]
+          },
+          {
+            "id": "04",
+            "label": "Cairo Montenotte, Italy",
+            "x": 428.7,
+            "y": 412.3,
+            "cities": [
+              "Cairo Montenotte, IT"
+            ]
+          }
+        ]
+      }
     ]
   }
 }

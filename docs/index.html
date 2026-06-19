@@ -68,6 +68,7 @@
     <a class="navlink" href="#timeline">timeline</a>
     <a class="navlink" href="#experience">experience</a>
     <a class="navlink" href="#certs">certs</a>
+    <a class="navlink" href="#map">footprint</a>
     <a class="navlink" href="#repos">code</a>
     <a class="navlink" href="#travel">travel</a>
     <a class="navlink always" href="https://www.linkedin.com/in/pstiber/" target="_blank" rel="noopener">linkedin ↗</a>
@@ -345,6 +346,31 @@
       </div>
     </section>
 
+    <!-- ============================ FIELD FOOTPRINT (MAPS) ============================ -->
+    <section id="map" aria-labelledby="map-h">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">// field footprint</div>
+          <h2 id="map-h">Field Footprint</h2>
+          <p id="map-intro"></p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-figures">
+            <figure class="map-figure" data-map="na">
+              <figcaption class="map-cap">North America</figcaption>
+              <div class="map-host" id="map-host-na"><!-- base SVG + markers injected by map.js --></div>
+            </figure>
+            <figure class="map-figure map-figure--eu" data-map="eu">
+              <figcaption class="map-cap">Europe</figcaption>
+              <div class="map-host" id="map-host-eu"><!-- base SVG + markers injected by map.js --></div>
+            </figure>
+          </div>
+          <div class="map-list" id="map-list" aria-label="Regions and cities"><!-- grouped city list injected by map.js --></div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============================ GITHUB REPOS ============================ -->
     <section id="repos" aria-labelledby="repos-h">
       <div class="wrap">
@@ -409,6 +435,7 @@
   <script src="js/heatmap.js"></script>
   <script src="js/wordcloud.js"></script>
   <script src="js/estate.js"></script>
+  <script src="js/map.js"></script>
 
   <!-- Credly badge embeds — renders the interactive animated badges in the certs section -->
   <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>

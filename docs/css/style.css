@@ -996,6 +996,104 @@ footer .ascii { color: var(--neon-green); white-space: pre; font-size: 0.7rem; l
   .travel-stage { height: 56vh; }
 }
 
+/* ---------- Field Footprint (maps) ---------- */
+.map-layout {
+  display: grid; gap: 22px;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  align-items: start;
+}
+@media (max-width: 880px) { .map-layout { grid-template-columns: 1fr; } }
+
+.map-figures { display: flex; flex-direction: column; gap: 18px; }
+.map-figure {
+  margin: 0; background: var(--bg-3); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px 16px 10px;
+}
+.map-figure--eu { align-self: start; max-width: 60%; }
+@media (max-width: 880px) { .map-figure--eu { max-width: 100%; } }
+.map-cap {
+  font-family: var(--mono); font-size: 0.78rem; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--text-dim); margin-bottom: 8px;
+}
+.map-host { width: 100%; }
+.footprint-map { width: 100%; height: auto; display: block; overflow: visible; }
+.footprint-map .country {
+  fill: rgba(0, 229, 255, 0.045);
+  stroke: rgba(0, 229, 255, 0.28);
+  stroke-width: 0.8; stroke-linejoin: round;
+}
+.map-fallback { color: var(--text-dim); font-family: var(--mono); font-size: 0.85rem; }
+
+/* Markers */
+.map-marker { cursor: pointer; }
+.map-marker .mk-dot {
+  fill: var(--neon-green); stroke: #05080d; stroke-width: 1.2;
+  transition: fill 0.15s ease, transform 0.15s ease;
+  transform-box: fill-box; transform-origin: center;
+}
+.map-marker .mk-halo {
+  fill: var(--neon-green); opacity: 0.55;
+  transform-box: fill-box; transform-origin: center;
+  animation: mk-pulse 2.8s ease-out infinite;
+}
+.map-marker .mk-badge {
+  fill: #05080d; font-family: var(--mono); font-weight: 700; font-size: 13px;
+  text-anchor: middle; dominant-baseline: central; pointer-events: none;
+}
+@keyframes mk-pulse {
+  0%   { transform: scale(0.55); opacity: 0.55; }
+  70%  { transform: scale(1.9);  opacity: 0; }
+  100% { transform: scale(1.9);  opacity: 0; }
+}
+.map-marker:hover .mk-dot,
+.map-marker.is-active .mk-dot {
+  fill: #aaff5a; transform: scale(1.35);
+}
+.map-marker.is-active .mk-halo { opacity: 0.85; }
+.map-marker:focus { outline: none; }
+.map-marker:focus .mk-dot { stroke: var(--cyan); stroke-width: 2; }
+
+/* City list */
+.map-list { max-height: 600px; overflow-y: auto; padding-right: 6px; }
+@media (max-width: 880px) { .map-list { max-height: none; } }
+.ml-title {
+  position: sticky; top: 0; z-index: 1; margin: 0 0 8px;
+  padding: 6px 0; background: var(--bg);
+  font-family: var(--mono); font-size: 0.8rem; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--cyan);
+}
+.ml-group + .ml-group { margin-top: 16px; }
+.ml-region {
+  padding: 8px 10px; border-radius: 8px; cursor: pointer;
+  border: 1px solid transparent; border-left: 2px solid transparent;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.ml-region:focus { outline: none; }
+.ml-region:hover, .ml-region:focus, .ml-region.is-active {
+  background: rgba(57, 255, 20, 0.06);
+  border-color: rgba(57, 255, 20, 0.25);
+  border-left-color: var(--neon-green);
+}
+.ml-region-head { display: flex; align-items: center; gap: 8px; }
+.ml-dot {
+  width: 8px; height: 8px; border-radius: 50%; flex: none;
+  background: var(--neon-green); box-shadow: 0 0 6px rgba(57, 255, 20, 0.7);
+}
+.ml-name { color: var(--text-bright); font-weight: 600; font-size: 0.92rem; }
+.ml-count {
+  margin-left: auto; font-family: var(--mono); font-size: 0.72rem;
+  color: var(--text-dim); background: var(--bg-2);
+  border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px;
+}
+.ml-cities {
+  list-style: none; margin: 4px 0 0; padding: 0 0 0 16px;
+  display: flex; flex-wrap: wrap; gap: 2px 10px;
+}
+.ml-cities li {
+  font-family: var(--mono); font-size: 0.72rem; color: var(--text-dim);
+}
+.ml-cities li::before { content: "› "; color: rgba(0, 229, 255, 0.5); }
+
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; scroll-behavior: auto !important; }

@@ -19,6 +19,7 @@ A menu of **marketable, cyber-themed visual concepts** for this portfolio. The s
 | 7 | **Terminal / hero boot screen** — `whoami --full` Kali-style prompt | Vanilla CSS | Establishes red-team identity in the first second |
 | 8 | **Global estate map** — Tilray's NA + Europe sites on an equirectangular SVG, glowing markers + hub-and-spoke links | Vanilla SVG/JS | Dependency-free, offline; visualizes the scope of operations managed (see #21) |
 | 9 | **Certification badge wall + Credly embeds** — CISSP/CISM crests, hover-to-verify issuer logos, cert→work mapping | Credly embed + CSS | Trust signals, independently verifiable (see #28) |
+| 10 | **Field Footprint maps** — North America + Europe, neon city markers grouped into regions, synced to a scannable city list (hover one ↔ highlight the other) | Vanilla SVG/JS (d3-geo at build time) | Shows the geographic reach of the work; dependency-free & offline (see #21/#22) |
 
 ---
 
