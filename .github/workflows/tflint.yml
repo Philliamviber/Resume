@@ -1,0 +1,34 @@
+name: TFLint
+
+on:
+  pull_request:
+    paths:
+      - "**/*.tf"
+      - ".tflint.hcl"
+  push:
+    branches: [main]
+    paths:
+      - "**/*.tf"
+      - ".tflint.hcl"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tflint:
+    name: Terraform lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up TFLint
+        uses: terraform-linters/setup-tflint@v4
+
+      - name: Initialize TFLint plugins
+        run: tflint --init
+
+      - name: Run TFLint recursively
+        run: tflint --recursive
