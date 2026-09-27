@@ -2,169 +2,121 @@
 
 # Philip Stiber · CISSP, CISM
 
-### Cybersecurity Leadership · IT Infrastructure Management · M&A Technology Integration
+### Infrastructure & Security Leadership · Secure Enterprise Transformation · Controls & Resilience
 
-[![CISSP](https://img.shields.io/badge/CISSP-(ISC)%C2%B2-39ff14?style=for-the-badge&labelColor=05080d)](https://www.isc2.org/)
-[![CISM](https://img.shields.io/badge/CISM-ISACA-ffb000?style=for-the-badge&labelColor=05080d)](https://www.isaca.org/credentialing/cism)
-[![Location](https://img.shields.io/badge/Peterborough-ON,_Canada-00e5ff?style=for-the-badge&labelColor=05080d)](#)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-pstiber-bd00ff?style=for-the-badge&logo=linkedin&labelColor=05080d)](https://www.linkedin.com/in/pstiber/)
+[![CISSP](https://img.shields.io/badge/CISSP-(ISC)%C2%B2-39ff14?style=for-the-badge&labelColor=05080d)](https://www.credly.com/badges/e7398140-fb0e-4ce8-86be-ecc8999d3d64/public_url)
+[![CISM](https://img.shields.io/badge/CISM-ISACA-ffb000?style=for-the-badge&labelColor=05080d)](https://www.credly.com/badges/af84d868-20c3-43b2-9d26-e2656fb7868a/public_url)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-pstiber-00e5ff?style=for-the-badge&logo=linkedin&labelColor=05080d)](https://www.linkedin.com/in/pstiber/)
 
-**🔗 [Launch the interactive portfolio →](https://philliamviber.github.io/Resume/)**
-
-*A BloodHound-style, force-directed map of a 15-year cybersecurity and infrastructure career.*
+**[Portfolio →](https://philliamviber.github.io/Resume/)** · **[Résumé (PDF) →](docs/Philip-Stiber-Resume.pdf)**
 
 </div>
 
 ---
 
-## 🎯 Summary
+## Summary
 
-> **Two companies become one — and the technology has to merge overnight: secure, audited, and running by Monday. That's my job.**
+> A technically grounded infrastructure leader who develops capable teams, directs secure enterprise transformation, and connects architecture, operational resilience and controls to measurable business value.
 
-For 15 years I've worked at the intersection of three roles most people pick only one of: the **engineer** who builds the systems, the **security leader** who defends and governs them, and the **integrator** who fuses entire companies together after an acquisition. I came up hands-on — Active Directory, networks, virtualization, PowerShell — and never traded that depth away as I moved into leadership.
+I lead the global infrastructure team at **Tilray Brands**, a multinational, regulated enterprise that grows by acquisition. My team integrates what the business acquires, retires what it no longer needs, and runs more than 50 of the SOX IT general controls it is audited on. I set direction, challenge designs and weigh cost against risk; experienced engineers own the plans, the delivery and the playbooks.
 
-Today I run global infrastructure and M&A integration at **Tilray Brands**, where I folded **10 acquisitions into one secure platform in 12 months**, migrated **900+ employees** across Microsoft Entra tenants, and built the **SOX ITGC**, system-hardening, and incident-response controls that keep auditors and executives confident. **CISSP-** and **CISM-certified**, I translate fluently between the server room and the boardroom: I can architect the network, write the script, pass the audit, and brief the C-suite on the risk — often in the same week.
-
----
-
-## 🔀 How my disciplines cross
-
-A specialist gets hired for one thing. I get hired because the wires connect — each layer was built on top of the last, so the work can't be siloed.
-
-- **Build it, then defend it** — I architect the AD, network, and virtualization estate, *then* harden it (segmentation, NGFW, whitelisting, CIS). The defense is designed by someone who knows how the machine actually works.
-- **Merge companies, not just mailboxes** — M&A is where identity, cloud, networking, and governance collide at once. I collapse acquired tenants, domains, and email into one governed Entra/M365 estate on a 60–90 day clock, without dropping security or breaking the business.
-- **Make compliance operational** — I turn SOX ITGC, NIST 800-53, and CIS into living controls (SLAs, BIAs, patch cycles, access reviews), not audit-season slideware.
-- **Lead without losing the keyboard** — I lead distributed teams of engineers and architects while staying technical enough to do the work myself. Engineers respect it; executives rely on it.
-- **Resilience as a habit** — from a 48-hour COVID-19 remote cutover for 160 staff to DR-ready virtualization, continuity is baked in, not bolted on.
-
----
-
-## 📈 Rare by the numbers
-
-The market is full of specialists. The value is in the overlap — and the overlap is uncommon.
-
-| Figure | What it means |
+| Delivered | Underway |
 |---|---|
-| **CISSP + CISM** | Most security professionals hold one or the other. Both together validate that I can **build and defend** the systems *and* **govern** the program and its risk. |
-| **70–90%** | The share of M&A deals that *Harvard Business Review* and others have long reported fail to deliver their expected value — with technology integration repeatedly named a leading cause. I've personally delivered **10 integrations in 12 months**. |
-| **3 deep domains** | Candidates are usually deep-technical *or* strategic. Hands-on infrastructure **+** security leadership **+** M&A delivery is a narrow slice of the talent pool. |
-| **15 years** | Hands-on through executive-facing — technical depth I never gave up. Still writing the PowerShell and reading the KQL while owning the strategy. |
+| **10** acquired organizations integrated in 12 months | Phased consolidation of an acquired Azure/AWS estate, targeting a six-figure annual OPEX reduction |
+| **900+** employees moved onto unified identity (6 Entra tenant migrations) | Azure Virtual Desktop deployed as code (Bicep) |
+| **50+** SOX IT general controls run and maintained | |
+| **~⅔** of the virtual-machine estate retired, with a six-figure annual OPEX reduction | IT's GMP compliance work: system validation, ITGCs and RPO/RTO attestations for lab systems and one site's ERP |
+| Microsoft CAF program: governed Azure landing zones and a Meraki SD-WAN hub in Azure | |
+| **160** staff moved remote in 48 hours (COVID-19) | |
 
 ---
 
-## 📊 Impact at a glance
+## The site
 
-| Metric | Result |
-|---|---|
-| 🔀 **M&A integrations** | **10** acquired orgs integrated in **12 months** |
-| 🍺 **Market outcome** | Helped make Tilray Beverages the **#4 craft brewer in the U.S.** |
-| ⚡ **Facility takeover** | **4** AB InBev production facilities in **90 days** |
-| 🔁 **Migration sprint** | **6** Molson Coors migrations in **60 days** |
-| 👥 **Identity** | **6** Entra tenant-to-tenant migrations · **900+** employees onboarded |
-| 🖥️ **Greenfield rebuild** | **350+** endpoints & servers reimaged |
-| 🚨 **Continuity** | **160** staff moved remote in **48 hours** (COVID-19) |
-| 🌐 **Scope** | Team of **10** supporting **65+** plants, brew pubs & offices across NA & Europe |
-
----
-
-## 🕸️ The interactive portfolio
-
-This repo is also a **GitHub Pages site** that renders the resume as a living, explorable map — built in the spirit of the [OSINT Framework](https://osintframework.com) and [BloodHound](https://github.com/SpecterOps/BloodHound) attack-path graphs.
+A static, single-page GitHub Pages site with a dark "SOC console" look. One JSON file drives every section.
 
 | Section | What it shows |
 |---|---|
-| 🔗 **[Career Graph](https://philliamviber.github.io/Resume/#graph)** | Force-directed "attack path": **operator → engagements → objectives → capabilities → credentials**. Drag, zoom, search, and filter. |
-| 🛰️ **[Skill Radar](https://philliamviber.github.io/Resume/#radar)** | Spider chart of 8 capability domains. |
-| 🔥 **[Proficiency Heatmap](https://philliamviber.github.io/Resume/#radar)** | Per-skill signal-meter grid. |
-| 🧰 **[Tech Arsenal](https://philliamviber.github.io/Resume/#cloud)** | Weighted word cloud of platforms & languages. |
-| 🧭 **[Timeline](https://philliamviber.github.io/Resume/#timeline)** | The career kill-chain, 2010 → today. |
+| **Hero** | Positioning, a live status log, and an animated network canvas |
+| **Profile** | The four business problems I'm brought in to solve |
+| **By the numbers** | Delivered outcomes only, plus profile facts |
+| **Selected work** | Six case files (problem, constraints, role, team, decisions, outcome) with animated, illustrative diagrams and a delivered / underway / ongoing status on each |
+| **Leadership approach** | An interactive delivery loop showing who owns each step |
+| **Capabilities** | Five capability areas, a NIST CSF 2.0 practice map, a radar chart and the tooling stack |
+| **Career graph** | A BloodHound-style force-directed map of roles, outcomes, capabilities and credentials |
+| **Experience** | A timeline rail plus role cards with a hover-to-reveal business impact for each achievement |
+| **Credentials** | Credly-verified CISSP and CISM, what each one maps to in the work, and current direction |
+| **Résumé** | [`resume.html`](docs/resume.html): an ATS-friendly, print-ready résumé built from the same facts, plus a PDF |
 
-> 💡 Want more visuals? See **[DESIGNS.md](DESIGNS.md)** — a catalog of ~30 marketable, cyber-themed design concepts (Sankey, chord, MITRE ATT&CK matrix, geo-map, 3D graph, and more) ready to bolt on.
-
----
-
-## 🧑‍💻 Experience
-
-**Tilray Brands Inc.** — *IT Infrastructure Manager* · Toronto, ON · Jul 2023 – Present
-Global infrastructure & high-tempo M&A integration for a global beverage-alcohol / CPG enterprise. Led 10 acquisition integrations, Anheuser-Busch & Molson Coors craft-brand integrations, 6 Entra tenant migrations, and a 10-person team across 65+ sites.
-
-**Baker Tilly KDN LLP** — *Information Technology Manager* · Courtice, ON · Jan 2019 – Feb 2023
-Matured the security program (CIS controls, firm-wide Palo Alto NGFW, threat hunting), rebuilt AD/O365 greenfield (300 endpoints + 50 servers), and ran the 48-hour COVID-19 remote-work cutover for 160 staff.
-
-**Collins Barrow Durham LLP** — *IT Systems Administrator* · Courtice, ON · Nov 2017 – Jan 2019
-Exchange→O365 migration, full Hyper-V virtualization, GPO/Windows hardening, and merger due-diligence prep.
-
-**Complete Sentient Information Systems** — *IT Systems Technical Consultant* · Oshawa, ON · May 2016 – Nov 2017
-AD/Exchange migrations, virtualization, and O365 deployments for legal, CPA, and SMB clients across the eastern GTA.
-
-**Bogart & Daugherty Consulting** — *IT Consultant* · Sarasota, FL · Apr 2010 – Sep 2014
-Exchange/BES/AD/Windows migrations, MSP escalation, and support for 30+ legal line-of-business applications.
-
-*Full role detail lives on the [live site](https://philliamviber.github.io/Resume/#experience) and in [`docs/data/resume-data.json`](docs/data/resume-data.json).*
+All motion is generated in code (canvas and SVG), with no video files. It pauses when off-screen and turns off completely for visitors who set *prefers-reduced-motion*.
 
 ---
 
-## 🎓 Education & Certifications
+## Security and privacy posture
 
-- **CISSP** — (ISC)² · Issued Jun 2023
-- **CISM** — ISACA · Issued Jun 2024
-- Coursework in **Computer Engineering** — University of South Florida (Tampa, FL)
-- Coursework in **Network Engineering & Windows Server Administration** — State College of Florida (Bradenton, FL)
+This is a security leader's site, so it holds itself to the same bar:
 
----
-
-## 🛠️ Tech stack
-
-**Enterprise:** Active Directory · Exchange · Hyper-V · VMware · ServiceNow · Cisco Meraki
-**Cloud:** Microsoft 365 · Azure IaaS · Azure Arc · Okta · Duo · Entra ID
-**Security:** Palo Alto NGFW · NIST 800-53 · SOX ITGC · CIS Controls
-**Scripting:** PowerShell · SQL · KQL · WMI · Python
+- **Strict Content-Security-Policy.** Scripts load only from this origin, plus Credly's badge embed. No inline scripts.
+- **No trackers, analytics or third-party fonts.** Inter and JetBrains Mono are self-hosted under the SIL OFL.
+- **Images are re-encoded without EXIF**, so no GPS, device or timestamp metadata is published. [`tools/check-site.py`](tools/check-site.py) enforces this in CI on every push and PR.
+- **No email or phone number** is published. Contact goes through LinkedIn.
+- **Case studies are generalized.** They contain no counterparties, run-rates, site names or architecture detail, and projected savings are labelled as targets, never as results.
+- **Private working notes** live in a git-ignored `private/` folder and are never committed.
 
 ---
 
-## 🚀 Run it locally
+## Run it locally
 
-The site is fully static and **offline-capable** (libraries are vendored in [`docs/vendor/`](docs/vendor/)). Because it loads JSON via `fetch()`, serve it over HTTP rather than opening the file directly:
+The site fetches its JSON, so serve it over HTTP instead of opening the file directly:
 
 ```bash
 cd docs
-python -m http.server 8000
-# then open http://localhost:8000
+python3 -m http.server 8000
+# open http://localhost:8000
 ```
 
-### Enable GitHub Pages (one-time)
+Before pushing, run the same guard CI runs:
 
-**Settings → Pages → Build and deployment → Deploy from a branch → `main` / `/docs` → Save.**
-The site then publishes to **https://philliamviber.github.io/Resume/**.
+```bash
+pip install pillow && python3 tools/check-site.py
+```
+
+### Branches
+
+- `main` is what GitHub Pages publishes (**Settings → Pages → Deploy from a branch → `main` / `/docs`**).
+- `dev` is where changes are built and reviewed. Merge `dev` into `main` to go live.
 
 ---
 
-## 📁 Repository structure
+## Repository layout
 
 ```
 Resume/
-├── README.md                # you are here
-├── DESIGNS.md               # ~30 visual concept ideas
-├── LICENSE                  # MIT
-└── docs/                    # GitHub Pages root
-    ├── index.html           # single-page interactive site
-    ├── css/style.css        # dark red-team / BloodHound theme
+├── README.md
+├── DESIGNS.md                 # visual concept catalog (built + backlog)
+├── tools/
+│   ├── check-site.py          # CI guard: EXIF/GPS, private files, emails, assets, size
+│   └── generate-maps.mjs      # build-time only: Field Footprint base maps
+├── .github/workflows/         # CodeQL, Trivy, Scorecard, zizmor, site-check, lint
+└── docs/                      # GitHub Pages root
+    ├── index.html             # single-page portfolio
+    ├── resume.html            # print/ATS résumé  → Philip-Stiber-Resume.pdf
+    ├── css/                   # style.css (base) · motion.css (sections + motion) · fonts.css · resume.css
     ├── js/
-    │   ├── main.js          # data loader + hero/stats/timeline/experience
-    │   ├── graph.js         # force-directed career graph (vis-network)
-    │   ├── radar.js         # skill radar (Chart.js)
-    │   ├── heatmap.js       # proficiency heatmap (CSS grid)
-    │   └── wordcloud.js     # tech word cloud (wordcloud2.js)
-    ├── data/resume-data.json  # single source of truth for ALL visuals
-    ├── assets/favicon.svg
-    └── vendor/              # vendored libs (offline-capable)
+    │   ├── main.js            # data loader, hero, numbers, experience, travel, nav
+    │   ├── motion.js          # hero network, boot log, ticker, decrypt text, reveals
+    │   ├── sections.js        # problems, leadership loop, capabilities, CSF matrix, repos
+    │   ├── cases.js           # case files + animated diagrams
+    │   ├── graph.js · radar.js · estate.js · map.js
+    ├── data/resume-data.json  # single source of truth for every section
+    ├── fonts/                 # self-hosted variable fonts (OFL)
+    └── vendor/                # vis-network, Chart.js (vendored, offline-capable)
 ```
 
-**Architecture:** one JSON file feeds every visualization. Update [`docs/data/resume-data.json`](docs/data/resume-data.json) and the whole site re-renders — no code changes needed.
+To update the site, edit [`docs/data/resume-data.json`](docs/data/resume-data.json). No code changes are needed.
 
 ---
 
 <div align="center">
-<sub>Built with vanilla HTML/CSS/JS · vis-network · Chart.js · wordcloud2.js · No trackers, no backend.</sub><br>
-<sub>📫 <a href="https://www.linkedin.com/in/pstiber/">linkedin.com/in/pstiber</a></sub>
+<sub>Vanilla HTML/CSS/JS · vis-network · Chart.js · No trackers, no backend.</sub>
 </div>

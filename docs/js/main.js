@@ -34,7 +34,8 @@ function wireImpact(data) {
   data.impact.forEach((s) => {
     const card = document.createElement("div");
     card.className = "stat";
-    card.innerHTML = `<div class="num" data-target="${s.value}">0</div>
+    const start = s.display != null ? s.display : `${s.prefix || ""}0${s.suffix || ""}`;
+    card.innerHTML = `<div class="num">${start}</div>
                       <div class="lbl">${s.label}</div>`;
     grid.appendChild(card);
     card._stat = s;
@@ -45,7 +46,7 @@ function wireImpact(data) {
       if (!e.isIntersecting) return;
       const numEl = e.target.querySelector(".num");
       const s = e.target._stat;
-      countUp(numEl, s.value, s.prefix, s.suffix);
+      if (s.display == null) countUp(numEl, s.value, s.prefix, s.suffix);
       io.unobserve(e.target);
     });
   }, { threshold: 0.4 });
@@ -56,8 +57,17 @@ function renderHero(data) {
   const p = data.profile;
   const sum = document.getElementById("hero-summary");
   if (sum) sum.textContent = p.summary;
-  const hook = document.getElementById("hero-hook");
-  if (hook && p.hook) hook.textContent = p.hook;
+  const pos = document.getElementById("hero-positioning");
+  if (pos && p.positioning) pos.textContent = p.positioning;
+
+  // Big typographic statement: [[...]] spans become gradient highlights.
+  const st = document.getElementById("statement");
+  if (st && (p.statement || p.hook)) {
+    const esc = (t) => t.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+    const body = esc(p.statement || p.hook).replace(/\[\[(.+?)\]\]/g, "<mark>$1</mark>");
+    st.innerHTML = `<span class="st-kicker">// the problem I get hired to solve</span>${body}`;
+    st.classList.add("reveal");
+  }
 
   // Profile photos: build a rotating stack of real headshots, each with its own
   // face-framing object-position. Falls back to the monogram SVG if none load.
@@ -103,17 +113,9 @@ function renderAvatar(p) {
   });
 }
 
-function renderCrossing(data) {
+function renderTagline(data) {
   const tag = document.getElementById("about-tagline");
   if (tag && data.profile.tagline) tag.textContent = data.profile.tagline;
-  const host = document.getElementById("crossing-grid");
-  if (!host || !data.profile.crossing) return;
-  host.innerHTML = data.profile.crossing.map((c, i) => `
-    <article class="cross-card">
-      <div class="x">&#10799; vector_${String(i + 1).padStart(2, "0")}</div>
-      <h3>${c.title}</h3>
-      <p>${c.body}</p>
-    </article>`).join("");
 }
 
 function renderRare(data) {
@@ -128,15 +130,14 @@ function renderRare(data) {
 }
 
 function renderTimeline(data) {
-  const host = document.getElementById("timeline-list");
-  if (!host) return;
+  const host = document.getElementById("rail");
+  if (!host || !data.timeline) return;
   host.innerHTML = data.timeline.map((t) => `
-    <div class="tl-item">
-      <span class="dot-node"></span>
-      <div class="yr">${t.year}</div>
-      <div class="tl-title">${t.title}</div>
-      <div class="tl-org">${t.org}</div>
-    </div>`).join("");
+    <li class="${String(t.node || "").startsWith("cert-") ? "cert" : ""}">
+      <div class="r-yr">${t.year}</div>
+      <div class="r-t">${t.title}</div>
+      <div class="r-o">${t.org}</div>
+    </li>`).join("");
 }
 
 function renderExperience(data) {
@@ -219,6 +220,7 @@ function renderExperience(data) {
         </div>
         <span class="exp-when">${x.tenure}</span>
       </div>
+      ${x.summary ? `<p class="exp-scope"><b>scope</b>${x.summary}</p>` : ""}
       ${brief(x.brief)}
       <div class="exp-detail">
         <div class="exp-detail-label">Detailed wins &mdash; hover or tap any line for its business impact</div>
@@ -301,6 +303,32 @@ function renderTravel(data) {
   startAuto();
 }
 
+function renderFooter(data) {
+  const el = document.getElementById("updated");
+  if (!el || !data.meta || !data.meta.updated) return;
+  const [y, m] = data.meta.updated.split("-").map(Number);
+  const when = new Date(y, m - 1, 1).toLocaleString("en-US", { month: "long", year: "numeric" });
+  el.textContent = `Last updated ${when}.`;
+}
+
+/* Mobile nav: a real <button> toggles the link panel; Escape or picking a
+   link closes it and returns focus sensibly. */
+function wireNav() {
+  const btn = document.querySelector(".nav-toggle");
+  const panel = document.getElementById("nav-links");
+  if (!btn || !panel) return;
+  const set = (open) => {
+    btn.setAttribute("aria-expanded", String(open));
+    panel.classList.toggle("is-open", open);
+  };
+  btn.addEventListener("click", () => set(btn.getAttribute("aria-expanded") !== "true"));
+  panel.addEventListener("click", (e) => { if (e.target.closest("a")) set(false); });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && panel.classList.contains("is-open")) { set(false); btn.focus(); }
+  });
+}
+wireNav();
+
 /* Boot: fetch data, render HTML parts, broadcast to chart modules. */
 async function boot() {
   try {
@@ -310,12 +338,13 @@ async function boot() {
     window.RESUME = data;
 
     renderHero(data);
-    renderCrossing(data);
+    renderTagline(data);
     renderRare(data);
     wireImpact(data);
     renderTimeline(data);
     renderExperience(data);
     renderTravel(data);
+    renderFooter(data);
 
     // Let the visualization modules know data is ready.
     document.dispatchEvent(new CustomEvent("resume:ready", { detail: data }));
