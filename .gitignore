@@ -18,3 +18,7 @@ changereview1.1.md
 
 # Source photo originals — served copies live in docs/assets/travel/
 images/
+
+# Private editorial material (positioning brief, evidence ledger, review notes).
+# Never publish: this repo is public and served by GitHub Pages.
+private/
