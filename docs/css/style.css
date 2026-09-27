@@ -625,7 +625,11 @@ footer .ascii { color: var(--neon-green); white-space: pre; font-size: 0.7rem; l
 .brand-tile:hover .bt-name { color: var(--text-bright); }
 /* Graceful fallback: a missing logo asset collapses to a clean text chip. */
 .brand-tile.logo-missing .bt-logo { display: none; }
-.brand-tile.logo-missing .bt-name { color: var(--text-bright); font-size: 0.9rem; font-weight: 700; }
+.brand-tile.logo-missing .bt-name {
+  display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 4 / 3;
+  padding: 10px; border-radius: 10px; background: var(--bg-3); border: 1px dashed rgba(0,229,255,0.35);
+  color: var(--text-bright); font-size: 1rem; font-weight: 700;
+}
 .bt-badge {
   font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.03em;
   color: var(--text-dim);

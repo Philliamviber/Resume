@@ -117,7 +117,7 @@
       },
       {
         "k": "VM ESTATE",
-        "v": "~⅔ retired",
+        "v": "~⅔ retired · six-figure annual OPEX saved",
         "s": "ok"
       },
       {
@@ -128,6 +128,11 @@
       {
         "k": "IDENTITY",
         "v": "6 Entra tenants consolidated",
+        "s": "ok"
+      },
+      {
+        "k": "LANDING ZONES",
+        "v": "CAF program delivered",
         "s": "ok"
       },
       {
@@ -147,7 +152,7 @@
       },
       {
         "k": "GMP",
-        "v": "IT compliance readiness in progress",
+        "v": "system validation · RPO/RTO attestations in progress",
         "s": "run"
       },
       {
@@ -290,7 +295,7 @@
     ]
   },
   "estate": {
-    "intro": "The brand portfolio behind the résumé. As Tilray Brands grew into a global beverage-alcohol and CPG enterprise across two continents, I led the infrastructure and M&A integration that folded each acquisition onto one secure, governed platform — brands integrated 2023–2026.",
+    "intro": "The brand portfolio behind the résumé. As Tilray Brands grew into a global beverage-alcohol and CPG enterprise, I led the infrastructure and M&A integration that brings each acquisition onto one secure, governed platform. Brands acquired 2023–2026.",
     "summary": [
       {
         "value": "#4",
@@ -363,18 +368,28 @@
         "acquiredVia": "anheuser-busch"
       },
       {
+        "name": "Square Mile Cider",
+        "acquiredVia": "anheuser-busch"
+      },
+      {
         "name": "Hop Valley Brewing",
         "logo": "assets/brands/hopvalley.png",
         "acquiredVia": "molson-coors"
       },
       {
         "name": "Terrapin Beer Co.",
-        "logo": "assets/brands/terrapin.png"
+        "logo": "assets/brands/terrapin.png",
+        "acquiredVia": "molson-coors"
       },
       {
         "name": "Revolver Brewing",
         "logo": "assets/brands/revolver.png",
-        "knockout": true
+        "knockout": true,
+        "acquiredVia": "molson-coors"
+      },
+      {
+        "name": "Atwater Brewery",
+        "acquiredVia": "molson-coors"
       },
       {
         "name": "Alpine Beer Company",
@@ -386,17 +401,22 @@
       },
       {
         "name": "BrewDog",
-        "logo": "assets/brands/brewdog.png"
+        "logo": "assets/brands/brewdog.png",
+        "badge": "acquired 2026"
       }
     ],
     "transitions": [
       {
-        "partner": "Anheuser-Busch",
-        "text": "Led the infrastructure and network integration for the 2023 acquisition of eight craft brands from Anheuser-Busch — system and network cutovers delivered on a 90-day clock."
+        "partner": "Anheuser-Busch · 2023",
+        "text": "Led the infrastructure and network integration for the acquisition of eight craft brands from Anheuser-Busch: system and network cutovers delivered on a 90-day clock."
       },
       {
-        "partner": "Molson Coors",
-        "text": "Led the post-acquisition infrastructure transition for craft brands acquired from Molson Coors — identity, email, and network consolidated onto one governed platform."
+        "partner": "Molson Coors · 2024",
+        "text": "Led the post-acquisition infrastructure transition for four craft brands acquired from Molson Coors: identity, email and network consolidated onto one governed platform."
+      },
+      {
+        "partner": "BrewDog · 2026",
+        "text": "Tilray acquired the BrewDog brand with its UK brewery and brewpubs, plus U.S. and Australian assets, in 2026."
       }
     ]
   },
@@ -527,12 +547,12 @@
         "grc",
         "cloud"
       ],
-      "summary": "Lead a distributed infrastructure team of ~10 supporting production facilities, brew pubs and offices across North America and Europe, inside an enterprise portfolio of 100+ active projects. Own the infrastructure SOX ITGC portfolio, direct acquisition-integration and cloud-consolidation strategy, and help connect business continuity with technical recovery.",
+      "summary": "Lead a distributed infrastructure team of 6–10 (a blend of full-time engineers and cloud consultants) supporting production facilities, brew pubs and offices across North America and Europe, inside an enterprise portfolio of 100+ active projects. Own the infrastructure SOX ITGC portfolio, direct acquisition-integration and cloud-consolidation strategy, spearhead IT's GMP compliance work, and help connect business continuity with technical recovery.",
       "brief": {
         "headline": "Integrated 10 acquisitions in 12 months, then turned to simplifying, controlling and reducing the cost of what was inherited.",
         "situation": "A multinational, regulated enterprise growing by acquisition, inheriting overlapping networks, identities, clouds and platforms across 65+ sites in North America and Europe.",
-        "action": "Lead a ~10-person team whose engineers own migration plans, delivery and playbooks, while I set direction, challenge designs and prioritize through sprint planning. We integrated acquired organizations onto one governed identity and network platform and retired legacy estate. I run 50+ SOX ITGCs and am developing a phased consolidation strategy for an acquired multi-cloud environment.",
-        "outcome": "10 organizations integrated in 12 months · 900+ employees on unified identity · 4 facilities taken over in 90 days · VM estate reduced by ~⅔ · six-figure cost reductions from legacy retirement · cloud consolidation underway, targeting a six-figure annual OPEX reduction.",
+        "action": "Lead a 6–10-person team of engineers and cloud consultants who own migration plans, delivery and playbooks, while I set direction, challenge designs and prioritize through sprint planning. We integrated acquired organizations onto one governed identity and network platform and retired legacy estate. I run 50+ SOX ITGCs, lead IT's GMP compliance work, and am developing a phased consolidation strategy for an acquired multi-cloud environment.",
+        "outcome": "10 organizations integrated in 12 months · 900+ employees on unified identity · 4 facilities taken over in 90 days · VM estate reduced by ~⅔ · six-figure annual OPEX reduction from legacy retirement · cloud consolidation underway, targeting a further six-figure annual OPEX reduction.",
         "metrics": [
           {
             "value": "10",
@@ -554,10 +574,12 @@
         "stack": [
           "Microsoft Entra ID",
           "Azure & AWS",
+          "Azure landing zones (CAF)",
           "Bicep (AVD)",
           "Cisco Meraki",
           "BGP",
           "SOX ITGC",
+          "GMP system validation",
           "NIST SP 800-53 / 800-82"
         ]
       },
@@ -571,24 +593,24 @@
           "impact": "One identity platform means consistent MFA and access policy, simpler audits, and no duplicate licensing across tenants."
         },
         {
-          "text": "Run and maintain 50+ SOX IT general controls (ITGCs) across the infrastructure function, and spearhead IT's part of GMP (Good Manufacturing Practice) compliance work for a business unit expanding into international markets (in progress).",
-          "impact": "Controls built into day-to-day infrastructure operations support financial-reporting compliance for a publicly traded company and prepare the business for new regulated markets."
+          "text": "Run and maintain 50+ SOX IT general controls (ITGCs) across the infrastructure function. Spearhead IT's GMP (Good Manufacturing Practice) compliance work for a business unit expanding into international markets: system validation, ITGCs and RPO/RTO attestations covering lab equipment and lab software, and at one facility the ERP and the infrastructure and operations around it (in progress).",
+          "impact": "Controls built into day-to-day infrastructure operations support financial-reporting compliance for a publicly traded company and prepare the business to operate in GMP-regulated markets."
         },
         {
-          "text": "Led a legacy rationalization program that reduced the virtual-machine estate to roughly one-third of its earlier size, and secured leadership support to sunset legacy platforms, delivering six-figure cost reductions.",
-          "impact": "A smaller estate costs less to run and leaves less to patch, secure and audit."
+          "text": "Led a legacy rationalization program that reduced the virtual-machine estate to roughly one-third of its earlier size, and secured leadership support to sunset legacy platforms, delivering a six-figure annual OPEX reduction.",
+          "impact": "Recurring savings every year, and a smaller estate that leaves less to patch, secure and audit."
         },
         {
-          "text": "Developing a phased migration and consolidation strategy for an acquired Azure/AWS environment (enduring landing zone, BGP cutovers, staged transitions), targeting a substantial six-figure reduction in annual operating expense. Underway.",
-          "impact": "Moves the acquired business onto a platform built to last, with savings measured against today's run rate."
+          "text": "Led a Microsoft Cloud Adoption Framework (CAF) program establishing governed Azure landing zones, including a zone-redundant Cisco Meraki SD-WAN hub in Azure connecting sites to the cloud. Now developing a phased consolidation strategy for an acquired Azure/AWS environment (enduring landing zone, BGP cutovers, staged transitions), targeting a substantial six-figure annual OPEX reduction. Underway.",
+          "impact": "A governed cloud foundation that acquisitions can land in, with savings measured against today's run rate."
         },
         {
           "text": "Brought business stakeholders together to run business impact analyses. Serve in the core leadership group convened where business continuity and technical disaster recovery intersect, using NIST SP 800-53 and SP 800-82 to frame risk and measure progress.",
           "impact": "Recovery priorities grounded in business impact, with a shared framework for measuring progress."
         },
         {
-          "text": "Guide a distributed team of ~10 engineers and architects who own migration plans, execution and playbooks: ERP, network and tenant migrations, AWS-to-Azure application moves, Azure App Service ecommerce integrations, and an Azure Virtual Desktop build in Bicep. I balance sprint capacity against a 100+-project enterprise portfolio.",
-          "impact": "Delivery capacity that doesn't depend on any one person, with room held back for the improvements that simplify future work."
+          "text": "Lead a distributed team of 6–10 engineers, architects and cloud consultants who own migration plans, execution and playbooks: ERP, network and tenant migrations, AWS-to-Azure application moves and Azure App Service ecommerce integrations. My team owns and controls the organization's infrastructure as code (including an Azure Virtual Desktop build in Bicep), delivered jointly with network engineering, information security and cloud architecture. I balance sprint capacity against a 100+-project enterprise portfolio.",
+          "impact": "Delivery capacity that flexes with consultants without depending on any one person, and a cross-functional IaC practice where changes are reviewed, reproducible and auditable."
         }
       ]
     },
@@ -1074,10 +1096,10 @@
       },
       {
         "id": "ach-team",
-        "label": "Team of 10 / 65+ sites",
+        "label": "Team of 6–10 / 65+ sites",
         "type": "achievement",
         "value": 14,
-        "meta": "NA & Europe estate"
+        "meta": "FTEs and cloud consultants · NA & Europe estate"
       },
       {
         "id": "ach-ngfw",
@@ -1262,7 +1284,7 @@
         "label": "VM estate ~⅔ retired",
         "type": "achievement",
         "value": 14,
-        "meta": "Legacy rationalization · six-figure cost reductions"
+        "meta": "Legacy rationalization · six-figure annual OPEX reduction"
       },
       {
         "id": "ach-cloud",
@@ -1273,10 +1295,10 @@
       },
       {
         "id": "ach-avd",
-        "label": "AVD as code",
+        "label": "IaC practice",
         "type": "achievement",
         "value": 14,
-        "meta": "Azure Virtual Desktop in Bicep · in delivery"
+        "meta": "Team owns the IaC (Bicep, AVD) · joint with network, infosec, cloud architecture"
       },
       {
         "id": "ach-bia",
@@ -1290,7 +1312,14 @@
         "label": "GMP readiness",
         "type": "achievement",
         "value": 14,
-        "meta": "IT compliance work for international expansion · in progress"
+        "meta": "System validation, ITGCs, RPO/RTO attestations · in progress"
+      },
+      {
+        "id": "ach-caf",
+        "label": "CAF landing zones",
+        "type": "achievement",
+        "value": 14,
+        "meta": "Cloud Adoption Framework program · Meraki SD-WAN hub in Azure"
       }
     ],
     "edges": [
@@ -1629,6 +1658,22 @@
       {
         "from": "ach-gmp",
         "to": "skill-grc"
+      },
+      {
+        "from": "tilray",
+        "to": "ach-caf"
+      },
+      {
+        "from": "ach-caf",
+        "to": "skill-cloud"
+      },
+      {
+        "from": "ach-caf",
+        "to": "skill-netsec"
+      },
+      {
+        "from": "ach-gmp",
+        "to": "skill-bcdr"
       }
     ]
   },
@@ -2076,12 +2121,12 @@
     {
       "title": "An estate that costs more than it should",
       "body": "Inherited platforms pile up. I build the case to retire what the business no longer needs, secure leadership support, and leave the team a simpler, cheaper environment to run.",
-      "proof": "VM estate reduced by roughly two-thirds",
+      "proof": "VM estate ~⅔ smaller · six-figure annual OPEX saved",
       "icon": "trim"
     },
     {
       "title": "Controls built into operations",
-      "body": "Compliance holds up when controls are part of how infrastructure runs day to day. I own a portfolio of 50+ SOX IT general controls and lead IT's part of emerging regulated-compliance work.",
+      "body": "Compliance holds up when controls are part of how infrastructure runs day to day. I own a portfolio of 50+ SOX IT general controls and spearhead IT's GMP compliance work for international expansion.",
       "proof": "50+ SOX ITGCs operated",
       "icon": "shield"
     },
@@ -2181,7 +2226,7 @@
       "status": "Delivered",
       "statusKind": "done",
       "when": "Tilray Brands",
-      "summary": "Deliberate selection and retirement shrank the virtual-machine estate to about a third of its size.",
+      "summary": "Deliberate selection and retirement shrank the virtual-machine estate to about a third of its size and cut annual OPEX.",
       "problem": "Years of acquisitions left overlapping platforms and a large virtual-machine estate: more to secure, patch, license and support than the business needed.",
       "constraints": "Systems still in use by production and corporate teams, application owners with competing priorities, and change capacity shared with a large project portfolio.",
       "role": "Built the case for retirement, chose what to keep and what to sunset, and secured leadership support for the program.",
@@ -2190,7 +2235,7 @@
         "Deliberate selection over blanket lift-and-shift: retire first, and migrate only what earns its place.",
         "Treat each retirement as a cost, risk and support decision, not only a technical one."
       ],
-      "outcome": "The virtual-machine estate is now roughly one-third of its earlier size. Separately, retiring legacy platforms has produced six-figure cost reductions, and further opportunities have been identified.",
+      "outcome": "The virtual-machine estate is now roughly one-third of its earlier size. Separately, retiring legacy platforms delivered a six-figure reduction in annual operating expense, and further opportunities have been identified.",
       "metrics": [
         {
           "v": "~⅔",
@@ -2198,7 +2243,7 @@
         },
         {
           "v": "6-fig",
-          "l": "cost reductions"
+          "l": "annual OPEX reduced"
         }
       ]
     },
@@ -2215,7 +2260,7 @@
       "role": "Developed the phased migration and consolidation strategy and defined the target operating environment.",
       "team": "Engineers plan and execute the phases, including AWS-to-Azure application-stack moves and BGP cutovers.",
       "decisions": [
-        "Establish the enduring post-migration landing zone first, then move workloads into it, rather than migrating into a temporary state.",
+        "Land workloads in the governed Azure landing zones established through the CAF program, rather than migrating into a temporary state.",
         "Move in phases, with cutovers sequenced around network and application dependencies.",
         "Judge success by the reduction in run rate, not by the number of workloads moved."
       ],
@@ -2228,6 +2273,39 @@
         {
           "v": "6-fig",
           "l": "annual OPEX target"
+        }
+      ]
+    },
+    {
+      "id": "gmp",
+      "diagram": "validate",
+      "title": "Bringing regulated systems under GMP control",
+      "status": "Underway",
+      "statusKind": "run",
+      "when": "International expansion",
+      "summary": "System validation, ITGCs and recovery attestations for a business unit entering GMP-regulated markets.",
+      "problem": "A business unit expanding into international markets has to meet Good Manufacturing Practice (GMP) expectations for the computerized systems its laboratory and production processes depend on.",
+      "constraints": "Lab equipment and lab software are in scope, and so is the ERP at one facility. Validation has to fit around live operations, and recovery commitments must be attested, not assumed.",
+      "role": "Spearhead IT's GMP compliance work: scoping, system validation, ITGCs and RPO/RTO attestations for in-scope systems.",
+      "team": "The infrastructure team supports the infrastructure and operations around the in-scope ERP.",
+      "decisions": [
+        "Scope explicitly: lab equipment, lab software and one facility's ERP, not the whole estate.",
+        "Attest recovery point and recovery time objectives (RPO/RTO) for in-scope systems instead of assuming them.",
+        "Build on the existing ITGC discipline rather than creating a parallel control set."
+      ],
+      "outcome": "In progress. This is readiness work; no certification or regulatory approval is claimed.",
+      "metrics": [
+        {
+          "v": "CSV",
+          "l": "system validation"
+        },
+        {
+          "v": "RPO/RTO",
+          "l": "recovery attestations"
+        },
+        {
+          "v": "ITGC",
+          "l": "control coverage"
         }
       ]
     },
@@ -2266,11 +2344,11 @@
       "status": "In delivery",
       "statusKind": "run",
       "when": "Current",
-      "summary": "Azure Virtual Desktop deployed from Bicep templates versioned in the enterprise repository.",
+      "summary": "My team owns the infrastructure as code; Azure Virtual Desktop is being delivered from Bicep templates.",
       "problem": "Virtual desktop platforms built by hand are hard to reproduce, review and audit.",
-      "constraints": "Enterprise change control, identity and network integration, and a team that has to own and extend the platform after go-live.",
-      "role": "Set the infrastructure-as-code direction for the build and contribute to design review.",
-      "team": "Engineers author and deploy the Bicep templates. Artifacts are versioned in the enterprise repository.",
+      "constraints": "Enterprise change control, identity and network integration, and four disciplines contributing to the same templates.",
+      "role": "I run the team that owns and controls the infrastructure as code.",
+      "team": "A joint effort across infrastructure, network engineering, information security and cloud architecture. Artifacts are versioned in the enterprise repository.",
       "decisions": [
         "Declarative templates instead of portal builds, so the environment can be reviewed, reproduced and audited.",
         "Keep artifacts in the enterprise repository so the design outlives any one engineer."
@@ -2295,9 +2373,9 @@
       "color": "#00e5ff",
       "evidence": [
         "10 acquired organizations integrated in 12 months",
-        "Legacy rationalization: VM estate reduced by ~⅔",
+        "Legacy rationalization: VM estate ~⅔ smaller, six-figure annual OPEX saved",
+        "CAF program: governed Azure landing zones, Meraki SD-WAN hub in Azure",
         "Phased multi-cloud consolidation strategy (underway)",
-        "CAF-aligned landing zones; Meraki SD-WAN hub in Azure",
         "ERP, network, tenant and application-stack migrations"
       ],
       "tools": [
@@ -2333,16 +2411,16 @@
       "color": "#ffb000",
       "evidence": [
         "Own and operate 50+ SOX IT general controls",
-        "Spearheading IT's GMP compliance work (in progress)",
+        "GMP: system validation and ITGCs for lab systems and one site's ERP (in progress)",
         "Risk framed with NIST SP 800-53 and SP 800-82",
         "Access reviews, patch cycles, SLAs and change discipline"
       ],
       "tools": [
         "SOX ITGC",
+        "GMP / CSV",
         "NIST 800-53",
         "NIST 800-82",
-        "CIS Controls",
-        "ServiceNow"
+        "CIS Controls"
       ]
     },
     {
@@ -2352,8 +2430,8 @@
       "evidence": [
         "Cross-functional business impact analyses",
         "Core group where continuity and DR intersect",
-        "160 staff moved remote in 48 hours (COVID-19)",
-        "DR-ready virtualization; multi-region AD design (personal lab)"
+        "RPO/RTO attestations for GMP-scoped systems (in progress)",
+        "160 staff moved remote in 48 hours (COVID-19)"
       ],
       "tools": [
         "BIA",
@@ -2368,10 +2446,10 @@
       "title": "Engineering leadership",
       "color": "#bd00ff",
       "evidence": [
-        "Distributed team of ~10 engineers and architects",
+        "Distributed team of 6–10: FTEs and cloud consultants",
         "Sprint planning across a 100+-project portfolio",
         "Engineers own plans, delivery and playbooks",
-        "Infrastructure as code and automation practice"
+        "Team owns the IaC, delivered with network, infosec and cloud architecture"
       ],
       "tools": [
         "Bicep",
@@ -2441,7 +2519,7 @@
           2,
           1,
           1,
-          1
+          2
         ]
       },
       {
@@ -2471,10 +2549,11 @@
       "arch:ID": "Asset and dependency discovery for every acquisition and retirement decision.",
       "sec:PR": "Hardening, segmentation, NGFW and identity controls.",
       "sec:RS": "Ransomware and security incident response, end to end.",
-      "grc:GV": "SOX ITGC ownership and regulated-compliance work.",
+      "grc:GV": "SOX ITGC ownership and GMP compliance work.",
       "grc:ID": "Control scoping and risk framing with NIST SP 800-53 / 800-82.",
       "res:ID": "Business impact analysis with business stakeholders.",
-      "res:RC": "Core group where continuity and technical recovery meet."
+      "res:RC": "Continuity/DR core group; RPO/RTO attestations for GMP-scoped systems.",
+      "arch:PR": "Governed landing zones from the CAF program."
     }
   },
   "focus": {
@@ -2506,7 +2585,7 @@
     },
     {
       "tag": "CISM",
-      "text": "Ownership of 50+ SOX IT general controls at Tilray, plus IT's part of regulated-compliance readiness."
+      "text": "Ownership of 50+ SOX IT general controls at Tilray, plus GMP system validation and RPO/RTO attestations for international expansion."
     },
     {
       "tag": "CISSP",

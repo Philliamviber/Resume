@@ -24,8 +24,9 @@ I lead the global infrastructure team at **Tilray Brands**, a multinational, reg
 |---|---|
 | **10** acquired organizations integrated in 12 months | Phased consolidation of an acquired Azure/AWS estate, targeting a six-figure annual OPEX reduction |
 | **900+** employees moved onto unified identity (6 Entra tenant migrations) | Azure Virtual Desktop deployed as code (Bicep) |
-| **50+** SOX IT general controls run and maintained | IT's part of GMP compliance work for international expansion |
-| **~⅔** of the virtual-machine estate retired | |
+| **50+** SOX IT general controls run and maintained | |
+| **~⅔** of the virtual-machine estate retired, with a six-figure annual OPEX reduction | IT's GMP compliance work: system validation, ITGCs and RPO/RTO attestations for lab systems and one site's ERP |
+| Microsoft CAF program: governed Azure landing zones and a Meraki SD-WAN hub in Azure | |
 | **160** staff moved remote in 48 hours (COVID-19) | |
 
 ---
@@ -39,7 +40,7 @@ A static, single-page GitHub Pages site with a dark "SOC console" look. One JSON
 | **Hero** | Positioning, a live status log, and an animated network canvas |
 | **Profile** | The four business problems I'm brought in to solve |
 | **By the numbers** | Delivered outcomes only, plus profile facts |
-| **Selected work** | Five case files (problem, constraints, role, team, decisions, outcome) with animated, illustrative diagrams and a delivered / underway / ongoing status on each |
+| **Selected work** | Six case files (problem, constraints, role, team, decisions, outcome) with animated, illustrative diagrams and a delivered / underway / ongoing status on each |
 | **Leadership approach** | An interactive delivery loop showing who owns each step |
 | **Capabilities** | Five capability areas, a NIST CSF 2.0 practice map, a radar chart and the tooling stack |
 | **Career graph** | A BloodHound-style force-directed map of roles, outcomes, capabilities and credentials |

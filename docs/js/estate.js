@@ -40,14 +40,21 @@
     const wall = document.getElementById("brand-wall");
     if (wall && estate.brands) {
       wall.innerHTML = estate.brands.map((b) => {
-        const via = b.acquiredVia
-          ? `<span class="bt-badge">${viaLabel(b.acquiredVia)}</span>`
-          : "";
+        const label = b.badge || viaLabel(b.acquiredVia);
+        const via = label ? `<span class="bt-badge">${label}</span>` : "";
         // White-knockout marks would vanish on the light card; flag them so
         // CSS recolors them to dark ink.
         const knockout = b.knockout ? " is-knockout" : "";
+        // Brands without press-kit art render as a clean text tile.
+        if (!b.logo) {
+          return `
+        <figure class="brand-tile logo-missing" role="listitem">
+          <figcaption class="bt-name">${b.name}</figcaption>
+          ${via}
+        </figure>`;
+        }
         return `
-        <figure class="brand-tile${knockout}">
+        <figure class="brand-tile${knockout}" role="listitem">
           <div class="bt-logo">
             <img src="${b.logo}" alt="${b.name} logo" loading="lazy" decoding="async">
           </div>

@@ -254,6 +254,16 @@ html.motion-ok .dg-code-wrap.play .dg-line { animation: boot-in 0.2s ease forwar
 html.motion-ok .dg-code-wrap .dg-res { opacity: 0; transform: translateY(6px); transform-box: fill-box; }
 html.motion-ok .dg-code-wrap.play .dg-res { animation: boot-in 0.4s ease forwards; animation-delay: calc(var(--i) * 260ms + 1.9s); }
 
+/* validate: GMP control board — cells resolve to done / in progress / queued */
+.dg-cell rect { fill: transparent; stroke: rgba(170,182,194,0.35); stroke-width: 1.1; stroke-dasharray: 3 3; transition: fill 0.35s ease, stroke 0.35s ease; }
+.dg-cell text { fill: #e4eaf0; font-size: 11px; }
+.dg-cell.done rect { fill: rgba(57,255,20,0.12); stroke: var(--neon-green); stroke-dasharray: none; }
+.dg-cell.done text { fill: var(--neon-green); }
+.dg-cell.run rect { fill: rgba(255,176,0,0.1); stroke: var(--amber); stroke-dasharray: none; }
+.dg-cell.run text { fill: var(--amber); }
+html.motion-ok .dg-cell.run { animation: blink-soft 1.4s ease-in-out infinite; }
+.dg-cell.queued text { fill: #aab6c2; }
+
 /* ============================ LEADERSHIP LOOP ============================ */
 .approach-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 28px; align-items: center; }
 @media (max-width: 900px) { .approach-grid { grid-template-columns: 1fr; } }

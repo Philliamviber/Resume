@@ -8,6 +8,7 @@
      migrate  — phased moves into a landing zone (some still queued)
      chain    — business process → dependency → recovery priority
      code     — an illustrative Bicep template building AVD resources
+     validate — GMP systems moving through scope → ITGC → validation → RPO/RTO
 
    Diagrams are deliberately generic: no real names, counts or topology.
    ============================================================= */
@@ -190,7 +191,43 @@
     };
   }
 
-  const DIAGRAMS = { converge, grid, migrate, chain, code };
+  /* ---------- validate (GMP) ---------- */
+  function validate() {
+    const rows = ["lab equipment", "lab software", "ERP (one site)", "supporting infra"];
+    const cols = ["scoped", "ITGC", "validated", "RPO/RTO"];
+    // Illustrative end state only: d = done, r = in progress, p = queued.
+    const end = ["dddr", "ddrp", "ddrr", "drpp"];
+    const cx = (c) => 150 + c * 60, ry = (r) => 64 + r * 40, W = 48, H = 26;
+    const body = `
+      <g class="dg-status"><rect x="290" y="8" width="100" height="20" rx="10" fill="rgba(255,176,0,.12)" stroke="#ffb000"/>
+        <text class="dg-label" x="340" y="22" text-anchor="middle" fill="#ffb000">IN PROGRESS</text></g>
+      <text class="dg-label small" x="10" y="22">GMP system control board</text>
+      ${cols.map((c, i) => `<text class="dg-label small" x="${cx(i) + W / 2}" y="52" text-anchor="middle">${c}</text>`).join("")}
+      ${rows.map((r, ri) => `
+        <text class="dg-label bright" x="10" y="${ry(ri) + 17}">${r}</text>
+        ${cols.map((_, ci) => `<g class="dg-cell" data-r="${ri}" data-c="${ci}">
+          <rect x="${cx(ci)}" y="${ry(ri)}" width="${W}" height="${H}" rx="5"/>
+          <text class="dg-label" x="${cx(ci) + W / 2}" y="${ry(ri) + 17}" text-anchor="middle"></text></g>`).join("")}`).join("")}
+      <text class="dg-label small" x="10" y="238"><tspan fill="#39ff14">✓</tspan> done   <tspan fill="#ffb000">…</tspan> in progress   <tspan fill="#aab6c2">○</tspan> queued</text>`;
+    const MARK = { d: "✓", r: "…", p: "○" }, CLS = { d: "done", r: "run", p: "queued" };
+    return {
+      svg: SVG("0 0 400 250", "dg-validate", "Illustration: GMP validation board for lab equipment, lab software, one site's ERP and supporting infrastructure, still in progress", body),
+      play(svg) {
+        svg.classList.add("play");
+        const cells = [...svg.querySelectorAll(".dg-cell")];
+        const set = (el) => {
+          const st = end[+el.dataset.r][+el.dataset.c];
+          el.classList.add(CLS[st]);
+          el.querySelector("text").textContent = MARK[st];
+        };
+        if (M().reduce) { cells.forEach(set); return; }
+        cells.sort((a, b) => (a.dataset.c - b.dataset.c) || (a.dataset.r - b.dataset.r))
+          .forEach((el, i) => setTimeout(() => set(el), 250 + i * 140));
+      },
+    };
+  }
+
+  const DIAGRAMS = { converge, grid, migrate, chain, code, validate };
 
   function row(label, value, cls) {
     if (!value || (Array.isArray(value) && !value.length)) return "";
@@ -208,7 +245,7 @@
       built.push(dg);
       return `
       <article class="case reveal" id="case-${esc(c.id)}" data-idx="0${i + 1}" aria-labelledby="case-${esc(c.id)}-h">
-        <figure class="case-fig">${dg.svg}<figcaption>illustrative · not to scale</figcaption></figure>
+        <figure class="case-fig">${dg.svg}<figcaption>illustrative · not actual status</figcaption></figure>
         <div class="case-body">
           <div class="case-top"><span class="pill ${esc(c.statusKind)}">${esc(c.status)}</span><span class="case-when">${esc(c.when)}</span></div>
           <h3 id="case-${esc(c.id)}-h">${esc(c.title)}</h3>
