@@ -20,13 +20,13 @@
       data: {
         labels,
         datasets: [{
-          label: "Proficiency (0–5)",
+          label: "Self-assessed proficiency (0–5)",
           data: scores,
           fill: true,
           backgroundColor: "rgba(57, 255, 20, 0.14)",
           borderColor: "#39ff14",
           borderWidth: 2,
-          pointBackgroundColor: "#ff2e63",
+          pointBackgroundColor: "#00e5ff",
           pointBorderColor: "#ffffff",
           pointHoverBackgroundColor: "#00e5ff",
           pointRadius: 4,

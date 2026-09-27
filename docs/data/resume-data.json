@@ -5,7 +5,7 @@
       "CISSP",
       "CISM"
     ],
-    "headline": "Cybersecurity Leadership | IT Infrastructure Management | M&A Technology Integration",
+    "headline": "Infrastructure & Security Leadership · Secure Enterprise Transformation · Controls & Resilience",
     "location": "Peterborough, ON, Canada",
     "linkedin": "https://www.linkedin.com/in/pstiber/",
     "photo": "assets/profile-1.jpg",
@@ -40,85 +40,123 @@
         "position": "35% 45%"
       }
     ],
-    "hook": "When two companies become one, the technology has to merge overnight — secure, audited, and running by Monday morning. That's the problem I get hired to solve.",
-    "summary": "For 15 years I've lived at the intersection of three roles most people pick just one of: the engineer who builds the systems, the security leader who defends and governs them, and the integrator who fuses whole companies together after an acquisition. I came up hands-on — Active Directory, networks, virtualization, PowerShell — and never traded that depth for a title. Today I lead global infrastructure and M&A integration at Tilray Brands, where I folded 10 acquisitions into one secure platform in 12 months, migrated 900+ employees across Microsoft Entra tenants, and built the SOX ITGC, system-hardening, and incident-response controls that keep auditors and executives confident. CISSP- and CISM-certified, I move fluently between the server room and the boardroom: I can architect the network, write the script, pass the audit, and brief the C-suite on the risk — often in the same week.",
-    "tagline": "Engineer × Security Leader × M&A Integrator — hands-on to boardroom",
-    "crossing": [
-      {
-        "title": "Build it, then defend it",
-        "body": "Most security leaders have never run the systems they are securing. I architect the Active Directory, network, and virtualization estate and then harden it — segmentation, next-gen firewalls, application whitelisting, CIS controls — so the defense is designed by someone who knows exactly how the machine works underneath."
-      },
-      {
-        "title": "Merge companies, not just mailboxes",
-        "body": "M&A integration is where identity, cloud, networking, and governance collide at once. I collapse acquired tenants, domains, and email into a single governed Entra / Microsoft 365 estate — on a 60-to-90-day clock — without dropping security posture or breaking the business mid-flight."
-      },
-      {
-        "title": "Lead without losing the keyboard",
-        "body": "I lead distributed teams of network engineers, cloud architects, and admins while staying technical enough to do the work myself. That earns trust in both directions: engineers respect it, executives rely on it."
-      },
-      {
-        "title": "Hunt, don't just alert",
-        "body": "A SIEM you bought is not a detection program. I build the analytics myself — KQL hunts in Microsoft Sentinel, identity-centric Zero-Trust correlation, coverage mapped to MITRE ATT&CK — so the threats that actually matter surface as signal instead of drowning in alert noise."
-      },
-      {
-        "title": "Adopt the cloud by the framework",
-        "body": "I drive cloud adoption by the playbook, not the credit card. I recently led a Microsoft Cloud Adoption Framework (CAF) program at Tilray Brands — governed landing zones and deep Azure adoption strategy across multiple deployments — including a Cisco Meraki global VPN hub built across geo-redundant Azure zones, connecting branch sites worldwide to the cloud with resilience designed in from day one."
-      },
-      {
-        "title": "Steady when it's on fire",
-        "body": "I've led live ransomware and security incidents end to end — contain, eradicate, recover — and built the programs that catch them early: phish-alert triage, patch discipline, and tested response runbooks. Under pressure, a clear process beats panic, and cutting attacker dwell time is the job."
-      },
-      {
-        "title": "Trusted at the top",
-        "body": "I've been the technology voice senior decision-makers rely on — from two former U.S. Senators and high-profile attorneys to publicly-traded-company executives — translating technical risk into language the people who sign can actually act on."
-      },
-      {
-        "title": "Range is the résumé",
-        "body": "I've been the entire IT department for a two-person law office and the M&A lead for a global enterprise across two continents — the same fundamentals, scaled up. Breadth like that is rare, and it's deliberate."
-      }
-    ],
+    "hook": "When two companies become one, the technology has to merge — secure, audited, and running by Monday morning. Then comes the harder part: simplifying what was inherited, controlling it, and making it cheaper to run.",
+    "summary": "I lead the global infrastructure team at Tilray Brands, a multinational, regulated enterprise that grows by acquisition. My team integrates what the business acquires, retires what it no longer needs, and runs more than 50 of the SOX IT general controls it is audited on. I set direction, challenge designs and weigh cost against risk; experienced engineers own the plans, the delivery and the playbooks. CISSP- and CISM-certified, with more than fifteen years of hands-on depth behind the decisions.",
+    "tagline": "Engineer's judgement, leader's scope — infrastructure, security and business outcomes in one operating model.",
     "rareStats": [
       {
-        "figure": "2-in-1",
-        "label": "CISSP + CISM held together",
-        "note": "Most security professionals carry one or the other. Both at once validates that I can build and defend the systems (CISSP) and govern the program and its risk (CISM). Fewer than 5% of security practitioners hold both."
-      },
-      {
-        "figure": "70–90%",
-        "label": "of M&A deals miss their goals",
-        "note": "Harvard Business Review and others have long reported most mergers fail to deliver their expected value — with technology integration repeatedly named a leading cause. I have personally delivered 10 integrations in 12 months."
-      },
-      {
-        "figure": "3 domains",
-        "label": "deep, not just broad",
-        "note": "Candidates are usually deep-technical OR strategic. The overlap of hands-on infrastructure, security leadership, and M&A delivery is a narrow slice of the talent pool."
-      },
-      {
-        "figure": "15 yrs",
-        "label": "hands-on through executive-facing",
-        "note": "Technical depth I never gave up — still writing the PowerShell and reading the KQL while owning the strategy and the audit."
-      },
-      {
-        "figure": "&lt;1%",
-        "label": "CISSP + CISM + active builder",
-        "note": "Holding both premier certs while actively shipping infrastructure as code, detection engineering, and automation puts this profile in a vanishingly small group: the practitioner who can also own the boardroom conversation."
+        "figure": "CISSP + CISM",
+        "label": "architecture and program, both validated",
+        "note": "CISSP covers security architecture and engineering; CISM covers running the security program and managing its risk. My work spans both, and so do the credentials."
       },
       {
         "figure": "US + CAN",
         "label": "authorized to work in both countries",
-        "note": "Dual U.S. and Canadian citizenship — I can take a role or run an integration on either side of the border with zero visa, sponsorship, or work-permit friction. For cross-border M&A, that is an operational edge, not just a convenience."
+        "note": "Dual U.S. and Canadian citizenship: I can take a role or run an integration on either side of the border without visa or sponsorship friction."
       },
       {
-        "figure": "11 repos",
-        "label": "a résumé you can read the source of",
-        "note": "Most leaders stop shipping code. I keep a public GitHub of secure-by-design infrastructure as code, detection engineering, and automation — the same disciplines on this résumé, open for anyone to inspect."
+        "figure": "15+ yrs",
+        "label": "hands-on through leadership",
+        "note": "From desktop-to-server support to leading a distributed infrastructure team. The technical depth is what makes the challenge in design reviews credible."
       },
       {
         "figure": "2 → 900+",
-        "label": "users, two-person office to global enterprise",
-        "note": "I have been the entire IT department for a small practice and the M&A integration lead for a 900+-employee enterprise across two continents — the same fundamentals proven across four orders of magnitude of scale."
+        "label": "users, small office to global enterprise",
+        "note": "I've been the entire IT department for a small practice and led integration for a 900+-employee enterprise across two continents. The fundamentals scale; the operating model has to change."
+      },
+      {
+        "figure": "11 repos",
+        "label": "personal lab work, open to inspect",
+        "note": "Infrastructure as code, detection engineering and automation built on my own time, kept separate from employer delivery."
       }
-    ]
+    ],
+    "positioning": "A technically grounded infrastructure leader who develops capable teams, directs secure enterprise transformation, and connects architecture, operational resilience and controls to measurable business value.",
+    "roles": [
+      "Infrastructure & Security Leadership",
+      "Secure Enterprise Transformation",
+      "Controls, Assurance & Resilience",
+      "M&A Technology Integration"
+    ],
+    "bootLog": [
+      {
+        "key": "acquisitions",
+        "val": "10 integrated in 12 months",
+        "status": "ok"
+      },
+      {
+        "key": "identity.plane",
+        "val": "6 tenants → 1 · 900+ users",
+        "status": "ok"
+      },
+      {
+        "key": "controls.sox_itgc",
+        "val": "50+ operated",
+        "status": "ok"
+      },
+      {
+        "key": "estate.vm",
+        "val": "~⅔ retired",
+        "status": "ok"
+      },
+      {
+        "key": "cloud.consolidation",
+        "val": "phased · underway",
+        "status": "run"
+      },
+      {
+        "key": "avd.deploy",
+        "val": "as code (Bicep) · in delivery",
+        "status": "run"
+      }
+    ],
+    "ticker": [
+      {
+        "k": "SOX ITGC",
+        "v": "50+ controls operated",
+        "s": "ok"
+      },
+      {
+        "k": "VM ESTATE",
+        "v": "~⅔ retired",
+        "s": "ok"
+      },
+      {
+        "k": "ACQUISITIONS",
+        "v": "10 integrated in 12 months",
+        "s": "ok"
+      },
+      {
+        "k": "IDENTITY",
+        "v": "6 Entra tenants consolidated",
+        "s": "ok"
+      },
+      {
+        "k": "CLOUD",
+        "v": "multi-cloud consolidation underway",
+        "s": "run"
+      },
+      {
+        "k": "IaC",
+        "v": "Azure Virtual Desktop in Bicep",
+        "s": "run"
+      },
+      {
+        "k": "RESILIENCE",
+        "v": "cross-functional BIAs",
+        "s": "ok"
+      },
+      {
+        "k": "GMP",
+        "v": "IT compliance readiness in progress",
+        "s": "run"
+      },
+      {
+        "k": "CREDENTIALS",
+        "v": "CISSP · CISM",
+        "s": "ok"
+      }
+    ],
+    "statement": "When two companies become one, the technology has to merge — [[secure, audited, and running by Monday morning]]. Then comes the harder part: [[simplifying what was inherited, controlling it, and making it cheaper to run]]."
   },
   "certifications": [
     {
@@ -154,7 +192,7 @@
   ],
   "github": {
     "profile": "https://github.com/Philliamviber",
-    "intro": "Public work that backs up the resume — secure-by-design infrastructure as code, detection engineering, and automation. The same disciplines, shipped in the open.",
+    "intro": "Personal lab work, kept separate from employer delivery: infrastructure as code, detection engineering and automation, built in the open and open to inspection.",
     "groups": [
       {
         "name": "Security & Detection Engineering",
@@ -365,408 +403,113 @@
   "domains": [
     {
       "key": "infra",
-      "label": "IT Infrastructure",
-      "score": 5,
-      "color": "#39ff14"
+      "label": "Infrastructure & Architecture",
+      "score": 5
     },
     {
-      "key": "cloudsec",
-      "label": "Cloud Security",
-      "score": 4,
-      "color": "#00e5ff"
+      "key": "cloud",
+      "label": "Cloud & IaC",
+      "score": 4
     },
     {
       "key": "grc",
-      "label": "GRC & Compliance",
-      "score": 5,
-      "color": "#ffb000"
-    },
-    {
-      "key": "ma",
-      "label": "M&A Integration",
-      "score": 5,
-      "color": "#ff2e63"
-    },
-    {
-      "key": "netsec",
-      "label": "Network Security",
-      "score": 4,
-      "color": "#bd00ff"
+      "label": "Controls & Assurance",
+      "score": 5
     },
     {
       "key": "bcdr",
-      "label": "Business Continuity / DR",
-      "score": 5,
-      "color": "#00ff9d"
+      "label": "Resilience (BC/DR)",
+      "score": 5
     },
     {
       "key": "iam",
       "label": "Identity & Access",
-      "score": 4,
-      "color": "#ff7b00"
+      "score": 4
     },
     {
-      "key": "automation",
-      "label": "Scripting & Automation",
-      "score": 5,
-      "color": "#f8f32b"
-    }
-  ],
-  "skills": [
-    {
-      "name": "Post-Merger Integration",
-      "domain": "ma",
-      "proficiency": 5
+      "key": "netsec",
+      "label": "Network Security",
+      "score": 4
     },
     {
-      "name": "Cybersecurity Leadership",
-      "domain": "grc",
-      "proficiency": 5
+      "key": "ma",
+      "label": "M&A Integration",
+      "score": 5
     },
     {
-      "name": "IT Infrastructure Management",
-      "domain": "infra",
-      "proficiency": 5
-    },
-    {
-      "name": "SOX ITGC",
-      "domain": "grc",
-      "proficiency": 5
-    },
-    {
-      "name": "NIST 800-53",
-      "domain": "grc",
-      "proficiency": 4
-    },
-    {
-      "name": "Business Continuity Planning",
-      "domain": "bcdr",
-      "proficiency": 5
-    },
-    {
-      "name": "Disaster Recovery",
-      "domain": "bcdr",
-      "proficiency": 5
-    },
-    {
-      "name": "Network Architecture Design",
-      "domain": "netsec",
-      "proficiency": 4
-    },
-    {
-      "name": "Enterprise System Hardening",
-      "domain": "netsec",
-      "proficiency": 4
-    },
-    {
-      "name": "Incident Response & Triage",
-      "domain": "grc",
-      "proficiency": 5
-    },
-    {
-      "name": "Scripting & Automation",
-      "domain": "automation",
-      "proficiency": 5
-    },
-    {
-      "name": "Threat Detection & Hunting",
-      "domain": "netsec",
-      "proficiency": 4
-    },
-    {
-      "name": "Cloud Security",
-      "domain": "cloudsec",
-      "proficiency": 4
-    },
-    {
-      "name": "Identity & Access Management",
-      "domain": "iam",
-      "proficiency": 4
-    },
-    {
-      "name": "Team Leadership",
-      "domain": "infra",
-      "proficiency": 5
-    },
-    {
-      "name": "Data Protection Strategies",
-      "domain": "grc",
-      "proficiency": 4
+      "key": "lead",
+      "label": "Team Leadership",
+      "score": 5
     }
   ],
   "techStack": {
-    "Enterprise Systems": [
-      "Active Directory",
-      "Microsoft Exchange",
-      "Hyper-V",
-      "VMware",
-      "ServiceNow",
-      "Cisco Meraki"
-    ],
-    "Cloud Platforms": [
+    "Cloud & identity": [
+      "Microsoft Azure",
+      "AWS",
+      "Entra ID",
       "Microsoft 365",
-      "Azure IaaS",
+      "Azure Virtual Desktop",
+      "Azure App Service",
       "Azure Arc",
       "Okta",
-      "Duo",
-      "Entra ID"
+      "Duo"
     ],
-    "Security": [
+    "Infrastructure & network": [
+      "Active Directory",
+      "Hyper-V",
+      "VMware",
+      "Cisco Meraki",
+      "BGP",
+      "Exchange",
+      "ServiceNow"
+    ],
+    "Security & assurance": [
       "Palo Alto NGFW",
+      "Microsoft Defender",
       "Microsoft Sentinel",
-      "Defender for Endpoint",
-      "NIST 800-53",
       "SOX ITGC",
+      "NIST SP 800-53",
+      "NIST SP 800-82",
       "CIS Controls",
-      "Application Whitelisting",
-      "Network Segmentation",
       "Zero Trust"
     ],
-    "Languages, Scripting & IaC": [
-      "PowerShell",
-      "SQL",
-      "KQL",
-      "WMI",
-      "Python",
-      "Perl",
-      "PHP",
-      "ASP",
-      "C++",
+    "Code & automation": [
+      "Bicep",
       "Terraform",
+      "PowerShell",
+      "KQL",
+      "Python",
+      "SQL",
       "GitHub Actions"
     ]
   },
-  "wordCloud": [
-    [
-      "Active Directory",
-      9
-    ],
-    [
-      "Entra ID",
-      9
-    ],
-    [
-      "M&A Integration",
-      10
-    ],
-    [
-      "SOX ITGC",
-      8
-    ],
-    [
-      "PowerShell",
-      11
-    ],
-    [
-      "Palo Alto NGFW",
-      7
-    ],
-    [
-      "Cisco Meraki",
-      7
-    ],
-    [
-      "Hyper-V",
-      6
-    ],
-    [
-      "VMware",
-      6
-    ],
-    [
-      "Azure",
-      7
-    ],
-    [
-      "Office 365",
-      8
-    ],
-    [
-      "Okta",
-      5
-    ],
-    [
-      "Duo",
-      5
-    ],
-    [
-      "KQL",
-      6
-    ],
-    [
-      "Python",
-      5
-    ],
-    [
-      "NIST 800-53",
-      6
-    ],
-    [
-      "Incident Response",
-      8
-    ],
-    [
-      "Ransomware Remediation",
-      6
-    ],
-    [
-      "Threat Hunting",
-      6
-    ],
-    [
-      "Disaster Recovery",
-      7
-    ],
-    [
-      "CISSP",
-      8
-    ],
-    [
-      "CISM",
-      8
-    ],
-    [
-      "ServiceNow",
-      5
-    ],
-    [
-      "Azure Arc",
-      5
-    ],
-    [
-      "Network Segmentation",
-      5
-    ],
-    [
-      "CIS Controls",
-      6
-    ],
-    [
-      "Business Continuity",
-      7
-    ],
-    [
-      "Tenant Migration",
-      7
-    ],
-    [
-      "Cloud Security",
-      7
-    ],
-    [
-      "GRC",
-      7
-    ],
-    [
-      "Exchange",
-      6
-    ],
-    [
-      "WMI",
-      4
-    ],
-    [
-      "SQL",
-      5
-    ],
-    [
-      "Hardening",
-      6
-    ],
-    [
-      "NGFW",
-      6
-    ],
-    [
-      "IAM",
-      6
-    ],
-    [
-      "Microsoft Sentinel",
-      7
-    ],
-    [
-      "Terraform",
-      6
-    ],
-    [
-      "Zero Trust",
-      6
-    ],
-    [
-      "GitHub Actions",
-      5
-    ],
-    [
-      "Defender",
-      6
-    ],
-    [
-      "MITRE ATT&CK",
-      5
-    ],
-    [
-      "DevSecOps",
-      5
-    ],
-    [
-      "C++",
-      5
-    ],
-    [
-      "Perl",
-      4
-    ],
-    [
-      "PHP",
-      4
-    ],
-    [
-      "ASP",
-      4
-    ],
-    [
-      "Detection Engineering",
-      5
-    ]
-  ],
   "impact": [
     {
       "value": 10,
-      "suffix": "",
-      "label": "M&A integrations within 12 months",
-      "icon": "merge"
-    },
-    {
-      "value": 4,
-      "prefix": "#",
-      "suffix": "",
-      "label": "Largest U.S. craft brewer enabled",
-      "icon": "trophy"
+      "label": "organizations integrated in 12 months"
     },
     {
       "value": 900,
       "suffix": "+",
-      "label": "Employees onboarded via Entra",
-      "icon": "users"
+      "label": "employees moved onto unified identity"
     },
     {
-      "value": 350,
+      "value": 50,
       "suffix": "+",
-      "label": "Endpoints & servers reimaged",
-      "icon": "server"
+      "label": "SOX IT general controls operated"
     },
     {
-      "value": 160,
-      "suffix": "",
-      "label": "Staff moved remote in 48 hours",
-      "icon": "bolt"
+      "display": "~⅔",
+      "label": "of the VM estate retired"
     },
     {
       "value": 65,
       "suffix": "+",
-      "label": "Sites, brew pubs & offices supported",
-      "icon": "globe"
+      "label": "sites across North America & Europe"
+    },
+    {
+      "value": 160,
+      "label": "staff moved remote in 48 hours"
     }
   ],
   "experience": [
@@ -782,26 +525,26 @@
         "ma",
         "infra",
         "grc",
-        "cloudsec"
+        "cloud"
       ],
-      "summary": "Leads global infrastructure and high-tempo M&A integration for a global beverage-alcohol and CPG enterprise.",
+      "summary": "Lead a distributed infrastructure team of ~10 supporting production facilities, brew pubs and offices across North America and Europe, inside an enterprise portfolio of 100+ active projects. Own the infrastructure SOX ITGC portfolio, direct acquisition-integration and cloud-consolidation strategy, and help connect business continuity with technical recovery.",
       "brief": {
-        "headline": "Integrated 10 acquisitions within 12 months — fueling Tilray Beverages' rise to the #4 craft brewer in the U.S.",
-        "situation": "A global beverage-alcohol and CPG enterprise on an aggressive acquisition spree, inheriting a sprawl of incompatible networks, identities, and email systems across 65+ sites in North America and Europe.",
-        "action": "Built and led a 10-person infrastructure team running back-to-back M&A takeovers — AB InBev and Molson Coors plant cutovers, 6 Entra tenant-to-tenant migrations, and AD / Meraki / O365 consolidations — while wiring SOX ITGC, system hardening, and incident response into daily operations.",
-        "outcome": "10 organizations integrated within 12 months · 900+ employees onboarded to unified governed identity · 4 production facilities transferred with zero unplanned downtime — accelerating the synergy capture behind the division's climb to #4 in the U.S. craft market.",
+        "headline": "Integrated 10 acquisitions in 12 months, then turned to simplifying, controlling and reducing the cost of what was inherited.",
+        "situation": "A multinational, regulated enterprise growing by acquisition, inheriting overlapping networks, identities, clouds and platforms across 65+ sites in North America and Europe.",
+        "action": "Lead a ~10-person team whose engineers own migration plans, delivery and playbooks, while I set direction, challenge designs and prioritize through sprint planning. We integrated acquired organizations onto one governed identity and network platform and retired legacy estate. I run 50+ SOX ITGCs and am developing a phased consolidation strategy for an acquired multi-cloud environment.",
+        "outcome": "10 organizations integrated in 12 months · 900+ employees on unified identity · 4 facilities taken over in 90 days · VM estate reduced by ~⅔ · six-figure cost reductions from legacy retirement · cloud consolidation underway, targeting a six-figure annual OPEX reduction.",
         "metrics": [
           {
             "value": "10",
-            "label": "M&A in 12 months"
+            "label": "acquisitions in 12 mo"
           },
           {
-            "value": "900+",
-            "label": "users onboarded"
+            "value": "50+",
+            "label": "SOX ITGCs operated"
           },
           {
-            "value": "4",
-            "label": "plants · zero downtime"
+            "value": "~⅔",
+            "label": "VM estate retired"
           },
           {
             "value": "65+",
@@ -809,38 +552,43 @@
           }
         ],
         "stack": [
-          "Microsoft Entra",
-          "Active Directory",
-          "Microsoft 365",
+          "Microsoft Entra ID",
+          "Azure & AWS",
+          "Bicep (AVD)",
           "Cisco Meraki",
+          "BGP",
           "SOX ITGC",
-          "Palo Alto NGFW"
+          "NIST SP 800-53 / 800-82"
         ]
       },
       "achievements": [
         {
-          "text": "Orchestrated high-priority IT M&A across 10 acquired organizations in 12 months, directly contributing to Tilray Beverages becoming the 4th-largest craft brewer in the U.S.",
-          "impact": "Accelerated value capture from acquisitions: each integration delivered on schedule meant faster revenue consolidation and synergy realization, directly advancing the growth strategy that vaulted the beverage division to #4 in the U.S. market."
+          "text": "Led infrastructure integration for 10 acquired organizations within 12 months, including full system and network takeovers of 4 production facilities from AB InBev in 90 days and 6 Molson Coors transitions in 60 days, contributing to Tilray Beverages' growth into the #4 U.S. craft brewer.",
+          "impact": "Each integration completed on schedule let the business consolidate operations sooner and reduce its dependence on sellers' transition services."
         },
         {
-          "text": "Coordinated IT acquisition events with AB InBev — full system and network takeovers of 4 production facilities in 90 days.",
-          "impact": "Protected production continuity through the ownership transfer: zero unplanned downtime across four revenue-generating plants meant no lost output or missed shipments during handover, de-risking the deal's operational P&L."
+          "text": "Completed 6 Microsoft Entra tenant-to-tenant migrations, bringing 900+ employees and their data onto one governed identity platform.",
+          "impact": "One identity platform means consistent MFA and access policy, simpler audits, and no duplicate licensing across tenants."
         },
         {
-          "text": "Directed post-acquisition transitions with Molson Coors — 6 major migrations in 60 days (Meraki org transfers, G-Suite→O365, Exchange→O365, Active Directory takeovers).",
-          "impact": "Compressed the integration timeline so the business could exit costly Transition Service Agreements early — every retired legacy contract cut recurring spend and removed a dependency on the seller."
+          "text": "Run and maintain 50+ SOX IT general controls (ITGCs) across the infrastructure function, and spearhead IT's part of GMP (Good Manufacturing Practice) compliance work for a business unit expanding into international markets (in progress).",
+          "impact": "Controls built into day-to-day infrastructure operations support financial-reporting compliance for a publicly traded company and prepare the business for new regulated markets."
         },
         {
-          "text": "Completed 6 Microsoft Entra tenant-to-tenant migrations, onboarding 900+ employees and thousands of digital assets within a year.",
-          "impact": "Unified identity gave 900+ employees governed, single sign-on access from day one — speeding workforce productivity, enabling consistent MFA and policy enforcement, and eliminating duplicate licensing across fragmented tenants."
+          "text": "Led a legacy rationalization program that reduced the virtual-machine estate to roughly one-third of its earlier size, and secured leadership support to sunset legacy platforms, delivering six-figure cost reductions.",
+          "impact": "A smaller estate costs less to run and leaves less to patch, secure and audit."
         },
         {
-          "text": "Led a distributed team of 10 (network engineers, cloud architects, sysadmins) supporting 15+ production facilities, 20 brew pubs, and 30 offices across North America and Europe.",
-          "impact": "Sustained always-on operations across 65+ sites on two continents with a lean team — high engineer-to-site leverage held infrastructure overhead down while protecting the uptime revenue depends on."
+          "text": "Developing a phased migration and consolidation strategy for an acquired Azure/AWS environment (enduring landing zone, BGP cutovers, staged transitions), targeting a substantial six-figure reduction in annual operating expense. Underway.",
+          "impact": "Moves the acquired business onto a platform built to last, with savings measured against today's run rate."
         },
         {
-          "text": "Aligned infrastructure operations with cybersecurity pillars: SLA reviews, BIAs, system hardening, SOX ITGC, and incident management/response.",
-          "impact": "Made IT an audit-ready, board-defensible function: SOX ITGC compliance and documented business impact analyses reduced regulatory and financial-reporting risk for a publicly traded company and protected market trust."
+          "text": "Brought business stakeholders together to run business impact analyses. Serve in the core leadership group convened where business continuity and technical disaster recovery intersect, using NIST SP 800-53 and SP 800-82 to frame risk and measure progress.",
+          "impact": "Recovery priorities grounded in business impact, with a shared framework for measuring progress."
+        },
+        {
+          "text": "Guide a distributed team of ~10 engineers and architects who own migration plans, execution and playbooks: ERP, network and tenant migrations, AWS-to-Azure application moves, Azure App Service ecommerce integrations, and an Azure Virtual Desktop build in Bicep. I balance sprint capacity against a 100+-project enterprise portfolio.",
+          "impact": "Delivery capacity that doesn't depend on any one person, with room held back for the improvements that simplify future work."
         }
       ]
     },
@@ -863,7 +611,7 @@
         "headline": "Moved 160 staff fully remote in 48 hours and rebuilt the firm's identity, network, and security estate.",
         "situation": "A professional-services firm running aging, end-of-life infrastructure with limited security maturity — then forced into an overnight remote-work pivot by the COVID-19 pandemic.",
         "action": "Matured the security program to CIS benchmarks (segmentation, application whitelisting, firm-wide Palo Alto NGFW, cloud IAM), stood up proactive security operations (threat hunting, incident response, patch cycles), and architected a greenfield Active Directory + O365 environment — co-authoring the COVID-19 technical strategy with the COO.",
-        "outcome": "160 employees productive remotely within 48 hours · 300 endpoints and 50 servers reimaged across three 48-hour windows · a measurably hardened posture that protected client confidentiality and uninterrupted billing.",
+        "outcome": "160 employees productive remotely within 48 hours · 300 endpoints and 50 servers reimaged across three 48-hour windows · a hardened security posture that protected client confidentiality and uninterrupted billing.",
         "metrics": [
           {
             "value": "48h",
@@ -1214,12 +962,12 @@
       },
       {
         "type": "company",
-        "label": "Engagement",
+        "label": "Role",
         "color": "#00e5ff"
       },
       {
         "type": "achievement",
-        "label": "Objective",
+        "label": "Outcome",
         "color": "#39ff14"
       },
       {
@@ -1301,7 +1049,7 @@
         "label": "10 M&A in 12mo",
         "type": "achievement",
         "value": 18,
-        "meta": "Tilray Beverages → #4 U.S. craft brewer"
+        "meta": "Contributed to Tilray Beverages' growth into the #4 U.S. craft brewer"
       },
       {
         "id": "ach-abinbev",
@@ -1368,10 +1116,10 @@
       },
       {
         "id": "ach-sox",
-        "label": "SOX ITGC & IR ops",
+        "label": "50+ SOX ITGCs",
         "type": "achievement",
         "value": 14,
-        "meta": "Audit-ready, board-defensible IT"
+        "meta": "Controls run and maintained across infrastructure"
       },
       {
         "id": "ach-secops",
@@ -1493,7 +1241,7 @@
       },
       {
         "id": "skill-auto",
-        "label": "Scripting & Automation",
+        "label": "Automation & IaC",
         "type": "skill",
         "value": 14
       },
@@ -1508,6 +1256,41 @@
         "label": "Incident Response & Triage",
         "type": "skill",
         "value": 14
+      },
+      {
+        "id": "ach-vm",
+        "label": "VM estate ~⅔ retired",
+        "type": "achievement",
+        "value": 14,
+        "meta": "Legacy rationalization · six-figure cost reductions"
+      },
+      {
+        "id": "ach-cloud",
+        "label": "Cloud consolidation",
+        "type": "achievement",
+        "value": 14,
+        "meta": "Phased Azure/AWS strategy · underway · OPEX target"
+      },
+      {
+        "id": "ach-avd",
+        "label": "AVD as code",
+        "type": "achievement",
+        "value": 14,
+        "meta": "Azure Virtual Desktop in Bicep · in delivery"
+      },
+      {
+        "id": "ach-bia",
+        "label": "BIA & continuity",
+        "type": "achievement",
+        "value": 14,
+        "meta": "Business impact analysis · continuity/DR core group"
+      },
+      {
+        "id": "ach-gmp",
+        "label": "GMP readiness",
+        "type": "achievement",
+        "value": 14,
+        "meta": "IT compliance work for international expansion · in progress"
       }
     ],
     "edges": [
@@ -1798,6 +1581,54 @@
       {
         "from": "cert-cism",
         "to": "skill-ir"
+      },
+      {
+        "from": "tilray",
+        "to": "ach-vm"
+      },
+      {
+        "from": "tilray",
+        "to": "ach-cloud"
+      },
+      {
+        "from": "tilray",
+        "to": "ach-avd"
+      },
+      {
+        "from": "tilray",
+        "to": "ach-bia"
+      },
+      {
+        "from": "tilray",
+        "to": "ach-gmp"
+      },
+      {
+        "from": "ach-vm",
+        "to": "skill-infra"
+      },
+      {
+        "from": "ach-cloud",
+        "to": "skill-cloud"
+      },
+      {
+        "from": "ach-cloud",
+        "to": "skill-ma"
+      },
+      {
+        "from": "ach-avd",
+        "to": "skill-auto"
+      },
+      {
+        "from": "ach-avd",
+        "to": "skill-cloud"
+      },
+      {
+        "from": "ach-bia",
+        "to": "skill-bcdr"
+      },
+      {
+        "from": "ach-gmp",
+        "to": "skill-grc"
       }
     ]
   },
@@ -2234,5 +2065,467 @@
         ]
       }
     ]
+  },
+  "problems": [
+    {
+      "title": "Two companies, one secure platform",
+      "body": "Acquisitions arrive with their own tenants, networks, identities and contracts. I lead the integration plan that brings them onto one governed platform quickly, without losing control of security or disrupting the business.",
+      "proof": "10 organizations integrated in 12 months",
+      "icon": "merge"
+    },
+    {
+      "title": "An estate that costs more than it should",
+      "body": "Inherited platforms pile up. I build the case to retire what the business no longer needs, secure leadership support, and leave the team a simpler, cheaper environment to run.",
+      "proof": "VM estate reduced by roughly two-thirds",
+      "icon": "trim"
+    },
+    {
+      "title": "Controls built into operations",
+      "body": "Compliance holds up when controls are part of how infrastructure runs day to day. I own a portfolio of 50+ SOX IT general controls and lead IT's part of emerging regulated-compliance work.",
+      "proof": "50+ SOX ITGCs operated",
+      "icon": "shield"
+    },
+    {
+      "title": "Where continuity meets recovery",
+      "body": "Business continuity and technical recovery are usually planned by different people. I bring business stakeholders into business impact analysis and sit in the small core group convened where the two intersect.",
+      "proof": "Cross-functional BIAs",
+      "icon": "pulse"
+    }
+  ],
+  "leadership": {
+    "intro": "The team I lead brings forward the plans, runs the migrations and improves the playbooks. My job is to keep that sustainable: set direction, add architectural judgement, and protect capacity for the improvements that make next quarter easier than this one.",
+    "loop": [
+      {
+        "step": "Plan",
+        "owner": "Engineers",
+        "text": "Engineers bring forward migration and change plans."
+      },
+      {
+        "step": "Challenge",
+        "owner": "Me + team",
+        "text": "I test designs against risk, cost, dependencies and alternatives."
+      },
+      {
+        "step": "Deliver",
+        "owner": "Engineers",
+        "text": "The team executes. I contribute, and I take the significant escalations."
+      },
+      {
+        "step": "Improve",
+        "owner": "Engineers",
+        "text": "Playbooks are updated with what each delivery taught us."
+      },
+      {
+        "step": "Prioritize",
+        "owner": "Me",
+        "text": "Sprint planning weighs a 100+-project portfolio against reserved improvement capacity."
+      }
+    ],
+    "principles": [
+      {
+        "t": "Ownership stays with the people doing the work",
+        "b": "Engineers own plans, execution and playbooks. Continuity doesn't depend on any one person, including me."
+      },
+      {
+        "t": "Judgement over heroics",
+        "b": "Seniority means informed challenge and good trade-offs, not taking every hard ticket."
+      },
+      {
+        "t": "Every delivery leaves a better playbook",
+        "b": "Repeatable beats remarkable. The tenth migration should be easier than the first."
+      },
+      {
+        "t": "Improvement capacity is negotiated",
+        "b": "Simplification competes with a large portfolio. I make the case for it inside real operational constraints."
+      }
+    ]
+  },
+  "caseStudies": [
+    {
+      "id": "integration",
+      "diagram": "converge",
+      "title": "Integrating acquisitions onto one governed platform",
+      "status": "Delivered",
+      "statusKind": "done",
+      "when": "2023–2024",
+      "summary": "Ten acquired organizations brought onto one governed identity and network platform in twelve months.",
+      "problem": "A run of acquisitions, including craft-brewing businesses acquired from Anheuser-Busch and Molson Coors, each arrived with its own identity tenant, email, network and support arrangements. The production sites had to keep running throughout.",
+      "constraints": "Transition-service deadlines, live production facilities, public-company controls, and a lean team spread across two continents.",
+      "role": "Led the infrastructure integration plan and sequencing, set the target state, and coordinated cutovers with the sellers' teams and the business.",
+      "team": "Engineers planned and executed the tenant, email, Meraki and Active Directory migrations and the facility cutovers.",
+      "decisions": [
+        "One governed target (Entra ID / Microsoft 365) for every acquisition, so each integration followed a repeatable path.",
+        "Exit transition-service dependencies on the seller early.",
+        "Plan facility takeovers around protecting production continuity through the ownership transfer."
+      ],
+      "outcome": "10 organizations integrated within 12 months. Four production facilities taken over in 90 days, six Molson Coors migrations completed in 60 days, and six Entra tenant-to-tenant migrations that moved 900+ employees onto unified identity.",
+      "metrics": [
+        {
+          "v": "10",
+          "l": "orgs in 12 months"
+        },
+        {
+          "v": "900+",
+          "l": "users on one identity"
+        },
+        {
+          "v": "4",
+          "l": "plants in 90 days"
+        }
+      ]
+    },
+    {
+      "id": "rationalization",
+      "diagram": "grid",
+      "title": "Rationalizing a legacy estate",
+      "status": "Delivered",
+      "statusKind": "done",
+      "when": "Tilray Brands",
+      "summary": "Deliberate selection and retirement shrank the virtual-machine estate to about a third of its size.",
+      "problem": "Years of acquisitions left overlapping platforms and a large virtual-machine estate: more to secure, patch, license and support than the business needed.",
+      "constraints": "Systems still in use by production and corporate teams, application owners with competing priorities, and change capacity shared with a large project portfolio.",
+      "role": "Built the case for retirement, chose what to keep and what to sunset, and secured leadership support for the program.",
+      "team": "Engineers validated dependencies, migrated the remaining workloads and decommissioned platforms.",
+      "decisions": [
+        "Deliberate selection over blanket lift-and-shift: retire first, and migrate only what earns its place.",
+        "Treat each retirement as a cost, risk and support decision, not only a technical one."
+      ],
+      "outcome": "The virtual-machine estate is now roughly one-third of its earlier size. Separately, retiring legacy platforms has produced six-figure cost reductions, and further opportunities have been identified.",
+      "metrics": [
+        {
+          "v": "~⅔",
+          "l": "VM estate retired"
+        },
+        {
+          "v": "6-fig",
+          "l": "cost reductions"
+        }
+      ]
+    },
+    {
+      "id": "consolidation",
+      "diagram": "migrate",
+      "title": "Consolidating an acquired cloud environment",
+      "status": "Underway",
+      "statusKind": "run",
+      "when": "In progress",
+      "summary": "A phased strategy to move an acquired multi-cloud estate into an enduring landing zone.",
+      "problem": "An acquired business runs a multi-cloud (Azure and AWS) environment with a substantial annual run rate and network dependencies of its own.",
+      "constraints": "Live applications, including ecommerce integrations; BGP and network dependencies; and the need to land workloads in an environment that will still make sense in five years.",
+      "role": "Developed the phased migration and consolidation strategy and defined the target operating environment.",
+      "team": "Engineers plan and execute the phases, including AWS-to-Azure application-stack moves and BGP cutovers.",
+      "decisions": [
+        "Establish the enduring post-migration landing zone first, then move workloads into it, rather than migrating into a temporary state.",
+        "Move in phases, with cutovers sequenced around network and application dependencies.",
+        "Judge success by the reduction in run rate, not by the number of workloads moved."
+      ],
+      "outcome": "Underway. The strategy targets a substantial six-figure reduction in annual operating expense. That figure is an estimate and has not yet been realized.",
+      "metrics": [
+        {
+          "v": "Phased",
+          "l": "migration strategy"
+        },
+        {
+          "v": "6-fig",
+          "l": "annual OPEX target"
+        }
+      ]
+    },
+    {
+      "id": "resilience",
+      "diagram": "chain",
+      "title": "Connecting business impact to technical recovery",
+      "status": "Ongoing",
+      "statusKind": "ongoing",
+      "when": "Shared responsibility",
+      "summary": "Business impact analysis as the common starting point for continuity and disaster recovery.",
+      "problem": "Continuity plans and disaster-recovery plans often describe the same systems in different terms, and different people own them.",
+      "constraints": "Accountability shared across business and IT leadership, and recovery priorities that have to reflect how the business actually makes and ships its products.",
+      "role": "Brought business stakeholders together to run business impact analyses. I'm a member of the small core leadership group called on where business continuity and technical recovery intersect.",
+      "team": "The infrastructure team maps technical dependencies and supports recovery planning.",
+      "decisions": [
+        "Start from business impact, not from the server list.",
+        "Frame infrastructure and production-environment risk with NIST SP 800-53 and SP 800-82 to measure progress and prioritize investment."
+      ],
+      "outcome": "Ongoing. Business impact analyses give continuity and recovery planning a shared, business-first starting point.",
+      "metrics": [
+        {
+          "v": "BIA",
+          "l": "business-first priorities"
+        },
+        {
+          "v": "800-53 · 800-82",
+          "l": "NIST framing"
+        }
+      ]
+    },
+    {
+      "id": "iac",
+      "diagram": "code",
+      "title": "Repeatable cloud delivery as code",
+      "status": "In delivery",
+      "statusKind": "run",
+      "when": "Current",
+      "summary": "Azure Virtual Desktop deployed from Bicep templates versioned in the enterprise repository.",
+      "problem": "Virtual desktop platforms built by hand are hard to reproduce, review and audit.",
+      "constraints": "Enterprise change control, identity and network integration, and a team that has to own and extend the platform after go-live.",
+      "role": "Set the infrastructure-as-code direction for the build and contribute to design review.",
+      "team": "Engineers author and deploy the Bicep templates. Artifacts are versioned in the enterprise repository.",
+      "decisions": [
+        "Declarative templates instead of portal builds, so the environment can be reviewed, reproduced and audited.",
+        "Keep artifacts in the enterprise repository so the design outlives any one engineer."
+      ],
+      "outcome": "Deployment is in progress. It is a current example of the team's infrastructure-as-code practice.",
+      "metrics": [
+        {
+          "v": "Bicep",
+          "l": "declarative IaC"
+        },
+        {
+          "v": "AVD",
+          "l": "Azure Virtual Desktop"
+        }
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "key": "arch",
+      "title": "Architecture & transformation",
+      "color": "#00e5ff",
+      "evidence": [
+        "10 acquired organizations integrated in 12 months",
+        "Legacy rationalization: VM estate reduced by ~⅔",
+        "Phased multi-cloud consolidation strategy (underway)",
+        "CAF-aligned landing zones; Meraki SD-WAN hub in Azure",
+        "ERP, network, tenant and application-stack migrations"
+      ],
+      "tools": [
+        "Azure",
+        "AWS",
+        "Entra ID",
+        "Microsoft 365",
+        "BGP",
+        "Cisco Meraki"
+      ]
+    },
+    {
+      "key": "sec",
+      "title": "Infrastructure security",
+      "color": "#39ff14",
+      "evidence": [
+        "Hardening, segmentation and firm-wide NGFW (CIS-aligned)",
+        "Identity consolidation with consistent MFA and policy",
+        "Incident and ransomware response: contain, eradicate, recover",
+        "Threat hunting and detection engineering (personal lab)"
+      ],
+      "tools": [
+        "Palo Alto NGFW",
+        "Defender",
+        "Sentinel",
+        "KQL",
+        "Zero Trust"
+      ]
+    },
+    {
+      "key": "grc",
+      "title": "Controls & assurance",
+      "color": "#ffb000",
+      "evidence": [
+        "Own and operate 50+ SOX IT general controls",
+        "Spearheading IT's GMP compliance work (in progress)",
+        "Risk framed with NIST SP 800-53 and SP 800-82",
+        "Access reviews, patch cycles, SLAs and change discipline"
+      ],
+      "tools": [
+        "SOX ITGC",
+        "NIST 800-53",
+        "NIST 800-82",
+        "CIS Controls",
+        "ServiceNow"
+      ]
+    },
+    {
+      "key": "res",
+      "title": "Resilience",
+      "color": "#ff2e63",
+      "evidence": [
+        "Cross-functional business impact analyses",
+        "Core group where continuity and DR intersect",
+        "160 staff moved remote in 48 hours (COVID-19)",
+        "DR-ready virtualization; multi-region AD design (personal lab)"
+      ],
+      "tools": [
+        "BIA",
+        "BC/DR",
+        "Hyper-V",
+        "VMware",
+        "Azure"
+      ]
+    },
+    {
+      "key": "lead",
+      "title": "Engineering leadership",
+      "color": "#bd00ff",
+      "evidence": [
+        "Distributed team of ~10 engineers and architects",
+        "Sprint planning across a 100+-project portfolio",
+        "Engineers own plans, delivery and playbooks",
+        "Infrastructure as code and automation practice"
+      ],
+      "tools": [
+        "Bicep",
+        "Terraform",
+        "PowerShell",
+        "GitHub",
+        "Python"
+      ]
+    }
+  ],
+  "csf": {
+    "intro": "Where my work sits across the six NIST Cybersecurity Framework 2.0 functions. This maps practice, not a compliance or certification claim. Brighter cells mark deeper, more direct responsibility.",
+    "functions": [
+      {
+        "k": "GV",
+        "name": "Govern"
+      },
+      {
+        "k": "ID",
+        "name": "Identify"
+      },
+      {
+        "k": "PR",
+        "name": "Protect"
+      },
+      {
+        "k": "DE",
+        "name": "Detect"
+      },
+      {
+        "k": "RS",
+        "name": "Respond"
+      },
+      {
+        "k": "RC",
+        "name": "Recover"
+      }
+    ],
+    "rows": [
+      {
+        "cap": "arch",
+        "v": [
+          2,
+          3,
+          2,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "cap": "sec",
+        "v": [
+          1,
+          2,
+          3,
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "cap": "grc",
+        "v": [
+          3,
+          3,
+          2,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "cap": "res",
+        "v": [
+          2,
+          3,
+          1,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "cap": "lead",
+        "v": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          2
+        ]
+      }
+    ],
+    "notes": {
+      "arch:ID": "Asset and dependency discovery for every acquisition and retirement decision.",
+      "sec:PR": "Hardening, segmentation, NGFW and identity controls.",
+      "sec:RS": "Ransomware and security incident response, end to end.",
+      "grc:GV": "SOX ITGC ownership and regulated-compliance work.",
+      "grc:ID": "Control scoping and risk framing with NIST SP 800-53 / 800-82.",
+      "res:ID": "Business impact analysis with business stakeholders.",
+      "res:RC": "Core group where continuity and technical recovery meet."
+    }
+  },
+  "focus": {
+    "title": "Where I'm extending the practice",
+    "note": "Forward-looking interests and personal lab work, not employer programs.",
+    "items": [
+      {
+        "t": "Workload & agent identity",
+        "b": "Applying identity governance to automation accounts and AI agents: least privilege, ownership, review."
+      },
+      {
+        "t": "Controlled automated execution",
+        "b": "Guardrails, approvals and audit trails for changes made by pipelines and agents."
+      },
+      {
+        "t": "Secure AI adoption",
+        "b": "Extending existing assurance, data-protection and resilience practice to AI-enabled tools."
+      },
+      {
+        "t": "Measuring AI-assisted delivery",
+        "b": "Evidence of throughput and quality, rather than enthusiasm."
+      }
+    ]
+  },
+  "certMap": [
+    {
+      "tag": "CISSP",
+      "text": "Hardening, segmentation and firm-wide Palo Alto NGFW at Baker Tilly: defences designed by the engineer who built the systems underneath."
+    },
+    {
+      "tag": "CISM",
+      "text": "Ownership of 50+ SOX IT general controls at Tilray, plus IT's part of regulated-compliance readiness."
+    },
+    {
+      "tag": "CISSP",
+      "text": "Six Entra tenant-to-tenant migrations at Tilray: identity architecture, MFA and access policy for 900+ users on two continents."
+    },
+    {
+      "tag": "CISM",
+      "text": "Business impact analysis and the continuity/recovery core group: risk framed in business terms with NIST SP 800-53 and 800-82."
+    },
+    {
+      "tag": "CISSP",
+      "text": "Incident and ransomware response: contain, eradicate, recover, then fix the process that let it in."
+    },
+    {
+      "tag": "CISM",
+      "text": "M&A technology due diligence: assessing information-security risk before close and folding acquired entities into one governed program."
+    }
+  ],
+  "meta": {
+    "updated": "2026-09"
   }
 }

@@ -3,47 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Philip Stiber · CISSP, CISM — Cyber & Infrastructure Portfolio</title>
-  <meta name="description" content="Interactive cybersecurity portfolio for Philip Stiber, CISSP/CISM — IT infrastructure leadership, M&A technology integration, and GRC, mapped as an attack-path graph." />
+  <!-- Strict CSP: scripts only from this origin (+ Credly's badge embed). No inline scripts. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.credly.com; frame-src https://www.credly.com; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Philip Stiber · CISSP, CISM — Infrastructure &amp; Security Leadership</title>
+  <meta name="description" content="Philip Stiber, CISSP, CISM — an infrastructure leader who develops capable teams, directs secure enterprise transformation, and connects architecture, resilience and controls to measurable business value." />
   <meta name="author" content="Philip Stiber" />
-  <meta property="og:title" content="Philip Stiber · CISSP, CISM — Cyber & Infrastructure Portfolio" />
-  <meta property="og:description" content="A BloodHound-style interactive map of a 15-year cybersecurity and IT infrastructure career." />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#05080d" />
+  <meta property="og:title" content="Philip Stiber · CISSP, CISM — Infrastructure &amp; Security Leadership" />
+  <meta property="og:description" content="Acquisition integration, legacy rationalization, SOX ITGC ownership and resilience, led through a team that owns its delivery." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://philliamviber.github.io/Resume/" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/jetbrains-mono-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/motion.css" />
 </head>
 <body>
 
-  <!-- Atmospheric tech-brand background scatter (opacity ~2.8%, pointer-events: none) -->
+  <!-- Atmospheric tech-term scatter (opacity ~2.8%, pointer-events: none) -->
   <div class="tech-bg" aria-hidden="true">
-    <span class="tb" style="top:3%;left:2%;font-size:1.15rem;transform:rotate(-10deg);color:#00e5ff">Azure AD</span>
+    <span class="tb" style="top:3%;left:2%;font-size:1.15rem;transform:rotate(-10deg);color:#00e5ff">Entra ID</span>
     <span class="tb" style="top:7%;right:4%;font-size:1.3rem;transform:rotate(7deg);color:#39ff14">PowerShell</span>
     <span class="tb" style="top:13%;left:8%;font-size:0.9rem;transform:rotate(-4deg);color:#ffb000">SOX ITGC</span>
     <span class="tb" style="top:18%;right:10%;font-size:1.05rem;transform:rotate(11deg);color:#bd00ff">Palo Alto</span>
     <span class="tb" style="top:22%;left:20%;font-size:0.85rem;transform:rotate(-7deg);color:#00e5ff">NIST 800-53</span>
-    <span class="tb" style="top:28%;right:2%;font-size:1.2rem;transform:rotate(-14deg);color:#39ff14">Entra ID</span>
-    <span class="tb" style="top:33%;left:3%;font-size:0.95rem;transform:rotate(6deg);color:#ff2e63">Hyper-V</span>
+    <span class="tb" style="top:28%;right:2%;font-size:1.2rem;transform:rotate(-14deg);color:#39ff14">Bicep</span>
+    <span class="tb" style="top:33%;left:3%;font-size:0.95rem;transform:rotate(6deg);color:#00e5ff">Hyper-V</span>
     <span class="tb" style="top:38%;right:14%;font-size:1.1rem;transform:rotate(-9deg);color:#ffb000">CIS Controls</span>
     <span class="tb" style="top:42%;left:15%;font-size:0.88rem;transform:rotate(4deg);color:#bd00ff">Terraform</span>
     <span class="tb" style="top:47%;right:5%;font-size:1.0rem;transform:rotate(12deg);color:#00e5ff">Cisco Meraki</span>
     <span class="tb" style="top:52%;left:5%;font-size:1.15rem;transform:rotate(-6deg);color:#39ff14">Sentinel</span>
-    <span class="tb" style="top:57%;right:8%;font-size:0.92rem;transform:rotate(-11deg);color:#ff2e63">VMware</span>
+    <span class="tb" style="top:57%;right:8%;font-size:0.92rem;transform:rotate(-11deg);color:#ff2e63">BGP</span>
     <span class="tb" style="top:61%;left:22%;font-size:0.85rem;transform:rotate(8deg);color:#ffb000">KQL</span>
     <span class="tb" style="top:65%;right:18%;font-size:1.0rem;transform:rotate(-5deg);color:#bd00ff">Zero Trust</span>
     <span class="tb" style="top:69%;left:7%;font-size:1.2rem;transform:rotate(13deg);color:#00e5ff">Active Directory</span>
     <span class="tb" style="top:73%;right:3%;font-size:0.9rem;transform:rotate(-8deg);color:#39ff14">GitHub Actions</span>
     <span class="tb" style="top:77%;left:14%;font-size:1.05rem;transform:rotate(5deg);color:#ff2e63">Microsoft 365</span>
-    <span class="tb" style="top:81%;right:12%;font-size:0.88rem;transform:rotate(-13deg);color:#ffb000">SIEM / SOAR</span>
-    <span class="tb" style="top:85%;left:2%;font-size:1.0rem;transform:rotate(9deg);color:#bd00ff">DevSecOps</span>
-    <span class="tb" style="top:89%;right:6%;font-size:1.1rem;transform:rotate(-6deg);color:#00e5ff">Threat Hunting</span>
+    <span class="tb" style="top:81%;right:12%;font-size:0.88rem;transform:rotate(-13deg);color:#ffb000">NIST 800-82</span>
+    <span class="tb" style="top:85%;left:2%;font-size:1.0rem;transform:rotate(9deg);color:#bd00ff">BIA · BC/DR</span>
+    <span class="tb" style="top:89%;right:6%;font-size:1.1rem;transform:rotate(-6deg);color:#00e5ff">Landing Zones</span>
     <span class="tb" style="top:93%;left:18%;font-size:0.9rem;transform:rotate(4deg);color:#39ff14">Defender</span>
-    <span class="tb" style="top:5%;left:42%;font-size:0.82rem;transform:rotate(-3deg);color:#ff2e63">Exchange Online</span>
+    <span class="tb" style="top:5%;left:42%;font-size:0.82rem;transform:rotate(-3deg);color:#ff2e63">AWS</span>
     <span class="tb" style="top:25%;left:55%;font-size:0.95rem;transform:rotate(7deg);color:#00e5ff">IAM · RBAC</span>
     <span class="tb" style="top:45%;left:48%;font-size:0.88rem;transform:rotate(-9deg);color:#39ff14">Python</span>
-    <span class="tb" style="top:60%;left:60%;font-size:1.0rem;transform:rotate(11deg);color:#ffb000">MITRE ATT&amp;CK</span>
+    <span class="tb" style="top:60%;left:60%;font-size:1.0rem;transform:rotate(11deg);color:#ffb000">Azure Virtual Desktop</span>
     <span class="tb" style="top:75%;left:50%;font-size:0.9rem;transform:rotate(-4deg);color:#bd00ff">Okta · Duo</span>
     <span class="tb" style="top:10%;left:68%;font-size:1.1rem;transform:rotate(6deg);color:#ff2e63">GRC</span>
     <span class="tb" style="top:35%;left:72%;font-size:0.85rem;transform:rotate(-12deg);color:#00e5ff">IaaS · PaaS</span>
@@ -53,62 +60,61 @@
     <span class="tb" style="top:95%;left:35%;font-size:0.9rem;transform:rotate(-10deg);color:#ff2e63">Azure Arc</span>
   </div>
 
-  <a class="skip-link" href="#graph">Skip to career graph</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ============================ NAV ============================ -->
   <nav class="nav" aria-label="Primary">
-    <span class="brand">stiber<span class="blink">_</span>sec</span>
+    <a class="brand" href="#top" aria-label="Back to top">stiber<span class="blink">_</span>sec</a>
     <span class="spacer"></span>
-    <a class="navlink" href="#about">profile</a>
-    <a class="navlink" href="#impact">impact</a>
-    <a class="navlink always" href="#graph">graph</a>
-    <a class="navlink" href="#radar">skills</a>
-    <a class="navlink" href="#cloud">stack</a>
-    <a class="navlink" href="#estate">estate</a>
-    <a class="navlink" href="#timeline">timeline</a>
-    <a class="navlink" href="#experience">experience</a>
-    <a class="navlink" href="#certs">certs</a>
-    <a class="navlink" href="#map">footprint</a>
-    <a class="navlink" href="#repos">code</a>
-    <a class="navlink" href="#travel">travel</a>
-    <a class="navlink always" href="https://www.linkedin.com/in/pstiber/" target="_blank" rel="noopener">linkedin ↗</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+      <span class="nav-toggle-bars" aria-hidden="true"></span><span class="nav-toggle-label">menu</span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a class="navlink" href="#about">profile</a>
+      <a class="navlink" href="#work">work</a>
+      <a class="navlink" href="#approach">approach</a>
+      <a class="navlink" href="#capabilities">capabilities</a>
+      <a class="navlink" href="#graph-section">graph</a>
+      <a class="navlink" href="#experience">experience</a>
+      <a class="navlink" href="#certs">credentials</a>
+      <a class="navlink" href="#map">footprint</a>
+      <a class="navlink" href="#repos">code</a>
+      <a class="navlink" href="#travel">travel</a>
+      <a class="navlink nav-cta" href="resume.html">résumé ↓</a>
+    </div>
   </nav>
 
   <!-- ============================ HERO ============================ -->
-  <header class="hero">
+  <header class="hero" id="top">
+    <canvas class="hero-net" id="hero-net" aria-hidden="true"></canvas>
     <div class="wrap hero-grid">
       <figure class="hero-avatar">
         <div class="avatar-ring" id="avatar-ring" aria-label="Philip Stiber" role="img">
-          <!-- Rotating photo stack injected by main.js; placeholder shows until photos load -->
           <img class="avatar-photo" src="assets/profile-placeholder.svg" alt="Philip Stiber" width="200" height="200" />
         </div>
         <figcaption>Philip Stiber · Peterborough, ON</figcaption>
       </figure>
-      <div class="terminal" role="img" aria-label="Terminal-styled introduction for Philip Stiber">
-        <div class="terminal-bar">
+      <div class="terminal">
+        <div class="terminal-bar" aria-hidden="true">
           <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
-          <span class="title">root@stiber-sec: ~/career</span>
+          <span class="title">operator@stiber-sec: ~/career</span>
         </div>
         <div class="terminal-body">
-          <div><span class="prompt">┌──(</span><span class="path">operator㉿stiber</span><span class="prompt">)-[</span><span class="cmd">~/career</span><span class="prompt">]</span></div>
-          <div><span class="prompt">└─$</span> <span class="cmd">whoami --full</span></div>
-          <h1>Philip Stiber <span style="color:var(--neon-green); font-size:0.5em; vertical-align:middle;">CISSP · CISM</span></h1>
-          <p class="role"><span id="typed-role" class="typed">Cybersecurity &amp; IT Infrastructure Leader</span></p>
-          <p class="hook" id="hero-hook"></p>
-          <p class="out" id="hero-summary">Loading mission brief…</p>
+          <div aria-hidden="true"><span class="prompt">┌──(</span><span class="path">operator㉿stiber</span><span class="prompt">)-[</span><span class="cmd">~/career</span><span class="prompt">]</span></div>
+          <div aria-hidden="true"><span class="prompt">└─$</span> <span class="cmd">./profile --summary</span></div>
+          <h1>Philip Stiber <span class="h1-creds">CISSP · CISM</span></h1>
+          <p class="role"><span class="sr-only" id="hero-role-sr">Infrastructure &amp; Security Leadership</span><span id="hero-role" class="typed" aria-hidden="true">Infrastructure &amp; Security Leadership</span></p>
+          <p class="positioning" id="hero-positioning"></p>
 
-          <div class="badges" id="badges">
-            <img src="https://img.shields.io/badge/CISSP-(ISC)%C2%B2-39ff14?style=flat-square&labelColor=05080d" alt="CISSP — (ISC)²" />
-            <img src="https://img.shields.io/badge/CISM-ISACA-ffb000?style=flat-square&labelColor=05080d" alt="CISM — ISACA" />
-            <img src="https://img.shields.io/badge/M%26A_Integrations-10_in_12mo-ff2e63?style=flat-square&labelColor=05080d" alt="10 M&A integrations in 12 months" />
-            <img src="https://img.shields.io/badge/Entra_Migrations-900%2B_users-00e5ff?style=flat-square&labelColor=05080d" alt="900+ users migrated via Entra" />
-          </div>
+          <ol class="boot" id="boot-log" aria-label="Current status"><!-- status lines injected by motion.js --></ol>
+
+          <p class="out" id="hero-summary">Loading profile…</p>
 
           <!-- ISC² and ISACA logos — hover to see cert details + Credly verify link -->
           <div class="issuer-badges" role="group" aria-label="Issuer credentials — hover to verify">
             <a class="issuer-badge-link"
                href="https://www.credly.com/badges/e7398140-fb0e-4ce8-86be-ecc8999d3d64/public_url"
-               target="_blank" rel="noopener"
+               target="_blank" rel="noopener noreferrer"
                aria-label="CISSP issued by (ISC)² — verify on Credly">
               <img src="assets/isc2.svg" alt="(ISC)² CISSP badge" class="issuer-mini" width="118" height="44" />
               <span class="badge-hover-card" aria-hidden="true">
@@ -119,7 +125,7 @@
             </a>
             <a class="issuer-badge-link"
                href="https://www.credly.com/badges/af84d868-20c3-43b2-9d26-e2656fb7868a/public_url"
-               target="_blank" rel="noopener"
+               target="_blank" rel="noopener noreferrer"
                aria-label="CISM issued by ISACA — verify on Credly">
               <img src="assets/isaca.svg" alt="ISACA CISM badge" class="issuer-mini" width="118" height="44" />
               <span class="badge-hover-card" aria-hidden="true">
@@ -131,117 +137,65 @@
           </div>
 
           <div class="cta-row">
-            <a class="btn" href="#graph">▶ launch career graph</a>
-            <a class="btn alt" href="https://www.linkedin.com/in/pstiber/" target="_blank" rel="noopener">view linkedin</a>
-            <a class="btn alt" href="https://www.linkedin.com/in/pstiber/" target="_blank" rel="noopener">contact</a>
+            <a class="btn" href="#work">▶ selected work</a>
+            <a class="btn alt" href="resume.html">résumé (PDF) ↓</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/pstiber/" target="_blank" rel="noopener noreferrer">connect on linkedin ↗</a>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- ============================ ABOUT / CROSSING ============================ -->
+  <!-- ============================ STATUS TICKER ============================ -->
+  <div class="ticker" aria-label="Status summary">
+    <div class="ticker-label" aria-hidden="true"><span class="live-dot"></span>status</div>
+    <div class="ticker-viewport">
+      <ul class="ticker-track" id="ticker-track"><!-- ticker items injected by motion.js --></ul>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ============================ PROFILE: STATEMENT + PROBLEMS ============================ -->
     <section id="about" aria-labelledby="about-h">
       <div class="wrap">
+        <blockquote class="statement" id="statement"><!-- hook injected --></blockquote>
+
         <div class="section-head">
-          <div class="kicker">// profile</div>
-          <h2 id="about-h">A Career Built to Not Be Siloed</h2>
+          <div class="kicker">// 01 · profile</div>
+          <h2 id="about-h" data-scramble>What I'm Brought In to Solve</h2>
           <p id="about-tagline"></p>
         </div>
-        <div class="crossing-grid" id="crossing-grid"><!-- crossing cards injected by main.js --></div>
+        <div class="problem-grid" id="problem-grid"><!-- problem cards injected by sections.js --></div>
       </div>
     </section>
 
-    <!-- ============================ RARE BY THE NUMBERS ============================ -->
-    <section id="rare" aria-labelledby="rare-h">
-      <div class="wrap">
-        <div class="section-head">
-          <div class="kicker">// why this profile is rare</div>
-          <h2 id="rare-h">Rare by the Numbers</h2>
-          <p>The market is full of specialists. The value is in the overlap — and the overlap is uncommon.</p>
-        </div>
-        <div class="rare-grid" id="rare-grid"><!-- rare stat cards injected by main.js --></div>
-      </div>
-    </section>
-
-    <!-- ============================ IMPACT ============================ -->
+    <!-- ============================ NUMBERS ============================ -->
     <section id="impact" aria-labelledby="impact-h">
       <div class="wrap">
         <div class="section-head">
-          <div class="kicker">// quantified impact</div>
-          <h2 id="impact-h">Objectives Achieved</h2>
-          <p>The numbers behind a decade-plus of enterprise infrastructure and security delivery.</p>
+          <div class="kicker">// 02 · telemetry</div>
+          <h2 id="impact-h" data-scramble>By the Numbers</h2>
+          <p>Delivered outcomes only. Work still underway is labelled as such throughout the site.</p>
         </div>
         <div class="impact-grid" id="impact-grid"><!-- stat cards injected by main.js --></div>
+        <div class="rare-grid" id="rare-grid"><!-- profile facts injected by main.js --></div>
       </div>
     </section>
 
-    <!-- ============================ GRAPH ============================ -->
-    <section id="graph-section" aria-labelledby="graph-h">
+    <!-- ============================ SELECTED WORK ============================ -->
+    <section id="work" aria-labelledby="work-h">
       <div class="wrap">
         <div class="section-head">
-          <div class="kicker">// attack-path map</div>
-          <h2 id="graph-h">Career Graph</h2>
-          <p>A BloodHound-style force-directed map of the path from operator → engagements → objectives → capabilities → credentials. Drag nodes, scroll to zoom, click a node for detail, or filter by type.</p>
+          <div class="kicker">// 03 · case files</div>
+          <h2 id="work-h" data-scramble>Selected Work</h2>
+          <p>Five pieces of work: the business problem, the constraints, what I did, what the team did, and where each one stands. Counterparties, figures and architecture are generalized on purpose.</p>
         </div>
-
-        <div class="graph-toolbar">
-          <input type="search" id="graph-search" placeholder="search nodes… (e.g. Entra, M&A, Tilray)" aria-label="Search graph nodes" />
-          <span class="chip" data-filter="all" data-active="true">all</span>
-          <span class="chip" data-filter="company">engagements</span>
-          <span class="chip" data-filter="achievement">objectives</span>
-          <span class="chip" data-filter="skill">capabilities</span>
-          <span class="chip" data-filter="cert">credentials</span>
-          <span class="spacer"></span>
-          <span class="chip" id="graph-reset">⟳ reset</span>
+        <div class="status-legend" aria-hidden="true">
+          <span class="sl"><span class="pill done">delivered</span></span>
+          <span class="sl"><span class="pill run">underway</span></span>
+          <span class="sl"><span class="pill ongoing">ongoing</span></span>
         </div>
-
-        <div id="graph" role="application" aria-label="Interactive career graph"></div>
-        <div class="graph-legend" id="graph-legend"><!-- legend injected --></div>
-        <div class="node-info" id="node-info">› Click any node to inspect its details.</div>
-      </div>
-    </section>
-
-    <!-- ============================ SKILLS: RADAR + HEATMAP ============================ -->
-    <section id="radar" aria-labelledby="radar-h">
-      <div class="wrap">
-        <div class="section-head">
-          <div class="kicker">// capability profile</div>
-          <h2 id="radar-h">Skill Domains &amp; Proficiency</h2>
-          <p>Domain coverage as a radar sweep, with a skill-by-skill proficiency heatmap.</p>
-        </div>
-        <div class="grid-2">
-          <div class="panel">
-            <h3>radar :: domain coverage</h3>
-            <div class="canvas-host"><canvas id="radar-canvas" aria-label="Radar chart of skill domains"></canvas></div>
-          </div>
-          <div class="panel">
-            <h3>heatmap :: proficiency matrix</h3>
-            <div class="heatmap" id="heatmap"><!-- heatmap injected --></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================ STACK: WORDCLOUD + TIMELINE ============================ -->
-    <section id="cloud" aria-labelledby="cloud-h">
-      <div class="wrap">
-        <div class="section-head">
-          <div class="kicker">// tooling &amp; trajectory</div>
-          <h2 id="cloud-h">Tech Arsenal &amp; Timeline</h2>
-          <p>The platforms and languages in active rotation, alongside the career kill-chain.</p>
-        </div>
-        <div class="grid-2">
-          <div class="panel">
-            <h3>arsenal :: tech word cloud</h3>
-            <canvas id="wordcloud" aria-label="Word cloud of technologies"></canvas>
-          </div>
-          <div class="panel">
-            <h3 id="timeline">trajectory :: timeline</h3>
-            <div class="timeline" id="timeline-list"><!-- timeline injected --></div>
-          </div>
-        </div>
+        <div id="case-list"><!-- case studies injected by cases.js --></div>
       </div>
     </section>
 
@@ -249,16 +203,84 @@
     <section id="estate" aria-labelledby="estate-h">
       <div class="wrap">
         <div class="section-head">
-          <div class="kicker">// integration portfolio</div>
-          <h2 id="estate-h">Integration Portfolio</h2>
+          <div class="kicker">// 03b · integration portfolio</div>
+          <h2 id="estate-h" data-scramble>Integration Portfolio</h2>
           <p id="estate-intro"></p>
         </div>
+        <div class="estate-summary" id="estate-summary"></div>
+        <div class="brand-wall" id="brand-wall" role="list" aria-label="Brands integrated 2023–2026"></div>
+        <div class="estate-transitions" id="estate-transitions"></div>
+      </div>
+    </section>
 
-        <div class="estate-summary" id="estate-summary"><!-- summary stat chips injected --></div>
+    <!-- ============================ LEADERSHIP APPROACH ============================ -->
+    <section id="approach" aria-labelledby="approach-h">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">// 04 · operating model</div>
+          <h2 id="approach-h" data-scramble>Leadership Approach</h2>
+          <p id="approach-intro"></p>
+        </div>
+        <div class="approach-grid">
+          <figure class="loop-fig" id="loop-fig" aria-label="The team's delivery loop"><!-- loop diagram injected by sections.js --></figure>
+          <div class="principles" id="principles"><!-- principles injected --></div>
+        </div>
+      </div>
+    </section>
 
-        <div class="brand-wall" id="brand-wall" role="list" aria-label="Brands integrated 2023–2026"><!-- brand logo tiles injected --></div>
+    <!-- ============================ CAPABILITIES ============================ -->
+    <section id="capabilities" aria-labelledby="cap-h">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">// 05 · capability profile</div>
+          <h2 id="cap-h" data-scramble>Capabilities</h2>
+          <p>Five capability areas, each backed by specific work, then mapped two ways: against the NIST Cybersecurity Framework 2.0 and as a self-assessed radar.</p>
+        </div>
+        <div class="cap-grid" id="cap-grid"><!-- pillars injected by sections.js --></div>
 
-        <div class="estate-transitions" id="estate-transitions"><!-- acquisition-integration callouts injected --></div>
+        <div class="grid-2 cap-charts">
+          <div class="panel">
+            <h3>matrix :: NIST CSF 2.0 practice map</h3>
+            <p class="panel-note" id="csf-intro"></p>
+            <div class="csf" id="csf" role="table" aria-label="Capability areas mapped to NIST CSF 2.0 functions"></div>
+            <p class="csf-detail" id="csf-detail" aria-live="polite">› Hover or focus a cell for detail.</p>
+          </div>
+          <div class="panel">
+            <h3>radar :: domain coverage</h3>
+            <div class="canvas-host"><canvas id="radar-canvas" aria-label="Radar chart of self-assessed domain proficiency"></canvas></div>
+          </div>
+        </div>
+
+        <div class="panel stack-panel">
+          <h3>stack :: platforms &amp; tooling in rotation</h3>
+          <div class="stack-groups" id="stack-groups"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ GRAPH ============================ -->
+    <section id="graph-section" aria-labelledby="graph-h">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">// 06 · relationship map</div>
+          <h2 id="graph-h" data-scramble>Career Graph</h2>
+          <p>A BloodHound-style map of how roles, outcomes, capabilities and credentials connect. Drag nodes, scroll to zoom, click for detail, or filter by type.</p>
+        </div>
+
+        <div class="graph-toolbar">
+          <input type="search" id="graph-search" placeholder="search nodes… (e.g. SOX, Entra, Tilray)" aria-label="Search graph nodes" />
+          <button type="button" class="chip" data-filter="all" data-active="true">all</button>
+          <button type="button" class="chip" data-filter="company">roles</button>
+          <button type="button" class="chip" data-filter="achievement">outcomes</button>
+          <button type="button" class="chip" data-filter="skill">capabilities</button>
+          <button type="button" class="chip" data-filter="cert">credentials</button>
+          <span class="spacer"></span>
+          <button type="button" class="chip" id="graph-reset">⟳ reset</button>
+        </div>
+
+        <div id="graph" role="application" aria-label="Interactive career graph"></div>
+        <div class="graph-legend" id="graph-legend"></div>
+        <div class="node-info" id="node-info">› Click any node to inspect its details.</div>
       </div>
     </section>
 
@@ -266,21 +288,22 @@
     <section id="experience" aria-labelledby="exp-h">
       <div class="wrap">
         <div class="section-head">
-          <div class="kicker">// engagement log</div>
-          <h2 id="exp-h">Experience</h2>
-          <p><strong>Hover or tap any achievement</strong> to drill into the business objective it elevated — the &ldquo;so what?&rdquo; behind every line.</p>
+          <div class="kicker">// 07 · engagement log</div>
+          <h2 id="exp-h" data-scramble>Experience</h2>
+          <p><strong>Hover, tap or tab to any achievement</strong> to see the business objective behind it.</p>
         </div>
-        <div id="exp-list"><!-- experience cards injected --></div>
+        <ol class="rail" id="rail" aria-label="Career timeline"><!-- timeline rail injected by main.js --></ol>
+        <div id="exp-list"><!-- experience cards injected by main.js --></div>
       </div>
     </section>
 
-    <!-- ============================ CERTIFICATIONS ============================ -->
+    <!-- ============================ CREDENTIALS ============================ -->
     <section id="certs" aria-labelledby="certs-h">
       <div class="wrap">
         <div class="section-head">
-          <div class="kicker">// verified credentials</div>
-          <h2 id="certs-h">Certifications</h2>
-          <p>Two industry-benchmark credentials that together cover the full security stack: building and defending systems (CISSP) and governing the program and its risk at executive level (CISM). Independently verifiable on Credly — hover the logos above or click <strong>verify on credly</strong> on any card.</p>
+          <div class="kicker">// 08 · verified credentials</div>
+          <h2 id="certs-h" data-scramble>Credentials &amp; Direction</h2>
+          <p>CISSP covers security architecture and engineering; CISM covers running the program and managing its risk. Both are independently verifiable on Credly.</p>
         </div>
         <div class="cert-grid">
           <article class="cert-card">
@@ -295,7 +318,7 @@
             <div class="credly-badge">
               <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e7398140-fb0e-4ce8-86be-ecc8999d3d64" data-share-badge-host="https://www.credly.com"></div>
             </div>
-            <a class="btn alt cert-verify" href="https://www.credly.com/badges/e7398140-fb0e-4ce8-86be-ecc8999d3d64/public_url" target="_blank" rel="noopener">verify on credly &#8599;</a>
+            <a class="btn alt cert-verify" href="https://www.credly.com/badges/e7398140-fb0e-4ce8-86be-ecc8999d3d64/public_url" target="_blank" rel="noopener noreferrer">verify on credly &#8599;</a>
           </article>
           <article class="cert-card">
             <div class="cert-meta">
@@ -309,40 +332,18 @@
             <div class="credly-badge">
               <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="af84d868-20c3-43b2-9d26-e2656fb7868a" data-share-badge-host="https://www.credly.com"></div>
             </div>
-            <a class="btn alt cert-verify" href="https://www.credly.com/badges/af84d868-20c3-43b2-9d26-e2656fb7868a/public_url" target="_blank" rel="noopener">verify on credly &#8599;</a>
+            <a class="btn alt cert-verify" href="https://www.credly.com/badges/af84d868-20c3-43b2-9d26-e2656fb7868a/public_url" target="_blank" rel="noopener noreferrer">verify on credly &#8599;</a>
           </article>
         </div>
 
-        <!-- Where these credentials map to real work -->
         <div class="cert-validates">
-          <h3>// where each credential maps to real work</h3>
-          <div class="cert-validates-grid">
-            <div class="cv-item">
-              <span class="cv-tag">CISSP</span>
-              <span class="cv-text">SOX ITGC controls and system-hardening program at Tilray Brands — building audit-ready controls that satisfy a public-company compliance obligation.</span>
-            </div>
-            <div class="cv-item">
-              <span class="cv-tag">CISM</span>
-              <span class="cv-text">Security program governance, business impact analyses, and executive risk briefings across Tilray and Baker Tilly — governing the program, not just operating it.</span>
-            </div>
-            <div class="cv-item">
-              <span class="cv-tag">CISSP</span>
-              <span class="cv-text">Palo Alto NGFW deployment, network segmentation, and CIS framework maturity at Baker Tilly — designing defences as the engineer who built the systems underneath.</span>
-            </div>
-            <div class="cv-item">
-              <span class="cv-tag">CISM</span>
-              <span class="cv-text">Incident response coordination, patch-cycle governance, and phish-alert programs at Baker Tilly — managing the security function as a business enabler, not a cost centre.</span>
-            </div>
-            <div class="cv-item">
-              <span class="cv-tag">CISSP</span>
-              <span class="cv-text">Six Entra tenant-to-tenant migrations, MFA enforcement, and access governance at Tilray — identity architecture across 900+ users spanning two continents.</span>
-            </div>
-            <div class="cv-item">
-              <span class="cv-tag">CISM</span>
-              <span class="cv-text">M&amp;A technology due diligence at Baker Tilly — assessing information-security risk before deal close and integrating acquired entities into a single governed program.</span>
-            </div>
-          </div>
+          <h3>// where each credential shows up in the work</h3>
+          <div class="cert-validates-grid" id="cert-map"></div>
         </div>
+
+        <div class="focus" id="focus"><!-- forward-looking focus injected by sections.js --></div>
+
+        <p class="edu-note" id="edu-note"></p>
       </div>
     </section>
 
@@ -350,23 +351,22 @@
     <section id="map" aria-labelledby="map-h">
       <div class="wrap">
         <div class="section-head">
-          <div class="kicker">// field footprint</div>
-          <h2 id="map-h">Field Footprint</h2>
+          <div class="kicker">// 09 · field footprint</div>
+          <h2 id="map-h" data-scramble>Field Footprint</h2>
           <p id="map-intro"></p>
         </div>
-
         <div class="map-layout">
           <div class="map-figures">
             <figure class="map-figure" data-map="na">
               <figcaption class="map-cap">North America</figcaption>
-              <div class="map-host" id="map-host-na"><!-- base SVG + markers injected by map.js --></div>
+              <div class="map-host" id="map-host-na"></div>
             </figure>
             <figure class="map-figure map-figure--eu" data-map="eu">
               <figcaption class="map-cap">Europe</figcaption>
-              <div class="map-host" id="map-host-eu"><!-- base SVG + markers injected by map.js --></div>
+              <div class="map-host" id="map-host-eu"></div>
             </figure>
           </div>
-          <div class="map-list" id="map-list" aria-label="Regions and cities"><!-- grouped city list injected by map.js --></div>
+          <div class="map-list" id="map-list" aria-label="Regions and cities"></div>
         </div>
       </div>
     </section>
@@ -375,33 +375,32 @@
     <section id="repos" aria-labelledby="repos-h">
       <div class="wrap">
         <div class="section-head">
-          <div class="kicker">// public work</div>
-          <h2 id="repos-h">On GitHub</h2>
+          <div class="kicker">// 10 · personal lab</div>
+          <h2 id="repos-h" data-scramble>On GitHub</h2>
           <p id="repos-intro"></p>
         </div>
-        <div id="repos-groups"><!-- repo groups injected by main.js --></div>
+        <div id="repos-groups"></div>
         <div class="repos-cta">
-          <a class="btn" href="https://github.com/Philliamviber" target="_blank" rel="noopener">&#9656; view full github profile</a>
+          <a class="btn" href="https://github.com/Philliamviber" target="_blank" rel="noopener noreferrer">&#9656; view full github profile</a>
         </div>
       </div>
     </section>
 
-    <!-- ============================ PERSONAL TRAVEL VENTURES ============================ -->
+    <!-- ============================ PERSONAL TRAVEL ============================ -->
     <section id="travel" aria-labelledby="travel-h">
       <div class="wrap">
         <div class="section-head">
-          <div class="kicker">// off the clock</div>
-          <h2 id="travel-h">Personal Travel Ventures</h2>
+          <div class="kicker">// 11 · off the clock</div>
+          <h2 id="travel-h" data-scramble>Personal Travel Ventures</h2>
           <p id="travel-sub"></p>
         </div>
-
         <div class="travel-viewport" tabindex="0" role="group" aria-roledescription="carousel" aria-label="Travel photo slideshow">
           <button class="travel-arrow travel-prev" type="button" aria-label="Previous photo">&#10094;</button>
-          <div class="travel-stage" id="travel-stage" aria-live="polite"><!-- slides injected by main.js --></div>
+          <div class="travel-stage" id="travel-stage" aria-live="polite"></div>
           <button class="travel-arrow travel-next" type="button" aria-label="Next photo">&#10095;</button>
           <span class="travel-counter" id="travel-counter" aria-hidden="true"></span>
         </div>
-        <div class="travel-dots" id="travel-dots" role="tablist" aria-label="Choose a photo"><!-- dots injected --></div>
+        <div class="travel-dots" id="travel-dots" aria-label="Choose a photo"></div>
       </div>
     </section>
   </main>
@@ -409,35 +408,36 @@
   <!-- ============================ FOOTER ============================ -->
   <footer>
     <div class="wrap">
-      <div class="ascii">  ____  _   _ _ _ _         ____  _   _ _
+      <div class="ascii" aria-hidden="true">  ____  _   _ _ _ _         ____  _   _ _
  |  _ \| | | (_) (_)_ __   / ___|| |_(_) |__   ___ _ __
  | |_) | |_| | | | | '_ \  \___ \| __| | '_ \ / _ \ '__|
  |  __/|  _  | | | | |_) |  ___) | |_| | |_) |  __/ |
  |_|   |_| |_|_|_|_| .__/  |____/ \__|_|_.__/ \___|_|
                    |_|</div>
       <p>
-        Philip Stiber · CISSP, CISM — Peterborough, ON ·
-        <a href="https://www.linkedin.com/in/pstiber/" target="_blank" rel="noopener">linkedin.com/in/pstiber</a>
+        Philip Stiber · CISSP, CISM ·
+        <a href="https://www.linkedin.com/in/pstiber/" target="_blank" rel="noopener noreferrer">linkedin.com/in/pstiber</a> ·
+        <a href="resume.html">résumé</a>
       </p>
-      <p class="out">Built as a static, offline-capable GitHub Pages site. Visuals: vis-network · Chart.js · wordcloud2.js. No trackers, no backend.</p>
+      <p class="out">Static site · strict Content-Security-Policy · self-hosted fonts · metadata-stripped images · no trackers or analytics. Credly badges load from credly.com. <span id="updated"></span></p>
     </div>
   </footer>
 
   <!-- Vendored libraries (offline-capable) -->
   <script src="vendor/vis-network.min.js"></script>
   <script src="vendor/chart.umd.min.js"></script>
-  <script src="vendor/wordcloud2.min.js"></script>
 
   <!-- App modules -->
   <script src="js/main.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/sections.js"></script>
+  <script src="js/cases.js"></script>
   <script src="js/graph.js"></script>
   <script src="js/radar.js"></script>
-  <script src="js/heatmap.js"></script>
-  <script src="js/wordcloud.js"></script>
   <script src="js/estate.js"></script>
   <script src="js/map.js"></script>
 
-  <!-- Credly badge embeds — renders the interactive animated badges in the certs section -->
-  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+  <!-- Credly badge embeds (the only third-party script) -->
+  <script async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
 </body>
 </html>

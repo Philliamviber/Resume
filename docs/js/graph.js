@@ -1,8 +1,8 @@
 /* =============================================================
    graph.js — the centerpiece "attack-path" career graph.
    Built on vis-network. Nodes come straight from
-   resume-data.json -> graph.{nodes,edges}. Styling mimics a
-   BloodHound attack-path map: dark canvas, glowing nodes,
+   resume-data.json -> graph.{nodes,edges}. Styling borrows from
+   BloodHound's relationship maps: dark canvas, glowing nodes,
    type-colored edges, physics-driven layout.
    ============================================================= */
 
@@ -17,6 +17,8 @@
 
   document.addEventListener("resume:ready", (ev) => {
     const data = ev.detail;
+    document.querySelectorAll(".chip[data-filter]").forEach((c) =>
+      c.setAttribute("aria-pressed", String(c.dataset.active === "true")));
     const host = document.getElementById("graph");
     if (!host || typeof vis === "undefined") {
       console.warn("vis-network not available or #graph missing.");
@@ -131,16 +133,11 @@
       chip.addEventListener("click", () => {
         document.querySelectorAll(".chip[data-filter]").forEach((c) => {
           c.dataset.active = "false";
-          c.style.background = "";
-          c.style.color = "";
-          c.style.borderColor = "";
+          c.setAttribute("aria-pressed", "false");
         });
         chip.dataset.active = "true";
+        chip.setAttribute("aria-pressed", "true");
         const f = chip.dataset.filter;
-        const col = TYPE_COLORS[f] || "#39ff14";
-        chip.style.background = col;
-        chip.style.color = "#05080d";
-        chip.style.borderColor = col;
         if (search) search.value = "";
         if (f === "all") { resetDim(); return; }
         // root always stays lit so the map keeps an anchor.
