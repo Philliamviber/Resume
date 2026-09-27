@@ -8,7 +8,7 @@
 [![CISM](https://img.shields.io/badge/CISM-ISACA-ffb000?style=for-the-badge&labelColor=05080d)](https://www.credly.com/badges/af84d868-20c3-43b2-9d26-e2656fb7868a/public_url)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-pstiber-00e5ff?style=for-the-badge&logo=linkedin&labelColor=05080d)](https://www.linkedin.com/in/pstiber/)
 
-**[Portfolio →](https://philliamviber.github.io/Resume/)** · **[Résumé (PDF) →](https://philliamviber.github.io/Resume/Philip-Stiber-Resume.pdf)**
+**[Portfolio →](https://philliamviber.github.io/Resume/)** · **[Résumé (PDF) →](docs/Philip-Stiber-Resume.pdf)**
 
 </div>
 
