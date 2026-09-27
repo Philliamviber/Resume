@@ -2,24 +2,34 @@
 
 A menu of **marketable, cyber-themed visual concepts** for this portfolio. The site already ships the ⭐ **Built now** set; the rest are scoped, ready-to-add ideas so the portfolio can keep evolving. Each entry notes the recommended library and the "why it sells."
 
-> Visual language throughout: **dark BloodHound / red-team aesthetic** — near-black canvas, neon green / cyan / amber / red / violet accents, node-and-edge glow, monospace headings.
+> Visual language throughout: **dark "SOC console"** — near-black canvas, cyan / green primary accents (blue-team), amber for "in progress", red reserved for alerts and retired items, violet for credentials; monospace kickers, node-and-edge glow.
+>
+> Rules for every visual: data comes from `resume-data.json`; status is always honest (delivered / underway / ongoing); diagrams of real work are **illustrative, generic and labelled as such** — no real names, counts, topology or counterparties; all motion respects `prefers-reduced-motion` and pauses off-screen.
 
 ---
 
-## ⭐ Built now (live on the site)
+## ⭐ Built now (live on the site, v3)
 
 | # | Concept | Library | Why it sells |
 |---|---------|---------|--------------|
-| 1 | **Career attack-path node graph** — operator → engagements → objectives → capabilities → credentials, force-directed, drag/zoom/search/filter | vis-network | The BloodHound-style centerpiece; instantly signals "security person" and rewards exploration |
-| 2 | **Skill-domain radar / spider chart** — 8 domains scored 0–5 | Chart.js (radar) | One glance = whole capability profile; recruiters love it |
-| 3 | **Proficiency heatmap** — per-skill 5-cell signal meter | Vanilla CSS grid | Dense, scannable, zero dependencies |
-| 4 | **Tech "arsenal" word cloud** — weighted tooling terms | wordcloud2.js | Keyword-rich (great for ATS skim) and visually punchy |
-| 5 | **Impact stat cards** — animated count-up of quantified wins | Vanilla JS | Numbers-first storytelling; the "wow" above the fold |
-| 6 | **Career kill-chain timeline** — glowing vertical trajectory | Vanilla CSS/JS | Narrative spine connecting roles to certs |
-| 7 | **Terminal / hero boot screen** — `whoami --full` Kali-style prompt | Vanilla CSS | Establishes red-team identity in the first second |
-| 8 | **Global estate map** — Tilray's NA + Europe sites on an equirectangular SVG, glowing markers + hub-and-spoke links | Vanilla SVG/JS | Dependency-free, offline; visualizes the scope of operations managed (see #21) |
-| 9 | **Certification badge wall + Credly embeds** — CISSP/CISM crests, hover-to-verify issuer logos, cert→work mapping | Credly embed + CSS | Trust signals, independently verifiable (see #28) |
-| 10 | **Field Footprint maps** — North America + Europe, neon city markers grouped into regions, synced to a scannable city list (hover one ↔ highlight the other) | Vanilla SVG/JS (d3-geo at build time) | Shows the geographic reach of the work; dependency-free & offline (see #21/#22) |
+| 1 | **Hero network canvas** — drifting nodes, links, travelling packets, scan rings; reacts to the cursor | Canvas 2D | Motion-graphic "video" feel with zero video weight |
+| 2 | **Status boot log** — `[ OK ]` / `[RUN]` lines for delivered vs underway work | Vanilla JS/CSS | Cyber-native way to state honest status up front |
+| 3 | **Status ticker** — SOC-style marquee of outcomes | CSS | Scannable proof, pauses on hover |
+| 4 | **Decrypt text** — hero role cycling + section headings resolve from glyphs | Vanilla JS | Kinetic "graphic text", screen-reader safe |
+| 5 | **Statement typography** — the hook as large gradient-highlighted type with a scan sweep | CSS | The thesis in one glance |
+| 6 | **Case-file diagrams** — converge (M&A), VM-grid retirement scan, phased migration, BIA→recovery chain, Bicep build | SVG + SMIL/CSS | Shows the mechanism of each case, animated on scroll |
+| 7 | **Delivery loop** — interactive ring showing who owns each step (engineers / shared / me) | SVG | Makes the leadership model visible |
+| 8 | **NIST CSF 2.0 practice matrix** — capability areas × Govern…Recover | CSS grid | Blue-team fluency; explicitly "practice, not compliance" |
+| 9 | **Career graph** — roles → outcomes → capabilities → credentials | vis-network | The BloodHound-style signature piece |
+| 10 | **Skill radar** — 8 self-assessed domains | Chart.js | One-glance profile |
+| 11 | **Impact counters + profile facts** | Vanilla JS | Numbers-first, delivered outcomes only |
+| 12 | **Timeline rail + experience cards** with hover-to-reveal business impact | Vanilla | Narrative spine + the "so what" |
+| 13 | **Integration portfolio brand wall** | Vanilla | Tangible proof of M&A scope |
+| 14 | **Credential wall + Credly embeds** | Credly | Independently verifiable |
+| 15 | **Field Footprint maps** | SVG (d3-geo at build time) | Geographic reach |
+| 16 | **Printable résumé + PDF** | Print CSS + Chromium | Recruiters still need a document |
+
+Retired in v3: proficiency heatmap (duplicated the radar) and tech word cloud (replaced by grouped, ATS-legible stack chips).
 
 ---
 
@@ -66,7 +76,7 @@ A menu of **marketable, cyber-themed visual concepts** for this portfolio. The s
 | 23 | **Typing-effect hero** — role titles cycle with a typewriter cursor | typed.js / vanilla | Cheap motion that reads premium |
 | 24 | **Glitch / scanline overlay** — subtle CRT red-team vibe | CSS only | Atmosphere without hurting readability |
 | 25 | **Neon grid / parallax background** — animated wireframe floor | CSS / canvas | Synthwave depth behind content |
-| 26 | **Dark / light theme toggle** — "SOC mode" vs "report mode" | CSS variables | Accessibility + recruiter comfort |
+| 26 | **Dark / light theme toggle** — "SOC mode" vs "report mode" (the résumé page already covers "report mode") | CSS variables | Accessibility + recruiter comfort |
 | 27 | **Threat-actor profile card** — your bio styled like an APT dossier | CSS | Memorable, shareable, very cyber |
 | 28 | **Certification badge wall** — CISSP/CISM crests with verify links | CSS grid | Trust signals, front and center |
 
@@ -76,7 +86,7 @@ A menu of **marketable, cyber-themed visual concepts** for this portfolio. The s
 
 | # | Concept | Library | Notes |
 |---|---------|---------|-------|
-| 29 | **Printable / PDF resume view** — one-click clean export | window.print() + print CSS | Recruiters still want a PDF |
+| 29 | ~~Printable / PDF resume view~~ — *built* (`resume.html` + PDF) | print CSS | Recruiters still want a PDF |
 | 30 | **QR to LinkedIn / vCard** — scannable hand-off for in-person events | qrcode.js | Bridges digital ↔ physical networking |
 | 31 | **Filterable graph legend + URL deep-links** — share a pre-filtered view | History API | "Here's my M&A subgraph" in one link |
 | 32 | **JSON-driven everything** — already implemented; one data file feeds all visuals | — | Update once, the whole site re-renders |

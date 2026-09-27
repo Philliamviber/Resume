@@ -8,16 +8,18 @@ on:
     branches: [main]
   workflow_dispatch:
 
-permissions:
-  security-events: write
-  id-token: write
-  contents: read
-  actions: read
+# Scorecard's result publishing rejects workflows with write permissions at
+# the top level, so everything stays read-only here and the job asks only for
+# what it needs.
+permissions: read-all
 
 jobs:
   scorecard:
     name: OpenSSF Scorecard
     runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      id-token: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4

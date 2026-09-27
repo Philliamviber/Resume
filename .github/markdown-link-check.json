@@ -1,0 +1,9 @@
+{
+  "ignorePatterns": [
+    { "pattern": "^https://www\\.linkedin\\.com" },
+    { "pattern": "^https://www\\.credly\\.com" },
+    { "pattern": "^#" }
+  ],
+  "retryOn429": true,
+  "aliveStatusCodes": [200, 206, 301, 302]
+}
